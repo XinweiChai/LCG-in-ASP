@@ -1,8 +1,5 @@
-bird(tweety). chicken(tweety).
-bird(tux). penguin(tux).
-fly(X) :- bird(X), not -fly(X).
--fly(X) :- bird(X), not fly(X).
--fly(X) :- penguin(X).
-:-fly(X), -fly(X).
-%:-fly(tux), -fly(tux).
-
+unsatisfied(1,1).
+unsatisfied(1,2).
+unsatisfied(2,1).
+proc(1). proc(2).
+satisfied(X):- not unsatisfied(X,_), proc(X).
