@@ -11,5 +11,6 @@ unsatisfied(X,B1,B2) :- conflict(X,B1,B2), conflict(Y,B1,B2), X!=Y, B1<B2.
 satisfied(X) :- not unsatisfied(X,_,_), proc(X).
 %#show conflict/3.
 %#show indirConflict/2.
+%#show satis/1.
 #show unsatisfied/3.
 #show satisfied/1.
