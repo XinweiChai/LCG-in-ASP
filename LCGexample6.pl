@@ -12,6 +12,11 @@ init(d,0).
 init(e,0).
 init(f,0).
 
+comp(1,b,1).
+comp(1,c,1).
+
+transition(1,a,1).
+
 node(a,1,1).
 node(b,1,2).
 node(c,1,3).

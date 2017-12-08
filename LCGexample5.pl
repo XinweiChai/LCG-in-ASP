@@ -10,6 +10,10 @@ init(c,0).
 init(d,0).
 init(e,0).
 
+comp(1,a,0).
+
+transition(1,d,0).
+
 node(a,1,1).
 node(b,1,2).
 node(c,1,3).
