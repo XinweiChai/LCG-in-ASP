@@ -12,10 +12,10 @@ init(d,0).
 init(e,0).
 init(f,0).
 
-%comp(1,a,0).
+comp(1,a,0).
 comp(2,f,1).
 comp(3,a,0).
-%transition(1,d,0).
+transition(1,d,0).
 transition(2,d,0).
 transition(3,f,1).
 

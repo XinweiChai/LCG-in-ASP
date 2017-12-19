@@ -22,8 +22,9 @@ newParent(N1,N2) :- parent(N1,N2).
 rule(N1,N2) :- newParent(N2,N1).
 rule(N1,N3) :- rule(N1,N2), rule(N2,N3).
 rule(N1,N2) :- node(P1,S1,N1), node(P2,S2,N2), node(P2,S3,N3), newParent(N1,N3), init(P2,S3), S2!=S3, P1!=P2, not addParent(N3,_), N1!=N3, N2!=N3.
-rule(N1,N2) :- addTransition(N,P,S), node(P,S,N2), node(P,S1,N1), S1!=S.
+rule(N3,N2) :- init(P,S), addTransition(N,P,S), node(P,S,N2), node(P,S1,N1), newParent(N3,N1), S1!=S.
 {addTransition(N,P,S)}1 :- transition(N,P,S), conflict(P), init(P,S).
+:- 2{addTransition(N,P,S):init(P,S)}.
 {addTransition(N2,P2,S2)}1 :- addTransition(N1,P1,S1), comp(N1,P2,S2), not init(P2,S2), transition(N2,P2,S2).
 :- addTransition(N,P1,S1), comp(N,P2,S2), not init(P2,S2), not addTransition(_,P2,S2), node(P2,S2,N2), not newParent(N2,_).
 addParent(N1,N2) :- addTransition(N,P1,S1), comp(N,P2,S2), node(P1,S1,N1), node(P2,S2,N2).
@@ -31,7 +32,7 @@ reachableAfterAddition :- unreachable, 0{seq(O,P,S):seq(O,P,S)}.
 %noSolution :- not reachableAfterAddition.
 
 
-#include "LCGexample6.pl".
+#include "LCGexample5.pl".
 #show seq/3.
 #show unreachable/0.
 #show reachable/0.
