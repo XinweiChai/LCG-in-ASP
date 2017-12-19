@@ -3,16 +3,21 @@ proc(b).
 proc(c).
 proc(d).
 proc(e).
+proc(f).
 
 init(a,0).
 init(b,0).
 init(c,0).
 init(d,0).
 init(e,0).
+init(f,0).
 
-comp(1,a,0).
-
-transition(1,d,0).
+%comp(1,a,0).
+comp(2,f,1).
+comp(3,a,0).
+%transition(1,d,0).
+transition(2,d,0).
+transition(3,f,1).
 
 node(a,1,1).
 node(b,1,2).
@@ -22,6 +27,7 @@ node(d,0,5).
 node(e,0,6).
 node(d,1,7).
 node(a,0,8).
+node(f,1,9).
 
 parent(1,2).
 parent(1,3).
