@@ -32,7 +32,7 @@ reachableAfterAddition :- unreachable, 0{seq(O,P,S):seq(O,P,S)}.
 %noSolution :- not reachableAfterAddition.
 
 
-#include "LCGexample5.pl".
+%#include "LCGexample6.pl".
 #show seq/3.
 #show unreachable/0.
 #show reachable/0.

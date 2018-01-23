@@ -1,0 +1,50 @@
+digraph { 
+a_1[shape=box];
+a_1 -> O_a_0_1;
+
+b_1[shape=box];
+b_1 -> O_b_0_1;
+
+c_1[shape=box];
+c_1 -> O_c_0_1;
+
+d_0[shape=box];
+d_0 -> O_d_0_0;
+
+d_1[shape=box];
+d_1 -> O_d_0_1;
+
+e_1[shape=box];
+e_1 -> O_e_0_1;
+O_a_0_1[label="a 0 1"];
+pintsol1[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_a_0_1 -> pintsol1;
+pintsol1 -> e_1;
+pintsol2[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_a_0_1 -> pintsol2;
+pintsol2 -> b_1;
+pintsol2 -> c_1;
+
+O_b_0_1[label="b 0 1"];
+pintsol3[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_b_0_1 -> pintsol3;
+pintsol3 -> d_0;
+
+O_c_0_1[label="c 0 1"];
+pintsol4[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_c_0_1 -> pintsol4;
+pintsol4 -> d_1;
+
+O_d_0_0[label="d 0 0"];
+pintsol5[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_d_0_0 -> pintsol5;
+
+
+O_d_0_1[label="d 0 1"];
+pintsol6[label="",shape=circle,fixedsize=true,width=0.1,height=0.1];
+O_d_0_1 -> pintsol6;
+pintsol6 -> b_1;
+
+O_e_0_1[label="e 0 1"];
+
+}

@@ -1,0 +1,19 @@
+CI [0,1]
+CII [0,1]
+Cro [0,1]
+N [0,1]
+
+CI 0 -> 1 when CII=1
+CI 0 -> 1 when Cro=0
+CI 1 -> 0 when CII=0
+CII 0 -> 1 when N=1
+CII 1 -> 0 when CI=0 and N=0
+CII 1 -> 0 when CI=0 and Cro=1
+CII 1 -> 0 when CI=1
+Cro 0 -> 1 
+Cro 1 -> 0 when CI=1
+N 0 -> 1 when CI=0
+N 1 -> 0 when CI=0 and Cro=1
+N 1 -> 0 when CI=1
+
+initial_state CI=0, CII=0, Cro=1, N=0

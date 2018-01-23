@@ -1,23 +1,32 @@
-from __future__ import print_function
+#from __future__ import print_function
 from pyasp.asp import *
 #input
-f=open('path','r')
-f.read()
-#use a class to save all the parameters
+#tentatives on translation from Matlab to Python
+#stateNodeArray adjMatrix solNodeArray
+#initialState actions startNode
+f=open('data/LCG1','r')
+for line in f.readlines():
+    line.split(" ")
+    #print(line)
+
+#SLCG
+    #some functions are being rewritten
 
 #preconditioning
+#adjacent list perhaps faster
 #while SCC is valid, break cycle
 
 #begin for
 #from root node, choose arbitrarily
 
+#a possible alternative for ASP part is to enumerate all the possible combinations of OR gates
 #write fact file
 
 goptions = ''
 soptions = '1'
 solver   = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
 encoding = 'nestedTest.lp'
-facts    = 'LCGexample6.pl'
+facts    = 'LCGexample5.pl'
 result   = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
 for s in result : 
   for a in s :
