@@ -1,5 +1,6 @@
 #from __future__ import print_function
 from pyasp.asp import *
+from SCC import strongly_connected_components_path
 #input
 #tentatives on translation from Matlab to Python
 #stateNodeArray adjMatrix solNodeArray
@@ -11,7 +12,9 @@ for line in f.readlines():
 
 #SLCG
     #some functions are being rewritten
-
+sccResult=[]
+for scc in strongly_connected_components_path(vertices, edges):
+    sccResult.append(scc)
 #preconditioning
 #adjacent list perhaps faster
 #while SCC is valid, break cycle
