@@ -4,7 +4,7 @@ def breakCycle(lcg, SCC,startNode)
            continue
        for j in cycle:
            if j == startNode:
-               pass
+               continue
            else:
                pred
     return lcg

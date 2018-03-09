@@ -10,11 +10,9 @@ for line in f.readlines():
     line.split(" ")
     #print(line)
 
-#SLCG
-    #some functions are being rewritten
 sccResult=[]
-for scc in strongly_connected_components_path(vertices, edges):
-    sccResult.append(scc)
+#for scc in strongly_connected_components_path(vertices, edges):
+#    sccResult.append(scc)
 #preconditioning
 #adjacent list perhaps faster
 #while SCC is valid, break cycle

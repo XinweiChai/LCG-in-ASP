@@ -3,7 +3,8 @@ def readBAN(path):
     hasStartNode = 0
     process = []
     dictionary = []
-    actions = []
+    actions = {}
+    initialState = []
     f = open('data/'+path,'r')
     for line in f.readlines():
         if 'goal' in line:
@@ -24,7 +25,7 @@ def readBAN(path):
                 process.append(words[0])
                 continue
             else:
-                initialState = np.zeros(len(process))
+                #initialState = np.zeros(len(process))
                 if words[0] != 'initial_state':
                     act=[[]]
                     act.append(words[0])
@@ -33,10 +34,10 @@ def readBAN(path):
                     for i in range(len(words)-5):
                         temp = re.split("=",words[i+5]) #last elements
                         act[0].append([temp[0],temp[1]])
-                    actions.append(act)
+                    actions[words[3]]=act
                 else:
                     for i in range(1,len(words)):
                         temp = re.split("=",line)
-                        initialState[process.index(temp[0])] = temp[1]
+                        initialState.append([temp])
+                        #initialState[process.index(temp[0])] = temp[1]
     return dictionary,actions,initialState,startState 
-                
