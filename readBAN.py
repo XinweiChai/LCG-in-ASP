@@ -34,6 +34,8 @@ def readBAN(path):
                     for i in range(len(words)-5):
                         temp = re.split("=",words[i+5]) #last elements
                         act[0].append([temp[0],temp[1]])
+                    act[0] = tuple(act[0])
+                    act=tuple(act)
                     actions[words[3]]=act
                 else:
                     for i in range(1,len(words)):
