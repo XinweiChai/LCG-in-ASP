@@ -2,36 +2,34 @@
 from pyasp.asp import *
 from SCC import strongly_connected_components_path
 #input
-#tentatives on translation from Matlab to Python
-#stateNodeArray adjMatrix solNodeArray
-#initialState actions startNode
-f=open('data/LCG1','r')
-for line in f.readlines():
-    line.split(" ")
-    #print(line)
+#translation from Matlab to Python
+[dictionary,actions, actionsByHitter, initialState, startState]=readBAN('data/LCG1','r')
 
-sccResult=[]
-#for scc in strongly_connected_components_path(vertices, edges):
-#    sccResult.append(scc)
-#preconditioning
-#adjacent list perhaps faster
-#while SCC is valid, break cycle
+[lcg , lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode);
+SCC = strongly_connected_components_path(lcgNodes, lcgEdges)
+while len(SCC)!=len(lcgNodes):
+    lcgEdges=breakCycle(lcgEdges, SCC,startNode, actionsByHitter, actions)
+    SCC = strongly_connected_components_path(lcgNodes, lcgEdges)
+lceEdges = precondition(lcgEdges, initialState)
+reachable=0;
+for i=1:500
+    lcgEdges = reconstruct(lcgEdges,startNode)
+    goptions = ''
+    soptions = '1'
+    solver   = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
+    encoding = 'nestedTest.lp'
+    facts    = 'LCGexample5.pl'
+    result   = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
+    for s in result : 
+        for a in s :
+            reachable=1
+            break
+        if reachable:
+            break
+    if reachable:
+        break
+if reachable:
+    print('reachable')
+else:
+    print('unreachable');
 
-#begin for
-#from root node, choose arbitrarily
-
-#a possible alternative for ASP part is to enumerate all the possible combinations of OR gates
-#write fact file
-
-goptions = ''
-soptions = '1'
-solver   = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
-encoding = 'nestedTest.lp'
-facts    = 'LCGexample5.pl'
-result   = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
-for s in result : 
-  for a in s :
-    args= ",".join(a.args())
-    print(a.pred(), '(',args, ')', sep='', end=' ')
-  print()
-#end for

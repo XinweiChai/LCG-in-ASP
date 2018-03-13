@@ -1,6 +1,6 @@
-def precondition(lcg, initialState)
-    for i,j in lcg.items():
-        if j not in lcg.keys() and j not in initialState:
-            lcg.pop(i)
-            precondition(lcg,initialState)
-    return lcg
+def precondition(lcgEdges, initialState)
+    for i,j in lcgEdges.items():
+        if j not in lcgEdges.keys() and j not in initialState:
+            lcgEdges.pop(i)
+            precondition(lcgEdges,initialState)
+    return lcgEdges

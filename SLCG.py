@@ -33,4 +33,4 @@ def SLCG(initialState, actions, startNode):
                         actToLs.append([j,k])
                         LS.append(k)
     lcg=[actToLs, lsToAct]
-    return stateNodeArray, lcg , lcgNodes, lcgEdges#, solNodeArray
+    return lcg , lcgNodes, lcgEdges#, solNodeArray

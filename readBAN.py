@@ -4,6 +4,7 @@ def readBAN(path):
     process = []
     dictionary = []
     actions = {}
+    actionsByHitter = {}
     initialState = []
     f = open('data/'+path,'r')
     for line in f.readlines():
@@ -36,10 +37,12 @@ def readBAN(path):
                         act[0].append([temp[0],temp[1]])
                     act[0] = tuple(act[0])
                     act=tuple(act)
-                    actions[words[3]]=act
+                    actions[(words[0],words[3])]=act
+                    for i in act[0]
+                        actionsByHitter[i] = act
                 else:
                     for i in range(1,len(words)):
                         temp = re.split("=",line)
                         initialState.append([temp])
                         #initialState[process.index(temp[0])] = temp[1]
-    return dictionary,actions,initialState,startState 
+    return dictionary,actions, actionsByHitter, initialState, startState 
