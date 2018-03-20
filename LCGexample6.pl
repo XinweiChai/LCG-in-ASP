@@ -1,10 +1,3 @@
-proc(a).
-proc(b).
-proc(c).
-proc(d).
-proc(e).
-proc(f).
-
 init(a,0).
 init(b,0).
 init(c,0).
