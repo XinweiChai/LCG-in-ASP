@@ -1,8 +1,7 @@
 from pyasp.asp import *
 from reconstruct import *
 from factGenerator import *
-def heuristic(k,lcgEdges,startNode,initialState,lcgNodes):
-    reachable=0
+def heuristics(k,lcgEdges,startNode,initialState,lcgNodes):
     for i in range(k):
         lcgEdges = reconstruct(lcgEdges,startNode)
         generate(initialState, lcgNodes, lcgEdges)
