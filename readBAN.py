@@ -8,6 +8,7 @@ def readBAN(path):
     actions = {}
     actionsByHitter = {}
     initialState = []
+    startState=[]
     f = open('data/'+path,'r')
     for line in f.readlines():
         line=line.replace("\n","")
@@ -15,10 +16,10 @@ def readBAN(path):
             hasStartNode = 1
             words = re.split(",*\s|\(\*|\*\)",line)
             startState=words[words.index('goal')+1]
-            startState = re.split("_|=",startState)
+            startState = re.split("[_=]",startState)
             startState = tuple(startState)
         else:
-            words = re.split("\s*and\s*|\s*",line)
+            words = re.split("\s*and\s*|\s+",line)
             if len(words) <= 1:
                 continue
             elif (len(words) > 2) and (not readProc):
@@ -30,7 +31,6 @@ def readBAN(path):
                 process.append(words[0])
                 continue
             else:
-                #initialState = np.zeros(len(process))
                 if words[0] != 'initial_state':
                     act=[[]]
                     act.append(words[0])
@@ -48,7 +48,6 @@ def readBAN(path):
                     for i in range(1,len(words)):
                         temp = re.split("=",line)
                         initialState.append([temp])
-                        #initialState[process.index(temp[0])] = temp[1]
             if not initialState:
                 for i in process:
                     initialState.append((i,'0'))

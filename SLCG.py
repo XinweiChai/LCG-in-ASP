@@ -1,4 +1,4 @@
-def SLCG(initialState, actions, actionsByHitter,startNode):
+def SLCG(initialState, actions, startNode):
     actToLs=[]
     lsToAct=[]
     lcgNodes=[]
@@ -15,21 +15,24 @@ def SLCG(initialState, actions, actionsByHitter,startNode):
             ls.pop(0)
             continue
         lcgNodes.append(i)
-        LS = LS|set([i])
+        LS = LS | {i}
         ls.pop(0)
         #if i[1] == initialState[i[0]]:
         if i in initialState:
             continue
         else:
             act = [actions[value] for value in targets if value == i]
+            lcgEdges[i]=act
             lcgNodes+=act
             for j in act:
                 solNode = [i,j]
-                lcgEdges[i]=j
                 lsToAct.append(solNode)
+                lcgEdges[j] = list(j[0])
                 for k in j[0]:
-                    lcgEdges[j]=k
                     actToLs.append((j,k))
                     ls.append(k)
+    for i in lcgNodes:
+        if i not in lcgEdges:
+            lcgEdges[i]=[]
     lcg=[actToLs, lsToAct]
     return lcg , lcgNodes, lcgEdges#, solNodeArray

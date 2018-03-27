@@ -16,8 +16,8 @@ unreachable :- prior(N1,N2), prior(N2,N1), N1<N2.
 reachable :- not unreachable.
 conflict(P2) :- prior(N1,N2), prior(N2,N1), node(P1,_,N1), node(P2,S2,N2), node(P2,S3,N3), parent(N1,N3), init(P2,S3), S2!=S3, P1!=P2.
 
-#include "LCGexample6.pl".
+%#include "LCGexample6.pl".
 #show seq/3.
 #show unreachable/0.
 #show reachable/0.
-#show conflict/1.
+%#show conflict/1.

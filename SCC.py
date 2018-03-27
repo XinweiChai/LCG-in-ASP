@@ -1,4 +1,4 @@
-def strongly_connected_components_path(vertices, edges):
+def strongly_connected_components_path(vertices: object, edges: object) -> object:
     """
     Find the strongly connected components of a directed graph.
 

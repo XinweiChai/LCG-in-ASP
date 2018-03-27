@@ -1,7 +1,7 @@
 import random
-def reconstruct(lcgEdges,startNode)
+def reconstruct(lcgEdges,startNode):
     toVisit = startNode
-    while toVisit
+    while toVisit:
         temp = []
         for i in toVisit:
             if i in lcgEdges:

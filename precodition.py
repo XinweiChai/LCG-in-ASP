@@ -1,6 +1,11 @@
-def precondition(lcgEdges, initialState)
-    for i,j in lcgEdges.items():
-        if j not in lcgEdges.keys() and j not in initialState:
-            lcgEdges.pop(i)
-            precondition(lcgEdges,initialState)
+def precondition(lcgEdges, initialState):
+    for i in lcgEdges.keys():
+        if i not in initialState:
+            mark=True
+            for k in lcgEdges[i]:
+                if k in lcgEdges:
+                    mark=False
+            if mark:
+                lcgEdges.pop(i)
+                precondition(lcgEdges, initialState)
     return lcgEdges
