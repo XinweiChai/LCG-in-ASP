@@ -1,54 +1,96 @@
-27/02/2018
+27/02/2018 80 days
 - ASP generator of arbitrary asynchronous transitions
-28/02/2018
-- parser for ASP generator to LF1T input, randomized inputs for LF1T, different transition diagrams
-01/03/2018
-LF1T Meeting, parser finish
-02/03/2018
-Prepare for Kanazawa Meeting
-05/03/2018
-Kanazawa Meeting
-06/03/2018
-Kanazawa Meeting, gave a talk:
-"Static Analysis for Reachability Problem"
-07/03/2018
-Plan for new paper on the collaboration of LFIT and model checking, animation of LCG
-08/03/2018
-Meet with Morgan and LFIT meeting
-09/03/2018
-Discussion with Tony about the semantics of the learning different dynamics: synchronous, asynchronous and general case
-12/03/2018
-13/03/2018
-Meeting with Morgan and lab meeting
-14/03/2018
-Paper CMSB
-15/03/2018
-Paper CMSB
-16/03/2018
+28/02/2018 79 days
+- Parser for ASP generator to LF1T input
+- Randomized inputs for LF1T
+- Different transition diagrams
+01/03/2018 78 days
+- LF1T Meeting, parser finish
+02/03/2018 77 days
+- Prepare for Kanazawa Meeting
+05/03/2018 74 days
+- Kanazawa Meeting
+06/03/2018 73 days
+- Kanazawa Meeting, talk given: "Static Analysis for Reachability Problem"
+07/03/2018 72 days
+- Plan for new paper on the collaboration of LFIT 
+- Contents added in slides: model checking, animation of LCG
+08/03/2018 71 days
+- Meet with Morgan 
+- LFIT meeting
+09/03/2018 70 days
+- Discussion with Tony about the semantics of the learning different dynamics: synchronous, asynchronous and general case
+12/03/2018 67 days
+13/03/2018 66 days
+- Meeting with Morgan 
+- Lab meeting
+14/03/2018 65 days
+- Paper CMSB
+15/03/2018 64 days
+- Paper CMSB
+16/03/2018 63 days
 LFIT meeting
-Paper CMSB
-19/03/2018
-Paper CMSB
-20/03/2018
-Lab meeting
-Paper CMSB
-22/03/2018
-Preparation of meeting in Kobe
-23/03/2018
+- Paper CMSB
+19/03/2018 60 days
+- Paper CMSB
+20/03/2018 59 days
+- Lab meeting
+- Paper CMSB
+22/03/2018 57 days
+- Preparation of meeting in Kobe
+23/03/2018 56 days
 - Meeting in Kobe, talk entitled "Identification of Key Components and Modification of Models by Model Checking"
-26/03/2018
-Coding
-27/03/2018
+26/03/2018 53 days
+- Coding
+27/03/2018 52 days
 - Main Code finished
 - Lab meeting
 - LFIT meeting
-28/03/2018
+28/03/2018 51 days
 - Test cycles and OR gates
 - LFIT meeting
-29/03/2018
+29/03/2018 50 days
 - Some code modification
 - Paper CMSB
-30/03/2018
-Some code modification, add command-line option
-Paper CMSB
-31/03/2018
+30/03/2018 49 days
+- Some code modification, add command-line option
+- Paper CMSB
+02/04/2018 46 days
+03/04/2018 45 days
+-Paper CMSB
+    - Abstract finished
+    - explanation of algorithms
+    - examples and figures added
+04/04/2018 44 days
+05/04/2018 43 days
+06/04/2018 42 days
+09/04/2018 39 days
+10/04/2018 38 days
+11/04/2018 37 days
+12/04/2018 36 days
+13/04/2018 35 days
+16/04/2018 32 days
+17/04/2018 31 days
+18/04/2018 30 days
+19/04/2018 29 days
+20/04/2018 28 days
+23/04/2018 25 days
+24/04/2018 24 days
+25/04/2018 23 days
+26/04/2018 22 days
+27/04/2018 21 days
+30/04/2018 18 days
+01/05/2018 17 days
+02/05/2018 16 days
+03/05/2018 15 days
+04/05/2018 14 days
+07/05/2018 11 days
+08/05/2018 10 days
+09/05/2018 9 days
+10/05/2018 8 days
+11/05/2018 7 days
+14/05/2018 4 days
+15/05/2018 3 days
+16/05/2018 2 days
+17/05/2018 1 day
+18/05/2018 0 day
