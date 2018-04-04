@@ -1,0 +1,400 @@
+--- erbb1=0, erbb2=0, erbb3=0, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=0, erbb3=0, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=0, erbb3=1, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=0, erbb3=1, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=1, erbb3=0, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=1, erbb3=0, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=1, erbb3=1, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=0, erbb2=1, erbb3=1, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=0, erbb3=0, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=0, erbb3=0, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=0, erbb3=1, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=0, erbb3=1, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=1, erbb3=0, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=1, erbb3=0, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=1, erbb3=1, =0
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
+--- erbb1=1, erbb2=1, erbb3=1, =1
+# elk1=1
+True
+# creb=1
+True
+# ap1=1
+True
+# hsp27=1
+True
+# actin_reorg=1
+True
+# cmyc=1
+True
+# pro_apoptotic=1
+True
+# p70s6_2=1
+False
+# pkc=1
+False
+# stat1=1
+False
+# stat3=1
+False
+# stat5=1
+False
