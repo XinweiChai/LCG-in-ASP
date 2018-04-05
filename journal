@@ -59,8 +59,8 @@ LFIT meeting
 03/04/2018 45 days
 - Paper CMSB
     - Abstract finished
-    - explanation of algorithms
-    - examples and figures added
+    - Explanation of algorithms
+    - Examples and figures added
 04/04/2018 44 days
 - Code ReachASP
     - Final debugging
@@ -68,6 +68,14 @@ LFIT meeting
 - Paper CMSB
     - Benchmark
 05/04/2018 43 days
+- Test finished, my approach takes more time in TCR but less time in EGFR than Pint, looking for the reason
+- Find more application
+    - Used Hyclock model and observations, but no interesting idea,
+    - Go to read Loic and Maxime's paper for more possible applications
+- Considering the collaboration asynchronous LFIT
+    - The rules are not real rules as in synchronous Boolean network(Boolean function), they are just a simplification of observation, no "learning"
+    - Rough idea for deleting or specifying rules(Create rules with new heads which never appear before)
+    - Rough idea for adding rules (need more reachability information to decrease the complexity of LCG)
 06/04/2018 42 days
 09/04/2018 39 days
 10/04/2018 38 days
