@@ -1,3 +1,4 @@
+Week 1
 27/02/2018 80 days
 - ASP generator of arbitrary asynchronous transitions
 28/02/2018 79 days
@@ -8,6 +9,8 @@
 - LF1T Meeting, parser finish
 02/03/2018 77 days
 - Prepare for Kanazawa Meeting
+
+Week 2
 05/03/2018 74 days
 - Kanazawa Meeting
 06/03/2018 73 days
@@ -20,6 +23,8 @@
 - LFIT meeting
 09/03/2018 70 days
 - Discussion with Tony about the semantics of the learning different dynamics: synchronous, asynchronous and general case
+
+Week 3
 12/03/2018 67 days
 13/03/2018 66 days
 - Meeting with Morgan 
@@ -31,15 +36,21 @@
 16/03/2018 63 days
 LFIT meeting
 - Paper CMSB
+
+Week 4
 19/03/2018 60 days
 - Paper CMSB
 20/03/2018 59 days
 - Lab meeting
 - Paper CMSB
+21/03/2018 58 days
+- National holiday
 22/03/2018 57 days
 - Preparation of meeting in Kobe
 23/03/2018 56 days
 - Meeting in Kobe, talk entitled "Identification of Key Components and Modification of Models by Model Checking"
+
+Week 5
 26/03/2018 53 days
 - Coding
 27/03/2018 52 days
@@ -55,7 +66,10 @@ LFIT meeting
 30/03/2018 49 days
 - Some code modification, add command-line option
 - Paper CMSB
+
+Week 6
 02/04/2018 46 days
+- JDoc short paper
 03/04/2018 45 days
 - Paper CMSB
     - Abstract finished
@@ -77,31 +91,51 @@ LFIT meeting
     - Rough idea for deleting or specifying rules(Create rules with new heads which never appear before)
     - Rough idea for adding rules (need more reachability information to decrease the complexity of LCG)
 06/04/2018 42 days
-09/04/2018 39 days
-10/04/2018 38 days
+- Paper CMSB
+    - Added conclusion, more description of algorithms, minor modification
+- Report CSI2018
+    - Administrative part finished
+
+Week 7
+09/04/2018 39 days and 10/04/2018 38 days
+- Paper CMSB
+    - Reference updated
+    - formula (r') updated
+    - paper reorganized
+    - many minor modifications
 11/04/2018 37 days
 12/04/2018 36 days
 13/04/2018 35 days
+
+Week 8
 16/04/2018 32 days
 17/04/2018 31 days
 18/04/2018 30 days
 19/04/2018 29 days
 20/04/2018 28 days
+
+Week 9
 23/04/2018 25 days
 24/04/2018 24 days
 25/04/2018 23 days
 26/04/2018 22 days
 27/04/2018 21 days
+
+Week 10
 30/04/2018 18 days
 01/05/2018 17 days
 02/05/2018 16 days
 03/05/2018 15 days
 04/05/2018 14 days
+
+Week 11
 07/05/2018 11 days
 08/05/2018 10 days
 09/05/2018 9 days
 10/05/2018 8 days
 11/05/2018 7 days
+
+Week 12
 14/05/2018 4 days
 15/05/2018 3 days
 16/05/2018 2 days
