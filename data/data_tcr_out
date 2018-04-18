@@ -1,0 +1,88 @@
+--- cd4=0, cd28=0, tcrlig=0
+# sre=1
+False
+# ap1=1
+False
+# nfkb=1
+False
+# nfat=1
+False
+# sigmab=1
+False
+--- cd4=0, cd28=0, tcrlig=1
+# sre=1
+True
+# ap1=1
+True
+# nfkb=1
+False
+# nfat=1
+True
+# sigmab=1
+True
+--- cd4=0, cd28=1, tcrlig=0
+# sre=1
+False
+# ap1=1
+False
+# nfkb=1
+False
+# nfat=1
+False
+# sigmab=1
+False
+--- cd4=0, cd28=1, tcrlig=1
+# sre=1
+True
+# ap1=1
+True
+# nfkb=1
+False
+# nfat=1
+True
+# sigmab=1
+True
+--- cd4=1, cd28=0, tcrlig=0
+# sre=1
+False
+# ap1=1
+False
+# nfkb=1
+False
+# nfat=1
+False
+# sigmab=1
+False
+--- cd4=1, cd28=0, tcrlig=1
+# sre=1
+True
+# ap1=1
+True
+# nfkb=1
+False
+# nfat=1
+True
+# sigmab=1
+True
+--- cd4=1, cd28=1, tcrlig=0
+# sre=1
+False
+# ap1=1
+False
+# nfkb=1
+False
+# nfat=1
+False
+# sigmab=1
+False
+--- cd4=1, cd28=1, tcrlig=1
+# sre=1
+True
+# ap1=1
+True
+# nfkb=1
+False
+# nfat=1
+True
+# sigmab=1
+True

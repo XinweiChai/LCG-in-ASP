@@ -1,0 +1,149 @@
+Start time: Wed Apr 18 16:38:00 JST 2018
+Model: testPhage.ph
+Inputs: cl cro cll n
+Outputs: cl cro cll n
+--- cl=0, cro=0, cll=0, n=0
+# cl=1
+False
+# cro=1
+True
+# cll=1
+False
+# n=1
+False
+--- cl=0, cro=0, cll=0, n=1
+# cl=1
+False
+# cro=1
+True
+# cll=1
+False
+# n=1
+True
+--- cl=0, cro=0, cll=1, n=0
+# cl=1
+False
+# cro=1
+False
+# cll=1
+True
+# n=1
+False
+--- cl=0, cro=0, cll=1, n=1
+# cl=1
+False
+# cro=1
+False
+# cll=1
+True
+# n=1
+True
+--- cl=0, cro=1, cll=0, n=0
+# cl=1
+False
+# cro=1
+True
+# cll=1
+False
+# n=1
+False
+--- cl=0, cro=1, cll=0, n=1
+# cl=1
+False
+# cro=1
+True
+# cll=1
+False
+# n=1
+True
+--- cl=0, cro=1, cll=1, n=0
+# cl=1
+False
+# cro=1
+True
+# cll=1
+True
+# n=1
+False
+--- cl=0, cro=1, cll=1, n=1
+# cl=1
+False
+# cro=1
+True
+# cll=1
+True
+# n=1
+True
+--- cl=1, cro=0, cll=0, n=0
+# cl=1
+True
+# cro=1
+True
+# cll=1
+False
+# n=1
+False
+--- cl=1, cro=0, cll=0, n=1
+# cl=1
+True
+# cro=1
+True
+# cll=1
+False
+# n=1
+True
+--- cl=1, cro=0, cll=1, n=0
+# cl=1
+True
+# cro=1
+Inconc
+# cll=1
+True
+# n=1
+False
+--- cl=1, cro=0, cll=1, n=1
+# cl=1
+True
+# cro=1
+Inconc
+# cll=1
+True
+# n=1
+True
+--- cl=1, cro=1, cll=0, n=0
+# cl=1
+True
+# cro=1
+True
+# cll=1
+False
+# n=1
+False
+--- cl=1, cro=1, cll=0, n=1
+# cl=1
+True
+# cro=1
+True
+# cll=1
+False
+# n=1
+True
+--- cl=1, cro=1, cll=1, n=0
+# cl=1
+True
+# cro=1
+True
+# cll=1
+True
+# n=1
+False
+--- cl=1, cro=1, cll=1, n=1
+# cl=1
+True
+# cro=1
+True
+# cll=1
+True
+# n=1
+True
+End time: Wed Apr 18 16:38:00 JST 2018
