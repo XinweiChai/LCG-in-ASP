@@ -8,7 +8,9 @@ import timeit
 #import argparse
 start = timeit.default_timer()
 #batch('data_tcr','tcrsig94.an')
-batch('data_egfr','egfr104.an')
+#batch('data_egfr','egfr104.an')
+batch('data_phage','testPhage')
+
 stop = timeit.default_timer()
 
 print(stop - start)
