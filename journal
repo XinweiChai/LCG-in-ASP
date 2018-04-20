@@ -125,9 +125,26 @@ Week 8
     - Benchmark on the performance of ASPReach
 - Lab meeting
 18/04/2018 30 days
-
+- New benchmark on the performance of ASPReach
+    - Inconclusive cases in Lambda phage
+    - Update in paper
 19/04/2018 29 days
+- Poster of JDoc2018
+- CMSB2018
 20/04/2018 28 days
+- ASPReach tests
+    - In one run, record the average iterations and max iterations
+- Collaboration with LFIT
+    - Determine which kind of a priori knowledge to be used
+- Visio-meeting with Tony and Morgan
+    - Soumettre l'article Acta Informatica à ArXiv, comme ça je pourrai expliquer ABAN plus facile
+    - Change "new modeling framework" en une citation ArXiv
+    - Ajouter la différence between la soumission de CMSB et Acta Informatica dans l'introduction ou dans contribution
+    - Comparaison avec PermReach sur la conclusivité
+    - Générer ABAN aléatoire et modèles à la main pour montrer l'incapabilité de PermReach
+    - Au moins un exemple où PermReach n'est pas conclusif 
+    - Écrire à Acta Informatica pour informations
+    - Informer Prof. Inoue notre papier
 
 Week 9
 23/04/2018 25 days

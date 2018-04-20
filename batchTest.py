@@ -24,6 +24,39 @@ def batch(fn,fnetwork):
                 fo.writelines("# "+j+"=1\n")
                 fo.writelines("False\n")
 
+def iterationTest(fn, fnetwork):
+    f=open('data//'+fn,'r')
+    fo=open('data//'+fn+"_out",'w')
+    input = re.split(' ', f.readline().replace("\n", ""))
+    output = re.split(' ', f.readline().replace("\n", ""))
+    trial=1
+    totalTrial=0
+    reachCount=0
+    maxCount=0
+    for k in range(trial):
+        for i in itertools.product([0, 1], repeat=len(input)):
+            fo.write("--- ")
+            for k in range(len(i)-1):
+                fo.write(input[k]+"="+str(i[k])+", ")
+            fo.write(input[-1]+"="+str(i[-1])+"\n")
+            #fo.writelines(str(i)+"\n")
+            for j in output:
+                [res,iter]=one_run(500, fnetwork,input, i, (j,'1'))
+                if res:
+                    totalTrial=totalTrial+iter
+                    if iter>maxCount:
+                        maxCount=iter
+                    reachCount=reachCount+1
+                    fo.writelines("# "+j+"=1\n")
+                    fo.writelines("True\n")
+                else:
+                    fo.writelines("# "+j+"=1\n")
+                    fo.writelines("False\n")
+    average=totalTrial/reachCount
+
+    return average, maxCount
+
+
 
 def one_run(iteration,fnetwork,input, changeState, start):
     #parser = argparse.ArgumentParser()

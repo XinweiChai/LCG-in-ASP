@@ -9,7 +9,7 @@ def heuristics(k,lcgEdges,startNode,initialState,lcgNodes):
         newlcgEdges = reconstruct(lcgEdges,startNode)
         if not newlcgEdges:
             #print('unreachable')
-            return False
+            return False,1
         generate(initialState,  newlcgEdges)
         goptions = ''
         soptions = '1'
@@ -21,6 +21,6 @@ def heuristics(k,lcgEdges,startNode,initialState,lcgNodes):
             for a in s:
                 if a.pred()=='reachable':
                     #print('reachable')
-                    return True
+                    return True,i+1
     #print('unreachable')
-    return False
+    return False,k

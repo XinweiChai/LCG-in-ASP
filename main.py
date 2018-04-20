@@ -9,8 +9,12 @@ import timeit
 start = timeit.default_timer()
 #batch('data_tcr','tcrsig94.an')
 #batch('data_egfr','egfr104.an')
-batch('data_phage','testPhage')
+#batch('data_phage','testPhage.an')
 
+#print(iterationMarker('data_tcr','tcrsig94.an'))
+#print(iterationMarker('data_egfr','egfr104.an'))
+#print(iterationMarker('data_phage','testPhage.an'))
+print(iterationTest('data_orTest', 'orTest.an'))
 stop = timeit.default_timer()
 
 print(stop - start)
