@@ -4,7 +4,11 @@ from cycle import *
 from precodition import *
 from heuristics import *
 from batchTest import *
+from generateModel import *
 import timeit
+size=5
+x=generateRandomBN(size,20)
+writeFile(x,size)
 #import argparse
 start = timeit.default_timer()
 #batch('data_tcr','tcrsig94.an')
