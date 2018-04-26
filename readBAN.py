@@ -1,9 +1,8 @@
 import re
 
-def readBAN(path):
+def read_BAN(path):
     readProc = 0
     process = []
-    dictionary = []
     actions = {}
     actionsByHitter = {}
     initialState = {}
@@ -22,7 +21,6 @@ def readBAN(path):
                 continue
             elif (len(words) > 3) and (not readProc):
                 readProc = 1
-                dictionary.append(process)
             if not readProc:
                 process.append(words[0])
                 actions[(words[0],'0')]=[]
@@ -58,4 +56,4 @@ def readBAN(path):
    # if not initialState:
    #     for i in process:
    #         initialState.append((i,'0'))
-    return dictionary,actions, actionsByHitter, initialState, startState 
+    return process ,actions, actionsByHitter, initialState, startState

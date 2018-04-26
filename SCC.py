@@ -284,4 +284,3 @@ def strongly_connected_components_iterative(vertices, edges):
                         del stack[index[v]:]
                         identified.update(scc)
                         yield scc
-
