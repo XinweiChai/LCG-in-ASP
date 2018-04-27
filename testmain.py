@@ -12,4 +12,4 @@ from heuristics import *
 lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
 lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
 iteration = 500
-heuristics(iteration, lcgEdges, startNode, initialState, lcgNodes)
+heuristics(iteration, lcgEdges, startNode, initialState)

@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 
 def reconstruct(lcgEdges, startNode):
@@ -9,7 +9,7 @@ def reconstruct(lcgEdges, startNode):
     while toVisit:
         for i in toVisit:
             if len(lcgEdges[i]) >= 1:
-                choose = lcgEdges[i][random.randint(0, len(lcgEdges[i]) - 1)]
+                choose = lcgEdges[i][randint(0, len(lcgEdges[i]) - 1)]
                 newlcgEdges[i] = [choose]
                 newlcgEdges[choose] = list(choose[0])
                 toVisit.extend(choose[0])

@@ -3,7 +3,7 @@ from SLCG import *
 from cycle import *
 from precodition import *
 from heuristics import *
-import itertools
+from itertools import product
 
 
 def batch(fn, fnetwork):  # comparison with Pint
@@ -17,7 +17,7 @@ def batch(fn, fnetwork):  # comparison with Pint
         [dictionary, actions, actionsByHitter, initialState, startNode]=read_BAN(fnetwork)
         input=dictionary
         output=dictionary
-    for i in itertools.product([0, 1], repeat=len(input)):
+    for i in product([0, 1], repeat=len(input)):
         fo.write("--- ")
         for k in range(len(i) - 1):
             fo.write(input[k] + "=" + str(i[k]) + ", ")
@@ -43,7 +43,7 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
     reachCount = 0
     maxCount = 0
     for k in range(trial):
-        for i in itertools.product([0, 1], repeat=len(input)):
+        for i in product([0, 1], repeat=len(input)):
             fo.write("--- ")
             for k in range(len(i) - 1):
                 fo.write(input[k] + "=" + str(i[k]) + ", ")
@@ -89,4 +89,5 @@ def one_run(iteration, fnetwork, input, changeState, start):
     [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
-    return heuristics(iteration, lcgEdges, startNode, initialState, lcgNodes)
+    #return heuristics(iteration, lcgEdges, startNode, initialState)
+    return heuristics_perm_reach(iteration, lcgNodes, lcgEdges, startNode, initialState)

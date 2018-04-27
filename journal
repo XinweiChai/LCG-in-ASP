@@ -155,7 +155,18 @@ Week 9
     - Presentation "Incorporation of Model Inference with Model Checking"
 - LFIT meeting
 25/04/2018 23 days
+- Discussion with Gauvain Bourgne
+    - The future steps of collaboration with LFIT
 26/04/2018 22 days
+- Visio meeting with Morgan and Tony
+    - Tony va faire la preuve de correctness of algorithm
+    - Mettre l'exemple de Emna exhaustive search comme related work
+    - Test of Mole NuSMV on random model
+    - Cite "Reduction of Qualitative Models of Biological Networks for Transient Dynamics Analysis"
+    - Runtime courbe pour montrer la complexite changeant avec la taille de automates
+    - Courbe pour montrer l'iteration necessaire k changeant avec nombre d'automates
+- Debug and test on randomly generated examples
+    - 100 examples of 5 components and 20 transitions
 27/04/2018 21 days
 
 Week 10

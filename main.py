@@ -5,7 +5,7 @@ from precodition import *
 from heuristics import *
 from batchTest import *
 from generateModel import *
-import timeit
+from timeit import default_timer
 
 size = 5
 num_tran = 10
@@ -14,7 +14,7 @@ models=30
 # writeFile(x,size)
 #generateFiles(models, size, num_tran)
 # import argparse
-start = timeit.default_timer()
+start = default_timer()
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr','egfr104.an')
 # batch('','testPhage.an')
@@ -23,7 +23,7 @@ test_models(0,100)
 # print(iterationMarker('data_egfr','egfr104.an'))
 # print(iterationMarker('data_phage','testPhage.an'))
 # print(iteration_test('data_orTest', 'orTest.an'))
-stop = timeit.default_timer()
+stop = default_timer()
 
 print(stop - start)
 # iteration=500
