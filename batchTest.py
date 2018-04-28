@@ -7,16 +7,16 @@ from itertools import product
 
 
 def batch(fn, fnetwork):  # comparison with Pint
-    fo = open('output//'+fnetwork + "_out", 'w')
+    fo = open('output//' + fnetwork + "_out", 'w')
     if fn:
-        f = open('data//'+fn, 'r')
+        f = open('data//' + fn, 'r')
         input = re.split(' ', f.readline().replace("\n", ""))
         output = re.split(' ', f.readline().replace("\n", ""))
         f.close()
     else:
-        [dictionary, actions, actionsByHitter, initialState, startNode]=read_BAN(fnetwork)
-        input=dictionary
-        output=dictionary
+        [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
+        input = dictionary
+        output = dictionary
     for i in product([0, 1], repeat=len(input)):
         fo.write("--- ")
         for k in range(len(i) - 1):
@@ -24,12 +24,14 @@ def batch(fn, fnetwork):  # comparison with Pint
         fo.write(input[-1] + "=" + str(i[-1]) + "\n")
         # fo.writelines(str(i)+"\n")
         for j in output:
-            if one_run(500, fnetwork, input, i, (j, '1')):
-                fo.writelines("# " + j + "=1\n")
+            [boo, iter] = one_run(500, fnetwork, input, i, (j, '1'))
+            fo.writelines("# " + j + "=1\n")
+            if boo:
                 fo.writelines("True\n")
-            else:
-                fo.writelines("# " + j + "=1\n")
+            elif iter == 1:
                 fo.writelines("False\n")
+            else:
+                fo.writelines("Inconclusive\n")
     fo.close()
 
 
@@ -66,9 +68,9 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
     return average, maxCount
 
 
-def test_models(begin,end):
-    for i in range(begin,end):
-        batch('','model' + str(i))
+def test_models(begin, end):
+    for i in range(begin, end):
+        batch('', 'model' + str(i))
 
 
 def one_run(iteration, fnetwork, input, changeState, start):
@@ -89,5 +91,5 @@ def one_run(iteration, fnetwork, input, changeState, start):
     [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
-    #return heuristics(iteration, lcgEdges, startNode, initialState)
+    # return heuristics(iteration, lcgEdges, startNode, initialState)
     return heuristics_perm_reach(iteration, lcgNodes, lcgEdges, startNode, initialState)

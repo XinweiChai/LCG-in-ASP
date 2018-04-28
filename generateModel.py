@@ -23,10 +23,10 @@ def generate_random_AN(size, num_tran):
             body.append(sign * dice)
             temp.remove(dice)
         trans = [head, body]
-        mark=False
+        mark = False
         for i in transition_set:
-            if head==i[0] and set(body) > set(i[1]):
-                mark=True
+            if head == i[0] and set(body) > set(i[1]):
+                mark = True
                 break
         if mark:
             continue
@@ -38,9 +38,9 @@ def generate_random_AN(size, num_tran):
 # def generateRandomTransition(size,numTran):
 
 def writeFile(model, fn, size):
-    f = open('data//'+fn, 'w')
+    f = open('data//' + fn, 'w')
     for i in range(size):
-        f.writelines('n' + str(i+1) + ' [0, 1]\n')
+        f.writelines('n' + str(i + 1) + ' [0, 1]\n')
     f.writelines('\n')
     for i in model:
         f.writelines('n' + str(abs(i[0])))

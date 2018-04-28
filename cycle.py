@@ -8,8 +8,8 @@ def breakCycle(lcgEdges, scc, startNode, actionsByHitter, actions):
         for i in scc:
             if len(i) == 2:
                 for j in actionsByHitter[i]:
-                    #for k in j[0]:
-                    for k in (j[1],j[3]):
+                    # for k in j[0]:
+                    for k in (j[1], j[3]):
                         if k not in scc:
                             lcgEdges = deleteElememt(i, scc, lcgEdges, actions, actionsByHitter)
                             return lcgEdges

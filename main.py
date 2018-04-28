@@ -3,22 +3,24 @@ from SLCG import *
 from cycle import *
 from precodition import *
 from heuristics import *
+from readBAN import  *
 from batchTest import *
 from generateModel import *
 from timeit import default_timer
 
 size = 5
 num_tran = 10
-models=30
+models = 30
+iteration=50
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,size)
-#generateFiles(models, size, num_tran)
+# generateFiles(models, size, num_tran)
 # import argparse
 start = default_timer()
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr','egfr104.an')
 # batch('','testPhage.an')
-test_models(0,100)
+test_models(0, 100)
 # print(iterationMarker('data_tcr','tcrsig94.an'))
 # print(iterationMarker('data_egfr','egfr104.an'))
 # print(iterationMarker('data_phage','testPhage.an'))
@@ -37,8 +39,9 @@ print(stop - start)
 
 # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('OrTest.lp')
 # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('LCG5')
-# [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('loopTest.lp')
-# [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
-# lcgEdges=cycle(lcgNodes,lcgEdges, startNode, actionsByHitter, actions)
-# lcgEdges = precondition(lcgEdges, actionsByHitter,initialState)
-# heuristics(iteration,lcgEdges,startNode,initialState,lcgNodes)
+#[dictionary,actions, actionsByHitter, initialState, startNode]=read_BAN('model70')
+#startNode=('n3','1')
+#[lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
+#lcgEdges=cycle(lcgNodes,lcgEdges, startNode, actionsByHitter, actions)
+#lcgEdges = precondition(lcgEdges, actionsByHitter,initialState)
+#print(heuristics_perm_reach(iteration,lcgEdges,startNode,initialState,lcgNodes))

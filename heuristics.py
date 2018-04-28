@@ -35,10 +35,10 @@ def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
     for i in range(k):
         newlcgEdges = reconstruct(lcgEdges, startNode)
         if not newlcgEdges:
-            return False
+            return False, 1
         if and_gate(lcgNodes, newlcgEdges, startNode, initialState):
-            return True
-    return False
+            return True, i + 1
+    return False, k
 
 
 def and_gate(lcgNodes, lcgEdges, startNode, initialState):
@@ -57,12 +57,12 @@ def and_gate(lcgNodes, lcgEdges, startNode, initialState):
         return True
     while leaves:
         for i in leaves:
-            flag_leaf= False
+            flag_leaf = False
             for j in permutations(i[0]):
                 flag = True
-                temp_state=initialState
+                temp_state = initialState
                 for k in j:
-                    [boo, state, sequence]=simple_branch(k,temp_state,lcgEdges)
+                    [boo, state, sequence] = simple_branch(k, temp_state, lcgEdges)
                     if not boo:
                         flag = False
                         break
@@ -71,27 +71,38 @@ def and_gate(lcgNodes, lcgEdges, startNode, initialState):
                 if flag:
                     flag_leaf = True
                     initialState = temp_state
+                    initialState[i[1]] = i[3]
                     break
             if not flag_leaf:
                 return False
-        for i in andGatesDict:
-            for j in leaves:
-                if j in andGatesDict[i]:
-                    andGatesDict[i].remove(j)
+        for i in leaves:
+            andGatesDict.pop(i)
+            for j in andGatesDict:
+                if i in andGatesDict[j]:
+                    andGatesDict[j].remove(i)
         leaves = [i for i in andGatesDict if not andGatesDict[i]]
     return True
 
+
 def simple_branch(target, state, lcgEdges):
-    temp=target
-    sequence=[temp]
+    if state[target[0]] == target[1]:
+        return True, state, None
+    temp = lcgEdges[target]
+    if not temp:
+        return False, None, None
+    temp = temp[0]
+    sequence = [temp]
+    count = 0
     while lcgEdges[temp]:
-        temp=lcgEdges[temp][0]
-        if len(temp)==4:
+        count = count + 1
+        temp = lcgEdges[temp][0]
+        if count % 2 == 0:
             sequence.append(temp)
     list.reverse(sequence)
     for i in sequence:
         for j in i[0]:
-            if j not in state:
+            if state[j[0]] != j[1]:
                 return False, None, None
-    state[j[1]]=j[3]
+            else:
+                state[i[1]] = i[3]
     return True, state, sequence
