@@ -6,7 +6,7 @@ from heuristics import *
 from itertools import product
 
 
-def batch(fn, fnetwork):  # comparison with Pint
+def batch(fn, fnetwork):  # comparison with Pint and PermReach
     fo = open('output//' + fnetwork + "_out", 'w')
     if fn:
         f = open('data//' + fn, 'r')
@@ -24,15 +24,20 @@ def batch(fn, fnetwork):  # comparison with Pint
         fo.write(input[-1] + "=" + str(i[-1]) + "\n")
         # fo.writelines(str(i)+"\n")
         for j in output:
-            [boo, iter] = one_run(500, fnetwork, input, i, (j, '1'))
-            fo.writelines("# " + j + "=1\n")
-            if boo:
-                fo.writelines("True\n")
-            elif iter == 1:
-                fo.writelines("False\n")
-            else:
-                fo.writelines("Inconclusive\n")
+            output_file(500, fo, fnetwork, input, i, j)
     fo.close()
+
+
+def output_file(iterations, fout, fnetwork, input_instance, i, j):
+    [boo, iterations] = one_run(iterations, fnetwork, input_instance, i, (j, '1'))
+    fout.writelines("# " + j + "=1\n")
+    if boo:
+        fout.writelines("True\n")
+    elif iterations == 0:
+        fout.writelines("False\n")
+    else:
+        fout.writelines("Inconclusive\n")
+    return boo, iterations
 
 
 def iteration_test(fn, fnetwork):  # count the average and max iteration
@@ -52,17 +57,12 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
             fo.write(input[-1] + "=" + str(i[-1]) + "\n")
             # fo.writelines(str(i)+"\n")
             for j in output:
-                [res, iter] = one_run(500, fnetwork, input, i, (j, '1'))
+                [res, iter] = output_file(500, fo, fnetwork, input, i, j)
                 if res:
                     totalTrial = totalTrial + iter
                     if iter > maxCount:
                         maxCount = iter
                     reachCount = reachCount + 1
-                    fo.writelines("# " + j + "=1\n")
-                    fo.writelines("True\n")
-                else:
-                    fo.writelines("# " + j + "=1\n")
-                    fo.writelines("False\n")
     average = totalTrial / reachCount
 
     return average, maxCount
@@ -73,7 +73,7 @@ def test_models(begin, end):
         batch('', 'model' + str(i))
 
 
-def one_run(iteration, fnetwork, input, changeState, start):
+def one_run(iterations, fnetwork, input, changeState, start):
     # parser = argparse.ArgumentParser()
     # parser.add_argument("fn")
     # parser.add_argument("init")
@@ -91,5 +91,14 @@ def one_run(iteration, fnetwork, input, changeState, start):
     [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
-    # return heuristics(iteration, lcgEdges, startNode, initialState)
-    return heuristics_perm_reach(iteration, lcgNodes, lcgEdges, startNode, initialState)
+    # return heuristics(iterations, lcgEdges, startNode, initialState)
+    orGates = []
+    orGatesItems = []
+    for i in lcgEdges:
+        if len(i) == 2 and len(lcgEdges[i]) > 1:
+            orGates.append(i)
+            orGatesItems.append(lcgEdges[i])
+    if len(orGates) > 10:
+        return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
+    else:
+        return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)

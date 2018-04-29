@@ -168,9 +168,12 @@ Week 9
 - Debug and test on randomly generated examples
     - 100 examples of 5 components and 20 transitions
 27/04/2018 21 days
+- Reimplement PermReach on Python and fixed some bugs
+- Comparison test
 
 Week 10
 30/04/2018 18 days
+- Implement exhaustive search for OR gates when the number of OR gates is under 10
 01/05/2018 17 days
 - Lab meeting
 02/05/2018 16 days

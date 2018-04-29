@@ -1,32 +1,55 @@
 from pyasp.asp import Gringo4Clasp
 from reconstruct import *
 from factGenerator import generate
-from itertools import permutations
+from itertools import product, permutations
+import copy
 
 
 def heuristics(k, lcgEdges, startNode, initialState):
     if startNode in initialState:
         # print('reachable')
         return True
-    for i in range(k):
+    for i in range(1, k + 1):
         newlcgEdges = reconstruct(lcgEdges, startNode)
-        if not newlcgEdges:
-            # print('unreachable')
+        res, x = ASP_solve(newlcgEdges, initialState, i)
+        if res:
+            return res, i
+        elif x == 0:
             return False, 1
-        generate(initialState, newlcgEdges)
-        goptions = ''
-        soptions = '1'
-        solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
-        encoding = 'nested.lp'
-        facts = 'fact.lp'
-        result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
-        for s in result:
-            for a in s:
-                if a.pred() == 'reachable':
-                    # print('reachable')
-                    return True, i + 1
-    # print('unreachable')
     return False, k
+
+
+def ASP_solve(lcgEdges, initialState, iteration):
+    if not lcgEdges:
+        # print('unreachable')
+        return False, 0
+    generate(initialState, lcgEdges)
+    goptions = ''
+    soptions = '1'
+    solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
+    encoding = 'nested.lp'
+    facts = 'fact.lp'
+    result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
+    for s in result:
+        for a in s:
+            if a.pred() == 'reachable':
+                # print('reachable')
+                return True, iteration
+    # print('unreachable')
+    return False, iteration
+
+
+def exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState):
+    if not orGates:
+        return ASP_solve(lcgEdges, initialState, 0)
+    lcgEdgesCopy = copy.copy(lcgEdges)
+    for i in product(*orGatesItems):
+        for j in range(len(orGates)):
+            lcgEdgesCopy[orGates[j]] = [i[j]]
+            res, x = ASP_solve(lcgEdgesCopy, initialState, 0)
+            if res:
+                return res, 0
+    return False, 0
 
 
 def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
