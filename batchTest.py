@@ -98,7 +98,7 @@ def one_run(iterations, fnetwork, input, changeState, start):
         if len(i) == 2 and len(lcgEdges[i]) > 1:
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
-    if len(orGates) > 10:
-        return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
-    else:
-        return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)
+    #if len(orGates) > 10:
+    return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
+    #else:
+    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)
