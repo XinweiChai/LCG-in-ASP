@@ -41,10 +41,16 @@ def output_file(iterations, fout, fnetwork, input_instance, i, j):
 
 
 def iteration_test(fn, fnetwork):  # count the average and max iteration
-    f = open('data//' + fn, 'r')
-    fo = open('data//' + fn + "_out", 'w')
-    input = re.split(' ', f.readline().replace("\n", ""))
-    output = re.split(' ', f.readline().replace("\n", ""))
+    fo = open('data//' + fnetwork + "_out", 'w')
+    if fn:
+        f = open('data//' + fn, 'r')
+        input = re.split(' ', f.readline().replace("\n", ""))
+        output = re.split(' ', f.readline().replace("\n", ""))
+        f.close()
+    else:
+        [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
+        input = dictionary
+        output = dictionary
     trial = 1
     totalTrial = 0
     reachCount = 0
@@ -72,15 +78,17 @@ def test_models(begin, end):
     for i in range(begin, end):
         batch('', 'model' + str(i))
 
+def batch_iteration_test(begin, end):
+    aver_of_average = 0
+    max_of_max = 0
+    for i in range(begin, end):
+        average, maxCount = iteration_test('', 'model' + str(i))
+        aver_of_average = aver_of_average + average
+        if maxCount > max_of_max:
+            max_of_max = maxCount
+    return aver_of_average, max_of_max
 
 def one_run(iterations, fnetwork, input, changeState, start):
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument("fn")
-    # parser.add_argument("init")
-    # args=parser.parse_args()
-    # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN(args.fn)
-    # startNode=tuple(re.split('=',args.init))
-    # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('tcrsig94.an')
     [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
     for i in input:
         initialState[i] = str(changeState[input.index(i)])
@@ -91,14 +99,15 @@ def one_run(iterations, fnetwork, input, changeState, start):
     [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
-    # return heuristics(iterations, lcgEdges, startNode, initialState)
     orGates = []
     orGatesItems = []
     for i in lcgEdges:
         if len(i) == 2 and len(lcgEdges[i]) > 1:
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
+    #return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
+    return heuristics(iterations, lcgEdges, startNode, initialState)
     #if len(orGates) > 10:
-    return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
+    #    return heuristics(iterations, lcgEdges, startNode, initialState)
     #else:
-    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)
+    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, initialState)

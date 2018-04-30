@@ -34,7 +34,7 @@ def count_inconclusive(fn, suffix, num):
         f = open(file_name, 'r')
         x = f.readline()
         while x:
-            if 'Inconclusive' in x:
+            if 'Inconclusive' in x or 'Inconc' in x:
                 count = count + 1
             x = f.readline()
     return count

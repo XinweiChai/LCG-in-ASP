@@ -20,7 +20,7 @@
 
 
 
-model="$1.an"
+model="$1"
 runfile="run-$1.sh"
 inputs=$2
 outputs=$3

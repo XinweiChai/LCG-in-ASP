@@ -39,7 +39,7 @@ def ASP_solve(lcgEdges, initialState, iteration):
     return False, iteration
 
 
-def exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState):
+def exhaustive_run(orGates, orGatesItems, lcgEdges, initialState):
     if not orGates:
         return ASP_solve(lcgEdges, initialState, 0)
     lcgEdgesCopy = copy.copy(lcgEdges)
