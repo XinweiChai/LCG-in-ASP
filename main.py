@@ -10,20 +10,21 @@ from compareFile import *
 from timeit import default_timer
 
 size = 5
-num_tran = 10
-models = 30
+num_tran = size*7
+models = 20
 iteration = 50
 # x=generate_random_AN(size, num_tran)
-# writeFile(x,size)
-# generateFiles(models, size, num_tran)
+# writeFile(x,'testmodel',size)
+#generateFiles(models, size, num_tran)
 # import argparse
 start = default_timer()
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr','egfr104.an')
 # batch('','testPhage.an')
-# test_models(0, 100)
-#print(batch_iteration_test(0,100))
-print(count_inconclusive('data//run-model', '.out', 100))
+#test_models(101, 102)
+print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
+#one_run(500, 'model_5//model10', ['n1','n2','n3','n4','n5'], [1,1,0,0,0], ('n5','1'))
+print(count_inconclusive('model_5//model', '.out', 100))
 # print(iterationMarker('data_tcr','tcrsig94.an'))
 # print(iterationMarker('data_egfr','egfr104.an'))
 # print(iterationMarker('data_phage','testPhage.an'))

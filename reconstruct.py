@@ -1,7 +1,7 @@
 from random import randint
 
 
-def reconstruct(lcgEdges, startNode):
+def random_reconstruct(lcgEdges, startNode):
     newlcgEdges = {}
     toVisit = [startNode]
     if startNode not in lcgEdges:
@@ -16,12 +16,5 @@ def reconstruct(lcgEdges, startNode):
             else:
                 newlcgEdges[i] = []
             toVisit.remove(i)
-
-    # for i in lcgEdges:
-    #     if len(i)==2:
-    #         if len(lcgEdges[i]) > 1:
-    #             toConnect = lcgEdges[i][random.randint(0,len(lcgEdges[i])-1)]
-    #             lcgEdges[i] = [toConnect]
-    #             #temp.append(toConnect)
-    #     #toVisit=temp
     return newlcgEdges
+

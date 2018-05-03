@@ -33,7 +33,7 @@ def output_file(iterations, fout, fnetwork, input_instance, i, j):
     fout.writelines("# " + j + "=1\n")
     if boo:
         fout.writelines("True\n")
-    elif iterations == 0:
+    elif iterations == 0 or iterations == 1:
         fout.writelines("False\n")
     else:
         fout.writelines("Inconclusive\n")
@@ -41,9 +41,9 @@ def output_file(iterations, fout, fnetwork, input_instance, i, j):
 
 
 def iteration_test(fn, fnetwork):  # count the average and max iteration
-    fo = open('data//' + fnetwork + "_out", 'w')
+    fo = open(fnetwork + '.out', 'w')
     if fn:
-        f = open('data//' + fn, 'r')
+        f = open(fn, 'r')
         input = re.split(' ', f.readline().replace("\n", ""))
         output = re.split(' ', f.readline().replace("\n", ""))
         f.close()
@@ -55,6 +55,7 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
     totalTrial = 0
     reachCount = 0
     maxCount = 0
+    inc = 0
     for k in range(trial):
         for i in product([0, 1], repeat=len(input)):
             fo.write("--- ")
@@ -69,24 +70,34 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
                     if iter > maxCount:
                         maxCount = iter
                     reachCount = reachCount + 1
-    average = totalTrial / reachCount
-
-    return average, maxCount
+                else:
+                    if iter > 1:
+                        inc = inc + 1
+    if reachCount == 0:
+        return 0, maxCount, inc
+    else:
+        average = totalTrial / reachCount
+        return average, maxCount, inc
 
 
 def test_models(begin, end):
     for i in range(begin, end):
         batch('', 'model' + str(i))
 
-def batch_iteration_test(begin, end):
+
+def batch_iteration_test(begin, end, fn, fnetwork):
     aver_of_average = 0
     max_of_max = 0
+    aver_of_inc = 0
     for i in range(begin, end):
-        average, maxCount = iteration_test('', 'model' + str(i))
+        print(i)
+        average, maxCount, inc = iteration_test(fn, fnetwork + str(i))
         aver_of_average = aver_of_average + average
+        aver_of_inc = aver_of_inc + inc
         if maxCount > max_of_max:
             max_of_max = maxCount
-    return aver_of_average, max_of_max
+    return aver_of_average / (end - begin), max_of_max, aver_of_inc / (end - begin)
+
 
 def one_run(iterations, fnetwork, input, changeState, start):
     [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
@@ -105,9 +116,11 @@ def one_run(iterations, fnetwork, input, changeState, start):
         if len(i) == 2 and len(lcgEdges[i]) > 1:
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
-    #return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
-    return heuristics(iterations, lcgEdges, startNode, initialState)
+    return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
+    #return heuristics(iterations, lcgEdges, startNode, initialState)
+    #print(initialState)
+    #print(startNode)
     #if len(orGates) > 10:
-    #    return heuristics(iterations, lcgEdges, startNode, initialState)
+    #    return heuristics(len(orGates)*5, lcgEdges, startNode, initialState)
     #else:
-    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, initialState)
+    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)

@@ -16,7 +16,7 @@ def generate_random_AN(size, num_tran):
         body = [sign * dice]
         temp.remove(dice)
         nextTr = random.randint(0, 10)
-        while nextTr > 5 and temp:
+        while nextTr > 1 and temp:
             nextTr = random.randint(0, 10)
             sign = random.choice([1, -1])
             dice = random.choice(temp)
@@ -38,7 +38,7 @@ def generate_random_AN(size, num_tran):
 # def generateRandomTransition(size,numTran):
 
 def writeFile(model, fn, size):
-    f = open('data//' + fn, 'w')
+    f = open('model_'+str(size)+'//' + fn, 'w')
     for i in range(size):
         f.writelines('n' + str(i + 1) + ' [0, 1]\n')
     f.writelines('\n')

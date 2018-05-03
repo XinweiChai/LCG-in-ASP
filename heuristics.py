@@ -10,7 +10,7 @@ def heuristics(k, lcgEdges, startNode, initialState):
         # print('reachable')
         return True
     for i in range(1, k + 1):
-        newlcgEdges = reconstruct(lcgEdges, startNode)
+        newlcgEdges = random_reconstruct(lcgEdges, startNode)
         res, x = ASP_solve(newlcgEdges, initialState, i)
         if res:
             return res, i
@@ -39,24 +39,43 @@ def ASP_solve(lcgEdges, initialState, iteration):
     return False, iteration
 
 
-def exhaustive_run(orGates, orGatesItems, lcgEdges, initialState):
+def exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState):
     if not orGates:
         return ASP_solve(lcgEdges, initialState, 0)
-    lcgEdgesCopy = copy.copy(lcgEdges)
     for i in product(*orGatesItems):
+        lcgEdgesCopy = copy.copy(lcgEdges)
         for j in range(len(orGates)):
             lcgEdgesCopy[orGates[j]] = [i[j]]
-            res, x = ASP_solve(lcgEdgesCopy, initialState, 0)
-            if res:
-                return res, 0
+        lcgEdgesCopy = prune(lcgEdgesCopy, startNode)
+        res, x = ASP_solve(lcgEdgesCopy, initialState, 0)
+        if res:
+            return res, 0
     return False, 0
+
+
+def prune(lcgEdges, startNode):
+    modif = False
+    while not modif:
+        modif = False
+        temp = list(lcgEdges.keys())
+        for i in temp:
+            if i != startNode:
+                mark = False
+                for j in lcgEdges.values():
+                    if i in j:
+                        mark = True
+                        break
+                if not mark:
+                    modif = True
+                    del lcgEdges[i]
+    return lcgEdges
 
 
 def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
     if startNode in initialState:
         return True
     for i in range(k):
-        newlcgEdges = reconstruct(lcgEdges, startNode)
+        newlcgEdges = random_reconstruct(lcgEdges, startNode)
         if not newlcgEdges:
             return False, 1
         if and_gate(lcgNodes, newlcgEdges, startNode, initialState):
