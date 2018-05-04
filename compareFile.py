@@ -15,8 +15,10 @@ def compare_file(fn1, fn2):
         x1 = f1.readline()
         x2 = f2.readline()
     if equal:
-        print('true')
-
+        return True
+        #print('true')
+    else:
+        return False
 
 def batch_compare(fn1, fn2, suffix, num):
     for i in range(num):
@@ -27,14 +29,20 @@ def batch_compare(fn1, fn2, suffix, num):
     return True
 
 
-def count_inconclusive(fn, suffix, num):
-    count = 0
+def count_result(fn, suffix, num):
+    inconc = 0
+    trues= 0
+    falses= 0
     for i in range(num):
         file_name = fn + str(i) + suffix
         f = open(file_name, 'r')
         x = f.readline()
         while x:
-            if 'Inconclusive' in x or 'Inconc' in x:
-                count = count + 1
+            if 'Inconclusive' in x or 'Inconc' in x or 'Killed' in x:
+                inconc = inconc + 1
+            if 'True' in x:
+                trues = trues + 1
+            if 'False' in x:
+                falses = falses + 1
             x = f.readline()
-    return count
+    return trues, falses, inconc

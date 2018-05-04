@@ -6,22 +6,18 @@ import copy
 
 
 def heuristics(k, lcgEdges, startNode, initialState):
-    if startNode in initialState:
-        # print('reachable')
-        return True
-    for i in range(1, k + 1):
+    for i in range(1, k + 2):
         newlcgEdges = random_reconstruct(lcgEdges, startNode)
         res, x = ASP_solve(newlcgEdges, initialState, i)
         if res:
             return res, i
-        elif x == 0:
-            return False, 1
+        #elif x == 0:
+        #    return False, 1
     return False, k
 
 
 def ASP_solve(lcgEdges, initialState, iteration):
     if not lcgEdges:
-        # print('unreachable')
         return False, 0
     generate(initialState, lcgEdges)
     goptions = ''
@@ -33,9 +29,7 @@ def ASP_solve(lcgEdges, initialState, iteration):
     for s in result:
         for a in s:
             if a.pred() == 'reachable':
-                # print('reachable')
                 return True, iteration
-    # print('unreachable')
     return False, iteration
 
 
@@ -49,13 +43,13 @@ def exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState):
         lcgEdgesCopy = prune(lcgEdgesCopy, startNode)
         res, x = ASP_solve(lcgEdgesCopy, initialState, 0)
         if res:
-            return res, 0
+            return True, 0
     return False, 0
 
 
 def prune(lcgEdges, startNode):
-    modif = False
-    while not modif:
+    modif = True
+    while modif:
         modif = False
         temp = list(lcgEdges.keys())
         for i in temp:
