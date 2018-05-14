@@ -1,4 +1,5 @@
 import random
+import os
 
 
 def generate_random_AN(size, num_tran):
@@ -72,5 +73,7 @@ def writeFile(model, fn, size):
 
 
 def generateFiles(amount, size, num_tran):
+    if not os.path.exists('model_'+str(size)):
+        os.makedirs('model_'+str(size))
     for i in range(amount):
         writeFile(generate_random_AN(size, num_tran), 'model' + str(i), size)

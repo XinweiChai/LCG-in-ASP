@@ -12,12 +12,13 @@ from timeit import default_timer
 sizes = [30,40,50,60,70,80,1000]
 size = 20
 times=[1,2,3,4,5,6,7]
-num_tran = size*times
+num_tran_var = size*times
+num_tran=size
 models = 20
 iteration = 50
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,'testmodel',size)
-#generateFiles(models, size, num_tran)
+generateFiles(models, size, num_tran)
 # import argparse
 start = default_timer()
 # batch('data_tcr','tcrsig94.an')
@@ -28,9 +29,9 @@ start = default_timer()
 #    print(str(i),compare_file('model_80//model'+str(i)+'.out','data//run-model'+str(i)+'.out'))
 #print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
 #print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'_exhaustive//model'))
-#print(one_run('model_80//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
+print(one_run('model_20//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
 #print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
-f=open('count_result','a')
+#f=open('count_result','a')
 #for i in sizes:
 #    begin=default_timer()
 #    #print(batch_iteration_test(0, models, 'data//inputFile', 'model_' + str(i) + '//model'))
@@ -39,13 +40,13 @@ f=open('count_result','a')
 #    end=default_timer()
 #    print(end-begin)
 
-for i in times:
-    begin=default_timer()
-    generateFiles(models, size, size*i)
-    print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
+#for i in times:
+#    begin=default_timer()
+#    generateFiles(models, size, size*i)
+#    print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
     #f.writelines(str(count_result('model_' + str(i) + '//model', '.out', models))+'\n')
-    end=default_timer()
-    print(end-begin)
+#    end=default_timer()
+#    print(end-begin)
 #print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
 #f.writelines(str(count_result('model_' + str(size) + '//model', '.out', models))+'\n')
 #f.writelines(str(count_result('data//run-model', '.out', models))+'\n')
