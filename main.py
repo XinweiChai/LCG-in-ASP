@@ -18,10 +18,10 @@ models = 20
 iteration = 50
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,'testmodel',size)
-generateFiles(models, size, num_tran)
+# generateFiles(models, size, num_tran)
 # import argparse
 start = default_timer()
-# batch('data_tcr','tcrsig94.an')
+batch('data_tcr','tcrsig94.an')
 # batch('data_egfr','egfr104.an')
 # batch('','testPhage.an')
 #test_models(101, 102)
@@ -29,7 +29,7 @@ start = default_timer()
 #    print(str(i),compare_file('model_80//model'+str(i)+'.out','data//run-model'+str(i)+'.out'))
 #print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
 #print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'_exhaustive//model'))
-print(one_run('model_20//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
+#print(one_run('model_20//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
 #print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
 #f=open('count_result','a')
 #for i in sizes:

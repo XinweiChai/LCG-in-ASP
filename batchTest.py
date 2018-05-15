@@ -24,7 +24,7 @@ def batch(fn, fnetwork):  # comparison with Pint and PermReach
         fo.write(input[-1] + "=" + str(i[-1]) + "\n")
         # fo.writelines(str(i)+"\n")
         for j in output:
-            output_file(500, fo, fnetwork, input, i, j)
+            output_file(fo, fnetwork, input, i, j)
     fo.close()
 
 
@@ -119,11 +119,15 @@ def one_run(fnetwork, input, changeState, start):
         if len(i) == 2 and len(lcgEdges[i]) > 1:
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
-    #return heuristics_perm_reach(iterations, lcgNodes, lcgEdges, startNode, initialState)
-    #print(startNode)
-    #return heuristics(len(orGates)*5, lcgEdges, startNode, initialState)
-    #print(initialState)
-    if len(orGates) > 9:
-        return heuristics(len(orGates)*5, lcgEdges, startNode, initialState)
+    # print(startNode)
+    # print(initialState)
+    #return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
+    if len(orGates) <= 10:
+        return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
     else:
-        return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)
+        return heuristics_perm_reach(len(orGates)*100+1, lcgNodes, lcgEdges, startNode, initialState)
+    #return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
+    #if len(orGates) > 9:
+    #    return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
+    #else:
+    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)

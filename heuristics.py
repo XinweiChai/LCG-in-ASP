@@ -76,6 +76,19 @@ def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
             return True, i + 1
     return False, k
 
+def exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState):
+    if not orGates:
+        return ASP_solve(lcgEdges, initialState, 0)
+    for i in product(*orGatesItems):
+        lcgEdgesCopy = copy.copy(lcgEdges)
+        for j in range(len(orGates)):
+            lcgEdgesCopy[orGates[j]] = [i[j]]
+        lcgEdgesCopy = prune(lcgEdgesCopy, startNode)
+        res = and_gate(lcgNodes, lcgEdgesCopy, startNode, initialState)
+        if res:
+            return True, 0
+    return False, 0
+
 
 def and_gate(lcgNodes, lcgEdges, startNode, initialState):
     andGates = [i for i in lcgEdges if len(lcgEdges[i]) > 1]
