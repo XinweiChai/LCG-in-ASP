@@ -39,7 +39,7 @@ def generate_random_AN(size, num_tran):
 # def generateRandomTransition(size,numTran):
 
 def writeFile(model, fn, size):
-    f = open('model_'+str(size)+'//' + fn, 'w')
+    f = open('model_' + str(size) + '//' + fn, 'w')
     for i in range(size):
         f.writelines('n' + str(i + 1) + ' [0, 1]\n')
     f.writelines('\n')
@@ -73,7 +73,7 @@ def writeFile(model, fn, size):
 
 
 def generateFiles(amount, size, num_tran):
-    if not os.path.exists('model_'+str(size)):
-        os.makedirs('model_'+str(size))
+    if not os.path.exists('model_' + str(size)):
+        os.makedirs('model_' + str(size))
     for i in range(amount):
         writeFile(generate_random_AN(size, num_tran), 'model' + str(i), size)

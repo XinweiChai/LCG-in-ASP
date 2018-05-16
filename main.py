@@ -9,11 +9,11 @@ from generateModel import *
 from compareFile import *
 from timeit import default_timer
 
-sizes = [30,40,50,60,70,80,1000]
+sizes = [30, 40, 50, 60, 70, 80, 1000]
 size = 20
-times=[1,2,3,4,5,6,7]
-num_tran_var = size*times
-num_tran=size
+times = [1, 2, 3, 4, 5, 6, 7]
+num_tran_var = size * times
+num_tran = size
 models = 20
 iteration = 50
 # x=generate_random_AN(size, num_tran)
@@ -21,18 +21,19 @@ iteration = 50
 # generateFiles(models, size, num_tran)
 # import argparse
 start = default_timer()
-batch('data_tcr','tcrsig94.an')
-# batch('data_egfr','egfr104.an')
+# batch('data_tcr','tcrsig94.an')
+# batch('data_egfr', 'egfr104.an')
 # batch('','testPhage.an')
-#test_models(101, 102)
-#for i in range(20):
+# print(compare_file('data//egfr104.an_out', 'data//run-egfr104.out'))
+# test_models(101, 102)
+# for i in range(20):
 #    print(str(i),compare_file('model_80//model'+str(i)+'.out','data//run-model'+str(i)+'.out'))
-#print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
-#print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'_exhaustive//model'))
-#print(one_run('model_20//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
-#print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
-#f=open('count_result','a')
-#for i in sizes:
+# print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
+# print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'_exhaustive//model'))
+# print(one_run('model_20//model18', ['n1','n2','n3','n4','n5'], [0,1,0,0,0], ('n4','1')))
+# print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
+# f=open('count_result','a')
+# for i in sizes:
 #    begin=default_timer()
 #    #print(batch_iteration_test(0, models, 'data//inputFile', 'model_' + str(i) + '//model'))
 #    print(batch_iteration_test(0, models, 'data//inputFile', 'model_' + str(i) + '//model'))
@@ -40,17 +41,17 @@ batch('data_tcr','tcrsig94.an')
 #    end=default_timer()
 #    print(end-begin)
 
-#for i in times:
+# for i in times:
 #    begin=default_timer()
 #    generateFiles(models, size, size*i)
 #    print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
-    #f.writelines(str(count_result('model_' + str(i) + '//model', '.out', models))+'\n')
+# f.writelines(str(count_result('model_' + str(i) + '//model', '.out', models))+'\n')
 #    end=default_timer()
 #    print(end-begin)
-#print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
-#f.writelines(str(count_result('model_' + str(size) + '//model', '.out', models))+'\n')
-#f.writelines(str(count_result('data//run-model', '.out', models))+'\n')
-#f.close
+# print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
+# f.writelines(str(count_result('model_' + str(size) + '//model', '.out', models))+'\n')
+# f.writelines(str(count_result('data//run-model', '.out', models))+'\n')
+# f.close
 # print(iterationMarker('data_tcr','tcrsig94.an'))
 # print(iterationMarker('data_egfr','egfr104.an'))
 # print(iterationMarker('data_phage','testPhage.an'))

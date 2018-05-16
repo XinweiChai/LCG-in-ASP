@@ -11,7 +11,7 @@ def heuristics(k, lcgEdges, startNode, initialState):
         res, x = ASP_solve(newlcgEdges, initialState, i)
         if res:
             return res, i
-        #elif x == 0:
+        # elif x == 0:
         #    return False, 1
     return False, k
 
@@ -75,6 +75,7 @@ def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
         if and_gate(lcgNodes, newlcgEdges, startNode, initialState):
             return True, i + 1
     return False, k
+
 
 def exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState):
     if not orGates:

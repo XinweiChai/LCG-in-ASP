@@ -40,15 +40,15 @@ def output_file(fout, fnetwork, input_instance, i, j):
     return boo, iterations
 
 
-def iteration_test(fn, fnetwork):  # count the average and max iteration
-    fo = open(fnetwork + '.out', 'w')
-    if fn:
-        f = open(fn, 'r')
+def iteration_test(f_network, f_out):  # count the average and max iteration
+    fo = open(f_out + '.out', 'w')
+    if f_network:
+        f = open(f_network, 'r')
         input = re.split(' ', f.readline().replace("\n", ""))
         output = re.split(' ', f.readline().replace("\n", ""))
         f.close()
-    else:
-        [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
+    else:  # if no input and output, input and output are set to universe by default
+        [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(f_out)
         input = dictionary
         output = dictionary
     totalTrial = 0
@@ -62,7 +62,7 @@ def iteration_test(fn, fnetwork):  # count the average and max iteration
         fo.write(input[-1] + "=" + str(i[-1]) + "\n")
         # fo.writelines(str(i)+"\n")
         for j in output:
-            [res, iter] = output_file(fo, fnetwork, input, i, j)
+            [res, iter] = output_file(fo, f_out, input, i, j)
             if res:
                 totalTrial = totalTrial + iter
                 if iter > maxCount:
@@ -109,7 +109,9 @@ def one_run(fnetwork, input, changeState, start):
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
     lcgEdges = prune(lcgEdges, startNode)
-    if initialState[startNode[0]]==startNode[1]:
+    print(startNode)
+    # print(initialState)
+    if initialState[startNode[0]] == startNode[1]:
         return True, 0
     if startNode not in lcgEdges:
         return False, 0
@@ -119,15 +121,13 @@ def one_run(fnetwork, input, changeState, start):
         if len(i) == 2 and len(lcgEdges[i]) > 1:
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
-    # print(startNode)
-    # print(initialState)
-    #return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
+    # return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
     if len(orGates) <= 10:
         return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
     else:
-        return heuristics_perm_reach(len(orGates)*100+1, lcgNodes, lcgEdges, startNode, initialState)
-    #return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
-    #if len(orGates) > 9:
+        return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
+    # return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
+    # if len(orGates) > 9:
     #    return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
-    #else:
+    # else:
     #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)

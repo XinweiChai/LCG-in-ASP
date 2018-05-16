@@ -1,7 +1,3 @@
-Start time: jeudi 12 février 2015, 10:25:19 (UTC+0100)
-Model: egfr104.ph
-Inputs: erbb1 erbb2 erbb3 erbb4 bir btc egf epr nrg1a nrg1b nrg2b nrg4 tgfa
-Outputs: elk1 creb ap1 hsp27 actin_reorg cmyc pro_apoptotic p70s6_2 pkc stat1 stat3 stat5
 --- erbb1 0, erbb2 0, erbb3 0, erbb4 0, bir 0, btc 0, egf 0, epr 0, nrg1a 0, nrg1b 0, nrg2b 0, nrg4 0, tgfa 0
 # elk1 1
 True
@@ -204802,4 +204798,3 @@ True
 True
 # stat5 1
 True
-End time: jeudi 12 février 2015, 20:12:11 (UTC+0100)

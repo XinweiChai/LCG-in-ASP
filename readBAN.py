@@ -8,7 +8,7 @@ def read_BAN(path):
     actionsByHitter = {}
     initialState = {}
     startState = []
-    f = open('data//'+path, 'r')
+    f = open('data//' + path, 'r')
     for line in f.readlines():
         line = line.replace("\n", "")
         if 'goal' in line:
