@@ -17,4 +17,3 @@ def random_reconstruct(lcgEdges, startNode):
                 newlcgEdges[i] = []
             toVisit.remove(i)
     return newlcgEdges
-

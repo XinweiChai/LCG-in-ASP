@@ -9,18 +9,28 @@ from generateModel import *
 from compareFile import *
 from timeit import default_timer
 
-sizes = [30, 40, 50, 60, 70, 80, 1000]
-size = 20
+sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+sizes2 = [200, 300, 400, 500, 600, 700, 800, 900, 1000]
+size_density = 3
 times = [1, 2, 3, 4, 5, 6, 7]
-num_tran_var = size * times
-num_tran = size
+num_tran_var = size_density * times
+# num_tran = size_density
 models = 20
 iteration = 50
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,'testmodel',size)
 # generateFiles(models, size, num_tran)
 # import argparse
+time_recorder1 = []
+time_recorder2 = []
 start = default_timer()
+stop = default_timer()
+for i in sizes1:
+    num_tran = size_density * i
+    generateFiles(models, i, num_tran)
+    for j in range(models):
+        batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
+
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
 # batch('','testPhage.an')
@@ -56,9 +66,9 @@ start = default_timer()
 # print(iterationMarker('data_egfr','egfr104.an'))
 # print(iterationMarker('data_phage','testPhage.an'))
 # print(iteration_test('data_orTest', 'orTest.an'))
-stop = default_timer()
+# stop = default_timer()
 
-print(stop - start)
+# print(stop - start)
 # iteration=500
 # parser = argparse.ArgumentParser()
 # parser.add_argument("fn")

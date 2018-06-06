@@ -26,9 +26,9 @@ def specilization(an, reach, unreach, unreach1):
     size_count = 0
     while l:
         for i in l:
-            if len(l[i])==size_count:
+            if len(l[i]) == size_count:
                 specialize()
-        size_count=size_count+1
+        size_count = size_count + 1
     return an
 
 

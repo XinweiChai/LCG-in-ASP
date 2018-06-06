@@ -16,9 +16,10 @@ def compare_file(fn1, fn2):
         x2 = f2.readline()
     if equal:
         return True
-        #print('true')
+        # print('true')
     else:
         return False
+
 
 def batch_compare(fn1, fn2, suffix, num):
     for i in range(num):
@@ -31,8 +32,8 @@ def batch_compare(fn1, fn2, suffix, num):
 
 def count_result(fn, suffix, num):
     inconc = 0
-    trues= 0
-    falses= 0
+    trues = 0
+    falses = 0
     for i in range(num):
         file_name = fn + str(i) + suffix
         f = open(file_name, 'r')

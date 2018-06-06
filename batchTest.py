@@ -7,9 +7,9 @@ from itertools import product
 
 
 def batch(fn, fnetwork):  # comparison with Pint and PermReach
-    fo = open('output//' + fnetwork + "_out", 'w')
+    fo = open(fnetwork + "_out", 'w')
     if fn:
-        f = open('data//' + fn, 'r')
+        f = open(fn, 'r')
         input = re.split(' ', f.readline().replace("\n", ""))
         output = re.split(' ', f.readline().replace("\n", ""))
         f.close()
@@ -109,7 +109,7 @@ def one_run(fnetwork, input, changeState, start):
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
     lcgEdges = prune(lcgEdges, startNode)
-    print(startNode)
+    #print(startNode)
     # print(initialState)
     if initialState[startNode[0]] == startNode[1]:
         return True, 0
@@ -122,10 +122,10 @@ def one_run(fnetwork, input, changeState, start):
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
     # return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    if len(orGates) <= 10:
-        return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    else:
-        return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
+    #if len(orGates) <= 10:
+    #    return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
+    #else:
+    return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
     # return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
     # if len(orGates) > 9:
     #    return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
