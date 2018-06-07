@@ -109,8 +109,8 @@ def one_run(fnetwork, input, changeState, start):
     lcgEdges = cycle(lcgNodes, lcgEdges, startNode, actionsByHitter, actions)
     lcgEdges = precondition(lcgEdges, actionsByHitter, initialState)
     lcgEdges = prune(lcgEdges, startNode)
-    #print(startNode)
-    # print(initialState)
+    print(startNode)
+    print(initialState)
     if initialState[startNode[0]] == startNode[1]:
         return True, 0
     if startNode not in lcgEdges:

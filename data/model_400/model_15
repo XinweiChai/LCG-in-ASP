@@ -1,0 +1,1600 @@
+n1 [0, 1]
+n2 [0, 1]
+n3 [0, 1]
+n4 [0, 1]
+n5 [0, 1]
+n6 [0, 1]
+n7 [0, 1]
+n8 [0, 1]
+n9 [0, 1]
+n10 [0, 1]
+n11 [0, 1]
+n12 [0, 1]
+n13 [0, 1]
+n14 [0, 1]
+n15 [0, 1]
+n16 [0, 1]
+n17 [0, 1]
+n18 [0, 1]
+n19 [0, 1]
+n20 [0, 1]
+n21 [0, 1]
+n22 [0, 1]
+n23 [0, 1]
+n24 [0, 1]
+n25 [0, 1]
+n26 [0, 1]
+n27 [0, 1]
+n28 [0, 1]
+n29 [0, 1]
+n30 [0, 1]
+n31 [0, 1]
+n32 [0, 1]
+n33 [0, 1]
+n34 [0, 1]
+n35 [0, 1]
+n36 [0, 1]
+n37 [0, 1]
+n38 [0, 1]
+n39 [0, 1]
+n40 [0, 1]
+n41 [0, 1]
+n42 [0, 1]
+n43 [0, 1]
+n44 [0, 1]
+n45 [0, 1]
+n46 [0, 1]
+n47 [0, 1]
+n48 [0, 1]
+n49 [0, 1]
+n50 [0, 1]
+n51 [0, 1]
+n52 [0, 1]
+n53 [0, 1]
+n54 [0, 1]
+n55 [0, 1]
+n56 [0, 1]
+n57 [0, 1]
+n58 [0, 1]
+n59 [0, 1]
+n60 [0, 1]
+n61 [0, 1]
+n62 [0, 1]
+n63 [0, 1]
+n64 [0, 1]
+n65 [0, 1]
+n66 [0, 1]
+n67 [0, 1]
+n68 [0, 1]
+n69 [0, 1]
+n70 [0, 1]
+n71 [0, 1]
+n72 [0, 1]
+n73 [0, 1]
+n74 [0, 1]
+n75 [0, 1]
+n76 [0, 1]
+n77 [0, 1]
+n78 [0, 1]
+n79 [0, 1]
+n80 [0, 1]
+n81 [0, 1]
+n82 [0, 1]
+n83 [0, 1]
+n84 [0, 1]
+n85 [0, 1]
+n86 [0, 1]
+n87 [0, 1]
+n88 [0, 1]
+n89 [0, 1]
+n90 [0, 1]
+n91 [0, 1]
+n92 [0, 1]
+n93 [0, 1]
+n94 [0, 1]
+n95 [0, 1]
+n96 [0, 1]
+n97 [0, 1]
+n98 [0, 1]
+n99 [0, 1]
+n100 [0, 1]
+n101 [0, 1]
+n102 [0, 1]
+n103 [0, 1]
+n104 [0, 1]
+n105 [0, 1]
+n106 [0, 1]
+n107 [0, 1]
+n108 [0, 1]
+n109 [0, 1]
+n110 [0, 1]
+n111 [0, 1]
+n112 [0, 1]
+n113 [0, 1]
+n114 [0, 1]
+n115 [0, 1]
+n116 [0, 1]
+n117 [0, 1]
+n118 [0, 1]
+n119 [0, 1]
+n120 [0, 1]
+n121 [0, 1]
+n122 [0, 1]
+n123 [0, 1]
+n124 [0, 1]
+n125 [0, 1]
+n126 [0, 1]
+n127 [0, 1]
+n128 [0, 1]
+n129 [0, 1]
+n130 [0, 1]
+n131 [0, 1]
+n132 [0, 1]
+n133 [0, 1]
+n134 [0, 1]
+n135 [0, 1]
+n136 [0, 1]
+n137 [0, 1]
+n138 [0, 1]
+n139 [0, 1]
+n140 [0, 1]
+n141 [0, 1]
+n142 [0, 1]
+n143 [0, 1]
+n144 [0, 1]
+n145 [0, 1]
+n146 [0, 1]
+n147 [0, 1]
+n148 [0, 1]
+n149 [0, 1]
+n150 [0, 1]
+n151 [0, 1]
+n152 [0, 1]
+n153 [0, 1]
+n154 [0, 1]
+n155 [0, 1]
+n156 [0, 1]
+n157 [0, 1]
+n158 [0, 1]
+n159 [0, 1]
+n160 [0, 1]
+n161 [0, 1]
+n162 [0, 1]
+n163 [0, 1]
+n164 [0, 1]
+n165 [0, 1]
+n166 [0, 1]
+n167 [0, 1]
+n168 [0, 1]
+n169 [0, 1]
+n170 [0, 1]
+n171 [0, 1]
+n172 [0, 1]
+n173 [0, 1]
+n174 [0, 1]
+n175 [0, 1]
+n176 [0, 1]
+n177 [0, 1]
+n178 [0, 1]
+n179 [0, 1]
+n180 [0, 1]
+n181 [0, 1]
+n182 [0, 1]
+n183 [0, 1]
+n184 [0, 1]
+n185 [0, 1]
+n186 [0, 1]
+n187 [0, 1]
+n188 [0, 1]
+n189 [0, 1]
+n190 [0, 1]
+n191 [0, 1]
+n192 [0, 1]
+n193 [0, 1]
+n194 [0, 1]
+n195 [0, 1]
+n196 [0, 1]
+n197 [0, 1]
+n198 [0, 1]
+n199 [0, 1]
+n200 [0, 1]
+n201 [0, 1]
+n202 [0, 1]
+n203 [0, 1]
+n204 [0, 1]
+n205 [0, 1]
+n206 [0, 1]
+n207 [0, 1]
+n208 [0, 1]
+n209 [0, 1]
+n210 [0, 1]
+n211 [0, 1]
+n212 [0, 1]
+n213 [0, 1]
+n214 [0, 1]
+n215 [0, 1]
+n216 [0, 1]
+n217 [0, 1]
+n218 [0, 1]
+n219 [0, 1]
+n220 [0, 1]
+n221 [0, 1]
+n222 [0, 1]
+n223 [0, 1]
+n224 [0, 1]
+n225 [0, 1]
+n226 [0, 1]
+n227 [0, 1]
+n228 [0, 1]
+n229 [0, 1]
+n230 [0, 1]
+n231 [0, 1]
+n232 [0, 1]
+n233 [0, 1]
+n234 [0, 1]
+n235 [0, 1]
+n236 [0, 1]
+n237 [0, 1]
+n238 [0, 1]
+n239 [0, 1]
+n240 [0, 1]
+n241 [0, 1]
+n242 [0, 1]
+n243 [0, 1]
+n244 [0, 1]
+n245 [0, 1]
+n246 [0, 1]
+n247 [0, 1]
+n248 [0, 1]
+n249 [0, 1]
+n250 [0, 1]
+n251 [0, 1]
+n252 [0, 1]
+n253 [0, 1]
+n254 [0, 1]
+n255 [0, 1]
+n256 [0, 1]
+n257 [0, 1]
+n258 [0, 1]
+n259 [0, 1]
+n260 [0, 1]
+n261 [0, 1]
+n262 [0, 1]
+n263 [0, 1]
+n264 [0, 1]
+n265 [0, 1]
+n266 [0, 1]
+n267 [0, 1]
+n268 [0, 1]
+n269 [0, 1]
+n270 [0, 1]
+n271 [0, 1]
+n272 [0, 1]
+n273 [0, 1]
+n274 [0, 1]
+n275 [0, 1]
+n276 [0, 1]
+n277 [0, 1]
+n278 [0, 1]
+n279 [0, 1]
+n280 [0, 1]
+n281 [0, 1]
+n282 [0, 1]
+n283 [0, 1]
+n284 [0, 1]
+n285 [0, 1]
+n286 [0, 1]
+n287 [0, 1]
+n288 [0, 1]
+n289 [0, 1]
+n290 [0, 1]
+n291 [0, 1]
+n292 [0, 1]
+n293 [0, 1]
+n294 [0, 1]
+n295 [0, 1]
+n296 [0, 1]
+n297 [0, 1]
+n298 [0, 1]
+n299 [0, 1]
+n300 [0, 1]
+n301 [0, 1]
+n302 [0, 1]
+n303 [0, 1]
+n304 [0, 1]
+n305 [0, 1]
+n306 [0, 1]
+n307 [0, 1]
+n308 [0, 1]
+n309 [0, 1]
+n310 [0, 1]
+n311 [0, 1]
+n312 [0, 1]
+n313 [0, 1]
+n314 [0, 1]
+n315 [0, 1]
+n316 [0, 1]
+n317 [0, 1]
+n318 [0, 1]
+n319 [0, 1]
+n320 [0, 1]
+n321 [0, 1]
+n322 [0, 1]
+n323 [0, 1]
+n324 [0, 1]
+n325 [0, 1]
+n326 [0, 1]
+n327 [0, 1]
+n328 [0, 1]
+n329 [0, 1]
+n330 [0, 1]
+n331 [0, 1]
+n332 [0, 1]
+n333 [0, 1]
+n334 [0, 1]
+n335 [0, 1]
+n336 [0, 1]
+n337 [0, 1]
+n338 [0, 1]
+n339 [0, 1]
+n340 [0, 1]
+n341 [0, 1]
+n342 [0, 1]
+n343 [0, 1]
+n344 [0, 1]
+n345 [0, 1]
+n346 [0, 1]
+n347 [0, 1]
+n348 [0, 1]
+n349 [0, 1]
+n350 [0, 1]
+n351 [0, 1]
+n352 [0, 1]
+n353 [0, 1]
+n354 [0, 1]
+n355 [0, 1]
+n356 [0, 1]
+n357 [0, 1]
+n358 [0, 1]
+n359 [0, 1]
+n360 [0, 1]
+n361 [0, 1]
+n362 [0, 1]
+n363 [0, 1]
+n364 [0, 1]
+n365 [0, 1]
+n366 [0, 1]
+n367 [0, 1]
+n368 [0, 1]
+n369 [0, 1]
+n370 [0, 1]
+n371 [0, 1]
+n372 [0, 1]
+n373 [0, 1]
+n374 [0, 1]
+n375 [0, 1]
+n376 [0, 1]
+n377 [0, 1]
+n378 [0, 1]
+n379 [0, 1]
+n380 [0, 1]
+n381 [0, 1]
+n382 [0, 1]
+n383 [0, 1]
+n384 [0, 1]
+n385 [0, 1]
+n386 [0, 1]
+n387 [0, 1]
+n388 [0, 1]
+n389 [0, 1]
+n390 [0, 1]
+n391 [0, 1]
+n392 [0, 1]
+n393 [0, 1]
+n394 [0, 1]
+n395 [0, 1]
+n396 [0, 1]
+n397 [0, 1]
+n398 [0, 1]
+n399 [0, 1]
+n400 [0, 1]
+
+n104 1 -> 0 when n392=0 and n71=0 and n270=0 and n284=1
+n76 0 -> 1 when n272=1 and n195=0 and n352=0 and n255=0 and n169=1 and n260=1 and n89=1 and n257=0 and n161=0 and n344=0 and n232=0 and n241=0 and n276=1 and n240=1 and n199=0 and n144=1 and n36=1
+n7 1 -> 0 when n280=1 and n256=1 and n311=0 and n225=1 and n142=1 and n387=0 and n357=0 and n312=0 and n96=0
+n330 1 -> 0 when n98=0 and n384=1 and n362=0 and n334=0
+n294 1 -> 0 when n369=0 and n297=0
+n246 1 -> 0 when n393=1 and n277=1 and n240=1 and n316=0 and n69=1 and n83=0 and n149=0
+n354 0 -> 1 when n215=0 and n344=1
+n187 0 -> 1 when n54=0 and n40=0 and n178=0 and n395=0
+n21 1 -> 0 when n134=1 and n18=0
+n153 1 -> 0 when n79=0 and n80=0 and n368=1 and n351=1 and n219=0
+n350 1 -> 0 when n261=0 and n268=1 and n231=0 and n151=0
+n74 0 -> 1 when n336=0 and n314=0
+n88 0 -> 1 when n39=1 and n239=0 and n8=0 and n276=0 and n123=0
+n349 1 -> 0 when n372=0 and n80=1 and n251=1
+n25 0 -> 1 when n180=0
+n306 0 -> 1 when n202=1 and n308=0 and n30=0 and n240=1
+n365 0 -> 1 when n238=1 and n293=0 and n171=0 and n242=1 and n9=1
+n72 1 -> 0 when n231=0 and n379=0
+n219 0 -> 1 when n170=0 and n379=1 and n218=0 and n174=0 and n253=1 and n121=1 and n322=0 and n365=1 and n157=1 and n186=1 and n213=1 and n180=1 and n315=1 and n205=0 and n34=1 and n14=0 and n161=1 and n30=1 and n141=1 and n237=1 and n318=0 and n238=0 and n259=1
+n172 1 -> 0 when n137=1 and n151=0 and n300=0 and n173=0
+n206 0 -> 1 when n334=0 and n63=0 and n352=1
+n56 1 -> 0 when n65=1
+n66 1 -> 0 when n215=0 and n255=1
+n334 0 -> 1 when n328=1
+n243 0 -> 1 when n77=1
+n289 0 -> 1 when n180=1 and n222=1
+n173 1 -> 0 when n342=1 and n152=0 and n231=1 and n362=1 and n178=0 and n389=1 and n91=1 and n367=1 and n117=1 and n162=1
+n355 1 -> 0 when n114=1
+n307 0 -> 1 when n92=0 and n252=1
+n6 1 -> 0 when n266=0 and n156=0 and n388=1 and n304=0 and n327=1 and n230=1 and n312=0 and n73=0 and n48=1 and n111=1
+n230 0 -> 1 when n34=1 and n167=1 and n68=0 and n330=0 and n366=1 and n347=1
+n355 0 -> 1 when n39=1 and n291=0 and n182=0 and n5=1 and n148=1 and n107=1 and n137=1 and n270=0 and n136=0 and n315=1 and n300=0 and n354=0 and n81=0 and n304=1 and n169=1 and n62=1 and n389=0 and n377=0 and n24=1
+n219 1 -> 0 when n7=0 and n373=1 and n90=1 and n312=0 and n276=1
+n3 1 -> 0 when n155=0 and n101=1
+n75 1 -> 0 when n374=0
+n18 1 -> 0 when n87=1 and n81=0 and n193=0 and n242=0 and n210=0 and n319=1 and n347=1
+n195 0 -> 1 when n377=1 and n241=0
+n139 0 -> 1 when n33=1 and n353=0
+n316 1 -> 0 when n337=1 and n246=1 and n272=1 and n179=0 and n126=1
+n157 1 -> 0 when n373=1 and n75=1 and n211=0 and n274=0 and n43=1 and n375=0
+n199 0 -> 1 when n184=0
+n322 0 -> 1 when n285=1 and n289=0 and n235=0 and n387=1 and n17=1 and n378=1 and n126=0 and n311=0 and n70=0 and n220=1 and n323=1
+n37 1 -> 0 when n274=1 and n108=0 and n366=1 and n267=1 and n43=1
+n225 0 -> 1 when n97=1 and n28=0 and n36=1
+n376 0 -> 1 when n57=0 and n124=0 and n339=0 and n153=1 and n166=1
+n368 1 -> 0 when n393=1 and n311=0
+n181 0 -> 1 when n254=0 and n236=0 and n51=0
+n395 0 -> 1 when n311=1 and n81=1 and n131=0 and n347=0 and n312=1
+n47 1 -> 0 when n92=0 and n276=1 and n131=1 and n395=0 and n102=0
+n216 0 -> 1 when n284=1 and n57=1 and n324=1 and n302=1
+n354 0 -> 1 when n172=1 and n175=1 and n304=0 and n35=0 and n86=0
+n88 1 -> 0 when n367=1 and n225=0
+n59 1 -> 0 when n41=1 and n14=0 and n50=1 and n167=0 and n152=1 and n46=0 and n52=1 and n178=0 and n44=0 and n121=1 and n321=0 and n21=0
+n104 0 -> 1 when n191=0 and n87=0
+n220 1 -> 0 when n181=1
+n19 0 -> 1 when n369=0 and n259=0 and n303=1 and n41=1 and n235=0 and n351=1 and n219=0 and n254=1 and n57=0
+n206 1 -> 0 when n384=1 and n292=0 and n155=0 and n250=0 and n374=1 and n306=0 and n43=1 and n18=1 and n16=0 and n149=0 and n95=1 and n11=0 and n122=1 and n253=0 and n297=0 and n237=1 and n394=1
+n356 0 -> 1 when n243=1 and n139=1 and n124=1 and n368=1 and n126=0 and n267=1 and n28=0 and n263=0 and n39=0 and n112=1 and n114=1 and n274=0 and n99=0 and n87=0 and n215=0 and n61=1 and n315=1 and n345=1 and n75=1 and n336=1
+n52 1 -> 0 when n383=0 and n9=1 and n47=1 and n322=0 and n260=0 and n207=1 and n82=0 and n188=0 and n203=1 and n72=0 and n148=0 and n287=0 and n28=1 and n282=0 and n191=1 and n3=1 and n235=1 and n279=0 and n257=0 and n217=1
+n59 1 -> 0 when n16=0 and n40=1
+n221 1 -> 0 when n2=0 and n261=1 and n297=1
+n226 0 -> 1 when n383=1 and n196=1
+n63 0 -> 1 when n134=1 and n320=0 and n174=1
+n372 1 -> 0 when n360=0
+n177 1 -> 0 when n84=0 and n358=0
+n265 0 -> 1 when n320=0
+n309 0 -> 1 when n127=1 and n361=1 and n287=0 and n194=1 and n400=1 and n352=0 and n40=1
+n249 1 -> 0 when n370=1 and n289=0 and n389=0 and n335=0 and n313=1 and n283=0 and n231=1 and n371=1
+n151 1 -> 0 when n194=0 and n54=0 and n263=1 and n242=1 and n238=1
+n123 1 -> 0 when n293=0 and n217=1 and n340=1
+n360 1 -> 0 when n54=0 and n159=0 and n61=1
+n235 0 -> 1 when n398=1 and n158=1
+n79 0 -> 1 when n180=0 and n210=0 and n54=0 and n174=0 and n150=0
+n201 1 -> 0 when n392=0 and n211=1 and n32=1
+n135 1 -> 0 when n38=1 and n279=1 and n81=1 and n128=1 and n35=0
+n157 0 -> 1 when n79=1 and n356=0 and n92=0 and n17=1 and n112=1 and n116=1 and n261=0 and n375=0 and n312=0 and n156=0 and n212=0 and n155=1
+n15 1 -> 0 when n320=0
+n198 1 -> 0 when n332=1 and n299=0
+n132 1 -> 0 when n357=1 and n43=0 and n114=0 and n191=1 and n25=0
+n295 1 -> 0 when n208=0 and n330=0 and n171=1 and n115=1 and n146=1
+n244 0 -> 1 when n178=0 and n305=1
+n132 1 -> 0 when n357=1 and n373=0 and n81=1 and n149=0 and n305=1 and n353=0 and n89=0
+n282 1 -> 0 when n236=0 and n98=1
+n212 0 -> 1 when n301=1 and n330=1 and n30=1
+n311 1 -> 0 when n231=0 and n108=1 and n293=0 and n74=1
+n353 0 -> 1 when n78=1 and n386=1
+n336 1 -> 0 when n325=0
+n269 0 -> 1 when n323=0 and n366=1
+n346 0 -> 1 when n102=1
+n278 0 -> 1 when n178=1 and n244=0 and n334=1 and n191=0
+n31 1 -> 0 when n294=0 and n284=1 and n164=0 and n69=0 and n223=1 and n297=1
+n133 0 -> 1 when n262=1 and n301=0 and n398=1
+n260 0 -> 1 when n135=1 and n267=0 and n164=1 and n21=0 and n138=0 and n239=1 and n105=1 and n222=1 and n288=1 and n118=1 and n188=0 and n374=1 and n148=0 and n365=1
+n339 1 -> 0 when n26=0 and n317=1 and n352=1
+n361 1 -> 0 when n158=0
+n22 0 -> 1 when n68=1 and n179=0 and n325=1 and n331=1 and n317=1 and n38=1 and n172=1 and n277=1 and n114=1
+n291 1 -> 0 when n362=0 and n164=0 and n31=1 and n376=0
+n40 0 -> 1 when n249=1 and n273=0 and n82=1 and n97=1 and n87=1 and n260=0 and n265=0 and n245=1 and n65=0 and n27=1 and n211=1 and n118=0 and n348=0 and n84=1
+n328 0 -> 1 when n156=0
+n391 0 -> 1 when n208=1
+n105 0 -> 1 when n320=0 and n308=1 and n49=1 and n310=1 and n202=1 and n88=1 and n279=0 and n364=0
+n248 0 -> 1 when n370=1 and n263=0 and n70=1 and n334=0 and n379=1 and n150=0 and n371=0 and n167=0 and n337=0 and n112=0 and n78=0 and n283=1 and n376=1 and n363=0 and n269=0
+n358 0 -> 1 when n23=1 and n196=0 and n112=1 and n276=0 and n54=0 and n123=1 and n331=1 and n30=0 and n66=1
+n134 1 -> 0 when n346=0 and n216=0 and n196=1 and n46=0 and n148=1
+n81 1 -> 0 when n105=0 and n379=0 and n162=0 and n123=1 and n284=1 and n136=1 and n290=1 and n326=0 and n16=1 and n34=1 and n112=0
+n30 0 -> 1 when n125=1 and n59=1 and n373=1 and n400=1 and n372=0 and n120=0 and n146=0 and n243=0 and n292=1 and n22=0 and n28=0 and n122=0 and n233=1 and n290=0 and n29=0 and n371=0 and n82=0
+n324 0 -> 1 when n371=0
+n44 0 -> 1 when n34=0 and n168=1 and n65=1 and n304=1 and n31=0
+n167 0 -> 1 when n217=1 and n79=1 and n308=1 and n133=1 and n306=1 and n329=0
+n296 1 -> 0 when n354=1 and n289=1 and n316=0 and n48=0 and n400=0
+n367 0 -> 1 when n326=0 and n165=0 and n353=1 and n70=0 and n159=0 and n274=1
+n104 0 -> 1 when n380=1 and n26=1
+n207 1 -> 0 when n247=0 and n377=0 and n33=0 and n146=1 and n50=1 and n102=1 and n119=0 and n203=0 and n347=0 and n270=1 and n53=0 and n183=1 and n148=1 and n357=1 and n291=0 and n350=1 and n113=1 and n389=1 and n172=1 and n355=1 and n334=0 and n143=0 and n266=0 and n348=1 and n72=1 and n339=1 and n310=1 and n40=1
+n85 0 -> 1 when n79=1
+n179 0 -> 1 when n159=0 and n127=0
+n7 1 -> 0 when n142=1 and n141=1 and n125=0
+n312 1 -> 0 when n395=0 and n85=0 and n166=1 and n352=1
+n196 1 -> 0 when n173=1 and n218=0 and n53=0 and n252=1
+n106 1 -> 0 when n89=0 and n130=0 and n298=0 and n255=0
+n157 1 -> 0 when n238=1 and n243=1 and n152=1 and n247=0 and n289=1 and n249=0 and n36=1 and n51=0 and n194=0 and n31=0 and n274=0
+n94 1 -> 0 when n80=1
+n388 0 -> 1 when n228=1 and n112=1
+n184 0 -> 1 when n74=1 and n296=1 and n26=0 and n163=0 and n213=0 and n172=0 and n376=1 and n4=1 and n374=0 and n230=0 and n323=0 and n330=0 and n290=1 and n24=1
+n59 0 -> 1 when n67=0 and n227=0 and n276=1 and n86=0 and n95=0 and n149=0 and n308=1
+n361 0 -> 1 when n130=1 and n364=1 and n341=1 and n232=1 and n204=0
+n286 0 -> 1 when n221=0
+n266 0 -> 1 when n275=1 and n164=1 and n331=0 and n78=1 and n370=1
+n184 1 -> 0 when n1=1 and n330=1 and n67=0 and n106=1 and n329=1 and n130=0
+n329 0 -> 1 when n49=1 and n79=0 and n172=1 and n90=0 and n30=1 and n7=0
+n383 0 -> 1 when n35=0 and n284=0 and n259=0 and n155=1
+n42 0 -> 1 when n147=1 and n29=0 and n71=1 and n105=0 and n151=0 and n323=0 and n381=1
+n355 1 -> 0 when n243=0 and n337=0 and n81=0 and n9=0 and n275=0
+n400 0 -> 1 when n262=0 and n199=0 and n155=0 and n393=1 and n386=0 and n382=0
+n254 0 -> 1 when n273=0 and n250=0 and n346=1 and n370=1 and n97=1 and n201=1 and n389=1 and n283=1 and n110=1 and n103=0 and n149=1 and n140=0 and n285=0 and n289=0 and n154=0 and n331=0 and n210=0 and n80=0
+n344 0 -> 1 when n392=0 and n393=1
+n47 0 -> 1 when n341=1
+n355 1 -> 0 when n239=1
+n273 0 -> 1 when n343=1 and n206=0 and n81=1 and n270=1 and n185=1
+n295 0 -> 1 when n317=1 and n238=0
+n86 1 -> 0 when n371=0 and n141=1 and n384=1 and n302=1 and n60=0 and n56=1 and n12=0
+n210 1 -> 0 when n382=0
+n252 1 -> 0 when n301=0 and n194=0 and n48=1
+n375 1 -> 0 when n79=1 and n32=1 and n199=1 and n266=0
+n356 0 -> 1 when n104=0 and n192=1 and n273=0 and n65=0 and n67=1 and n367=1 and n202=0 and n221=1
+n27 0 -> 1 when n175=1 and n207=0 and n70=0
+n193 0 -> 1 when n179=1 and n267=0
+n313 0 -> 1 when n153=0 and n345=1 and n98=0 and n391=1 and n113=1 and n148=0
+n258 1 -> 0 when n183=1 and n224=0 and n333=1 and n8=0 and n6=0 and n125=0
+n30 1 -> 0 when n191=1 and n53=0 and n160=0 and n373=0 and n103=0 and n52=1 and n187=1 and n119=1
+n31 0 -> 1 when n362=0 and n142=1
+n387 1 -> 0 when n341=0 and n389=0 and n222=1
+n354 0 -> 1 when n344=1 and n285=0 and n327=1 and n265=0 and n397=1 and n362=1 and n325=1 and n364=0 and n232=1 and n130=1
+n377 0 -> 1 when n258=0 and n101=0 and n41=1 and n195=0 and n379=0 and n178=0 and n89=1 and n341=0
+n368 1 -> 0 when n83=0 and n232=0 and n286=1
+n194 1 -> 0 when n157=0 and n51=0 and n29=0 and n333=1
+n194 1 -> 0 when n235=0 and n232=0 and n300=0 and n111=1 and n50=0 and n152=1 and n84=1 and n273=1 and n392=0 and n351=1 and n123=1 and n269=1 and n311=1
+n23 0 -> 1 when n247=1 and n116=0 and n213=1 and n290=1 and n261=0 and n153=0 and n77=1
+n18 1 -> 0 when n363=1 and n335=0 and n202=0 and n212=1 and n395=0 and n117=0 and n65=1 and n64=0 and n72=1 and n266=1 and n163=0 and n379=1
+n256 0 -> 1 when n51=1
+n45 1 -> 0 when n56=0 and n32=0
+n371 0 -> 1 when n370=1 and n286=1
+n95 1 -> 0 when n169=0 and n392=0 and n205=1 and n346=1 and n94=0 and n25=1 and n84=0 and n311=1 and n113=0
+n8 0 -> 1 when n13=0 and n144=1
+n62 0 -> 1 when n76=0 and n20=0 and n156=0 and n277=0
+n131 1 -> 0 when n283=1 and n277=0 and n52=0
+n330 1 -> 0 when n324=1 and n105=1 and n104=1 and n48=1 and n340=1 and n131=1
+n398 0 -> 1 when n252=0 and n99=1
+n218 0 -> 1 when n388=0 and n42=0 and n3=0 and n281=0 and n252=1 and n306=1 and n349=0 and n311=0 and n359=1 and n239=0 and n14=1 and n229=0
+n277 0 -> 1 when n185=0 and n36=0 and n201=1 and n254=1 and n12=0
+n368 0 -> 1 when n20=1 and n365=0 and n28=0
+n379 1 -> 0 when n166=1 and n88=0 and n241=0 and n187=0
+n235 0 -> 1 when n55=0 and n78=0 and n171=1 and n60=1
+n24 1 -> 0 when n393=0
+n315 0 -> 1 when n224=0 and n148=0 and n41=1 and n322=1
+n16 0 -> 1 when n233=1 and n278=0 and n179=1 and n312=1 and n132=0 and n353=0 and n346=1 and n201=1 and n154=0 and n198=1 and n42=0 and n141=1 and n400=1 and n240=0 and n337=1 and n360=1 and n242=1 and n119=1 and n377=0
+n248 1 -> 0 when n230=1 and n30=0 and n126=1 and n66=0
+n137 0 -> 1 when n396=1 and n331=1 and n241=0
+n180 1 -> 0 when n108=1 and n257=1 and n237=1
+n389 1 -> 0 when n282=1 and n344=1 and n330=0 and n186=0 and n396=0
+n184 1 -> 0 when n40=1 and n128=0
+n84 0 -> 1 when n21=0 and n233=0 and n158=1 and n77=0
+n226 1 -> 0 when n257=1 and n243=1 and n342=1 and n376=0 and n326=0 and n196=0 and n373=1 and n119=0
+n86 1 -> 0 when n66=1 and n217=1 and n179=0 and n33=0 and n283=1 and n276=1
+n335 0 -> 1 when n234=0 and n69=0 and n7=0
+n197 1 -> 0 when n385=0
+n5 0 -> 1 when n141=0
+n32 0 -> 1 when n290=0 and n345=1 and n333=0 and n52=1 and n266=1
+n58 0 -> 1 when n131=1 and n174=0 and n348=1 and n108=0 and n229=1 and n324=1 and n31=0 and n143=0 and n201=1 and n231=0 and n381=1
+n39 1 -> 0 when n16=1 and n110=1 and n1=0 and n218=1
+n335 1 -> 0 when n369=0 and n398=1 and n341=0 and n213=0 and n159=0 and n386=1 and n228=1 and n168=0 and n172=1 and n157=1 and n256=0 and n359=1 and n153=0 and n368=1 and n126=1
+n204 0 -> 1 when n39=1
+n163 0 -> 1 when n264=0 and n118=0
+n76 0 -> 1 when n199=0 and n400=0 and n48=1 and n47=1 and n355=1 and n164=1 and n6=0 and n187=0
+n300 1 -> 0 when n100=1 and n267=1 and n80=0 and n110=0 and n355=1 and n136=0 and n365=0 and n146=0 and n231=0 and n394=1 and n303=0 and n314=1 and n21=1 and n157=1 and n333=1 and n213=0
+n44 0 -> 1 when n277=0 and n30=1 and n264=1 and n312=1
+n139 1 -> 0 when n362=0
+n110 1 -> 0 when n340=0 and n34=0 and n125=1 and n89=0 and n100=0 and n156=0 and n344=1 and n62=0 and n285=1 and n391=1 and n184=1 and n233=1 and n132=0 and n237=1 and n385=0 and n15=1
+n51 0 -> 1 when n174=0
+n351 0 -> 1 when n209=0
+n99 0 -> 1 when n145=1 and n234=1 and n10=1 and n21=1 and n266=0 and n113=0 and n214=1 and n95=1 and n230=0 and n303=0 and n144=0 and n261=0 and n298=1 and n308=0 and n151=1
+n64 0 -> 1 when n294=0 and n270=0 and n307=1 and n387=0 and n9=1
+n7 0 -> 1 when n140=0 and n144=0 and n380=1
+n400 1 -> 0 when n104=0
+n274 1 -> 0 when n222=0 and n110=1 and n353=1 and n123=0 and n333=1 and n100=0 and n11=0 and n277=0 and n169=0
+n313 1 -> 0 when n90=1 and n348=1 and n249=1 and n225=0 and n176=0
+n350 1 -> 0 when n206=1 and n213=0 and n223=0 and n322=0 and n258=0 and n181=0
+n229 1 -> 0 when n386=1
+n10 0 -> 1 when n253=0 and n229=1
+n233 0 -> 1 when n324=1 and n7=1
+n255 0 -> 1 when n88=1 and n313=0
+n25 1 -> 0 when n285=1 and n125=1
+n333 0 -> 1 when n77=1
+n161 1 -> 0 when n25=1 and n351=0 and n58=0 and n288=1
+n266 0 -> 1 when n367=0 and n122=1 and n383=0 and n309=0 and n306=0 and n238=1 and n115=0 and n156=0 and n8=1 and n394=1 and n73=1 and n217=0 and n67=1 and n129=1 and n130=0 and n132=1 and n153=0
+n345 1 -> 0 when n37=0 and n291=1
+n267 0 -> 1 when n195=1 and n400=1 and n378=1 and n302=0 and n340=0 and n306=1 and n297=1 and n174=0 and n163=1
+n176 0 -> 1 when n317=1 and n244=0 and n285=1 and n314=0 and n28=1 and n72=1 and n6=0 and n271=1 and n91=1
+n370 1 -> 0 when n293=0
+n276 1 -> 0 when n240=0 and n215=1 and n339=1 and n91=0 and n11=1
+n35 0 -> 1 when n295=1 and n383=1 and n271=1 and n105=0 and n134=0
+n24 1 -> 0 when n112=1 and n286=0 and n231=0 and n262=0 and n100=1 and n233=1 and n376=0 and n101=1 and n150=0 and n354=0 and n327=0 and n59=0 and n38=1 and n131=1 and n205=1
+n218 1 -> 0 when n58=1 and n340=0 and n369=0 and n136=1 and n90=1 and n52=0 and n345=0 and n206=1
+n265 1 -> 0 when n1=1 and n30=1 and n296=0 and n66=0 and n206=1 and n212=1 and n170=1
+n384 0 -> 1 when n308=0 and n365=1 and n135=1 and n395=1
+n131 1 -> 0 when n348=1 and n278=0
+n309 0 -> 1 when n174=0 and n142=0 and n387=1 and n222=0 and n388=0 and n260=1 and n358=0
+n97 1 -> 0 when n86=0 and n191=1 and n285=1
+n49 1 -> 0 when n98=0
+n357 0 -> 1 when n58=1 and n102=1 and n5=1
+n244 1 -> 0 when n6=0 and n88=1
+n283 0 -> 1 when n7=1 and n385=1 and n238=1 and n111=0 and n149=0 and n152=0 and n362=1
+n69 0 -> 1 when n149=1 and n110=0 and n391=0 and n387=0 and n385=1 and n200=0
+n319 0 -> 1 when n132=1
+n144 0 -> 1 when n314=1 and n373=1 and n315=1 and n109=0
+n330 1 -> 0 when n266=1 and n231=1 and n307=1 and n102=1
+n18 0 -> 1 when n352=0 and n32=0
+n202 0 -> 1 when n313=1 and n265=1 and n162=0 and n14=1
+n398 1 -> 0 when n101=0 and n372=0
+n287 1 -> 0 when n388=1 and n200=1 and n197=1
+n105 0 -> 1 when n72=1 and n120=0 and n229=1 and n115=0 and n257=1 and n323=0 and n199=0 and n279=0 and n295=0 and n214=1 and n280=0 and n212=0 and n173=1 and n25=1 and n227=1 and n203=1 and n184=0 and n42=0 and n111=0 and n142=1 and n358=1 and n46=1 and n95=1
+n149 0 -> 1 when n120=0 and n157=1 and n85=0 and n190=0 and n183=1
+n254 1 -> 0 when n100=1 and n244=1 and n11=0
+n296 1 -> 0 when n339=1 and n93=0 and n228=1 and n389=0
+n194 0 -> 1 when n263=1 and n160=0 and n245=1 and n356=1 and n366=1
+n176 1 -> 0 when n52=0 and n95=1 and n117=0 and n140=0
+n83 1 -> 0 when n144=0 and n41=0
+n249 0 -> 1 when n161=1 and n201=1 and n86=0
+n278 0 -> 1 when n130=1 and n192=0 and n58=1 and n135=0 and n142=0 and n266=0 and n310=1 and n166=1 and n207=1
+n387 0 -> 1 when n283=1 and n399=1 and n84=1 and n273=0 and n95=0 and n243=0 and n107=0
+n149 0 -> 1 when n160=0 and n272=1 and n277=1 and n61=0
+n222 1 -> 0 when n122=1 and n391=0 and n177=0 and n163=1 and n157=0 and n109=1 and n119=0 and n306=1 and n393=1
+n74 0 -> 1 when n122=1 and n288=0 and n15=1
+n277 0 -> 1 when n382=0 and n140=0 and n162=0 and n381=0
+n260 0 -> 1 when n211=0 and n400=0
+n307 1 -> 0 when n265=0 and n23=1 and n256=1
+n248 0 -> 1 when n155=0 and n40=0 and n252=0
+n379 1 -> 0 when n292=1 and n303=1 and n157=1 and n99=1 and n20=0 and n265=0 and n235=1 and n36=1 and n193=1 and n46=0 and n178=0 and n297=0 and n123=0 and n131=1 and n247=0
+n180 1 -> 0 when n291=0 and n395=1 and n15=0 and n202=0 and n224=0 and n239=0 and n79=1
+n176 1 -> 0 when n360=0 and n218=0
+n12 1 -> 0 when n52=1 and n394=0 and n207=0 and n94=0 and n372=1 and n203=1 and n70=0
+n13 1 -> 0 when n248=0 and n169=0 and n365=0 and n89=0
+n30 1 -> 0 when n342=0 and n285=1 and n293=1 and n54=0 and n67=0 and n221=0 and n216=0 and n6=0
+n357 0 -> 1 when n182=0 and n144=1 and n97=1 and n338=1 and n322=0 and n165=1 and n195=1
+n232 1 -> 0 when n40=1 and n53=1 and n57=0
+n32 0 -> 1 when n299=1 and n253=1
+n239 1 -> 0 when n232=1 and n237=0 and n386=0 and n353=0 and n107=1 and n347=0 and n140=1
+n260 1 -> 0 when n265=1 and n229=1 and n368=0 and n56=0 and n48=1 and n279=0 and n181=1 and n33=1 and n215=0 and n199=1 and n237=1 and n191=0 and n329=0
+n120 1 -> 0 when n156=0 and n341=1
+n227 1 -> 0 when n218=1 and n323=0 and n310=0 and n15=0 and n73=0
+n328 1 -> 0 when n260=0 and n81=0 and n168=1 and n196=0 and n352=1 and n11=0 and n217=1 and n69=0 and n149=0 and n339=0 and n184=0 and n356=1 and n59=1 and n346=0 and n85=1 and n17=1 and n49=1 and n380=1 and n10=0
+n257 1 -> 0 when n347=0 and n286=0
+n163 0 -> 1 when n70=0 and n194=1 and n300=1 and n29=1
+n264 0 -> 1 when n386=0 and n12=1 and n269=1 and n35=1 and n194=1
+n226 0 -> 1 when n327=0 and n169=1
+n197 1 -> 0 when n264=1 and n159=0 and n368=0 and n228=1 and n244=0 and n132=1 and n378=1 and n243=1 and n257=0 and n359=0 and n92=0 and n162=0 and n278=1 and n251=0 and n247=0 and n183=0 and n11=0 and n310=0
+n193 1 -> 0 when n33=0 and n47=0 and n373=1 and n76=0
+n329 1 -> 0 when n179=0
+n170 0 -> 1 when n258=1 and n146=0 and n353=1 and n100=0 and n57=0
+n196 1 -> 0 when n170=0 and n351=0 and n136=1 and n257=1 and n375=0 and n228=0 and n356=0 and n316=0
+n289 1 -> 0 when n292=0 and n355=1 and n139=0 and n161=1
+n39 0 -> 1 when n34=1 and n30=0 and n189=1 and n288=1 and n223=0 and n168=1
+n367 1 -> 0 when n372=1 and n320=0
+n29 0 -> 1 when n173=1 and n129=1 and n383=0 and n315=0 and n18=1 and n261=1 and n120=1 and n123=1
+n76 1 -> 0 when n87=1 and n187=0
+n261 1 -> 0 when n284=0
+n5 1 -> 0 when n379=0 and n390=1
+n43 1 -> 0 when n55=0 and n196=1 and n96=1 and n234=1 and n399=1 and n161=1 and n337=0 and n215=1 and n390=1 and n82=0 and n243=1
+n214 0 -> 1 when n386=1 and n125=0 and n134=0 and n13=1 and n14=0 and n285=0
+n316 1 -> 0 when n176=1 and n116=1 and n58=0 and n180=1 and n264=1 and n22=0 and n63=0 and n153=0 and n379=1
+n275 1 -> 0 when n362=1 and n248=1 and n19=1 and n110=1 and n265=0 and n370=0 and n266=1 and n144=1
+n219 0 -> 1 when n282=1 and n185=1
+n15 0 -> 1 when n194=1
+n117 1 -> 0 when n138=1 and n104=0 and n107=0 and n105=1 and n344=0 and n64=1 and n89=0 and n103=1 and n123=1 and n239=0 and n161=1 and n339=1 and n273=1 and n335=0 and n319=1 and n192=1 and n274=1
+n179 0 -> 1 when n260=0 and n256=0 and n340=1 and n360=0 and n268=0 and n3=1 and n95=0 and n335=0
+n233 0 -> 1 when n275=1 and n344=0 and n238=0
+n221 0 -> 1 when n207=1 and n265=1 and n26=0 and n214=0 and n35=1 and n191=1 and n3=0
+n244 0 -> 1 when n59=1 and n354=0
+n128 1 -> 0 when n202=0 and n268=0 and n309=0 and n10=1 and n121=0 and n271=0
+n245 1 -> 0 when n112=0 and n13=0 and n269=0 and n120=1 and n4=1 and n391=0 and n67=0 and n241=0 and n151=0 and n213=0 and n93=0 and n250=0 and n126=0 and n254=1
+n382 0 -> 1 when n34=0
+n250 1 -> 0 when n298=0 and n258=1 and n153=0 and n22=0
+n229 1 -> 0 when n316=1 and n195=0
+n261 1 -> 0 when n104=1 and n163=0 and n344=0 and n251=0 and n7=0
+n296 0 -> 1 when n340=1 and n252=0 and n344=1
+n10 0 -> 1 when n378=1 and n287=1 and n84=1 and n162=1
+n149 0 -> 1 when n227=0 and n253=0 and n193=1 and n274=1
+n53 0 -> 1 when n332=1 and n395=0
+n159 1 -> 0 when n30=0
+n222 1 -> 0 when n75=1 and n162=1 and n79=0 and n336=1 and n197=0 and n113=1 and n310=1 and n347=0 and n41=0
+n99 1 -> 0 when n366=1 and n39=0 and n275=0 and n79=0 and n384=0 and n70=1 and n124=1 and n21=1 and n166=1 and n393=0 and n288=1 and n380=0 and n371=1
+n9 1 -> 0 when n184=0 and n341=0 and n334=1 and n235=1 and n282=1
+n216 0 -> 1 when n72=1 and n366=0 and n301=1 and n294=1 and n56=0 and n278=1 and n111=0
+n264 0 -> 1 when n250=1 and n65=0 and n94=0 and n206=0 and n222=1 and n243=1 and n87=1
+n274 0 -> 1 when n190=0 and n318=1 and n171=1
+n20 0 -> 1 when n70=0 and n266=1 and n104=0 and n152=0 and n311=0
+n191 0 -> 1 when n55=1 and n230=1 and n354=0
+n24 1 -> 0 when n39=0 and n145=0 and n126=1 and n144=0 and n100=1 and n270=0 and n340=1 and n154=1 and n86=1 and n51=1 and n21=1 and n20=0 and n364=0 and n159=1 and n128=0 and n389=0 and n181=0 and n247=0 and n89=1 and n176=0 and n289=0 and n139=0 and n201=1 and n252=1 and n56=1
+n103 0 -> 1 when n219=0
+n306 1 -> 0 when n263=0 and n353=1 and n42=1 and n162=1 and n147=0 and n82=1 and n193=1 and n121=1 and n58=1 and n150=1 and n84=0 and n51=0 and n7=0
+n105 0 -> 1 when n278=1 and n93=1 and n164=0
+n19 0 -> 1 when n18=1
+n65 0 -> 1 when n117=0 and n169=0 and n108=0 and n81=1
+n49 0 -> 1 when n305=1
+n198 0 -> 1 when n190=0 and n261=0 and n35=1 and n203=1 and n257=1 and n269=0
+n224 1 -> 0 when n357=0 and n73=1 and n133=0 and n308=0 and n231=1 and n132=0 and n198=0 and n253=0 and n315=1 and n140=1 and n110=1 and n373=1 and n312=1 and n239=1 and n300=1 and n19=1 and n244=0 and n127=1 and n392=1 and n374=1 and n131=1 and n395=0 and n252=0
+n22 1 -> 0 when n20=1 and n209=0 and n45=0 and n243=0 and n159=0 and n88=0 and n87=1 and n197=0
+n226 0 -> 1 when n386=0 and n220=1 and n336=1
+n164 1 -> 0 when n149=1 and n28=1
+n55 0 -> 1 when n18=0 and n227=0
+n3 1 -> 0 when n167=0 and n182=0 and n201=1 and n367=1
+n393 0 -> 1 when n18=1
+n317 0 -> 1 when n77=1 and n26=1 and n386=0 and n35=1 and n315=1 and n78=1 and n136=1 and n133=1 and n380=1 and n379=1 and n30=1
+n316 1 -> 0 when n75=1 and n342=0 and n124=0 and n143=1 and n328=1 and n252=0 and n367=0 and n277=0
+n400 1 -> 0 when n354=0 and n235=1 and n126=0 and n87=0
+n89 0 -> 1 when n159=1 and n80=0
+n217 1 -> 0 when n366=0 and n47=1 and n96=0
+n91 1 -> 0 when n134=0 and n229=1 and n225=0
+n313 0 -> 1 when n155=0 and n295=1
+n217 0 -> 1 when n175=1 and n267=1 and n8=1 and n373=1 and n335=1 and n250=0 and n253=1
+n376 1 -> 0 when n8=1 and n213=1 and n22=0 and n349=1 and n372=1 and n384=0 and n37=1 and n91=1 and n332=1 and n298=0 and n232=0 and n29=0 and n80=0 and n255=1 and n103=0 and n132=1 and n157=0 and n230=1 and n186=1 and n133=1 and n49=1 and n249=0 and n136=0 and n338=0 and n290=0 and n247=0
+n251 1 -> 0 when n86=0 and n223=0 and n357=0 and n72=0
+n385 1 -> 0 when n358=0 and n173=0 and n127=1
+n307 1 -> 0 when n70=0 and n255=0 and n296=1
+n54 1 -> 0 when n391=0 and n213=1 and n163=0 and n390=0
+n312 1 -> 0 when n173=0 and n57=0 and n363=1
+n341 1 -> 0 when n67=1 and n234=0
+n73 0 -> 1 when n398=0 and n107=0 and n27=1
+n302 0 -> 1 when n165=0 and n40=1 and n307=1 and n394=1 and n212=1 and n294=0 and n221=0
+n184 0 -> 1 when n249=1 and n153=1 and n290=1
+n307 1 -> 0 when n92=1
+n293 0 -> 1 when n302=0 and n131=1 and n201=0 and n305=1 and n247=1 and n278=0 and n14=1
+n93 1 -> 0 when n210=1
+n391 0 -> 1 when n42=1
+n270 0 -> 1 when n220=0
+n72 1 -> 0 when n11=0 and n364=0 and n387=1
+n176 1 -> 0 when n163=0 and n79=1 and n291=0 and n58=1 and n348=0 and n85=1 and n159=0 and n34=0 and n227=1
+n311 0 -> 1 when n286=1 and n178=1 and n317=0 and n346=0 and n60=1 and n369=1 and n44=0 and n292=0 and n305=0 and n297=1 and n13=1 and n99=1 and n213=0
+n85 0 -> 1 when n24=1 and n320=0 and n352=0 and n261=1 and n106=0 and n272=1 and n81=0 and n103=1 and n307=1 and n169=1 and n114=0 and n47=1 and n366=0
+n284 0 -> 1 when n317=1 and n226=1
+n1 1 -> 0 when n242=0 and n108=1 and n11=1 and n90=0 and n344=0 and n366=0 and n49=0 and n142=0 and n182=1
+n109 1 -> 0 when n239=1 and n235=1 and n153=1
+n105 1 -> 0 when n69=1
+n261 1 -> 0 when n114=1 and n228=0 and n374=0 and n268=0
+n158 0 -> 1 when n86=1 and n113=0
+n259 0 -> 1 when n321=0 and n265=1 and n57=0 and n305=1 and n15=1 and n31=1 and n89=0
+n16 1 -> 0 when n122=1 and n393=0 and n34=0 and n147=1 and n319=1 and n146=1
+n218 0 -> 1 when n376=1
+n49 0 -> 1 when n64=1
+n134 0 -> 1 when n162=1 and n9=0 and n392=1 and n204=1 and n290=1 and n111=1 and n42=1 and n89=1
+n264 1 -> 0 when n346=0
+n175 0 -> 1 when n91=1
+n369 1 -> 0 when n317=0
+n336 0 -> 1 when n288=1 and n315=1 and n199=1 and n107=0 and n276=1 and n33=0 and n77=0 and n383=0 and n63=1 and n172=0 and n116=0 and n371=0 and n122=0 and n395=1
+n150 0 -> 1 when n132=1 and n179=1 and n50=1
+n268 1 -> 0 when n224=0
+n3 1 -> 0 when n287=0
+n295 0 -> 1 when n338=1 and n378=0 and n28=0 and n346=0 and n313=0 and n279=0
+n210 1 -> 0 when n124=1 and n167=1 and n82=0 and n301=0 and n292=1
+n31 0 -> 1 when n278=0
+n302 0 -> 1 when n246=0 and n308=1 and n47=1 and n290=1 and n380=1 and n349=1 and n235=0 and n276=0 and n265=0
+n276 1 -> 0 when n172=1 and n59=1 and n307=0 and n23=1
+n297 1 -> 0 when n187=0 and n55=1 and n26=0
+n316 1 -> 0 when n38=0 and n328=0
+n227 1 -> 0 when n198=1 and n349=0 and n354=1 and n231=0 and n79=1 and n280=1 and n213=1 and n383=1 and n339=1 and n36=1
+n85 1 -> 0 when n389=1 and n273=1 and n55=0 and n210=0 and n175=0 and n114=0 and n379=0 and n100=1 and n95=1 and n382=0 and n32=1 and n308=1 and n387=1 and n317=0 and n302=1 and n157=1 and n88=0 and n360=1 and n215=1
+n286 0 -> 1 when n220=0 and n371=0 and n201=0 and n331=0
+n386 1 -> 0 when n118=1 and n114=1
+n398 1 -> 0 when n64=1 and n286=1 and n68=1 and n217=0 and n343=1 and n74=1 and n267=0 and n62=0 and n354=0 and n311=0
+n352 1 -> 0 when n74=0 and n219=0 and n85=1 and n285=0 and n119=0
+n255 1 -> 0 when n110=1 and n120=1 and n354=0 and n285=0
+n306 1 -> 0 when n273=1 and n142=1 and n53=1
+n110 1 -> 0 when n195=1
+n348 0 -> 1 when n222=1 and n369=1 and n361=0 and n331=0 and n211=0 and n212=0 and n339=1 and n219=0 and n3=0
+n119 0 -> 1 when n396=1 and n2=0 and n187=1 and n186=1 and n172=0 and n72=0 and n346=1 and n397=1 and n191=1
+n55 1 -> 0 when n309=0 and n372=0 and n115=0 and n71=0 and n369=0 and n97=1 and n7=0 and n64=1 and n174=1 and n390=0 and n84=0 and n283=0 and n279=0 and n8=0 and n244=0 and n394=1 and n254=1 and n166=0 and n114=1 and n139=0
+n57 1 -> 0 when n166=0 and n196=0 and n379=0 and n269=0
+n311 1 -> 0 when n363=0 and n274=0 and n157=1
+n96 0 -> 1 when n211=1 and n296=0 and n339=1 and n42=1 and n157=0 and n119=1 and n139=1 and n196=0 and n32=0 and n361=1 and n229=0 and n7=1
+n182 0 -> 1 when n297=1
+n99 0 -> 1 when n158=1 and n163=0 and n181=1 and n118=1 and n17=1 and n145=0 and n251=1 and n338=1 and n396=0 and n331=1 and n42=0 and n109=0 and n49=0 and n346=0 and n152=0 and n265=1 and n30=1 and n317=1 and n295=1 and n332=1 and n121=0
+n296 1 -> 0 when n324=0 and n159=0 and n69=0 and n86=0 and n242=0 and n211=1 and n189=0 and n24=1 and n52=0 and n124=0
+n372 1 -> 0 when n235=1 and n269=1 and n315=1 and n345=0 and n126=0 and n250=1 and n158=0 and n100=0 and n252=1
+n339 1 -> 0 when n270=0 and n331=1
+n292 1 -> 0 when n221=0 and n389=1 and n91=0 and n125=1
+n79 1 -> 0 when n207=1 and n43=1
+n157 1 -> 0 when n20=0 and n287=1 and n17=0 and n36=1 and n219=1
+n281 0 -> 1 when n78=1 and n358=1 and n251=0 and n339=1 and n222=0 and n112=1 and n229=0
+n312 1 -> 0 when n322=1
+n304 1 -> 0 when n50=1
+n215 0 -> 1 when n49=1 and n228=1 and n160=0 and n183=1 and n109=0 and n28=1 and n85=0 and n133=0 and n113=0 and n214=0 and n141=0 and n104=0 and n97=0 and n72=0 and n209=1
+n193 1 -> 0 when n302=0 and n290=1
+n363 0 -> 1 when n203=1 and n73=0 and n118=1 and n312=1 and n384=1
+n150 1 -> 0 when n114=0 and n107=0 and n246=1 and n239=1 and n185=1 and n82=1 and n181=1 and n44=1 and n39=1 and n140=0
+n234 0 -> 1 when n133=0 and n22=1 and n191=0
+n93 0 -> 1 when n82=1
+n91 0 -> 1 when n20=1 and n258=0 and n51=1 and n160=1 and n163=1 and n107=0 and n264=0
+n362 1 -> 0 when n60=1 and n107=0 and n312=0 and n23=1 and n235=1 and n223=1 and n137=0 and n118=0
+n253 1 -> 0 when n312=1
+n328 0 -> 1 when n225=0
+n359 1 -> 0 when n326=1 and n167=0
+n228 0 -> 1 when n388=1 and n91=1 and n247=0 and n152=1 and n141=1 and n327=0 and n312=1 and n311=0 and n103=1 and n287=1
+n88 1 -> 0 when n16=1 and n64=0 and n75=0 and n190=1 and n377=1 and n41=0 and n76=1 and n368=0
+n101 0 -> 1 when n344=1 and n364=0
+n35 0 -> 1 when n71=1 and n219=0 and n229=0
+n212 1 -> 0 when n353=0 and n24=0
+n240 1 -> 0 when n162=1 and n134=0 and n4=1 and n350=0 and n60=1 and n224=1 and n135=1 and n23=1
+n230 1 -> 0 when n27=0 and n21=0
+n357 0 -> 1 when n308=0 and n210=1 and n91=0 and n367=1 and n10=1 and n348=1 and n328=0 and n58=1
+n278 0 -> 1 when n147=1 and n18=0 and n127=0 and n38=0 and n90=1
+n197 1 -> 0 when n360=0 and n170=0 and n70=0 and n274=0 and n29=1 and n253=0 and n164=0
+n206 0 -> 1 when n107=1
+n171 0 -> 1 when n310=1
+n196 0 -> 1 when n202=0 and n82=1 and n288=1
+n176 0 -> 1 when n239=0 and n185=0
+n202 0 -> 1 when n304=1 and n398=1 and n257=0 and n173=1 and n337=0
+n37 1 -> 0 when n13=0 and n226=0 and n291=1 and n378=0 and n296=0 and n212=0
+n368 1 -> 0 when n316=0 and n313=1 and n81=1 and n42=1 and n292=0 and n38=1 and n236=1 and n308=1
+n309 0 -> 1 when n230=1 and n367=0 and n383=0 and n173=1 and n114=1 and n389=0 and n128=1 and n28=1 and n2=1 and n297=0
+n138 1 -> 0 when n241=1 and n53=1 and n24=0 and n309=0 and n135=0
+n214 0 -> 1 when n272=0 and n77=1
+n306 1 -> 0 when n92=0 and n99=1 and n280=0
+n344 1 -> 0 when n23=0 and n227=0 and n141=1 and n247=0 and n36=0
+n336 1 -> 0 when n322=1 and n241=1 and n362=0
+n86 1 -> 0 when n230=0 and n64=1 and n393=1 and n361=1
+n275 0 -> 1 when n48=1 and n136=0 and n288=1 and n32=1 and n331=0 and n68=1 and n35=0 and n253=0 and n294=0 and n168=0 and n217=1 and n398=1 and n350=1 and n316=0 and n227=0 and n330=1
+n90 0 -> 1 when n16=1 and n249=1 and n201=1
+n300 0 -> 1 when n286=0 and n40=0
+n266 1 -> 0 when n126=0 and n92=1 and n36=1 and n140=1 and n279=0
+n390 1 -> 0 when n113=1 and n207=0 and n203=0 and n192=1 and n267=0 and n104=1 and n71=1 and n44=0 and n227=1 and n237=0 and n138=0 and n288=1 and n380=0 and n101=1 and n45=0 and n49=1
+n237 0 -> 1 when n366=1 and n73=1
+n73 1 -> 0 when n310=0 and n131=0 and n171=1 and n61=0 and n139=1 and n367=1 and n70=0 and n353=0
+n20 1 -> 0 when n21=0 and n397=1 and n297=1 and n301=1 and n16=1 and n59=0 and n168=0 and n356=0 and n42=1
+n34 1 -> 0 when n85=0 and n112=1 and n50=1
+n395 1 -> 0 when n58=0 and n105=1 and n378=1 and n264=1 and n119=0 and n363=1 and n279=0 and n236=0 and n70=1
+n125 1 -> 0 when n15=1 and n281=0 and n12=1 and n121=1 and n333=0 and n176=1 and n182=0 and n252=1 and n141=0
+n69 1 -> 0 when n359=1 and n41=1 and n171=0 and n302=1 and n239=0 and n148=1 and n358=1 and n346=1 and n140=0 and n276=0 and n98=0 and n329=0 and n157=1 and n147=0 and n19=1 and n23=0 and n116=1 and n3=0 and n132=1 and n365=0 and n219=0 and n72=1 and n143=0 and n26=1 and n121=1 and n18=1 and n158=1 and n141=0 and n313=1 and n101=0
+n70 1 -> 0 when n114=0 and n153=1 and n88=1 and n316=0 and n101=1 and n352=0 and n148=1 and n140=0 and n33=1 and n38=1 and n113=1 and n233=1 and n390=1 and n364=0
+n181 1 -> 0 when n268=0 and n280=0 and n258=0 and n295=1 and n67=1 and n390=1
+n45 1 -> 0 when n71=0 and n352=1 and n299=0 and n59=1 and n84=0 and n244=0 and n4=0 and n73=0 and n225=0 and n203=0 and n113=1 and n249=1 and n227=0 and n310=0
+n54 0 -> 1 when n250=1 and n74=1
+n276 1 -> 0 when n47=1 and n53=1 and n319=0 and n68=0 and n314=0 and n182=1 and n22=1 and n242=0 and n391=0
+n32 0 -> 1 when n235=0 and n84=1 and n2=1 and n111=1 and n65=0
+n260 1 -> 0 when n320=1
+n398 1 -> 0 when n228=0 and n133=0 and n64=1 and n216=0 and n39=1 and n332=1 and n229=1 and n149=0 and n307=1 and n304=1 and n197=0 and n337=1 and n331=1
+n32 1 -> 0 when n278=1 and n321=0 and n19=1 and n245=0 and n387=1
+n49 0 -> 1 when n324=0 and n376=0 and n395=0 and n308=1 and n184=0 and n7=1 and n367=1 and n185=0 and n151=0 and n209=1 and n116=1 and n247=0 and n109=0 and n43=0 and n150=0 and n62=1 and n201=0 and n59=0 and n302=0
+n204 0 -> 1 when n282=1 and n8=0 and n68=1 and n376=0 and n281=1 and n26=0 and n339=1 and n34=1 and n382=0 and n293=0 and n29=0 and n222=0 and n380=0 and n325=1 and n56=1 and n41=0 and n3=1 and n284=0 and n49=1 and n28=0
+n296 1 -> 0 when n74=1
+n195 0 -> 1 when n388=1 and n233=1
+n296 0 -> 1 when n173=1 and n265=0 and n59=1 and n355=1 and n364=0
+n177 0 -> 1 when n351=1
+n93 1 -> 0 when n311=0 and n142=1 and n399=1 and n182=1 and n42=1
+n337 0 -> 1 when n273=0 and n224=1 and n280=0 and n182=1 and n127=1
+n198 0 -> 1 when n231=0 and n76=0 and n101=1 and n350=0 and n47=0 and n207=1 and n3=0 and n344=1 and n226=1
+n199 1 -> 0 when n1=1
+n351 1 -> 0 when n275=1 and n303=0 and n171=0
+n67 1 -> 0 when n375=1 and n392=1 and n254=0 and n354=1 and n191=1
+n225 1 -> 0 when n330=0 and n7=1 and n308=1 and n149=1 and n345=0 and n88=1
+n219 0 -> 1 when n15=1 and n12=0 and n168=1 and n396=0
+n334 1 -> 0 when n251=1
+n95 0 -> 1 when n15=1 and n32=0 and n137=0 and n71=0 and n248=0 and n104=0 and n244=1
+n5 0 -> 1 when n283=0 and n380=0
+n9 1 -> 0 when n127=0 and n36=0 and n74=0 and n228=0
+n318 1 -> 0 when n57=1
+n313 1 -> 0 when n350=0
+n34 0 -> 1 when n196=0 and n384=0
+n63 0 -> 1 when n336=1 and n294=1 and n71=0 and n269=0 and n341=1
+n366 0 -> 1 when n177=0 and n53=0 and n202=1 and n101=1 and n249=0 and n357=0 and n59=1 and n206=1 and n144=1 and n174=1 and n201=0 and n335=1 and n272=0 and n199=1 and n276=1
+n327 1 -> 0 when n142=0
+n374 0 -> 1 when n42=1
+n321 0 -> 1 when n47=1 and n63=1
+n349 0 -> 1 when n153=1
+n155 1 -> 0 when n350=0
+n152 1 -> 0 when n114=1 and n187=1 and n165=1 and n136=0 and n139=0
+n255 0 -> 1 when n326=0 and n335=0 and n74=0 and n289=0
+n271 0 -> 1 when n304=1
+n206 1 -> 0 when n180=0
+n83 1 -> 0 when n308=0
+n68 0 -> 1 when n216=1 and n204=0 and n158=0 and n306=0 and n326=0 and n82=0 and n361=0 and n390=0
+n243 0 -> 1 when n335=0 and n279=1 and n251=0 and n7=1
+n90 1 -> 0 when n48=0 and n95=1 and n35=1 and n94=1
+n341 0 -> 1 when n94=1 and n245=1 and n200=1
+n377 0 -> 1 when n314=1 and n195=0 and n364=0 and n117=1
+n287 1 -> 0 when n336=1 and n154=1 and n266=0 and n222=1
+n219 1 -> 0 when n152=0 and n284=1 and n397=1 and n185=0 and n339=0 and n136=0 and n255=0 and n96=1 and n276=0
+n24 0 -> 1 when n250=0 and n83=0 and n274=0 and n190=1 and n369=1 and n256=0 and n242=1 and n70=0 and n287=1 and n121=0 and n394=1 and n185=1 and n2=1 and n213=1 and n300=1 and n295=1 and n51=1 and n244=0 and n73=0 and n225=0
+n13 0 -> 1 when n80=0 and n172=1
+n75 0 -> 1 when n354=0 and n133=1 and n24=0 and n127=0 and n250=1
+n278 1 -> 0 when n281=1 and n338=0 and n191=1 and n60=1
+n323 1 -> 0 when n320=0 and n182=0 and n154=0 and n28=1 and n23=1
+n207 0 -> 1 when n198=0 and n100=1 and n181=0 and n199=1
+n196 1 -> 0 when n83=0
+n19 1 -> 0 when n286=0 and n72=1
+n12 0 -> 1 when n290=1 and n144=1 and n135=0 and n230=1 and n26=1 and n7=0 and n294=0
+n112 0 -> 1 when n271=1 and n117=1 and n317=0 and n103=1
+n395 1 -> 0 when n253=1 and n62=1 and n135=1 and n392=1 and n268=1 and n42=0 and n344=1 and n259=1 and n111=0 and n339=1
+n38 1 -> 0 when n98=1 and n130=1
+n194 1 -> 0 when n211=1 and n40=0 and n255=0 and n135=0 and n25=1
+n348 0 -> 1 when n66=0 and n165=0 and n359=0 and n300=0
+n229 0 -> 1 when n240=0 and n303=0 and n116=1 and n13=1 and n206=1 and n335=0 and n201=1 and n139=0 and n334=0 and n347=0 and n91=1 and n140=1
+n241 0 -> 1 when n255=1
+n345 0 -> 1 when n68=0 and n46=0 and n180=0 and n179=1 and n267=0 and n115=0 and n70=1 and n89=1 and n187=1 and n280=0
+n262 0 -> 1 when n240=1
+n225 0 -> 1 when n220=1 and n41=1 and n360=1 and n164=1 and n278=0 and n135=1 and n149=1
+n253 0 -> 1 when n36=0 and n140=0 and n67=0 and n326=0 and n350=0 and n168=1 and n179=0 and n83=1 and n24=0 and n30=1 and n202=1
+n136 1 -> 0 when n363=1 and n43=0 and n238=1
+n273 1 -> 0 when n27=0 and n281=1 and n363=1 and n88=1
+n310 0 -> 1 when n269=0
+n301 1 -> 0 when n12=1 and n175=0
+n212 0 -> 1 when n271=0 and n289=1 and n359=0 and n152=0
+n349 0 -> 1 when n56=1 and n236=1 and n108=0 and n102=0 and n105=1 and n10=1 and n235=1
+n342 0 -> 1 when n68=1 and n398=0 and n153=1 and n321=0 and n260=1 and n74=1 and n231=0 and n313=0 and n381=1 and n316=0 and n389=0 and n220=1 and n114=0 and n134=0 and n31=0 and n349=1
+n98 0 -> 1 when n243=1 and n209=0 and n222=0 and n357=1 and n52=1 and n387=0
+n271 1 -> 0 when n241=0
+n202 0 -> 1 when n177=1 and n155=0 and n284=0 and n110=0 and n206=1 and n319=1 and n268=1
+n202 0 -> 1 when n176=0 and n192=0
+n266 0 -> 1 when n291=0 and n262=0 and n193=0 and n287=1 and n8=1 and n257=1
+n163 1 -> 0 when n338=0
+n267 0 -> 1 when n119=1 and n72=1 and n282=0 and n101=1 and n330=0 and n285=1
+n143 0 -> 1 when n89=0
+n266 1 -> 0 when n373=1 and n131=1
+n379 1 -> 0 when n66=1 and n245=0 and n72=1 and n89=0
+n47 1 -> 0 when n334=1
+n322 1 -> 0 when n141=0 and n387=0 and n98=0 and n358=0 and n80=0 and n374=0 and n73=1
+n283 0 -> 1 when n87=0 and n170=1 and n255=1 and n228=0 and n37=1
+n56 1 -> 0 when n267=1 and n106=1 and n76=0
+n49 1 -> 0 when n172=1 and n383=0 and n187=0 and n273=0 and n255=1 and n313=0 and n292=1 and n140=1 and n175=0 and n79=0 and n335=0
+n313 1 -> 0 when n33=0 and n157=0
+n197 1 -> 0 when n169=1 and n344=0 and n50=1 and n178=1 and n384=0 and n289=1 and n57=0
+n178 1 -> 0 when n391=1 and n332=1 and n60=1 and n88=1 and n283=1 and n277=1 and n294=1 and n76=1 and n150=1 and n345=1 and n288=1 and n259=1 and n369=0
+n146 0 -> 1 when n389=0 and n295=0 and n144=1 and n336=1 and n172=0 and n199=0 and n9=1 and n313=0 and n7=1 and n229=1 and n235=1
+n49 0 -> 1 when n270=0 and n360=0 and n28=1 and n276=1
+n398 0 -> 1 when n124=1 and n164=1 and n354=0 and n333=0 and n343=1 and n161=1 and n122=1
+n55 1 -> 0 when n181=0 and n9=1 and n66=1 and n33=1 and n333=0 and n265=0
+n367 1 -> 0 when n248=0
+n20 1 -> 0 when n242=1 and n329=0 and n233=1 and n138=1 and n35=0 and n13=1 and n330=1 and n388=1 and n219=1 and n256=1
+n332 0 -> 1 when n191=1
+n91 1 -> 0 when n37=0 and n338=1 and n189=0
+n6 1 -> 0 when n22=0 and n277=1 and n332=0 and n161=1 and n67=1 and n115=0 and n145=1 and n194=1 and n113=1 and n360=1
+n333 1 -> 0 when n40=1 and n386=0 and n15=1 and n224=0 and n388=1 and n89=0 and n90=0 and n334=0 and n6=0 and n377=0
+n49 0 -> 1 when n232=0 and n46=0 and n354=0 and n305=0 and n209=0 and n397=1 and n135=1
+n308 0 -> 1 when n183=0 and n180=1 and n100=0 and n203=1 and n35=1 and n393=1 and n120=1 and n238=0
+n113 1 -> 0 when n139=0
+n384 0 -> 1 when n253=1 and n242=1
+n60 0 -> 1 when n304=0 and n324=1 and n311=0 and n276=1
+n172 1 -> 0 when n224=1 and n307=0 and n364=0 and n51=0 and n19=1 and n300=1 and n122=0 and n236=1 and n164=1 and n102=0 and n304=1 and n330=1 and n273=1 and n248=0 and n394=1 and n370=1 and n22=1
+n330 0 -> 1 when n316=1 and n23=1 and n283=0 and n153=0 and n167=1 and n155=1
+n357 0 -> 1 when n1=0 and n107=1
+n103 1 -> 0 when n162=0 and n301=0 and n229=0 and n377=0 and n72=1 and n398=0 and n71=1 and n394=0 and n120=0 and n277=1 and n356=0 and n242=0 and n187=0 and n91=1 and n253=0 and n141=1 and n207=1 and n293=0 and n149=1 and n31=0 and n131=1 and n73=1 and n92=0
+n236 1 -> 0 when n333=1 and n210=1 and n172=0 and n294=1 and n149=1 and n330=0 and n175=1 and n220=1 and n134=1
+n189 1 -> 0 when n1=0 and n123=0 and n385=0 and n13=0 and n95=0 and n360=1
+n174 0 -> 1 when n72=0
+n316 0 -> 1 when n177=1 and n380=1
+n309 0 -> 1 when n115=1 and n278=1 and n224=1 and n159=1 and n208=1 and n31=0
+n19 1 -> 0 when n69=0 and n252=1 and n14=0 and n260=0 and n218=1 and n331=0
+n339 1 -> 0 when n99=1 and n127=0 and n332=0 and n344=0 and n291=1 and n34=1 and n57=0 and n395=0 and n238=0
+n352 1 -> 0 when n57=0
+n121 0 -> 1 when n247=0 and n72=0 and n156=1 and n138=1 and n78=1 and n144=1
+n12 0 -> 1 when n263=0
+n160 0 -> 1 when n206=1
+n393 1 -> 0 when n2=1 and n235=1 and n24=1 and n34=1 and n371=0 and n6=1 and n287=0 and n250=1 and n97=0 and n221=0
+n110 1 -> 0 when n169=1 and n284=1 and n112=1 and n151=0 and n270=1 and n190=0
+n110 1 -> 0 when n287=0 and n232=0 and n9=0 and n301=0
+n107 1 -> 0 when n124=0 and n392=1 and n340=1 and n271=1 and n195=1 and n23=1 and n31=1 and n215=0
+n214 0 -> 1 when n31=0 and n288=0 and n11=1 and n379=0 and n369=0 and n121=0
+n293 1 -> 0 when n201=0 and n280=0 and n142=1 and n50=0 and n115=0
+n310 1 -> 0 when n195=0 and n124=1
+n120 0 -> 1 when n199=1 and n330=0 and n43=0 and n361=1 and n207=0 and n7=0 and n211=1
+n101 1 -> 0 when n52=1 and n265=1 and n222=1 and n353=1 and n117=0
+n374 0 -> 1 when n347=1 and n213=0 and n204=1 and n243=1 and n231=1 and n395=0 and n230=0 and n233=1 and n77=0 and n210=0 and n88=1 and n194=0
+n398 0 -> 1 when n236=1 and n89=0 and n196=0 and n165=1 and n74=1
+n294 1 -> 0 when n331=1 and n48=1
+n33 1 -> 0 when n198=0 and n348=0 and n368=1 and n257=1 and n50=1 and n212=0
+n78 1 -> 0 when n80=1 and n126=0 and n265=0 and n172=1 and n366=1 and n306=0 and n242=1 and n77=0 and n261=1 and n11=0 and n71=0 and n379=0 and n315=1 and n291=1 and n238=0
+n36 0 -> 1 when n194=0 and n386=1 and n223=0 and n69=1
+n312 0 -> 1 when n94=0 and n367=0 and n18=1 and n134=1 and n49=1 and n123=0 and n102=1 and n350=1 and n232=1 and n347=1 and n62=0 and n159=1 and n158=0
+n374 0 -> 1 when n140=1
+n286 1 -> 0 when n44=0 and n90=1 and n54=0 and n235=1 and n393=1 and n115=1 and n213=1 and n278=0 and n1=0 and n254=0 and n170=1 and n398=1 and n397=1
+n74 1 -> 0 when n317=0 and n3=1 and n118=1
+n141 0 -> 1 when n29=0
+n89 0 -> 1 when n236=0 and n370=1
+n52 0 -> 1 when n40=1 and n73=1 and n5=1 and n234=1 and n387=0 and n33=0 and n309=0
+n282 0 -> 1 when n341=0 and n244=0 and n301=0 and n149=0 and n82=0 and n381=0 and n56=1 and n198=0
+n153 0 -> 1 when n160=1 and n399=1 and n244=1
+n274 1 -> 0 when n197=1 and n338=0 and n14=1 and n97=0 and n155=1
+n354 1 -> 0 when n241=1 and n69=0 and n99=1 and n84=0 and n271=0 and n237=1 and n225=1 and n23=1 and n244=1 and n337=0 and n133=1 and n202=0 and n387=1 and n331=1 and n61=0 and n355=1 and n321=1 and n327=0
+n351 1 -> 0 when n186=0 and n219=1 and n266=1 and n396=1 and n164=1
+n354 1 -> 0 when n312=0
+n385 0 -> 1 when n343=1
+n88 1 -> 0 when n276=1 and n44=0 and n323=0 and n237=1
+n348 1 -> 0 when n298=1
+n104 0 -> 1 when n30=0 and n82=0 and n262=0 and n343=1 and n165=0 and n308=1 and n362=0 and n287=1 and n395=0 and n334=0
+n124 1 -> 0 when n44=0 and n57=0
+n204 1 -> 0 when n297=0 and n248=0 and n90=1 and n15=1 and n187=1 and n183=0 and n205=1 and n302=1 and n235=1 and n327=0 and n191=1 and n17=0 and n244=1 and n101=1 and n318=0 and n383=1 and n299=0 and n223=1 and n119=0 and n266=0 and n76=0
+n26 1 -> 0 when n335=1 and n9=0 and n142=1 and n246=1
+n98 0 -> 1 when n325=0
+n39 1 -> 0 when n136=0 and n337=0
+n244 1 -> 0 when n195=1 and n147=1 and n89=0 and n50=0 and n226=1 and n177=1 and n303=0 and n366=0 and n379=0 and n316=1 and n143=0 and n20=1 and n363=0 and n172=1
+n12 0 -> 1 when n41=1 and n313=0 and n300=1
+n238 0 -> 1 when n35=1 and n279=1 and n344=1 and n112=1 and n162=0 and n179=1 and n195=1 and n14=0 and n8=0 and n135=0 and n394=1 and n84=0 and n253=1 and n269=0 and n310=1
+n299 1 -> 0 when n208=0
+n95 0 -> 1 when n1=0 and n393=0
+n324 1 -> 0 when n291=0 and n309=1 and n373=0 and n247=1
+n89 1 -> 0 when n51=1 and n63=0 and n134=1 and n293=1 and n138=1
+n145 1 -> 0 when n208=0
+n315 1 -> 0 when n387=0
+n45 0 -> 1 when n316=1 and n354=0 and n268=0 and n165=1 and n229=0 and n72=1 and n112=1 and n224=0 and n301=1 and n110=0 and n218=0 and n338=1
+n74 0 -> 1 when n60=1 and n28=1 and n336=1 and n364=0 and n218=1 and n188=0 and n141=0 and n7=0 and n138=1
+n11 0 -> 1 when n102=0
+n391 0 -> 1 when n37=1 and n288=0 and n291=0 and n361=0 and n267=1 and n367=1 and n56=1
+n132 0 -> 1 when n108=0 and n128=0 and n77=0 and n296=1 and n74=1
+n271 1 -> 0 when n80=1 and n25=0 and n325=0 and n61=0 and n293=1 and n273=0 and n381=1 and n203=0 and n150=1
+n200 0 -> 1 when n167=0 and n299=1 and n133=1
+n125 1 -> 0 when n306=1 and n280=0 and n160=1 and n135=0
+n48 1 -> 0 when n42=1 and n54=1 and n231=0 and n124=0 and n362=0 and n330=1 and n175=1 and n82=1 and n56=0 and n74=0 and n97=1 and n307=0 and n161=1 and n123=0 and n325=1 and n297=0 and n41=1 and n229=0
+n221 0 -> 1 when n68=0
+n223 1 -> 0 when n142=1 and n230=1
+n135 0 -> 1 when n320=0 and n304=1 and n138=1 and n9=1 and n214=0 and n111=0 and n235=1 and n29=1
+n87 1 -> 0 when n260=1 and n299=0 and n70=0
+n123 1 -> 0 when n159=1 and n128=0 and n97=0
+n363 1 -> 0 when n257=1
+n63 1 -> 0 when n276=0 and n169=1 and n292=1 and n183=0 and n151=1 and n334=1 and n351=0 and n3=1 and n143=1 and n244=0 and n365=1 and n362=1 and n187=1
+n74 1 -> 0 when n57=1 and n95=0 and n247=0 and n107=0 and n83=1 and n78=1 and n291=1 and n256=1 and n181=0 and n87=0 and n175=0 and n26=0 and n73=0 and n257=0 and n69=1
+n271 1 -> 0 when n122=1 and n337=1 and n181=1 and n302=0 and n84=1 and n19=1
+n217 1 -> 0 when n158=1 and n29=1 and n64=0 and n165=1 and n307=0
+n60 1 -> 0 when n338=0 and n307=0 and n15=1 and n195=0 and n216=1 and n5=1 and n104=0 and n159=1 and n400=1 and n303=1 and n32=0 and n375=1 and n243=0 and n211=1 and n164=0 and n287=1 and n370=1 and n221=1 and n347=1 and n341=1 and n219=0 and n16=0 and n329=0 and n218=1 and n360=0
+n310 1 -> 0 when n96=0 and n353=0 and n161=0 and n69=1 and n82=1 and n34=1 and n131=0 and n222=1 and n29=0 and n68=1 and n221=0 and n60=1 and n46=1 and n3=0 and n204=0
+n302 0 -> 1 when n353=0 and n155=1
+n318 1 -> 0 when n143=0 and n114=0 and n197=1 and n146=1 and n387=0 and n370=1
+n42 0 -> 1 when n220=0 and n7=1 and n112=1 and n308=0
+n388 1 -> 0 when n298=1 and n283=1 and n395=0
+n342 1 -> 0 when n147=0
+n125 0 -> 1 when n362=1 and n92=1 and n102=1 and n34=1 and n124=0 and n195=1 and n253=1 and n304=1 and n29=1
+n82 0 -> 1 when n294=0 and n218=1 and n150=1 and n68=1 and n317=1 and n182=0 and n130=0
+n305 1 -> 0 when n264=0 and n43=0 and n112=1 and n362=0 and n225=0 and n107=0 and n364=0 and n148=1 and n69=0 and n332=0 and n379=1 and n141=0 and n186=1 and n54=1 and n162=1 and n9=0 and n205=0
+n181 0 -> 1 when n365=0 and n292=0
+n123 0 -> 1 when n228=0 and n189=0
+n400 0 -> 1 when n303=1 and n237=0 and n327=0 and n122=1 and n394=0 and n350=1 and n222=1 and n198=0 and n372=0 and n210=0 and n165=0 and n163=1 and n158=0
+n340 1 -> 0 when n296=0 and n122=1 and n339=1
+n245 0 -> 1 when n261=1 and n215=1 and n240=1 and n225=1 and n204=1 and n253=1 and n292=1 and n74=0 and n58=0 and n45=1 and n255=0 and n359=1 and n180=0 and n289=0
+n317 0 -> 1 when n291=1 and n34=1 and n310=1
+n358 0 -> 1 when n324=0 and n237=1 and n236=0 and n247=0 and n101=0 and n293=1 and n47=1
+n188 0 -> 1 when n272=0
+n317 0 -> 1 when n121=0 and n1=0 and n294=0
+n91 0 -> 1 when n313=0 and n226=0 and n155=1 and n5=1 and n156=1
+n137 0 -> 1 when n28=0 and n96=0 and n152=1 and n127=0
+n147 1 -> 0 when n378=1 and n178=1 and n135=0 and n138=1
+n347 0 -> 1 when n395=0 and n272=0 and n286=1 and n339=0 and n260=1 and n130=1
+n266 1 -> 0 when n334=1 and n30=1 and n5=1 and n361=0 and n111=1 and n143=0 and n319=0 and n194=0 and n287=0 and n237=1 and n239=0
+n50 0 -> 1 when n381=0 and n368=0 and n29=0 and n299=1 and n36=1 and n188=1 and n95=1 and n309=0 and n145=0 and n165=0 and n32=1 and n192=1 and n97=0
+n98 1 -> 0 when n291=1 and n24=0 and n386=1
+n159 0 -> 1 when n227=0 and n254=1 and n198=0 and n390=0 and n112=1 and n100=0 and n200=1 and n215=1 and n244=1 and n257=0 and n292=1 and n260=1 and n329=0 and n44=1 and n235=0 and n15=1 and n331=0 and n302=0 and n18=0 and n111=0 and n121=0 and n71=0
+n202 1 -> 0 when n99=1 and n19=1 and n81=0 and n203=0 and n17=1
+n51 0 -> 1 when n130=1 and n2=0 and n99=1 and n259=0
+n99 1 -> 0 when n377=1 and n89=0 and n13=0 and n48=1 and n137=0 and n49=1 and n17=0 and n29=1 and n361=1 and n196=1 and n292=1 and n298=0 and n46=0 and n237=0
+n253 0 -> 1 when n102=1 and n2=1
+n238 1 -> 0 when n228=1 and n127=0 and n44=1 and n8=1 and n169=0 and n398=0
+n164 1 -> 0 when n65=0 and n145=1 and n382=1
+n77 0 -> 1 when n21=1 and n213=0 and n329=0 and n34=0 and n352=0 and n209=1 and n212=1 and n384=0 and n277=1 and n300=1 and n56=0
+n51 0 -> 1 when n376=1 and n231=0 and n128=1 and n178=0
+n129 0 -> 1 when n75=1 and n255=1 and n243=0 and n207=1 and n13=1
+n224 0 -> 1 when n146=1
+n67 0 -> 1 when n251=1 and n191=0 and n222=1 and n198=0 and n142=1 and n210=0 and n336=0 and n183=0
+n381 1 -> 0 when n11=1 and n247=1 and n308=1 and n326=1
+n269 1 -> 0 when n271=1
+n283 1 -> 0 when n134=1 and n159=0 and n400=1 and n371=0 and n288=0 and n124=1 and n117=0 and n67=0
+n121 1 -> 0 when n77=1
+n340 0 -> 1 when n378=1 and n385=0
+n222 1 -> 0 when n24=0 and n320=1 and n316=1 and n225=0 and n374=1 and n323=0 and n139=0
+n327 0 -> 1 when n96=1 and n183=0 and n386=1 and n220=1
+n387 1 -> 0 when n347=1 and n124=1 and n233=1 and n256=1 and n72=1 and n400=0
+n312 1 -> 0 when n31=0 and n315=0 and n121=1 and n359=0 and n384=0
+n304 1 -> 0 when n350=0 and n396=1 and n249=0 and n131=1 and n187=1 and n116=1 and n20=0
+n270 0 -> 1 when n183=1 and n15=1 and n101=0 and n91=0 and n349=0
+n134 0 -> 1 when n352=0 and n197=1 and n85=0 and n184=0 and n93=1 and n375=0 and n274=0
+n10 1 -> 0 when n225=1 and n195=0 and n351=1 and n102=1 and n329=0 and n25=0
+n194 0 -> 1 when n243=1 and n303=0 and n270=1 and n159=0 and n215=1 and n204=1 and n309=0 and n205=0 and n288=1 and n6=1 and n213=1 and n144=0 and n79=0 and n331=0
+n228 1 -> 0 when n393=1 and n195=1
+n192 0 -> 1 when n329=1 and n119=1 and n4=1
+n218 1 -> 0 when n347=1 and n129=1 and n285=1 and n89=1 and n222=1 and n354=0
+n299 1 -> 0 when n32=1
+n376 1 -> 0 when n285=0 and n95=1 and n187=1
+n363 1 -> 0 when n103=0 and n219=1 and n38=1 and n30=0 and n387=0 and n316=1
+n297 0 -> 1 when n116=0 and n394=1 and n204=1 and n255=1
+n268 0 -> 1 when n188=0 and n28=1 and n367=1 and n369=1 and n166=1 and n212=1 and n229=0 and n235=0 and n390=1 and n26=1
+n90 1 -> 0 when n398=0 and n150=0 and n69=1
+n1 1 -> 0 when n395=1 and n133=0 and n347=1 and n271=1
+n386 0 -> 1 when n300=0 and n338=1
+n342 0 -> 1 when n334=1 and n166=1
+n25 0 -> 1 when n100=1 and n9=0
+n34 0 -> 1 when n62=1 and n281=1 and n393=1 and n43=0
+n115 0 -> 1 when n93=1
+n325 1 -> 0 when n46=0 and n353=0 and n185=0 and n12=0
+n287 1 -> 0 when n129=1 and n139=1 and n284=1 and n321=1 and n259=1 and n171=1 and n128=0 and n112=0
+n222 1 -> 0 when n192=1 and n169=0 and n41=0 and n90=1 and n259=1 and n358=0 and n269=0 and n147=0 and n364=0
+n235 0 -> 1 when n370=0 and n88=1 and n234=1 and n57=0 and n131=1 and n241=1 and n11=0
+n124 0 -> 1 when n317=1
+n279 0 -> 1 when n39=1 and n290=0 and n196=1 and n113=0 and n278=0 and n84=0 and n218=1 and n356=1 and n115=1 and n213=1 and n16=0 and n226=1 and n364=0 and n87=0 and n157=1
+n79 1 -> 0 when n298=0
+n267 1 -> 0 when n336=1 and n381=0 and n204=0
+n192 1 -> 0 when n46=1
+n277 1 -> 0 when n129=1 and n50=0 and n33=0 and n65=1 and n367=1 and n333=0
+n241 1 -> 0 when n38=1 and n169=1 and n301=0
+n346 1 -> 0 when n390=0 and n345=0 and n8=0 and n10=1 and n196=0
+n163 1 -> 0 when n192=0 and n261=1 and n21=0 and n166=1 and n16=1 and n92=0 and n187=1 and n136=0 and n230=1 and n179=1 and n234=0 and n396=1 and n47=1 and n94=0 and n374=0 and n87=0 and n357=0 and n227=0
+n159 0 -> 1 when n120=0 and n203=1 and n327=0 and n228=0
+n24 1 -> 0 when n296=1 and n385=0 and n272=1 and n315=1 and n261=1
+n337 0 -> 1 when n140=1
+n99 1 -> 0 when n113=1
+n309 1 -> 0 when n202=1 and n349=0 and n190=0
+n46 1 -> 0 when n39=1 and n22=1 and n377=1 and n47=0
+n194 1 -> 0 when n4=0
+n42 1 -> 0 when n68=0 and n167=1
+n169 1 -> 0 when n154=0
+n212 0 -> 1 when n54=0 and n113=1 and n276=1 and n363=1 and n192=1 and n396=0 and n172=0 and n120=1 and n217=1 and n257=0 and n196=1 and n319=1 and n306=1 and n384=1
+n325 1 -> 0 when n306=0 and n115=1 and n194=1
+n135 0 -> 1 when n232=1 and n103=1 and n267=1 and n244=1 and n396=1 and n277=0 and n353=1 and n229=0
+n117 0 -> 1 when n278=1 and n292=0 and n94=1 and n176=1 and n28=1 and n262=1 and n263=1 and n215=0
+n219 1 -> 0 when n9=1 and n124=0 and n397=0 and n392=1
+n188 1 -> 0 when n117=1 and n90=1 and n183=0 and n18=0
+n279 0 -> 1 when n120=0 and n181=1 and n372=1 and n18=1 and n233=0 and n204=0 and n143=0
+n109 1 -> 0 when n112=0 and n200=1 and n67=1
+n152 1 -> 0 when n297=1 and n134=0 and n386=0 and n288=1 and n160=0 and n259=1 and n111=0 and n225=1
+n22 1 -> 0 when n341=1 and n283=1 and n158=1 and n13=1
+n323 1 -> 0 when n340=0 and n380=0 and n290=1 and n279=1 and n14=1
+n179 0 -> 1 when n99=0 and n240=1 and n223=0 and n312=0 and n363=0 and n85=0 and n396=1 and n380=0
+n310 0 -> 1 when n73=0 and n373=1 and n11=1 and n325=1
+n306 0 -> 1 when n178=1 and n205=0 and n113=1
+n383 0 -> 1 when n297=1
+n200 1 -> 0 when n25=1 and n365=1
+n102 1 -> 0 when n37=0 and n106=1 and n36=0 and n260=0
+n373 1 -> 0 when n245=1 and n21=1 and n234=0 and n397=1 and n378=0
+n348 1 -> 0 when n74=0 and n315=0 and n206=1 and n223=0
+n385 1 -> 0 when n88=0 and n284=0
+n186 1 -> 0 when n18=1 and n4=1 and n371=0 and n204=0 and n336=0
+n300 1 -> 0 when n334=1 and n176=0 and n184=0 and n24=0 and n347=0 and n98=0
+n105 0 -> 1 when n377=0 and n224=1 and n68=0 and n157=0 and n114=0 and n271=1 and n133=1
+n15 1 -> 0 when n375=1 and n35=1 and n63=1 and n283=1 and n91=1 and n195=0 and n303=0 and n393=1 and n246=1 and n277=0 and n41=0 and n318=0 and n86=0 and n102=0 and n288=1 and n255=0 and n204=1 and n350=0
+n395 0 -> 1 when n128=1 and n275=1 and n377=0 and n342=1 and n224=1 and n214=1 and n380=0 and n315=0 and n56=1 and n90=0 and n288=0 and n21=0 and n70=1 and n26=1 and n35=1 and n210=0 and n171=1
+n83 0 -> 1 when n186=0 and n369=1 and n335=0 and n370=0 and n396=0
+n316 0 -> 1 when n126=1 and n188=0
+n268 0 -> 1 when n160=1 and n171=0 and n49=0 and n84=1 and n391=0 and n303=1
+n18 0 -> 1 when n394=0 and n53=1
+n284 1 -> 0 when n108=0
+n251 1 -> 0 when n153=1
+n279 0 -> 1 when n114=1 and n40=0
+n19 1 -> 0 when n390=0 and n121=0
+n321 0 -> 1 when n224=0 and n62=0 and n250=0
+n337 0 -> 1 when n363=0 and n207=0 and n24=0
+n268 1 -> 0 when n43=1 and n5=0 and n297=1
+n95 0 -> 1 when n205=1 and n113=0 and n389=1 and n52=1
+n121 1 -> 0 when n26=1 and n340=0 and n134=0 and n327=1 and n375=0
+n209 1 -> 0 when n146=0 and n379=1 and n128=1 and n393=1
+n350 0 -> 1 when n207=1 and n174=0 and n35=1 and n293=0
+n3 1 -> 0 when n360=1 and n20=1 and n320=0
+n20 0 -> 1 when n118=1 and n164=1 and n30=0 and n104=1
+n24 0 -> 1 when n320=1 and n175=1
+n155 1 -> 0 when n327=1 and n44=0
+n305 0 -> 1 when n200=1 and n121=0 and n266=0 and n85=1 and n133=0 and n123=0
+n28 0 -> 1 when n172=1 and n382=0 and n312=0
+n41 1 -> 0 when n259=1 and n140=0 and n132=0 and n94=1 and n201=1 and n399=1 and n263=0 and n340=1 and n124=0 and n374=0 and n111=0 and n308=0 and n167=1 and n33=1 and n86=1 and n148=1 and n79=0 and n158=0 and n80=1 and n91=0 and n182=1
+n39 0 -> 1 when n54=1 and n182=1 and n95=0 and n124=1 and n156=1 and n61=1 and n21=0 and n109=1 and n151=0 and n147=1
+n350 1 -> 0 when n59=0 and n42=0 and n220=0 and n396=1 and n186=1
+n308 0 -> 1 when n204=1 and n184=1 and n35=1 and n121=0 and n236=0 and n2=0 and n230=1 and n342=0
+n99 1 -> 0 when n274=1 and n300=0 and n389=0 and n121=0 and n228=1 and n66=0 and n212=1 and n76=0 and n116=0
+n310 0 -> 1 when n387=1 and n60=0
+n81 0 -> 1 when n99=1 and n175=1 and n22=0 and n246=0 and n154=0 and n365=1 and n147=0 and n349=1 and n39=1
+n93 1 -> 0 when n296=1
+n262 1 -> 0 when n254=0 and n388=1 and n65=0 and n371=1
+n35 1 -> 0 when n315=0 and n273=1
+n46 0 -> 1 when n55=1
+n3 1 -> 0 when n223=1 and n78=1 and n301=1 and n377=0 and n200=0 and n291=1 and n236=0 and n164=0 and n235=0 and n136=1 and n186=1 and n43=1 and n101=1 and n284=1
+n278 1 -> 0 when n100=0 and n69=0 and n283=0 and n215=0
+n265 1 -> 0 when n392=1 and n72=0
+n287 0 -> 1 when n371=0
+n214 0 -> 1 when n111=0 and n167=0
+n257 1 -> 0 when n64=1
+n271 1 -> 0 when n278=0
+n322 0 -> 1 when n44=0 and n287=1 and n200=1 and n371=1 and n314=1 and n178=0 and n6=0 and n193=0
+n158 1 -> 0 when n225=1 and n3=0 and n336=0 and n148=1 and n145=1 and n216=1 and n212=1 and n286=1 and n83=0 and n277=1 and n365=1 and n200=1
+n189 1 -> 0 when n314=0 and n216=0 and n39=1 and n259=1 and n241=1
+n214 0 -> 1 when n72=0 and n239=1 and n362=0
+n251 1 -> 0 when n312=0 and n80=1 and n265=0 and n97=0 and n372=0 and n239=0 and n379=1
+n160 1 -> 0 when n400=0
+n211 0 -> 1 when n18=1
+n57 1 -> 0 when n269=0 and n207=1 and n369=0 and n373=0
+n253 0 -> 1 when n149=1 and n219=0 and n216=1 and n245=1 and n252=1 and n173=0 and n354=1 and n74=1 and n271=1 and n318=1
+n392 1 -> 0 when n48=1 and n15=1 and n76=1
+n89 0 -> 1 when n182=1 and n227=1 and n359=1 and n72=0 and n360=0 and n367=0 and n246=1 and n241=0 and n88=0 and n398=0 and n324=0 and n297=0 and n221=1 and n259=1 and n73=0 and n304=0 and n52=0 and n8=1
+n347 1 -> 0 when n56=0 and n65=1 and n179=0 and n89=0 and n172=0 and n43=0 and n25=1 and n106=1 and n2=1
+n112 1 -> 0 when n372=0 and n58=1 and n318=0 and n276=0
+n52 1 -> 0 when n321=0 and n324=1
+n394 0 -> 1 when n94=1 and n81=0 and n209=1 and n367=0 and n347=0 and n250=1 and n29=0 and n296=1 and n125=1 and n246=1 and n120=0
+n227 1 -> 0 when n150=1 and n344=0 and n203=0 and n232=0 and n349=0
+n213 1 -> 0 when n303=1 and n282=1 and n26=0 and n353=0 and n179=1
+n314 1 -> 0 when n273=1
+n178 1 -> 0 when n77=1 and n239=0 and n121=0 and n16=1 and n5=0 and n41=1 and n370=0 and n226=0 and n334=0 and n375=1 and n114=0 and n263=1 and n215=0 and n277=1 and n359=1 and n83=0 and n1=1 and n250=0 and n86=1
+n83 1 -> 0 when n358=1 and n378=0 and n158=1 and n263=1
+n68 0 -> 1 when n175=1 and n9=0
+n349 0 -> 1 when n109=1 and n52=1 and n219=0 and n310=0 and n164=0 and n240=1 and n345=1 and n213=0 and n384=0 and n282=1
+n97 0 -> 1 when n223=1
+n75 0 -> 1 when n184=0 and n39=0 and n91=0 and n331=0 and n363=0 and n57=1 and n248=0 and n244=1 and n66=1 and n99=0 and n60=0 and n53=1 and n251=1 and n290=1 and n329=0 and n17=0 and n387=0
+n316 0 -> 1 when n324=0 and n153=0 and n82=0 and n386=0
+n30 1 -> 0 when n157=0 and n226=1 and n311=1
+n115 0 -> 1 when n232=0 and n305=0 and n96=1 and n342=0 and n126=0 and n274=1 and n280=0 and n389=0 and n258=0 and n378=1 and n321=0 and n228=0 and n233=0
+n143 1 -> 0 when n264=0 and n184=1 and n278=1 and n80=0 and n291=0
+n344 1 -> 0 when n305=1
+n115 0 -> 1 when n218=1 and n326=0 and n299=1 and n173=0 and n309=0 and n293=0 and n261=0 and n120=0 and n398=1 and n141=1
+n61 0 -> 1 when n149=0 and n291=0 and n244=0 and n304=1 and n368=1 and n394=0 and n8=1 and n95=1 and n307=1 and n92=1 and n75=0 and n318=1
+n55 1 -> 0 when n216=1 and n228=1 and n385=0 and n179=0 and n145=0 and n197=0 and n279=1 and n170=0 and n12=0
+n303 0 -> 1 when n119=1 and n326=1
+n264 1 -> 0 when n26=0 and n171=1 and n387=0 and n114=0
+n319 1 -> 0 when n200=1 and n85=1 and n26=1
+n314 0 -> 1 when n337=0
+n370 1 -> 0 when n152=0
+n336 1 -> 0 when n174=0 and n93=0 and n387=1 and n352=0
+n388 1 -> 0 when n378=1 and n153=0 and n13=0
+n384 1 -> 0 when n314=0
+n124 1 -> 0 when n14=0 and n229=1 and n77=0 and n87=1 and n277=1
+n303 1 -> 0 when n16=0 and n214=0 and n284=1 and n362=0 and n113=1 and n365=0
+n25 0 -> 1 when n362=0 and n395=1 and n32=1 and n158=0 and n17=0 and n160=1 and n122=0 and n113=0 and n225=0 and n292=1
+n57 1 -> 0 when n179=0 and n4=0 and n36=0 and n1=1 and n262=1 and n374=0 and n277=0 and n110=1 and n24=1 and n201=1 and n379=1 and n222=0
+n118 0 -> 1 when n288=1 and n299=1
+n339 1 -> 0 when n148=1
+n276 1 -> 0 when n141=1 and n195=1
+n344 0 -> 1 when n73=0 and n223=1
+n385 0 -> 1 when n296=0 and n86=1 and n369=1 and n60=1
+n175 1 -> 0 when n233=1 and n10=0
+n24 1 -> 0 when n325=1 and n233=1 and n369=0 and n148=1
+n369 1 -> 0 when n67=1 and n253=0 and n196=1 and n157=1 and n246=0 and n329=0 and n381=0 and n129=1 and n153=0 and n364=0 and n103=1 and n72=0
+n210 0 -> 1 when n178=1 and n161=1 and n180=0 and n322=1
+n398 1 -> 0 when n129=1 and n17=0
+n17 1 -> 0 when n333=1
+n215 0 -> 1 when n134=1
+n63 1 -> 0 when n344=0
+n299 0 -> 1 when n223=1 and n390=1 and n356=1
+n291 0 -> 1 when n331=1 and n229=1 and n2=0 and n168=0 and n367=0
+n136 1 -> 0 when n383=1 and n59=1 and n2=0 and n34=0 and n62=0 and n196=1 and n201=1 and n294=1 and n125=0 and n100=0 and n165=1 and n363=1 and n151=1 and n76=0 and n33=1 and n349=0 and n21=1 and n280=0
+n7 1 -> 0 when n79=0 and n393=1 and n129=1 and n93=1 and n209=1 and n261=1 and n330=1 and n67=0
+n27 1 -> 0 when n304=1 and n197=1 and n92=0
+n149 0 -> 1 when n43=1 and n53=0 and n204=1 and n11=0 and n172=0 and n128=0
+n42 0 -> 1 when n366=0 and n151=1
+n162 0 -> 1 when n369=0 and n315=0 and n91=1 and n185=1 and n373=0 and n199=1 and n35=0 and n287=1 and n330=1 and n81=0 and n1=0 and n109=1 and n103=0 and n101=1
+n216 1 -> 0 when n174=1
+n78 0 -> 1 when n17=1 and n208=1 and n185=0 and n157=1 and n151=1 and n226=0 and n341=0 and n152=1 and n149=0 and n322=0
+n261 1 -> 0 when n179=1 and n51=1 and n19=1 and n295=0 and n112=1 and n211=0 and n222=1
+n292 1 -> 0 when n82=0 and n40=1 and n146=1 and n88=1 and n69=0
+n83 0 -> 1 when n62=1 and n375=1 and n75=0 and n2=0 and n200=1 and n172=0 and n335=0 and n177=0 and n110=0 and n25=0
+n238 1 -> 0 when n128=0 and n71=1
+n397 0 -> 1 when n322=1 and n346=1 and n252=0 and n310=0 and n206=1 and n363=1 and n308=0 and n52=1 and n396=0 and n128=1
+n81 0 -> 1 when n142=0 and n74=0
+n37 1 -> 0 when n328=1 and n336=0
+n309 1 -> 0 when n244=1 and n297=0 and n179=0 and n390=0 and n65=0 and n64=1 and n37=1 and n257=0 and n284=1 and n116=0 and n60=0 and n361=1 and n208=1 and n25=0 and n269=0 and n308=0 and n337=0 and n353=0 and n166=1 and n232=1 and n324=1 and n71=0 and n54=1 and n180=0 and n366=0 and n127=1 and n201=1 and n147=1 and n19=1 and n367=1 and n59=1 and n155=1 and n313=0 and n91=0 and n20=0 and n16=1 and n142=0 and n124=1 and n320=0
+n344 0 -> 1 when n184=0 and n145=1
+n235 1 -> 0 when n101=0
+n168 0 -> 1 when n294=0
+n294 0 -> 1 when n120=1 and n233=0
+n335 1 -> 0 when n82=0 and n299=0 and n61=0
+n84 0 -> 1 when n72=1
+n48 1 -> 0 when n274=0
+n315 0 -> 1 when n182=1
+n101 0 -> 1 when n48=1 and n22=1 and n114=0 and n102=1 and n195=1 and n23=0
+n25 0 -> 1 when n230=1 and n163=0 and n44=0 and n218=0 and n106=1 and n179=0 and n239=1 and n400=0 and n16=0 and n140=0 and n229=0 and n69=0 and n262=0 and n185=1 and n194=0 and n251=0
+n385 1 -> 0 when n52=1
+n377 1 -> 0 when n53=1
+n20 0 -> 1 when n358=0 and n392=0 and n57=1
+n242 0 -> 1 when n258=1 and n49=1 and n357=0 and n251=1
+n329 0 -> 1 when n247=1 and n52=0 and n397=0 and n292=1 and n133=1 and n37=1 and n385=1
+n341 0 -> 1 when n179=0 and n183=1
+n397 0 -> 1 when n214=1 and n305=0
+n33 1 -> 0 when n56=1 and n310=0 and n120=1 and n131=0
+n64 0 -> 1 when n221=1
+n318 0 -> 1 when n249=1 and n188=1 and n23=0 and n21=0 and n292=1 and n176=1 and n186=0 and n170=0
+n218 1 -> 0 when n160=1 and n180=0 and n91=1 and n235=0 and n27=1 and n171=1 and n173=1 and n35=1
+n343 1 -> 0 when n9=1 and n338=0 and n378=0 and n125=1 and n391=1 and n243=1
+n233 0 -> 1 when n280=0 and n243=1 and n283=0 and n295=1 and n85=1 and n78=0 and n189=0 and n377=1 and n181=0
+n50 1 -> 0 when n355=1 and n80=1
+n338 1 -> 0 when n362=1 and n295=0
+n246 0 -> 1 when n95=0 and n287=0
+n197 1 -> 0 when n283=1 and n251=0 and n115=0 and n161=1 and n315=0 and n344=1
+n128 0 -> 1 when n187=1 and n394=1
+n110 0 -> 1 when n236=0 and n112=1
+n53 1 -> 0 when n303=0
+n95 0 -> 1 when n312=0 and n223=1 and n269=0 and n109=1
+n235 0 -> 1 when n180=0 and n159=0 and n47=0 and n388=0 and n11=0
+n240 0 -> 1 when n267=1 and n374=1 and n198=0
+n361 0 -> 1 when n241=1 and n359=1
+n236 1 -> 0 when n14=1
+n237 0 -> 1 when n349=1 and n166=1 and n226=1 and n112=1
+n22 1 -> 0 when n330=1 and n287=0 and n203=0 and n67=1 and n265=1 and n320=0 and n80=1 and n26=1 and n14=0 and n3=1
+n86 1 -> 0 when n314=1
+n387 0 -> 1 when n329=1 and n291=0 and n175=1 and n141=0
+n162 0 -> 1 when n8=1 and n132=0 and n17=0 and n204=0 and n197=0 and n147=1 and n85=0 and n185=0 and n356=1 and n145=0
+n360 0 -> 1 when n147=1 and n374=1
+n31 0 -> 1 when n3=1 and n199=0 and n177=1 and n216=1 and n133=1 and n202=1
+n195 1 -> 0 when n59=0 and n221=1
+n167 0 -> 1 when n140=1 and n329=1 and n58=1 and n245=1 and n341=0 and n313=0 and n224=0 and n320=1
+n193 1 -> 0 when n235=0 and n157=0 and n90=0 and n30=1 and n57=0 and n118=1 and n16=1 and n13=1 and n75=1 and n144=1 and n392=1
+n388 0 -> 1 when n195=0 and n225=1 and n318=0 and n366=0 and n71=0 and n204=1 and n126=0 and n207=0 and n330=1
+n164 1 -> 0 when n141=1 and n193=1 and n126=1 and n371=1
+n264 1 -> 0 when n242=0 and n302=0 and n41=0 and n231=0 and n163=1 and n35=0 and n185=1 and n229=1 and n363=0 and n47=0
+n272 0 -> 1 when n320=1 and n4=1 and n263=0
+n267 1 -> 0 when n355=1 and n311=0 and n24=0 and n212=1
+n12 1 -> 0 when n101=1 and n395=0 and n370=1 and n105=0 and n16=0 and n303=1 and n92=0 and n65=1
+n348 0 -> 1 when n238=0 and n389=1 and n190=0
+n209 0 -> 1 when n172=1 and n121=1 and n195=1 and n173=0 and n229=0 and n196=0 and n34=1
+n88 1 -> 0 when n244=1 and n246=0
+n139 1 -> 0 when n272=1 and n36=1 and n285=0 and n270=0
+n126 0 -> 1 when n51=1 and n214=0 and n231=0 and n48=0 and n346=1 and n208=1 and n77=1 and n135=1 and n105=0 and n108=1 and n143=1 and n141=0 and n261=1 and n292=0 and n194=0 and n98=1 and n20=0
+n355 1 -> 0 when n142=1 and n56=0
+n20 1 -> 0 when n184=0 and n242=0 and n79=0
+n7 1 -> 0 when n147=0 and n60=1 and n111=0 and n285=0 and n328=0 and n135=1 and n180=0 and n202=1 and n22=1 and n117=1 and n116=0 and n344=1 and n3=1 and n182=1 and n222=1
+n91 0 -> 1 when n218=0 and n330=1
+n56 0 -> 1 when n18=1 and n134=1 and n82=1 and n74=1 and n37=0 and n222=1
+n392 0 -> 1 when n120=0 and n219=1 and n330=0 and n250=1 and n173=1 and n161=0
+n355 1 -> 0 when n279=1 and n252=1 and n198=1 and n208=1 and n147=1 and n295=1 and n257=0 and n331=0 and n86=0
+n319 0 -> 1 when n230=0 and n291=0 and n314=1 and n70=0 and n148=0 and n325=0 and n327=1 and n293=0 and n194=1 and n27=1
+n167 1 -> 0 when n121=0 and n139=0 and n371=0
+n333 1 -> 0 when n273=1 and n393=1 and n5=1
+n33 1 -> 0 when n312=0 and n146=0 and n133=0 and n201=0 and n190=0 and n320=0 and n386=1 and n251=0 and n193=1 and n183=1 and n231=0 and n61=1
+n121 1 -> 0 when n124=1 and n234=0 and n212=1
+n379 0 -> 1 when n149=1
+n222 0 -> 1 when n384=1 and n103=1 and n315=1 and n347=1
+n105 1 -> 0 when n245=1 and n85=1 and n49=1 and n358=0 and n226=1 and n238=0
+n353 0 -> 1 when n1=1 and n345=0 and n359=1 and n390=1
+n317 1 -> 0 when n80=1 and n230=0
+n139 1 -> 0 when n236=1 and n238=0 and n371=0 and n281=0 and n307=0 and n92=0
+n391 1 -> 0 when n44=1 and n357=0 and n160=1 and n145=1
+n135 0 -> 1 when n360=0 and n331=0 and n123=1 and n143=0
+n208 1 -> 0 when n205=0
+n317 1 -> 0 when n366=1
+n230 0 -> 1 when n59=1 and n278=0 and n82=0 and n176=1 and n36=1 and n16=1 and n203=1 and n153=1 and n23=1 and n218=0 and n366=1 and n279=0
+n171 0 -> 1 when n321=1 and n206=1 and n54=1 and n271=1 and n395=0 and n91=0
+n296 1 -> 0 when n29=0 and n227=1 and n113=1 and n127=1 and n145=1 and n2=1 and n26=0
+n387 1 -> 0 when n230=0 and n263=0 and n147=0 and n375=1 and n74=1 and n381=0 and n155=0 and n85=0
+n97 0 -> 1 when n246=0 and n192=0 and n24=1 and n27=0 and n315=1 and n300=0 and n391=1 and n23=0 and n160=1 and n1=1
+n280 1 -> 0 when n396=0 and n118=1 and n284=0 and n391=0 and n87=0 and n182=1 and n196=1 and n249=1 and n174=0 and n309=1 and n25=0
+n102 1 -> 0 when n351=0 and n64=1
+n33 0 -> 1 when n173=0 and n174=0
+n119 1 -> 0 when n399=1 and n271=0 and n228=0 and n23=1 and n6=1 and n62=0 and n67=1 and n94=1 and n200=0
+n15 1 -> 0 when n322=1 and n134=1 and n380=0 and n214=0 and n30=1 and n207=1 and n142=1
+n192 0 -> 1 when n60=1
+n398 1 -> 0 when n356=0 and n270=1 and n4=1 and n179=1 and n329=1 and n48=1 and n98=0 and n39=1 and n325=0 and n269=1
+n126 1 -> 0 when n38=0 and n212=0 and n265=0 and n341=1 and n261=1
+n46 0 -> 1 when n20=1 and n99=1 and n320=1 and n394=1 and n19=0 and n244=0 and n22=0 and n86=1 and n138=1
+n192 0 -> 1 when n29=0 and n393=1 and n259=0 and n62=0 and n227=0
+n92 1 -> 0 when n303=1
+n273 1 -> 0 when n103=1 and n229=0
+n179 0 -> 1 when n72=0 and n227=1
+n380 0 -> 1 when n99=0 and n86=0 and n363=1 and n232=1 and n315=0 and n175=0
+n389 1 -> 0 when n371=0 and n121=0
+n316 1 -> 0 when n118=0
+n387 1 -> 0 when n63=0 and n9=0 and n392=1 and n166=1
+n119 0 -> 1 when n80=0
+n171 0 -> 1 when n16=1 and n78=0 and n333=1 and n142=0 and n234=0 and n399=1
+n391 0 -> 1 when n35=0 and n136=0 and n323=0 and n342=0 and n302=0 and n204=0 and n360=0 and n86=0 and n392=1 and n185=0 and n255=0 and n277=1 and n393=1 and n313=0 and n72=1
+n357 0 -> 1 when n245=1 and n365=1 and n186=1
+n254 1 -> 0 when n140=0 and n223=0
+n283 0 -> 1 when n379=1 and n102=0 and n316=0 and n266=0 and n347=1 and n346=1 and n26=0 and n269=0 and n98=1
+n149 1 -> 0 when n12=1 and n74=0 and n161=0 and n380=0 and n304=0
+n370 1 -> 0 when n110=0 and n366=1 and n288=0 and n171=0 and n324=0
+n259 0 -> 1 when n335=1
+n390 0 -> 1 when n148=1 and n5=1 and n248=0 and n304=1
+n358 1 -> 0 when n44=0 and n132=0 and n264=1 and n49=1 and n39=0 and n352=1 and n273=0 and n330=1 and n25=1 and n240=0
+n60 0 -> 1 when n235=0
+n399 0 -> 1 when n24=1 and n199=0 and n109=0 and n400=0 and n397=1
+n213 1 -> 0 when n274=1 and n291=0
+n289 1 -> 0 when n119=0
+n363 0 -> 1 when n166=0 and n314=0 and n306=1 and n102=1 and n21=0 and n294=0 and n220=0 and n340=0 and n133=1 and n341=1 and n124=1 and n75=1 and n365=0 and n123=0 and n346=0 and n266=0 and n48=0 and n301=0 and n360=1 and n167=0 and n143=1 and n379=0 and n321=1 and n31=0 and n228=1 and n387=1
+n7 0 -> 1 when n363=0 and n48=0 and n13=1
+n182 0 -> 1 when n168=0 and n16=1 and n64=0 and n242=0 and n75=0 and n275=1 and n325=0
+n100 1 -> 0 when n302=1 and n110=1 and n18=1 and n60=0
+n215 1 -> 0 when n128=0
+n190 1 -> 0 when n68=1 and n400=0
+n331 0 -> 1 when n219=1
+n20 1 -> 0 when n16=0 and n309=1 and n43=1
+n121 0 -> 1 when n214=0 and n76=0 and n221=1 and n321=1 and n156=1 and n157=1
+n131 0 -> 1 when n163=0
+n205 1 -> 0 when n149=1 and n244=0 and n230=0 and n84=1 and n135=0 and n132=1 and n397=1 and n229=1 and n137=0 and n176=0 and n251=1
+n295 1 -> 0 when n218=1 and n375=0 and n176=1
+n268 1 -> 0 when n309=0 and n50=1 and n56=0 and n143=1 and n335=1 and n86=0 and n342=1 and n346=0
+n47 1 -> 0 when n354=1 and n382=1
+n121 0 -> 1 when n178=0 and n205=0 and n284=1 and n8=1 and n39=1 and n395=0
+n357 1 -> 0 when n213=0 and n389=1 and n172=0 and n156=1 and n35=0 and n211=1
+n62 0 -> 1 when n55=0 and n323=1
+n256 0 -> 1 when n227=0 and n261=0 and n355=1 and n116=0
+n397 0 -> 1 when n51=1 and n368=0 and n193=1 and n249=0 and n61=1 and n30=1 and n37=0 and n285=1
+n398 1 -> 0 when n39=1 and n306=1 and n298=0 and n333=1
+n194 0 -> 1 when n65=0
+n397 0 -> 1 when n378=0 and n23=1 and n276=0 and n70=1
+n237 0 -> 1 when n259=0
+n245 0 -> 1 when n60=0 and n33=1 and n280=1 and n292=0
+n129 1 -> 0 when n34=1 and n245=0 and n342=0
+n271 0 -> 1 when n162=1 and n187=0
+n231 1 -> 0 when n356=1 and n267=1 and n193=0 and n92=0 and n194=1
+n75 0 -> 1 when n18=1 and n78=0 and n83=0 and n365=0 and n296=0 and n297=1 and n247=0 and n368=1 and n194=1
+n140 1 -> 0 when n149=0 and n38=1 and n5=1
+n288 0 -> 1 when n370=1 and n105=0 and n328=1 and n276=1
+n126 0 -> 1 when n188=1 and n89=1 and n54=1 and n165=0 and n337=0 and n391=0 and n377=1 and n52=1 and n378=0 and n69=0 and n115=1 and n207=0 and n357=1 and n354=1
+n328 0 -> 1 when n127=0 and n280=1 and n37=1 and n5=0 and n243=0 and n221=1 and n223=1
+n275 0 -> 1 when n27=0 and n26=0
+n337 1 -> 0 when n265=0 and n180=0 and n327=0 and n328=1
+n353 1 -> 0 when n384=0 and n390=0 and n106=1 and n230=1
+n329 0 -> 1 when n104=1 and n185=1 and n189=0 and n382=0
+n379 1 -> 0 when n182=1 and n278=1 and n228=0 and n12=0 and n363=0
+n131 1 -> 0 when n92=0 and n180=1 and n225=1 and n33=1 and n324=1
+n295 0 -> 1 when n40=1 and n378=0 and n305=0 and n134=0 and n245=0 and n273=0 and n56=1
+n153 0 -> 1 when n383=0 and n384=1 and n308=0
+n340 1 -> 0 when n99=0 and n306=0 and n251=0 and n248=1 and n46=0 and n293=1
+n121 0 -> 1 when n354=1 and n149=0 and n55=0 and n67=0
+n144 1 -> 0 when n341=0 and n386=0 and n291=0
+n360 1 -> 0 when n343=0
+n278 0 -> 1 when n373=1 and n81=0
+n57 1 -> 0 when n282=1
+n173 1 -> 0 when n319=0 and n94=0 and n28=0 and n144=0 and n134=0 and n326=0 and n17=0 and n39=0
+n397 0 -> 1 when n15=0 and n240=1 and n245=0 and n279=0 and n250=0 and n282=0 and n55=0 and n253=1 and n369=0 and n141=1 and n130=0
+n52 0 -> 1 when n341=1 and n25=1 and n211=1 and n213=0 and n306=0
+n277 0 -> 1 when n337=0 and n252=0 and n90=1
+n151 0 -> 1 when n85=0
+n304 1 -> 0 when n131=1 and n123=1 and n69=1
+n213 0 -> 1 when n308=1 and n285=1 and n50=0 and n2=1 and n358=1 and n87=1 and n66=0 and n3=1 and n210=0 and n371=1 and n295=1
+n211 0 -> 1 when n310=0 and n205=1 and n12=1
+n136 0 -> 1 when n80=1
+n303 1 -> 0 when n15=1 and n102=1 and n225=1 and n32=1 and n363=1 and n342=0 and n267=0 and n398=1
+n77 0 -> 1 when n303=0 and n196=0 and n318=0
+n271 1 -> 0 when n67=0 and n73=1 and n366=1
+n385 0 -> 1 when n360=0 and n120=1 and n198=1 and n332=0 and n387=1 and n48=0 and n16=1 and n114=1 and n142=1
+n366 1 -> 0 when n291=1 and n15=1
+n397 1 -> 0 when n383=0
+n398 0 -> 1 when n344=1 and n25=1 and n154=0 and n75=0 and n264=1 and n15=1 and n92=1 and n107=0 and n227=1 and n298=0
+n146 1 -> 0 when n259=0 and n282=1 and n111=0 and n195=0 and n106=0 and n14=1
+n122 0 -> 1 when n129=1 and n75=1 and n286=0 and n30=0 and n283=0 and n143=1 and n119=0 and n123=1 and n43=1 and n40=0
+n211 0 -> 1 when n363=1 and n207=0 and n273=1 and n103=1 and n347=0 and n5=1 and n69=0 and n352=1 and n208=1 and n142=0 and n84=0 and n371=1 and n9=0 and n41=0 and n139=1 and n234=0 and n22=0 and n58=1 and n261=0 and n71=1
+n141 1 -> 0 when n260=1 and n328=1 and n137=1
+n325 1 -> 0 when n282=1 and n169=0 and n198=1 and n211=0 and n130=0 and n341=1 and n156=0 and n113=1 and n36=1 and n57=0 and n175=0 and n350=1
+n40 0 -> 1 when n68=1 and n363=1 and n399=1
+n185 1 -> 0 when n169=1 and n130=0 and n341=1 and n82=0 and n45=0 and n120=0 and n161=1
+n303 0 -> 1 when n177=0 and n374=1 and n31=1 and n262=1 and n191=0 and n312=1 and n80=0 and n234=0 and n92=1 and n116=0 and n377=0
+n336 1 -> 0 when n181=0
+n114 0 -> 1 when n72=1 and n36=0 and n41=0 and n134=1 and n193=0 and n229=1
+n303 1 -> 0 when n198=0
+n3 1 -> 0 when n318=1 and n297=1 and n5=0 and n394=0
+n292 1 -> 0 when n73=0 and n336=0 and n86=1
+n147 0 -> 1 when n299=1 and n337=0 and n362=0 and n154=0 and n295=1 and n118=0
+n205 1 -> 0 when n248=0
+n350 0 -> 1 when n209=1
+n258 0 -> 1 when n57=0 and n363=1 and n188=0 and n200=0 and n260=0 and n47=0 and n246=1 and n276=0
+n181 1 -> 0 when n138=1 and n191=1
+n72 0 -> 1 when n23=1 and n229=1 and n60=1 and n355=1 and n251=1 and n382=0 and n346=1 and n363=0 and n147=1 and n114=0 and n187=0 and n175=0 and n253=1
+n101 0 -> 1 when n296=0
+n81 1 -> 0 when n147=0 and n97=1 and n237=0 and n393=1 and n375=0
+n312 0 -> 1 when n143=0
+n192 1 -> 0 when n259=1 and n75=0 and n267=1 and n272=1 and n244=1
+n359 1 -> 0 when n186=0 and n238=0 and n280=1 and n130=0 and n182=1 and n197=0 and n166=1 and n391=0 and n151=1 and n331=0 and n313=1 and n262=1 and n139=1
+n78 0 -> 1 when n253=0 and n131=1 and n193=1 and n258=1
+n265 1 -> 0 when n154=1 and n294=1 and n130=1 and n266=0 and n88=1 and n147=0 and n157=0 and n109=0 and n29=1 and n264=0 and n219=1 and n364=0 and n206=1 and n100=1 and n60=0 and n158=0
+n33 1 -> 0 when n199=1 and n361=1
+n214 0 -> 1 when n239=0 and n255=1 and n363=0 and n333=1 and n325=0 and n7=1 and n250=1
+n200 1 -> 0 when n85=1 and n220=0 and n113=1 and n27=0 and n163=1 and n166=0 and n331=0 and n79=0 and n9=0 and n369=0 and n343=1 and n301=1 and n118=1 and n395=0 and n195=0
+n352 0 -> 1 when n176=1 and n53=0 and n150=0 and n8=0 and n18=1 and n183=1 and n279=1 and n97=1 and n236=1
+n93 0 -> 1 when n335=0
+n312 0 -> 1 when n276=1 and n365=1
+n39 0 -> 1 when n120=0
+n210 1 -> 0 when n16=1
+n366 0 -> 1 when n378=0
+n186 1 -> 0 when n386=0
+n31 1 -> 0 when n42=0 and n15=1 and n355=1 and n249=1 and n29=0 and n92=1 and n200=0 and n33=0 and n222=1 and n280=0 and n321=0 and n373=0 and n191=1 and n140=0 and n309=1 and n146=0 and n389=0 and n81=1 and n242=0 and n315=1 and n376=0 and n48=1 and n127=0 and n19=1 and n158=1 and n368=1 and n18=1 and n166=0 and n63=0 and n260=1 and n165=1 and n245=1 and n86=1 and n145=0 and n204=1
+n125 1 -> 0 when n286=0 and n303=1 and n130=0 and n143=1
+n172 0 -> 1 when n44=1 and n196=0 and n379=0 and n228=0 and n43=1
+n72 1 -> 0 when n346=0 and n328=0 and n154=1 and n143=1
+n109 1 -> 0 when n391=1 and n377=0 and n350=1 and n225=0 and n65=1
+n359 1 -> 0 when n208=0 and n309=0 and n63=1 and n379=0
+n295 1 -> 0 when n221=1 and n74=0 and n148=0 and n145=0 and n245=0 and n1=0 and n108=0 and n189=0 and n140=1 and n192=0
+n268 1 -> 0 when n28=1 and n321=0 and n304=0
+n124 1 -> 0 when n91=0 and n122=0 and n50=1 and n34=0 and n6=0 and n315=1 and n143=1 and n221=1 and n298=0 and n244=1 and n188=1 and n276=1 and n20=1 and n177=1 and n109=0
+n34 0 -> 1 when n52=1 and n254=1 and n40=0 and n145=1 and n36=1 and n182=1 and n221=1 and n365=0
+n275 0 -> 1 when n141=1 and n394=0
+n369 0 -> 1 when n134=0 and n289=0 and n205=1 and n284=0 and n252=1 and n241=1 and n372=1 and n280=0 and n114=1 and n136=0 and n366=1 and n339=1 and n102=1
+n369 0 -> 1 when n323=0
+n66 0 -> 1 when n78=1 and n86=1 and n363=0 and n296=0 and n183=0 and n367=0 and n395=1
+n94 0 -> 1 when n79=1 and n256=1 and n275=0 and n254=0
+n212 0 -> 1 when n399=1
+n21 0 -> 1 when n281=1 and n73=0 and n316=1
+n56 1 -> 0 when n345=1 and n218=1
+n122 1 -> 0 when n5=1 and n169=0 and n93=0 and n302=1 and n256=1 and n374=1
+n302 0 -> 1 when n64=1 and n296=1 and n386=1 and n399=0 and n59=0 and n172=0
+n275 1 -> 0 when n215=1 and n126=0 and n47=0 and n13=1 and n30=0 and n217=1 and n265=0 and n191=1 and n85=1 and n118=1 and n320=1 and n330=0
+n338 0 -> 1 when n96=0 and n249=0 and n392=1 and n193=0 and n23=1 and n310=0 and n340=1 and n268=0 and n201=0 and n233=0 and n68=1 and n83=1
+n110 1 -> 0 when n80=1 and n340=0 and n34=1 and n281=1 and n298=1 and n180=0 and n93=0 and n329=0 and n156=0 and n257=1 and n199=0 and n322=0 and n341=1 and n230=1 and n313=1
+n321 0 -> 1 when n7=1 and n356=1 and n183=0 and n325=0 and n106=0 and n71=0 and n171=0
+n196 0 -> 1 when n170=0 and n236=0
+n51 1 -> 0 when n329=1 and n157=0 and n53=1 and n35=1 and n214=0
+n77 0 -> 1 when n145=0
+n177 1 -> 0 when n242=0 and n335=1 and n75=0 and n41=1 and n208=1 and n45=0 and n340=0 and n318=0 and n332=1 and n359=1 and n339=1 and n358=0
+n168 0 -> 1 when n64=0 and n245=0 and n209=1 and n314=1 and n362=0 and n169=1
+n168 1 -> 0 when n247=0 and n25=0
+n139 0 -> 1 when n188=0 and n148=1 and n137=0
+n205 1 -> 0 when n346=1 and n20=1 and n112=1
+n281 0 -> 1 when n267=0 and n336=1 and n249=1
+n164 1 -> 0 when n291=1
+n249 1 -> 0 when n139=1 and n231=0 and n45=0 and n210=0 and n106=1 and n27=0 and n146=0 and n66=1 and n85=0
+n151 1 -> 0 when n74=1 and n106=1
+n64 0 -> 1 when n351=1 and n347=1 and n254=0 and n118=1 and n249=0 and n229=0 and n122=1 and n90=0 and n89=0
+n144 0 -> 1 when n214=1 and n181=0
+n397 1 -> 0 when n388=0 and n59=1 and n368=0 and n9=0 and n112=0 and n290=0 and n267=0 and n346=0
+n397 1 -> 0 when n371=0 and n252=0 and n342=1
+n230 1 -> 0 when n238=1 and n148=1 and n43=0 and n370=1 and n234=1 and n11=1 and n349=1 and n169=0 and n262=1 and n258=1 and n2=1 and n171=0
+n116 0 -> 1 when n51=1 and n8=0 and n37=0 and n279=1 and n355=1 and n356=0 and n392=1 and n292=1 and n380=0 and n291=1 and n73=1 and n98=0
+n254 0 -> 1 when n146=0 and n193=0
+n72 0 -> 1 when n102=0
+n247 0 -> 1 when n155=0 and n70=0
+n250 1 -> 0 when n199=0 and n169=1 and n158=0 and n31=0 and n229=0 and n309=0 and n168=1 and n331=1 and n294=1 and n379=1 and n35=0 and n247=1 and n238=0 and n264=0 and n241=0 and n334=1
+n153 0 -> 1 when n188=0 and n400=1
+n305 0 -> 1 when n364=1
+n196 0 -> 1 when n312=0 and n209=0 and n118=1 and n322=1 and n136=1 and n267=0 and n18=0 and n224=1 and n199=0 and n178=1 and n36=1 and n350=0 and n86=1 and n47=1 and n13=1 and n339=1 and n157=0 and n217=1 and n168=1 and n286=1 and n8=1 and n189=0
+n120 1 -> 0 when n234=1 and n157=1
+n149 0 -> 1 when n198=1 and n311=1 and n296=0 and n251=1 and n86=0 and n94=1 and n175=0 and n213=0 and n363=1
+n311 0 -> 1 when n108=0 and n224=1
+n296 0 -> 1 when n133=0 and n245=0 and n238=0 and n292=0 and n66=1 and n327=0 and n138=0 and n394=0 and n287=1 and n110=1 and n392=0
+n87 0 -> 1 when n2=1
+n397 1 -> 0 when n39=1 and n119=0
+n28 1 -> 0 when n243=1 and n14=1
+n28 1 -> 0 when n191=1 and n180=1 and n62=1
+n170 1 -> 0 when n84=1 and n162=0
+n129 1 -> 0 when n229=0 and n342=0 and n394=1 and n107=1 and n150=0 and n320=1
+n37 1 -> 0 when n230=0
+n82 0 -> 1 when n164=1 and n369=1
+n228 1 -> 0 when n184=1 and n296=0 and n385=0 and n234=0 and n289=0
+n395 1 -> 0 when n113=1 and n333=0 and n101=1 and n299=1
+n27 0 -> 1 when n217=1 and n146=0
+n360 1 -> 0 when n263=0 and n112=1 and n239=1 and n96=1 and n281=0 and n300=0 and n17=0 and n132=1 and n18=1 and n69=0 and n398=0 and n395=0
+n206 0 -> 1 when n118=1 and n373=1
+n371 0 -> 1 when n200=1 and n333=0
+n10 1 -> 0 when n7=1 and n167=1 and n210=1 and n290=1 and n326=1
+n60 1 -> 0 when n264=0 and n19=1 and n7=0
+n293 0 -> 1 when n217=0 and n82=0
+n397 1 -> 0 when n347=1 and n145=1 and n322=1 and n326=0 and n359=0 and n183=0 and n158=0 and n169=0
+n331 0 -> 1 when n29=0 and n185=1 and n74=0 and n25=0 and n141=1 and n79=1
+n258 0 -> 1 when n94=1 and n10=0 and n195=1 and n222=0
+n100 0 -> 1 when n319=0 and n168=0
+n397 1 -> 0 when n181=1 and n175=0
+n214 1 -> 0 when n323=0 and n41=0 and n255=1 and n390=0
+n171 1 -> 0 when n70=0 and n50=1
+n26 1 -> 0 when n232=0
+n335 1 -> 0 when n209=0 and n66=1
+n261 1 -> 0 when n301=1 and n32=0 and n141=1 and n190=0 and n396=0 and n400=0 and n38=1 and n171=1
+n249 1 -> 0 when n277=1 and n301=1
+n118 0 -> 1 when n22=1 and n339=0 and n257=0 and n256=1 and n199=1 and n293=1 and n114=0 and n241=0 and n264=0 and n66=0 and n97=0 and n68=0 and n11=1 and n246=0 and n105=0 and n222=0 and n13=0 and n115=1 and n260=0
+n375 1 -> 0 when n52=0 and n321=1 and n187=0
+n317 0 -> 1 when n135=0 and n14=1 and n186=0 and n121=1 and n240=0 and n20=0 and n177=0 and n94=0 and n279=1 and n17=0 and n102=1 and n378=1 and n211=1 and n149=1
+n358 0 -> 1 when n363=0
+n100 0 -> 1 when n159=1 and n316=1 and n298=0
+n24 1 -> 0 when n78=1 and n88=0 and n172=0 and n120=1 and n137=1 and n268=0 and n234=1 and n79=0
+n239 0 -> 1 when n25=1 and n343=0 and n269=1 and n135=0 and n55=1 and n220=1 and n100=0 and n88=1
+n249 1 -> 0 when n24=1 and n355=0
+n193 1 -> 0 when n102=0 and n2=1 and n314=0 and n143=1 and n19=1 and n142=1
+n281 0 -> 1 when n231=1 and n378=0
+n190 0 -> 1 when n273=0
+n16 1 -> 0 when n160=1 and n202=1 and n235=0 and n305=0 and n263=0 and n291=0 and n75=1 and n346=1 and n213=1 and n400=1 and n90=0 and n67=0 and n347=1 and n167=1 and n277=0 and n132=0 and n77=1 and n96=1 and n78=1 and n356=1
+n354 0 -> 1 when n314=1 and n320=0 and n371=0
+n237 1 -> 0 when n43=1
+n254 0 -> 1 when n216=0 and n156=0 and n292=0 and n15=0
+n3 1 -> 0 when n221=1 and n152=0 and n331=1 and n235=0 and n172=1 and n270=1 and n292=0
+n316 0 -> 1 when n105=1 and n135=0 and n197=0 and n99=0 and n151=0 and n366=1 and n8=1 and n53=0 and n327=0 and n23=1 and n12=1 and n374=0 and n284=0
+n306 0 -> 1 when n285=1 and n280=1 and n113=0 and n327=0 and n145=0 and n339=1 and n219=1 and n51=1 and n344=1
+n47 0 -> 1 when n48=0 and n342=1
+n28 1 -> 0 when n41=0 and n26=0 and n221=0 and n153=0 and n119=0 and n290=0
+n69 0 -> 1 when n70=0 and n380=0 and n378=1 and n242=0 and n400=1 and n47=0 and n184=1 and n225=0 and n26=1 and n58=0 and n385=0 and n17=1 and n335=1 and n248=0 and n147=1 and n99=0 and n245=0 and n40=0 and n124=0
+n188 1 -> 0 when n116=0
+n198 1 -> 0 when n211=1 and n183=0 and n202=1 and n199=0 and n113=0 and n14=1 and n279=1
+n13 1 -> 0 when n396=0
+n122 1 -> 0 when n311=1 and n154=1 and n327=1 and n256=0
+n364 0 -> 1 when n371=1
+n307 1 -> 0 when n128=0 and n357=0 and n48=0 and n159=0 and n203=0 and n385=0 and n61=1 and n36=0 and n49=1 and n132=0
+n371 0 -> 1 when n224=1
+n365 1 -> 0 when n56=1 and n313=0 and n65=0 and n291=1
+n179 1 -> 0 when n334=0 and n2=1 and n96=1
+n170 0 -> 1 when n94=1 and n62=1 and n127=1 and n195=1 and n283=0 and n398=1 and n27=0 and n205=1 and n304=1 and n166=0 and n22=0 and n197=1 and n280=0 and n36=1
+n78 0 -> 1 when n311=0 and n54=0 and n40=1 and n134=1

@@ -16,9 +16,9 @@ def generate_random_AN(size, num_tran):
         dice = random.choice(temp)
         body = [sign * dice]
         temp.remove(dice)
-        nextTr = random.randint(0, 10)
+        nextTr = random.randint(0, 9)
         while nextTr > 1 and temp:
-            nextTr = random.randint(0, 10)
+            nextTr = random.randint(0, 9)
             sign = random.choice([1, -1])
             dice = random.choice(temp)
             body.append(sign * dice)
