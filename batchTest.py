@@ -4,7 +4,8 @@ from cycle import *
 from precodition import *
 from heuristics import *
 from itertools import product
-
+import multiprocessing
+import time
 
 def batch(fn, fnetwork):  # comparison with Pint and PermReach
     fo = open(fnetwork + "_out", 'w')
@@ -29,6 +30,14 @@ def batch(fn, fnetwork):  # comparison with Pint and PermReach
 
 
 def output_file(fout, fnetwork, input_instance, i, j):
+    p = multiprocessing.Process(target=one_run, name="Foo", args=(fnetwork, input_instance, i, (j, '1')))
+    p.start()
+    # Wait 10 seconds for foo
+    time.sleep(10)
+    # Terminate foo
+    p.terminate()
+    # Cleanup
+    p.join()
     [boo, iterations] = one_run(fnetwork, input_instance, i, (j, '1'))
     fout.writelines("# " + j + "=1\n")
     if boo:
