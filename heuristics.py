@@ -67,14 +67,14 @@ def prune(lcgEdges, startNode):
 
 def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
     if startNode in initialState:
-        return True
+        return [True, 0]
     for i in range(k):
         newlcgEdges = random_reconstruct(lcgEdges, startNode)
         if not newlcgEdges:
-            return False, 1
+            return [False, 1]
         if and_gate(lcgNodes, newlcgEdges, startNode, initialState):
-            return True, i + 1
-    return False, k
+            return [True, i + 1]
+    return [False, k]
 
 
 def exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState):

@@ -27,11 +27,13 @@ time_recorder1 = []
 time_recorder2 = []
 start = default_timer()
 stop = default_timer()
-# for i in sizes2:
-#    num_tran = size_density * i
-#    #generateFiles(models, i, num_tran)
-#    for j in range(5,models):
-#        batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
+if __name__ == '__main__':
+   for i in sizes2:
+       num_tran = size_density * i
+       if i != 400:
+           generateFiles(models, i, num_tran)
+       for j in range(models):
+           batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
 
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
@@ -42,7 +44,7 @@ stop = default_timer()
 #    print(str(i),compare_file('model_80//model'+str(i)+'.out','data//run-model'+str(i)+'.out'))
 # print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'//model'))
 # print(batch_iteration_test(0,100,'data//inputFile','model_'+str(size)+'_exhaustive//model'))
-#if __name__ == '__main__':
+# if __name__ == '__main__':
 #    p = multiprocessing.Process(target=one_run, name="Foo", args=('data//model_400//model_5', ['n1', 'n2', 'n3', 'n4', 'n5'], [0, 1, 0, 0, 0], ('n6', '1')))
 #    p.start()
 #    # Wait 10 seconds for foo
@@ -52,7 +54,9 @@ stop = default_timer()
 #    print("timeout")
 #    # Cleanup
 #    p.join()
-#    print(one_run('data//model_400//model_5', ['n1', 'n2', 'n3', 'n4', 'n5'], [0, 1, 0, 0, 0], ('n6', '1')))
+#if __name__=='__main__':
+#    print(output_file('data//model_400//model_0_out','data//model_400//model_0' ,[0,0], [0, 0, 0, 0, 0], ('n8', '1')))
+# print(one_run('data//model_400//model_0', ['n1', 'n2', 'n3', 'n4', 'n5'], [0, 0, 0, 0, 0], ('n8', '1'), {}))
 # print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
 # f=open('count_result','a')
 # for i in sizes:

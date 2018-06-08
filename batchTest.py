@@ -7,6 +7,7 @@ from itertools import product
 import multiprocessing
 import time
 
+
 def batch(fn, fnetwork):  # comparison with Pint and PermReach
     fo = open(fnetwork + "_out", 'w')
     if fn:
@@ -30,15 +31,23 @@ def batch(fn, fnetwork):  # comparison with Pint and PermReach
 
 
 def output_file(fout, fnetwork, input_instance, i, j):
-    p = multiprocessing.Process(target=one_run, name="Foo", args=(fnetwork, input_instance, i, (j, '1')))
+    manager = multiprocessing.Manager()
+    return_dict = manager.dict()
+    p = multiprocessing.Process(target=one_run, args=(fnetwork, input_instance, i, (j, '1'), return_dict))
     p.start()
-    # Wait 10 seconds for foo
-    time.sleep(10)
-    # Terminate foo
-    p.terminate()
+    # Wait 30 seconds for one_run
+    p.join(30)
+    # Terminate one_run
+    if p.is_alive():
+        p.terminate()
+        fout.writelines("Timeout\n")
+        p.join()
+        return [False, 10000]
     # Cleanup
+    [boo, iterations] = [return_dict[0][0], return_dict[0][1]]
     p.join()
-    [boo, iterations] = one_run(fnetwork, input_instance, i, (j, '1'))
+    # [boo, iterations] = one_run(fnetwork, input_instance, i, (j, '1'))
+    # return_dict[0] = [boo, iterations]
     fout.writelines("# " + j + "=1\n")
     if boo:
         fout.writelines("True\n")
@@ -46,7 +55,8 @@ def output_file(fout, fnetwork, input_instance, i, j):
         fout.writelines("False\n")
     else:
         fout.writelines("Inconclusive\n")
-    return boo, iterations
+    return return_dict[0]
+    # return boo, iterations
 
 
 def iteration_test(f_network, f_out):  # count the average and max iteration
@@ -106,7 +116,7 @@ def batch_iteration_test(begin, end, fn, fnetwork):
     return aver_of_average / (end - begin), max_of_max, aver_of_inc / (end - begin)
 
 
-def one_run(fnetwork, input, changeState, start):
+def one_run(fnetwork, input, changeState, start, return_dict):
     [dictionary, actions, actionsByHitter, initialState, startNode] = read_BAN(fnetwork)
     for i in input:
         initialState[i] = str(changeState[input.index(i)])
@@ -121,9 +131,11 @@ def one_run(fnetwork, input, changeState, start):
     print(startNode)
     print(initialState)
     if initialState[startNode[0]] == startNode[1]:
-        return True, 0
+        return_dict[0] = [True, 0]
+        # return True, 0
     if startNode not in lcgEdges:
-        return False, 0
+        return_dict[0] = [False, 0]
+    # return False, 0
     orGates = []
     orGatesItems = []
     for i in lcgEdges:
@@ -131,10 +143,11 @@ def one_run(fnetwork, input, changeState, start):
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
     # return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    #if len(orGates) <= 10:
+    # if len(orGates) <= 10:
     #    return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    #else:
-    return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
+    # else:
+    return_dict[0] = heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
+    # return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
     # return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
     # if len(orGates) > 9:
     #    return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
