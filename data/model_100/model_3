@@ -99,301 +99,302 @@ n98 [0, 1]
 n99 [0, 1]
 n100 [0, 1]
 
-n49 0 -> 1 when n28=1
-n52 1 -> 0 when n24=1 and n25=0 and n38=0 and n33=1
-n36 1 -> 0 when n18=1 and n67=0 and n43=0
-n76 1 -> 0 when n78=1 and n80=0 and n99=1 and n57=1 and n16=1 and n7=0 and n74=0 and n73=1 and n38=0 and n68=0
-n71 1 -> 0 when n61=1
-n80 0 -> 1 when n46=0 and n23=1 and n14=1 and n53=1 and n67=0 and n2=1
-n54 0 -> 1 when n87=1
-n19 1 -> 0 when n9=1 and n35=0 and n70=0
-n52 0 -> 1 when n8=0 and n41=0
-n51 0 -> 1 when n46=1 and n13=1
-n83 1 -> 0 when n52=1 and n35=1 and n1=1 and n21=1 and n99=1 and n86=1 and n82=1 and n84=1 and n71=0 and n7=0 and n94=0 and n8=0 and n97=1 and n100=1 and n49=1 and n3=1 and n47=0 and n39=1 and n41=1 and n23=1 and n27=0 and n88=1 and n48=0 and n29=0 and n34=0 and n31=1
-n55 1 -> 0 when n35=1 and n82=1 and n18=1 and n30=0
-n75 0 -> 1 when n54=0 and n5=1 and n91=1 and n69=0 and n59=1 and n94=0 and n51=0 and n56=1 and n1=1 and n18=0 and n34=0 and n32=0 and n80=0 and n66=0 and n2=1 and n41=0 and n16=0 and n71=1
-n58 1 -> 0 when n94=0 and n72=1 and n48=0 and n92=1 and n31=0 and n43=0 and n18=0 and n87=1 and n82=1 and n22=1 and n14=0 and n24=1
-n70 1 -> 0 when n75=1 and n10=1 and n93=1
-n4 0 -> 1 when n92=0 and n95=1 and n74=0 and n59=0 and n39=1 and n60=1 and n90=1
-n77 1 -> 0 when n27=0 and n52=0
-n57 0 -> 1 when n38=0 and n37=0 and n67=1 and n71=0 and n91=0
-n17 0 -> 1 when n51=1 and n14=0 and n32=0 and n83=1 and n39=0 and n75=1 and n11=1 and n74=1 and n23=0
-n15 0 -> 1 when n21=0
-n56 1 -> 0 when n63=0 and n30=0
-n96 0 -> 1 when n42=1 and n74=0 and n55=1 and n47=0 and n15=1 and n72=0 and n65=1
-n87 0 -> 1 when n98=0 and n29=0 and n58=0 and n66=1 and n79=0 and n50=1
-n9 1 -> 0 when n13=0 and n66=1 and n82=1 and n77=1 and n32=1 and n35=0 and n94=0 and n8=0 and n62=1 and n30=1 and n27=1 and n61=1 and n37=0 and n78=0 and n2=1 and n29=1 and n18=1 and n22=1 and n17=0 and n76=0 and n50=0 and n34=1 and n89=1 and n64=0 and n95=1 and n1=0 and n58=0
-n45 0 -> 1 when n14=0 and n70=1
-n57 0 -> 1 when n21=1 and n63=1 and n1=0 and n79=0 and n50=0 and n31=1 and n3=0 and n66=0 and n28=0 and n91=1 and n10=1 and n32=1
-n49 1 -> 0 when n14=1 and n79=1
-n39 0 -> 1 when n24=0 and n48=1 and n74=0
-n99 0 -> 1 when n12=1 and n13=1 and n26=0 and n76=1
-n68 1 -> 0 when n15=1 and n58=0 and n74=0 and n23=1 and n76=0 and n42=1 and n92=0 and n1=1 and n99=0 and n41=1 and n69=0 and n81=0 and n25=1 and n65=1 and n51=0 and n14=1 and n64=0 and n70=1 and n75=0 and n35=0 and n6=1 and n80=1 and n38=0 and n87=1 and n12=1 and n32=1 and n22=1 and n31=0 and n21=1 and n49=0 and n50=1
-n41 0 -> 1 when n87=1 and n55=0 and n68=1 and n60=0 and n42=0
-n29 0 -> 1 when n22=0 and n56=1 and n86=0 and n7=0 and n51=1 and n88=1 and n49=0 and n79=1 and n12=1 and n57=0 and n47=1
-n11 0 -> 1 when n47=1 and n43=1 and n17=1 and n22=0
-n49 0 -> 1 when n5=0 and n29=0 and n9=0 and n89=1 and n46=0
-n100 1 -> 0 when n63=0 and n50=0 and n55=1 and n5=1 and n77=1 and n83=0 and n48=0 and n59=1 and n22=0
-n54 1 -> 0 when n21=1
-n47 1 -> 0 when n58=0 and n91=0 and n80=0
-n95 0 -> 1 when n84=0 and n60=0 and n58=1 and n25=0 and n89=0 and n8=1 and n69=0 and n97=1 and n13=0
-n54 1 -> 0 when n59=1 and n85=0 and n95=0
-n5 1 -> 0 when n80=0
-n63 0 -> 1 when n75=1 and n22=0 and n40=0 and n3=0
-n77 0 -> 1 when n10=1
-n73 1 -> 0 when n50=0
-n86 0 -> 1 when n11=1 and n100=1 and n99=0 and n97=1 and n9=0 and n39=1 and n38=1 and n7=0
-n81 0 -> 1 when n69=1 and n62=1 and n22=0 and n4=0
-n99 1 -> 0 when n42=0 and n5=0
-n93 0 -> 1 when n42=1
-n46 1 -> 0 when n1=1 and n2=1 and n48=1
-n37 0 -> 1 when n13=1 and n93=0 and n32=0
-n38 0 -> 1 when n72=1
-n83 1 -> 0 when n16=0 and n44=1 and n85=0
-n92 1 -> 0 when n52=0 and n46=1
-n90 0 -> 1 when n21=1 and n94=0 and n100=1
-n32 0 -> 1 when n95=0 and n86=0
-n64 0 -> 1 when n36=1 and n94=1 and n47=0 and n77=1 and n49=0
-n38 0 -> 1 when n6=0
-n12 0 -> 1 when n1=0 and n25=1 and n28=0
-n81 1 -> 0 when n61=1 and n18=1
-n31 1 -> 0 when n71=1
-n40 1 -> 0 when n33=1 and n96=1
-n39 1 -> 0 when n69=0 and n73=0 and n87=0 and n26=0 and n31=0 and n10=1
-n74 0 -> 1 when n65=1 and n75=0 and n32=0 and n86=1 and n1=1 and n34=1 and n77=1 and n64=1
-n63 1 -> 0 when n15=0 and n70=0 and n9=0 and n5=1 and n90=1 and n16=1 and n88=1
-n88 0 -> 1 when n15=1 and n16=0 and n17=1 and n4=1 and n68=0 and n28=1
-n6 1 -> 0 when n13=0 and n88=0 and n39=0 and n63=1 and n12=1 and n99=0 and n1=0 and n93=1 and n21=0 and n80=1 and n24=0 and n38=0 and n90=0 and n8=0 and n2=1 and n16=0 and n47=0 and n5=1
-n70 1 -> 0 when n72=1
-n45 1 -> 0 when n17=0 and n18=1 and n73=1 and n2=0 and n57=0 and n49=0 and n33=0 and n70=1 and n94=0 and n56=1 and n81=1
-n6 1 -> 0 when n7=0 and n37=0 and n17=1 and n5=0 and n25=0
-n99 1 -> 0 when n5=1 and n6=0 and n62=1
-n50 0 -> 1 when n91=0 and n85=0 and n16=0 and n55=0 and n32=1 and n3=0 and n47=1 and n61=0 and n59=0 and n41=0 and n57=1 and n67=1
-n72 1 -> 0 when n26=1 and n83=0 and n1=1 and n63=1 and n57=0 and n40=1 and n100=0 and n22=1 and n39=1 and n46=0 and n89=0 and n37=1 and n88=0
-n64 1 -> 0 when n83=1 and n57=0
-n5 0 -> 1 when n62=0 and n68=0 and n78=1 and n87=1 and n51=1 and n21=1
-n15 1 -> 0 when n84=0
-n54 1 -> 0 when n53=1
-n87 0 -> 1 when n42=1 and n32=0 and n54=1 and n10=1 and n52=0 and n63=1 and n83=0 and n58=1 and n11=0 and n76=0
-n15 1 -> 0 when n67=0
-n76 1 -> 0 when n61=0 and n89=0 and n64=0
-n17 1 -> 0 when n21=1 and n68=0 and n25=1
-n93 0 -> 1 when n74=1 and n5=1 and n56=1
-n44 1 -> 0 when n45=0 and n64=0 and n30=0 and n98=0
-n10 0 -> 1 when n73=0
-n50 0 -> 1 when n93=0 and n98=1
-n60 0 -> 1 when n7=0 and n6=0 and n87=0 and n43=1
-n81 1 -> 0 when n79=1 and n83=0
-n37 0 -> 1 when n56=1 and n84=1 and n78=1 and n73=1 and n33=1 and n45=0 and n18=1 and n29=1 and n1=0 and n80=0 and n28=0 and n75=1 and n50=1 and n52=1 and n31=1 and n44=1 and n98=1 and n90=0
-n63 0 -> 1 when n58=1
-n78 0 -> 1 when n68=0 and n72=1 and n58=1 and n35=1 and n14=1 and n71=0 and n63=1
-n32 0 -> 1 when n77=0 and n22=0 and n47=1 and n49=0 and n36=0 and n55=1 and n86=0 and n82=0 and n25=0
-n80 1 -> 0 when n36=1 and n33=1
-n19 0 -> 1 when n65=1 and n30=1 and n90=0
-n18 0 -> 1 when n50=0 and n63=1 and n34=1 and n48=1 and n56=1 and n19=0 and n85=0 and n81=1 and n86=0 and n11=1 and n23=1 and n89=0 and n69=0 and n53=0 and n45=1 and n51=0 and n64=1 and n59=1 and n82=1
-n1 0 -> 1 when n8=0 and n31=0 and n72=1 and n82=1 and n68=0
-n48 1 -> 0 when n94=1
-n17 0 -> 1 when n31=1 and n96=1 and n15=1 and n24=1 and n56=1
-n73 1 -> 0 when n28=0 and n57=1 and n4=1 and n6=1 and n80=0
-n19 0 -> 1 when n67=1
-n51 0 -> 1 when n88=1 and n82=0 and n95=1 and n94=0 and n27=0 and n54=0 and n52=0 and n25=0 and n69=1 and n81=0 and n62=0 and n85=1 and n74=0 and n6=1
-n61 1 -> 0 when n15=1 and n88=1 and n3=0 and n4=1 and n8=0
-n86 1 -> 0 when n3=1 and n25=1
-n2 0 -> 1 when n23=0
-n5 1 -> 0 when n84=1
-n56 0 -> 1 when n14=0 and n32=1 and n76=0 and n9=1
-n97 0 -> 1 when n28=0
-n41 0 -> 1 when n52=1 and n38=1 and n94=0 and n72=1 and n78=0
-n17 1 -> 0 when n91=1 and n5=1
-n34 1 -> 0 when n51=0 and n21=1
-n47 1 -> 0 when n25=0 and n69=1 and n33=0 and n65=1 and n48=1
-n23 0 -> 1 when n22=1 and n96=1 and n11=0 and n65=1
-n66 1 -> 0 when n97=0 and n59=1 and n58=1 and n25=1 and n14=1 and n21=0 and n12=0
-n28 0 -> 1 when n17=1 and n84=1 and n62=1 and n9=1
-n51 0 -> 1 when n19=0 and n58=1 and n48=0 and n55=0 and n41=0
-n64 0 -> 1 when n72=0 and n32=1 and n8=0 and n73=0 and n31=0 and n62=0 and n96=1 and n19=0 and n83=0 and n100=1 and n12=1 and n9=0 and n86=0 and n66=1 and n92=1 and n89=1 and n99=1 and n20=1 and n70=1 and n77=1 and n98=0 and n55=0 and n41=0
-n30 1 -> 0 when n55=0 and n60=1 and n58=0 and n70=0 and n66=1 and n85=1
-n47 0 -> 1 when n30=0 and n65=0 and n35=0 and n53=1 and n70=0 and n36=1
-n90 0 -> 1 when n19=1 and n40=1 and n38=0 and n78=1 and n70=0 and n41=1 and n55=1 and n39=1 and n5=0 and n43=1 and n2=1
-n46 0 -> 1 when n68=0
-n78 0 -> 1 when n18=1 and n46=0 and n77=1 and n87=0 and n10=0 and n50=1 and n6=0 and n59=1
-n32 1 -> 0 when n22=0 and n54=1 and n50=1
-n13 0 -> 1 when n41=1 and n7=0 and n67=0 and n95=0 and n14=0 and n38=0 and n75=0 and n12=0 and n26=0
-n83 1 -> 0 when n47=1 and n16=0 and n84=1 and n77=0 and n99=0
-n87 1 -> 0 when n50=0 and n70=1 and n82=0 and n63=0 and n26=1 and n49=1
-n35 0 -> 1 when n13=1 and n17=1 and n31=1 and n95=1 and n94=0
-n38 1 -> 0 when n60=1
-n30 1 -> 0 when n13=0
-n39 1 -> 0 when n73=1
-n10 1 -> 0 when n43=1 and n26=0 and n36=1 and n9=0 and n98=1 and n96=0 and n41=0 and n29=0 and n4=0 and n53=1 and n35=1 and n83=1 and n17=1 and n45=0 and n63=0 and n33=0
-n63 0 -> 1 when n42=0 and n58=0 and n6=1 and n80=0 and n55=1 and n53=1 and n52=1 and n41=1
-n7 1 -> 0 when n64=1 and n54=1 and n61=1 and n96=0 and n24=0 and n32=1 and n66=1 and n81=0 and n40=1 and n23=1 and n12=1 and n8=1 and n5=1 and n94=0 and n84=1 and n46=1 and n69=0 and n17=1 and n37=0 and n95=0 and n29=1
-n10 1 -> 0 when n61=0 and n48=0 and n19=1 and n32=0 and n75=0 and n77=1 and n63=1 and n13=1 and n21=0 and n53=1 and n90=1 and n34=0 and n33=1 and n35=0 and n5=0 and n99=0 and n46=1 and n24=1 and n91=1 and n31=1 and n42=1 and n92=1 and n52=1 and n80=0 and n83=1 and n15=0 and n72=1 and n74=1 and n76=0
-n40 1 -> 0 when n29=0 and n43=1 and n53=0
-n55 1 -> 0 when n49=0 and n50=0 and n75=0
-n44 0 -> 1 when n8=1 and n96=0 and n7=0 and n49=0
-n83 0 -> 1 when n99=1 and n60=1 and n20=1 and n17=1 and n40=1 and n81=0 and n78=0 and n34=0 and n79=0
-n76 0 -> 1 when n44=1 and n22=1 and n92=0
-n1 0 -> 1 when n67=1 and n76=0 and n79=0 and n6=1 and n57=1 and n37=0 and n34=1
-n38 0 -> 1 when n19=1 and n93=1 and n13=0 and n49=1 and n46=1 and n48=1
-n88 0 -> 1 when n100=0 and n4=0 and n62=0 and n6=1 and n44=1 and n55=1 and n42=0 and n93=1 and n53=1 and n90=0 and n29=0 and n17=1
-n78 1 -> 0 when n46=0 and n59=1
-n27 0 -> 1 when n81=1 and n66=0 and n43=0
-n97 0 -> 1 when n95=0 and n64=0
-n50 0 -> 1 when n45=0 and n85=0
-n23 1 -> 0 when n65=1
-n52 1 -> 0 when n86=1 and n54=1 and n55=0 and n11=1 and n80=0 and n32=0 and n5=0 and n82=1 and n27=0 and n97=0 and n68=0 and n34=1 and n35=1
-n68 1 -> 0 when n40=1 and n43=0
-n11 0 -> 1 when n62=0 and n96=1 and n26=0 and n53=1 and n60=0 and n17=1 and n69=1 and n15=0 and n82=1
-n91 0 -> 1 when n92=1 and n47=1 and n57=0
-n11 0 -> 1 when n61=0 and n54=1 and n41=1 and n96=0 and n23=1 and n25=1 and n81=1 and n39=0 and n70=1 and n85=1 and n89=1 and n79=0 and n12=1 and n97=0 and n68=1 and n57=1 and n40=1 and n26=1 and n100=0 and n84=0 and n1=1 and n99=0 and n20=1 and n3=0
-n26 0 -> 1 when n25=0 and n14=1 and n34=0 and n98=1 and n39=1 and n47=0
-n99 1 -> 0 when n3=0 and n98=1 and n23=1 and n55=1 and n15=1 and n77=1 and n19=0 and n27=1 and n6=1 and n39=0
-n53 1 -> 0 when n23=0 and n8=0 and n67=1 and n35=1 and n100=1 and n83=1 and n27=0 and n26=1
-n2 0 -> 1 when n21=1 and n84=1
-n83 0 -> 1 when n78=0 and n59=0 and n100=0 and n76=0 and n13=1 and n25=0 and n47=0 and n3=1
-n73 0 -> 1 when n86=1 and n70=1 and n2=0 and n17=1 and n58=1
-n32 1 -> 0 when n54=1
-n98 1 -> 0 when n88=0 and n51=1 and n33=1 and n17=0 and n38=1 and n10=0 and n41=1
-n89 0 -> 1 when n54=0 and n65=0 and n99=0 and n96=0 and n68=0 and n36=1 and n32=1
-n90 0 -> 1 when n18=1
-n97 1 -> 0 when n37=0 and n52=0 and n23=0 and n9=1 and n99=0
-n27 0 -> 1 when n43=1 and n26=0
-n24 1 -> 0 when n43=1
-n77 0 -> 1 when n25=0 and n7=1 and n8=0 and n34=1 and n97=1 and n50=1 and n47=0 and n68=1 and n3=0 and n1=0 and n15=1 and n29=0 and n53=0 and n40=0 and n60=0 and n61=1 and n51=1 and n23=1 and n90=0 and n79=1 and n93=1 and n84=0
-n29 0 -> 1 when n70=0 and n88=1 and n91=0 and n5=1 and n34=0
-n14 0 -> 1 when n23=0 and n61=1 and n100=1 and n47=1 and n8=0
-n50 1 -> 0 when n2=0 and n10=1 and n1=1 and n17=0
-n26 0 -> 1 when n43=1 and n27=1
-n42 1 -> 0 when n84=1 and n93=0 and n66=0 and n6=0 and n68=1 and n63=1 and n37=0 and n44=0 and n32=0 and n77=0 and n74=0 and n14=0 and n45=1 and n10=1 and n43=0 and n7=1 and n69=0 and n87=1
-n85 0 -> 1 when n43=0
-n90 1 -> 0 when n58=1 and n50=1 and n92=0 and n46=1 and n30=0 and n100=0 and n24=1 and n44=0 and n61=1 and n26=1 and n17=1
-n23 1 -> 0 when n92=0 and n22=1 and n16=0 and n59=0 and n75=1 and n2=1
-n11 1 -> 0 when n100=1 and n91=0
-n38 0 -> 1 when n24=1 and n61=0
-n16 0 -> 1 when n13=0 and n26=1 and n66=0 and n31=1 and n51=1 and n29=1 and n91=0 and n23=0 and n78=1 and n67=1
-n15 1 -> 0 when n8=0 and n29=0 and n43=1 and n24=0
-n50 0 -> 1 when n58=1
-n98 1 -> 0 when n81=0 and n42=1 and n32=1 and n41=0
-n19 0 -> 1 when n52=1 and n86=1 and n80=1
-n4 0 -> 1 when n55=0 and n88=0 and n23=1 and n15=1 and n59=0 and n26=0 and n74=1 and n25=0 and n75=0
-n21 0 -> 1 when n14=1 and n97=0 and n5=0 and n68=1 and n40=1 and n33=1 and n2=0 and n34=1
-n28 1 -> 0 when n92=0 and n22=0
-n82 0 -> 1 when n34=0 and n36=1 and n60=0 and n53=0 and n51=0 and n18=0 and n32=0 and n48=1 and n81=1 and n31=1 and n47=0
-n2 1 -> 0 when n1=1 and n53=0 and n23=0 and n6=0
-n38 1 -> 0 when n92=1 and n8=1 and n32=0
-n37 0 -> 1 when n97=0 and n12=0 and n29=0 and n21=0
-n86 1 -> 0 when n70=0 and n68=0
-n20 1 -> 0 when n22=0 and n43=1 and n95=1 and n87=1 and n2=0 and n40=0
-n24 0 -> 1 when n22=0 and n9=0 and n61=1 and n7=1
-n57 0 -> 1 when n18=0 and n36=1 and n67=0
-n31 1 -> 0 when n100=1 and n28=0
-n31 0 -> 1 when n13=1 and n23=1 and n21=0 and n97=0 and n52=0
-n93 1 -> 0 when n84=1 and n5=1 and n47=0
-n93 1 -> 0 when n62=0 and n4=0
-n84 0 -> 1 when n68=0 and n33=0 and n88=1 and n40=1 and n2=1 and n30=0 and n14=0 and n22=1 and n28=1 and n29=1 and n42=1
-n63 1 -> 0 when n10=1 and n8=0
-n68 0 -> 1 when n28=0 and n7=0 and n11=0 and n13=1 and n79=0 and n80=1 and n34=1 and n52=0 and n1=1 and n32=0 and n93=1 and n27=1 and n86=0 and n30=0 and n94=0 and n26=1 and n54=0 and n8=1 and n14=0 and n29=1 and n92=0 and n76=1 and n46=1
-n66 1 -> 0 when n2=0 and n6=0 and n18=0 and n22=1 and n69=0
-n96 0 -> 1 when n93=1 and n17=0 and n18=0 and n14=0 and n7=1 and n41=0 and n72=0 and n56=0
-n13 1 -> 0 when n50=0 and n87=0 and n60=0
-n46 0 -> 1 when n48=1 and n26=1 and n17=0 and n49=0 and n62=1
-n32 0 -> 1 when n41=1 and n96=1 and n38=0
-n55 1 -> 0 when n63=0 and n73=0 and n39=0 and n9=1 and n22=1 and n37=1 and n86=0 and n57=1 and n88=1 and n83=1 and n36=1
-n41 1 -> 0 when n29=0 and n13=0 and n47=1 and n82=0 and n40=0 and n55=1
-n55 1 -> 0 when n33=0 and n78=0 and n52=1 and n56=0
-n1 0 -> 1 when n40=0 and n88=0
-n65 0 -> 1 when n87=0 and n7=0 and n63=1 and n69=1 and n78=0 and n10=1 and n1=1 and n8=1 and n70=1 and n99=1 and n5=0 and n3=1 and n27=0 and n20=0 and n54=0 and n48=1 and n96=1 and n6=0 and n100=0 and n38=1 and n4=0 and n49=0 and n23=1 and n59=1 and n32=0 and n44=1 and n98=1 and n34=0 and n37=0 and n41=1
-n52 1 -> 0 when n10=1
-n100 0 -> 1 when n64=0 and n63=1
-n87 0 -> 1 when n19=1 and n8=1
-n43 1 -> 0 when n20=1 and n88=1 and n66=1 and n6=1 and n36=0 and n12=0 and n94=1 and n48=0 and n40=1 and n70=0 and n68=1 and n44=0 and n75=0
-n30 1 -> 0 when n12=1 and n89=0
-n33 1 -> 0 when n9=1 and n24=1 and n52=0
-n56 0 -> 1 when n75=1 and n51=0 and n30=0
-n18 1 -> 0 when n40=0
-n53 1 -> 0 when n20=1 and n7=1 and n74=0
-n88 1 -> 0 when n71=0 and n7=1 and n31=1 and n53=1 and n94=0
-n14 0 -> 1 when n70=1 and n19=0 and n77=1 and n38=0 and n6=0 and n43=1 and n69=0 and n87=1 and n21=0 and n16=1 and n32=0 and n81=1
-n67 0 -> 1 when n99=0 and n98=0 and n10=0 and n48=1 and n31=0
-n19 1 -> 0 when n94=0 and n72=0 and n28=0 and n47=0
-n75 0 -> 1 when n25=0 and n38=0 and n30=1 and n14=1 and n99=0 and n5=0
-n46 1 -> 0 when n32=1 and n2=1 and n25=0 and n3=0 and n22=1 and n66=0 and n54=1
-n74 0 -> 1 when n60=0 and n92=0 and n75=1 and n50=0 and n73=0 and n16=0
-n53 1 -> 0 when n91=0 and n7=1 and n11=1 and n84=1 and n18=0 and n2=1 and n30=1 and n81=1
-n50 1 -> 0 when n93=1 and n76=1 and n27=1 and n73=0 and n81=1 and n100=0 and n77=1 and n37=1 and n47=1 and n16=0 and n84=0 and n64=1 and n8=1 and n34=0 and n11=0
-n22 0 -> 1 when n92=1 and n32=0 and n100=1 and n50=0 and n21=0 and n58=0
-n89 0 -> 1 when n54=0 and n73=1 and n52=0 and n70=0 and n49=1 and n76=1 and n22=1
-n38 1 -> 0 when n57=1 and n20=1
-n60 1 -> 0 when n67=0 and n48=1 and n76=0 and n35=1 and n62=1 and n25=1
-n70 1 -> 0 when n17=0 and n88=0
-n17 1 -> 0 when n60=0 and n22=0 and n98=0 and n77=0
-n13 1 -> 0 when n67=0 and n75=1 and n10=1 and n14=1
-n26 1 -> 0 when n77=1
-n57 1 -> 0 when n20=0
-n63 1 -> 0 when n73=0
-n83 1 -> 0 when n65=1 and n45=1 and n48=1 and n34=1 and n87=0
-n92 1 -> 0 when n27=1 and n21=0
-n69 1 -> 0 when n100=0 and n76=1 and n6=1 and n47=1 and n32=1 and n93=1 and n54=0 and n12=1 and n45=1
-n75 0 -> 1 when n64=1 and n66=0 and n42=1 and n35=0 and n72=1 and n90=1 and n47=0
-n6 0 -> 1 when n63=0 and n55=1 and n3=0 and n28=0 and n82=1 and n91=1
-n93 1 -> 0 when n85=1 and n82=0
-n35 0 -> 1 when n21=0 and n81=0 and n39=0 and n85=1 and n9=0 and n48=0
-n16 0 -> 1 when n3=1 and n40=1 and n91=1 and n93=1 and n10=0 and n5=0 and n49=0 and n67=0 and n53=0 and n12=0
-n36 1 -> 0 when n56=1 and n66=1 and n78=1 and n19=0 and n57=1 and n60=0 and n41=1 and n75=1 and n8=0 and n54=0
-n6 1 -> 0 when n87=0 and n8=1 and n1=1 and n92=1 and n7=0 and n89=0
-n39 1 -> 0 when n2=0 and n89=1 and n36=1 and n25=0 and n35=0 and n98=0
-n75 0 -> 1 when n97=0 and n26=0 and n96=0
-n91 1 -> 0 when n68=1
-n27 0 -> 1 when n62=0 and n61=1 and n14=1 and n40=1 and n38=1 and n86=1 and n100=1 and n93=1 and n53=1 and n66=0 and n31=0 and n82=1 and n25=1 and n6=0 and n49=1 and n12=1 and n89=0
-n49 0 -> 1 when n5=0 and n75=1 and n30=1 and n63=1 and n93=1
-n56 1 -> 0 when n72=1 and n10=1 and n16=1 and n5=0 and n83=0 and n82=1 and n73=1 and n13=1
-n22 0 -> 1 when n52=1 and n4=0
-n52 0 -> 1 when n78=1
-n41 1 -> 0 when n82=0 and n87=0 and n31=1
-n32 0 -> 1 when n38=1 and n22=1 and n95=0 and n8=0 and n78=0 and n20=1 and n5=1 and n21=0 and n59=0
-n80 1 -> 0 when n57=0 and n31=1 and n63=1 and n71=1 and n9=0 and n76=0 and n65=1 and n8=1 and n58=0 and n24=1
-n11 0 -> 1 when n61=1 and n85=0 and n52=1 and n75=1 and n95=0
-n48 0 -> 1 when n64=1 and n1=1 and n38=0 and n51=0 and n2=1 and n66=1 and n30=0 and n90=0 and n53=0 and n35=0 and n55=1 and n17=0 and n62=1 and n60=1
-n81 1 -> 0 when n18=1 and n43=1 and n39=1 and n63=1 and n82=0
-n53 1 -> 0 when n100=1
-n4 0 -> 1 when n35=0 and n72=1
-n88 0 -> 1 when n6=0 and n30=0 and n53=1 and n39=1 and n25=1 and n49=0 and n75=0 and n66=0 and n95=0 and n98=1 and n16=1 and n34=0 and n19=1 and n23=0 and n24=0 and n1=1 and n65=0
-n90 1 -> 0 when n45=1 and n96=0 and n25=0 and n59=0 and n86=1 and n8=1 and n53=0
-n60 1 -> 0 when n14=1 and n87=0 and n17=1
-n67 1 -> 0 when n99=0 and n3=0 and n65=0 and n57=1
-n36 1 -> 0 when n13=0 and n57=0
-n58 0 -> 1 when n81=0 and n72=0 and n68=1 and n88=0 and n34=0 and n36=1 and n91=0 and n53=1 and n94=0 and n4=1 and n90=0 and n63=1 and n70=0 and n45=0
-n42 0 -> 1 when n18=0 and n55=0 and n7=0
-n89 1 -> 0 when n70=1 and n93=0 and n39=1 and n13=0 and n91=0 and n85=1 and n76=0 and n35=0 and n59=1 and n92=1 and n68=0
-n48 0 -> 1 when n31=0 and n18=0 and n37=0 and n15=0 and n36=0 and n90=0 and n63=1 and n65=0 and n76=0 and n89=0 and n53=0
-n16 0 -> 1 when n31=1 and n37=1 and n29=0 and n11=0 and n47=1 and n58=0 and n51=1 and n1=0
-n85 0 -> 1 when n39=0 and n40=0
-n43 0 -> 1 when n85=1 and n54=1 and n96=1 and n93=1 and n55=1 and n16=0 and n81=1 and n23=1 and n32=0
-n21 0 -> 1 when n97=0
-n39 1 -> 0 when n20=0 and n8=0 and n86=0 and n49=0 and n40=1 and n25=1
-n40 1 -> 0 when n46=1 and n25=1 and n13=1 and n33=0 and n22=1 and n63=0 and n50=1
-n25 0 -> 1 when n12=0 and n78=1 and n36=1 and n19=0 and n54=0 and n29=0
-n48 0 -> 1 when n80=1 and n79=1 and n55=0
-n77 1 -> 0 when n33=0
-n87 1 -> 0 when n22=0 and n15=1 and n69=1
-n25 0 -> 1 when n94=0 and n10=1 and n35=1 and n39=0 and n5=1 and n68=0 and n47=0 and n16=1
-n82 1 -> 0 when n2=0 and n44=1
-n72 0 -> 1 when n43=0 and n14=0 and n95=0 and n63=1 and n4=0 and n42=1
-n88 1 -> 0 when n77=0 and n92=0 and n4=1 and n14=1 and n31=0 and n13=1
-n53 1 -> 0 when n44=1 and n91=1 and n3=1
-n79 1 -> 0 when n23=0 and n41=1
-n26 0 -> 1 when n47=1 and n88=1 and n24=0 and n19=0 and n29=0 and n15=1 and n8=1 and n12=0 and n85=1 and n31=1 and n46=0 and n58=0
-n46 1 -> 0 when n78=0 and n6=1 and n99=1 and n63=0 and n87=1 and n9=0 and n10=1 and n77=0
-n36 1 -> 0 when n1=0 and n58=1 and n78=0 and n5=1 and n97=0
-n77 0 -> 1 when n7=0
-n6 1 -> 0 when n10=0 and n76=0 and n16=0 and n64=1 and n63=0 and n18=0 and n90=1
-n72 0 -> 1 when n5=1 and n93=1 and n26=0 and n92=0 and n48=1 and n60=1
-n93 1 -> 0 when n77=0
-n59 0 -> 1 when n78=0 and n51=1 and n53=1
-n36 1 -> 0 when n58=1 and n75=0 and n47=1 and n42=0
-n65 1 -> 0 when n53=1 and n8=1 and n18=0 and n59=0
-n93 0 -> 1 when n87=0 and n63=0 and n83=1 and n42=0 and n85=1
-n20 0 -> 1 when n76=1 and n69=1 and n37=1 and n86=0 and n43=1 and n34=0 and n25=1 and n78=1 and n98=0 and n29=0 and n5=0 and n75=0
-n10 0 -> 1 when n73=1 and n52=1
-n9 1 -> 0 when n21=0 and n100=0 and n12=1 and n93=1 and n76=0 and n37=1 and n61=1 and n52=0 and n81=0 and n23=1 and n31=0
+n80 1 -> 0 when n94=1 and n24=0
+n33 1 -> 0 when n35=0 and n94=1 and n27=0 and n79=0 and n81=1 and n23=0 and n62=0 and n47=1 and n93=0
+n87 1 -> 0 when n38=0 and n70=0
+n20 1 -> 0 when n54=0 and n56=1 and n36=0
+n77 1 -> 0 when n68=0 and n66=1
+n95 1 -> 0 when n36=1 and n76=1 and n21=1 and n56=0 and n29=0 and n94=0 and n48=0 and n63=0 and n40=1
+n7 1 -> 0 when n24=1
+n27 0 -> 1 when n6=1
+n20 1 -> 0 when n83=0 and n32=0
+n21 0 -> 1 when n72=1 and n88=0 and n19=1 and n16=0 and n9=1 and n11=1 and n32=1 and n47=1 and n97=0
+n14 0 -> 1 when n76=1
+n67 0 -> 1 when n59=1 and n25=1 and n18=0 and n95=1 and n42=0 and n8=0 and n23=0
+n54 1 -> 0 when n13=1 and n26=1 and n97=0
+n76 1 -> 0 when n59=1
+n7 1 -> 0 when n18=0
+n36 1 -> 0 when n63=0 and n87=1 and n16=0 and n61=1 and n47=0 and n93=0 and n97=0
+n47 0 -> 1 when n2=0 and n95=0 and n11=0 and n20=1 and n99=0 and n88=1 and n78=1 and n58=0 and n39=1 and n89=0 and n51=1
+n56 0 -> 1 when n10=1 and n92=1 and n14=1 and n94=0 and n81=1
+n72 0 -> 1 when n7=0 and n38=0 and n32=1 and n20=1 and n85=1 and n69=0 and n58=0 and n3=1 and n46=0 and n2=1 and n94=1 and n39=0
+n18 0 -> 1 when n30=1
+n48 1 -> 0 when n8=0 and n4=0 and n15=1 and n64=1 and n56=0 and n5=1 and n46=1 and n21=1 and n78=0 and n91=0 and n30=0 and n84=1 and n95=0 and n11=0
+n97 0 -> 1 when n17=1 and n66=1 and n60=0
+n91 1 -> 0 when n52=1 and n77=1 and n66=1 and n86=0
+n31 1 -> 0 when n17=1 and n83=1 and n36=1 and n100=0 and n10=1 and n86=0 and n25=1 and n7=0 and n14=1 and n27=1
+n8 1 -> 0 when n44=1 and n13=1 and n7=0
+n82 1 -> 0 when n25=1 and n34=0 and n80=1 and n26=1 and n85=1
+n82 0 -> 1 when n4=0 and n79=0 and n94=1 and n63=1 and n81=1 and n93=0 and n61=1 and n55=1 and n37=1 and n14=0 and n96=1 and n86=0 and n31=0
+n42 0 -> 1 when n29=0 and n86=1 and n80=0 and n90=1 and n36=0 and n20=0 and n60=1 and n31=0 and n58=1 and n52=0 and n91=1
+n3 1 -> 0 when n48=0
+n80 1 -> 0 when n40=0
+n43 0 -> 1 when n19=1 and n72=1 and n77=0 and n70=0
+n41 0 -> 1 when n46=0 and n87=0
+n83 0 -> 1 when n24=1 and n38=0 and n99=1 and n40=1 and n59=0
+n72 1 -> 0 when n34=0
+n96 0 -> 1 when n35=1 and n56=1 and n89=1
+n89 0 -> 1 when n23=1
+n50 0 -> 1 when n72=1 and n93=1
+n63 1 -> 0 when n69=0 and n58=1 and n8=1 and n28=0 and n6=0 and n97=1 and n43=0 and n26=1 and n23=1 and n25=0 and n72=0 and n29=0 and n95=1 and n50=0 and n90=0 and n3=1 and n57=0 and n55=0 and n1=1 and n79=0 and n75=0 and n98=0 and n16=0 and n31=0 and n35=1 and n49=1
+n72 0 -> 1 when n63=1 and n41=1
+n68 1 -> 0 when n19=0
+n93 0 -> 1 when n7=1 and n99=1
+n90 1 -> 0 when n56=1 and n52=0 and n21=0 and n85=0 and n74=1 and n20=1 and n42=0 and n53=0 and n71=1 and n16=0 and n84=1 and n63=0 and n96=1 and n68=1 and n28=1 and n50=1 and n95=1 and n89=1
+n36 1 -> 0 when n52=0 and n20=0 and n88=1 and n54=0 and n1=1 and n79=1 and n94=1 and n3=0 and n98=0 and n56=1 and n10=1 and n89=0 and n34=1 and n58=0 and n14=0 and n84=1 and n8=1
+n31 0 -> 1 when n33=1 and n17=0 and n64=1 and n44=0 and n91=1 and n78=0 and n46=0 and n95=1 and n7=0
+n16 1 -> 0 when n39=0
+n27 1 -> 0 when n98=1 and n13=0
+n26 0 -> 1 when n86=0
+n92 0 -> 1 when n100=1 and n88=1 and n63=0 and n3=0 and n96=1
+n22 1 -> 0 when n4=0 and n10=1 and n11=1 and n6=0
+n95 0 -> 1 when n40=0 and n53=1 and n14=0 and n2=0 and n19=0 and n42=1 and n61=1 and n47=0 and n67=1 and n83=0 and n23=1 and n17=0
+n2 0 -> 1 when n13=1 and n54=0 and n20=0 and n1=0 and n42=0 and n45=1 and n26=0 and n17=0
+n57 0 -> 1 when n88=0 and n51=0 and n41=1 and n7=0 and n45=0
+n44 0 -> 1 when n74=1 and n93=0 and n39=1
+n62 1 -> 0 when n84=1
+n61 1 -> 0 when n70=1 and n19=1 and n18=1 and n66=0 and n48=1 and n32=0 and n16=0 and n26=0
+n4 0 -> 1 when n6=1 and n14=0 and n27=1
+n38 1 -> 0 when n57=0 and n100=1 and n60=1 and n93=1 and n91=0 and n25=0 and n58=0
+n51 0 -> 1 when n62=0
+n63 1 -> 0 when n74=1 and n9=1 and n86=1 and n52=0 and n5=1 and n81=0 and n87=0 and n29=1
+n38 0 -> 1 when n59=1 and n71=1 and n58=0 and n69=1 and n86=1 and n41=1 and n88=0 and n22=0 and n68=1 and n26=0 and n93=1 and n61=1 and n23=0 and n95=0 and n11=1 and n76=0 and n91=1 and n66=0 and n15=0
+n68 1 -> 0 when n9=1
+n69 1 -> 0 when n11=1 and n81=0 and n49=0 and n24=0 and n98=0 and n82=0 and n23=0 and n51=0 and n42=1 and n66=1 and n30=1 and n4=1 and n26=1 and n57=1
+n19 1 -> 0 when n23=0 and n71=0 and n27=0 and n46=1 and n64=0 and n70=0 and n40=1 and n11=0 and n67=1 and n56=0 and n59=0 and n17=0 and n68=0
+n60 1 -> 0 when n100=1 and n31=0 and n18=0 and n4=1 and n17=0 and n15=1 and n44=1
+n18 1 -> 0 when n70=1 and n85=0 and n44=0 and n7=1 and n33=0 and n1=0 and n58=1
+n29 0 -> 1 when n1=0 and n11=1 and n41=1 and n6=1 and n64=1 and n61=0 and n56=0
+n62 1 -> 0 when n73=0 and n24=1 and n97=0 and n56=0 and n75=1 and n76=0 and n96=0 and n1=0 and n55=0 and n8=1
+n89 1 -> 0 when n94=1
+n73 0 -> 1 when n46=1 and n86=0 and n25=0
+n57 1 -> 0 when n76=1 and n7=1 and n1=0 and n69=1 and n55=1 and n89=0
+n90 0 -> 1 when n52=0
+n26 1 -> 0 when n14=0 and n59=1 and n1=0 and n47=1 and n81=0 and n77=1 and n91=1
+n10 0 -> 1 when n49=1 and n23=0 and n95=0 and n3=0
+n93 0 -> 1 when n36=0 and n92=0 and n34=1 and n5=0 and n57=0 and n18=0 and n76=1
+n23 0 -> 1 when n93=0 and n68=1 and n78=1 and n30=0 and n59=0 and n72=0
+n97 1 -> 0 when n83=1
+n87 0 -> 1 when n84=1 and n86=1 and n40=0
+n25 0 -> 1 when n6=1
+n28 1 -> 0 when n32=0 and n83=0 and n5=1 and n81=0 and n14=1 and n20=0 and n31=0 and n46=1 and n27=0 and n87=1 and n94=1 and n44=1 and n77=0 and n90=0 and n97=0 and n17=0 and n64=0 and n78=0 and n48=1 and n65=0
+n98 0 -> 1 when n41=0
+n32 1 -> 0 when n91=1
+n4 1 -> 0 when n11=1 and n88=0
+n85 1 -> 0 when n21=1 and n43=1 and n6=0 and n74=0 and n15=1
+n48 1 -> 0 when n89=0
+n38 1 -> 0 when n100=0 and n67=0 and n72=0
+n64 1 -> 0 when n61=0 and n42=0 and n79=0 and n52=0 and n32=1 and n98=0 and n26=1 and n54=1
+n87 0 -> 1 when n11=0 and n55=0
+n85 1 -> 0 when n33=1 and n59=0
+n62 1 -> 0 when n80=1 and n48=1 and n44=1 and n85=1 and n83=1 and n3=1 and n16=0 and n70=1
+n76 1 -> 0 when n3=0
+n64 0 -> 1 when n52=1 and n24=1 and n51=1 and n84=0 and n46=0 and n8=1 and n96=1
+n62 1 -> 0 when n83=1 and n81=0 and n39=0 and n37=1 and n100=1 and n61=1
+n30 1 -> 0 when n79=0 and n25=1 and n33=0
+n42 0 -> 1 when n52=1 and n41=0 and n72=1
+n72 0 -> 1 when n28=0 and n69=0 and n29=0 and n80=0 and n10=0 and n42=0 and n83=1 and n7=0 and n46=1 and n63=0
+n29 0 -> 1 when n76=1 and n21=0 and n16=0 and n13=0 and n96=1
+n51 0 -> 1 when n70=0 and n77=1 and n14=0 and n66=1
+n69 1 -> 0 when n85=1 and n98=1 and n83=1 and n21=0 and n22=1 and n13=0 and n86=0 and n99=1 and n26=1 and n4=1 and n93=1 and n15=0
+n52 0 -> 1 when n54=0 and n17=0 and n31=0 and n99=1 and n55=1 and n39=1
+n30 1 -> 0 when n65=1 and n75=0 and n41=1 and n34=1 and n42=1 and n62=1 and n25=0 and n83=1 and n59=1 and n49=0 and n81=1 and n27=1 and n78=0 and n89=1
+n67 0 -> 1 when n52=0 and n90=0 and n98=1 and n9=0 and n38=1 and n27=1 and n12=1 and n42=0 and n93=1 and n73=1 and n39=1
+n16 1 -> 0 when n69=1 and n33=1 and n31=1 and n22=1 and n36=0 and n2=0
+n50 1 -> 0 when n33=1 and n35=0 and n28=0 and n89=1
+n51 1 -> 0 when n5=1 and n46=0 and n99=1
+n38 1 -> 0 when n4=1 and n90=1
+n88 1 -> 0 when n34=0
+n99 1 -> 0 when n78=1 and n39=0 and n36=0 and n24=1 and n13=0 and n77=1 and n55=1 and n34=1 and n4=0 and n89=1 and n14=1 and n40=1 and n42=1 and n51=0 and n38=1 and n71=0 and n88=0
+n61 0 -> 1 when n73=0 and n17=0 and n98=0 and n25=0 and n13=1 and n74=1 and n20=1 and n42=0 and n96=1 and n83=0 and n49=0 and n24=0 and n92=0 and n4=0 and n89=1 and n34=1
+n74 1 -> 0 when n17=0 and n42=0 and n96=1 and n10=1 and n61=0 and n50=1 and n23=1
+n87 1 -> 0 when n7=0 and n64=0 and n79=0 and n46=0 and n85=0 and n37=1
+n88 0 -> 1 when n100=0 and n8=1 and n40=0 and n2=1 and n54=0 and n12=1 and n34=1 and n4=1 and n37=1
+n32 1 -> 0 when n68=1 and n83=0 and n24=1 and n98=1 and n100=1 and n31=1 and n97=0
+n22 0 -> 1 when n86=1 and n14=1 and n88=0 and n36=0 and n50=0
+n42 0 -> 1 when n27=0 and n39=0
+n19 0 -> 1 when n61=0 and n85=0
+n23 0 -> 1 when n84=0 and n20=1 and n17=1 and n31=0 and n28=1 and n46=1 and n67=1 and n16=0 and n53=1 and n100=1 and n99=0 and n92=1 and n13=1 and n38=1 and n65=0 and n15=1 and n26=1 and n50=1
+n12 1 -> 0 when n93=1
+n63 0 -> 1 when n56=0 and n35=0
+n62 1 -> 0 when n100=0 and n3=0 and n98=0 and n87=0 and n79=1 and n42=0 and n61=0 and n89=1 and n64=0 and n56=1 and n37=1 and n11=0 and n55=1 and n68=1
+n5 0 -> 1 when n98=0
+n77 1 -> 0 when n95=0
+n15 0 -> 1 when n100=1 and n54=1 and n66=1 and n33=1 and n31=1 and n10=1
+n48 0 -> 1 when n23=0
+n7 1 -> 0 when n28=0
+n80 1 -> 0 when n96=1 and n65=1
+n98 0 -> 1 when n48=0 and n32=1 and n93=1 and n71=0 and n78=1 and n57=0 and n80=0 and n91=0 and n59=0 and n26=1 and n74=0 and n30=1
+n42 0 -> 1 when n94=0 and n22=1
+n10 0 -> 1 when n42=1 and n5=1 and n30=0 and n74=1 and n64=0
+n22 1 -> 0 when n74=0 and n88=1 and n68=0 and n27=0 and n17=1 and n87=0 and n53=0 and n71=0 and n82=0 and n50=0
+n37 1 -> 0 when n61=0 and n85=1 and n55=0 and n57=1 and n83=1 and n65=0 and n95=0 and n4=0 and n34=1 and n64=1
+n37 0 -> 1 when n81=0 and n11=1 and n14=1 and n95=1 and n84=0 and n34=0
+n50 0 -> 1 when n35=0
+n30 1 -> 0 when n64=0 and n46=0 and n40=0
+n83 0 -> 1 when n43=0 and n55=1 and n8=0 and n13=0 and n33=1
+n11 0 -> 1 when n91=1
+n46 1 -> 0 when n30=1
+n42 0 -> 1 when n83=0 and n19=0 and n45=1 and n41=1 and n39=1 and n99=0 and n55=0 and n5=0 and n49=0 and n58=0 and n26=0 and n75=0 and n11=0 and n16=1 and n33=1 and n53=0
+n65 1 -> 0 when n84=0 and n100=1 and n72=0 and n30=0
+n9 1 -> 0 when n17=1
+n70 1 -> 0 when n60=1 and n2=0 and n100=0 and n74=0 and n77=0 and n35=1 and n65=0
+n44 1 -> 0 when n31=1 and n26=0 and n52=1 and n3=0 and n14=1 and n33=1 and n56=0 and n46=0 and n8=0 and n7=1
+n61 0 -> 1 when n29=0 and n75=1 and n39=0
+n57 1 -> 0 when n46=0 and n13=0 and n83=0 and n30=1 and n74=0 and n77=0 and n95=0 and n26=0 and n84=1 and n43=1 and n42=1 and n62=1 and n100=1 and n78=0 and n70=0 and n47=0 and n19=1 and n9=0
+n60 0 -> 1 when n10=0 and n92=1 and n52=0 and n28=0 and n70=1 and n74=0 and n80=0 and n40=0 and n79=1 and n94=0 and n1=1 and n32=1 and n71=1 and n81=1 and n85=1
+n34 1 -> 0 when n33=1 and n26=0 and n35=1 and n98=0
+n54 0 -> 1 when n18=1 and n20=0 and n59=1 and n48=1 and n77=0 and n16=0 and n19=1 and n28=0 and n22=0 and n44=1 and n53=0 and n94=1 and n56=0 and n2=1
+n90 1 -> 0 when n53=0
+n56 0 -> 1 when n60=0 and n17=0 and n52=1 and n70=1
+n99 0 -> 1 when n53=0 and n32=0 and n39=0 and n94=1 and n43=1 and n51=0 and n1=0 and n78=0
+n76 1 -> 0 when n92=1 and n42=0 and n40=1 and n93=1 and n60=1 and n38=1 and n32=1 and n73=1
+n96 0 -> 1 when n59=0 and n35=1 and n3=0 and n33=1
+n85 1 -> 0 when n96=1 and n100=0 and n20=1 and n93=0 and n52=0 and n72=0 and n50=1 and n22=1 and n44=0 and n73=0 and n26=1 and n94=1 and n81=0
+n31 0 -> 1 when n13=0
+n80 0 -> 1 when n46=1 and n8=1 and n42=1 and n29=1 and n94=0 and n4=1 and n27=0 and n50=1
+n79 0 -> 1 when n16=0 and n7=0 and n86=1 and n41=0
+n45 0 -> 1 when n92=1 and n41=1 and n76=0 and n59=0 and n71=1 and n22=0 and n31=1 and n100=1 and n56=0 and n36=0 and n26=1 and n98=1 and n19=1 and n99=0 and n49=0 and n37=1
+n78 0 -> 1 when n60=0
+n59 1 -> 0 when n91=0 and n61=1
+n20 1 -> 0 when n87=0
+n79 0 -> 1 when n96=0 and n71=0 and n76=0 and n88=0 and n89=1 and n61=1 and n62=0 and n45=0 and n51=1
+n23 1 -> 0 when n25=1
+n73 1 -> 0 when n17=1
+n69 0 -> 1 when n71=0 and n10=0
+n24 1 -> 0 when n73=1
+n29 1 -> 0 when n38=0 and n76=1 and n21=1
+n53 1 -> 0 when n34=0 and n97=0 and n14=1
+n99 0 -> 1 when n94=1 and n63=0
+n100 0 -> 1 when n60=1 and n11=0 and n34=0 and n2=1 and n9=1 and n23=0
+n60 1 -> 0 when n42=1 and n62=1 and n8=0
+n40 1 -> 0 when n66=1
+n20 0 -> 1 when n76=1 and n54=1 and n83=1 and n41=0 and n53=0
+n4 1 -> 0 when n36=1 and n81=0 and n63=1 and n51=0 and n6=0 and n17=1 and n59=1 and n52=0
+n17 0 -> 1 when n1=0 and n84=1 and n97=0 and n39=1 and n50=1 and n61=0
+n67 1 -> 0 when n97=0 and n23=1 and n8=1 and n32=0 and n1=0 and n93=1 and n99=0 and n16=1 and n100=1 and n14=1 and n28=1 and n35=0 and n6=1 and n59=1
+n23 0 -> 1 when n75=1
+n61 1 -> 0 when n2=1 and n57=1 and n12=0 and n53=1
+n69 0 -> 1 when n34=0 and n9=1 and n45=0 and n53=1 and n66=1 and n65=1 and n20=0 and n41=1 and n24=0 and n60=1
+n88 1 -> 0 when n65=0 and n60=0 and n90=0 and n21=0 and n35=1 and n46=0
+n74 0 -> 1 when n50=1
+n65 1 -> 0 when n53=1 and n15=1
+n50 1 -> 0 when n82=1 and n74=0 and n36=0 and n45=1
+n85 1 -> 0 when n14=0 and n52=1 and n53=0 and n70=1 and n83=0 and n3=1 and n80=0 and n78=0 and n74=1 and n43=0 and n66=1 and n23=0 and n31=0 and n54=1
+n9 0 -> 1 when n49=0 and n19=0 and n60=0 and n82=0 and n81=0 and n36=1
+n24 0 -> 1 when n59=1 and n36=0 and n97=0 and n70=0 and n42=0 and n96=0 and n29=0 and n92=0 and n1=0
+n12 0 -> 1 when n67=1 and n27=0 and n16=0 and n63=1 and n23=0 and n22=0 and n42=0
+n75 0 -> 1 when n57=1 and n46=0 and n10=0 and n69=0 and n39=0 and n92=0
+n14 0 -> 1 when n74=0 and n50=1 and n80=1 and n86=1 and n85=1 and n59=1 and n1=0
+n24 1 -> 0 when n39=1 and n78=0 and n74=1 and n91=1 and n62=1 and n27=1 and n81=1 and n83=0 and n68=0 and n64=0 and n71=0 and n88=0 and n72=0 and n67=0 and n87=0 and n12=1 and n76=1 and n73=0
+n92 1 -> 0 when n82=0 and n61=1 and n58=1 and n99=1 and n49=1 and n75=0
+n76 0 -> 1 when n47=0 and n30=1 and n9=0 and n56=0
+n32 0 -> 1 when n9=1 and n92=1 and n99=0 and n31=0 and n74=0 and n97=1 and n35=0 and n88=0 and n24=1 and n49=0 and n91=1 and n6=1
+n10 0 -> 1 when n93=0 and n34=0 and n41=1 and n15=0 and n91=1 and n89=1
+n29 0 -> 1 when n8=1 and n79=0 and n69=0 and n58=0 and n22=1 and n17=0 and n36=1 and n86=1 and n15=1 and n45=0
+n16 1 -> 0 when n62=0 and n36=0 and n37=1 and n93=1 and n23=0
+n82 0 -> 1 when n7=1
+n94 0 -> 1 when n57=0 and n68=1
+n87 1 -> 0 when n3=1 and n56=0
+n49 1 -> 0 when n88=0 and n40=1 and n19=1
+n45 1 -> 0 when n39=0 and n67=1 and n33=0 and n47=0 and n70=0 and n32=1 and n55=0 and n86=1 and n66=0
+n28 1 -> 0 when n78=0 and n53=1 and n12=0 and n11=1 and n71=1 and n44=0 and n27=0 and n84=1 and n20=1 and n79=0 and n88=0 and n87=1 and n15=1 and n21=1
+n49 0 -> 1 when n89=1 and n60=1 and n82=1 and n28=0 and n2=1 and n26=1
+n45 0 -> 1 when n42=1 and n17=1 and n54=0 and n80=1 and n57=0 and n56=1 and n81=0 and n64=0 and n37=0 and n94=1 and n38=0 and n92=1
+n21 1 -> 0 when n85=1
+n99 0 -> 1 when n73=1 and n91=1
+n21 1 -> 0 when n100=0 and n73=1 and n46=0 and n44=0 and n15=1 and n1=1 and n32=0 and n85=0 and n31=0 and n11=1 and n57=1 and n13=0 and n76=1 and n30=1 and n70=0 and n94=1 and n74=0 and n65=1
+n93 1 -> 0 when n37=0 and n21=1 and n99=0 and n83=1 and n26=0 and n63=1 and n46=0
+n59 1 -> 0 when n54=1 and n44=1 and n81=1 and n100=0 and n60=1 and n98=0 and n39=1 and n90=1 and n42=0 and n28=0 and n23=0
+n76 0 -> 1 when n72=0 and n4=0 and n28=0 and n75=1 and n13=0 and n27=1 and n22=1 and n46=1 and n8=1 and n56=0 and n90=0 and n70=0
+n66 1 -> 0 when n53=1 and n90=0 and n64=0 and n25=0 and n23=0 and n99=1 and n73=1 and n63=0
+n46 0 -> 1 when n21=1 and n32=0 and n13=1 and n82=1
+n76 1 -> 0 when n96=1 and n22=0 and n17=0 and n34=0
+n73 0 -> 1 when n7=0 and n37=0 and n64=0
+n33 1 -> 0 when n82=0 and n11=0 and n54=1 and n29=1 and n70=1 and n8=0 and n62=1 and n99=0 and n61=1
+n52 1 -> 0 when n32=0 and n28=0 and n38=0 and n36=1 and n82=0 and n44=1 and n41=0
+n36 1 -> 0 when n69=1 and n44=0
+n14 0 -> 1 when n70=0 and n60=1
+n73 0 -> 1 when n68=1
+n1 1 -> 0 when n80=1
+n66 0 -> 1 when n4=0 and n49=1 and n81=1 and n87=1 and n82=0 and n100=0 and n33=0 and n15=1 and n48=1 and n37=0 and n60=1 and n42=0 and n65=1 and n41=1 and n9=0
+n30 0 -> 1 when n6=0 and n35=0
+n39 1 -> 0 when n63=0 and n46=0 and n74=0 and n55=0 and n1=0 and n67=0 and n6=0 and n10=1
+n32 0 -> 1 when n79=0 and n74=1 and n28=0 and n96=1 and n18=0 and n85=1
+n30 0 -> 1 when n34=1 and n23=1 and n74=0 and n21=0 and n70=0 and n13=0
+n84 0 -> 1 when n34=0
+n52 1 -> 0 when n57=1
+n60 0 -> 1 when n68=1 and n33=1 and n36=0 and n100=0 and n42=1 and n63=0 and n23=0 and n74=1 and n57=0
+n22 1 -> 0 when n4=0
+n6 1 -> 0 when n16=1
+n8 0 -> 1 when n50=1 and n99=1 and n32=0 and n78=1 and n85=1 and n27=1 and n41=0 and n87=1 and n46=1 and n24=1 and n100=0 and n90=1
+n16 0 -> 1 when n45=1 and n96=0 and n34=1 and n79=1 and n37=0 and n89=0 and n27=1 and n73=0 and n63=1 and n90=0 and n10=1 and n29=0 and n66=0
+n24 0 -> 1 when n89=0
+n21 1 -> 0 when n42=0 and n8=1 and n48=1 and n36=0
+n80 1 -> 0 when n70=1 and n48=1 and n24=1 and n30=0
+n5 0 -> 1 when n16=1 and n7=1
+n54 0 -> 1 when n30=1
+n91 1 -> 0 when n63=1 and n25=1 and n92=0
+n86 0 -> 1 when n69=1 and n20=0 and n84=1 and n33=1
+n97 1 -> 0 when n74=1 and n82=0 and n83=0 and n58=1 and n31=1 and n46=0
+n57 0 -> 1 when n63=1 and n94=1 and n74=0
+n95 1 -> 0 when n21=0 and n41=0 and n90=0 and n17=0 and n59=1 and n14=0 and n53=0 and n35=1 and n93=1 and n2=0 and n12=0 and n70=1 and n62=0 and n73=0 and n16=0
+n34 1 -> 0 when n5=0 and n51=1
+n23 0 -> 1 when n71=1 and n50=1
+n72 0 -> 1 when n9=0 and n36=0 and n46=1 and n71=1 and n74=1 and n6=0 and n56=0
+n88 1 -> 0 when n54=0 and n74=0 and n77=1
+n10 1 -> 0 when n33=1 and n41=1
+n5 0 -> 1 when n71=0 and n86=1 and n27=1
+n90 0 -> 1 when n36=1 and n45=1 and n31=0 and n66=0 and n51=1 and n24=0 and n65=1 and n82=0 and n50=0 and n77=1
+n3 0 -> 1 when n59=1 and n91=1
+n31 1 -> 0 when n92=1 and n94=0 and n88=0
+n31 0 -> 1 when n25=0 and n5=1 and n62=0 and n49=1 and n6=1 and n15=0 and n27=1 and n1=0 and n54=0 and n43=1 and n8=1 and n63=0 and n55=0 and n79=0 and n99=0
+n45 1 -> 0 when n63=0 and n71=0 and n29=1 and n15=1 and n100=1 and n67=0
+n94 1 -> 0 when n37=0 and n69=0 and n31=0 and n33=1 and n74=0
+n10 0 -> 1 when n81=1 and n36=0 and n35=1 and n20=0 and n13=0 and n25=0
+n45 0 -> 1 when n19=1 and n93=0 and n39=1 and n16=0 and n66=0 and n27=0 and n8=1 and n70=0 and n42=1
+n38 0 -> 1 when n31=1 and n62=0 and n12=0 and n26=0 and n24=1 and n43=0
+n31 0 -> 1 when n68=0
+n81 0 -> 1 when n3=0 and n2=0 and n53=1 and n32=1 and n68=1 and n60=1 and n15=0
+n50 1 -> 0 when n100=1 and n53=1 and n59=0 and n56=0 and n63=1 and n51=0 and n27=0
+n81 1 -> 0 when n63=0 and n6=1 and n7=0
+n46 0 -> 1 when n87=0 and n76=1 and n88=0
+n62 1 -> 0 when n99=0 and n92=1 and n6=1 and n54=0 and n65=0 and n87=0 and n100=0 and n83=0
+n68 0 -> 1 when n60=1 and n9=1 and n30=1 and n49=1 and n66=1 and n87=1 and n10=1
+n67 1 -> 0 when n78=0 and n62=0 and n43=0 and n55=1 and n26=0
+n94 1 -> 0 when n17=0 and n92=0 and n2=1 and n81=0 and n7=1 and n78=0 and n91=1 and n1=1
+n24 0 -> 1 when n84=1 and n55=0 and n49=0 and n25=0 and n92=0 and n62=0
+n40 0 -> 1 when n83=0 and n18=0 and n66=0 and n91=1 and n94=0 and n50=1 and n19=1 and n95=1 and n14=0 and n42=1 and n82=0 and n73=1 and n98=0 and n100=0 and n22=1 and n93=1 and n86=0 and n85=0 and n17=1 and n84=1 and n97=1 and n57=0
+n43 0 -> 1 when n89=0 and n63=1
+n5 0 -> 1 when n96=1
+n48 1 -> 0 when n81=0
+n69 0 -> 1 when n49=1 and n84=1 and n31=1
+n7 1 -> 0 when n98=0 and n11=0 and n95=0 and n23=1 and n64=0
+n24 0 -> 1 when n7=0 and n96=1 and n79=1
+n41 0 -> 1 when n32=1 and n95=0 and n87=0
+n100 1 -> 0 when n55=0
+n91 1 -> 0 when n74=1 and n33=0 and n83=1 and n26=1
+n22 0 -> 1 when n40=0 and n82=0 and n6=1 and n7=1
+n37 1 -> 0 when n42=0 and n64=0 and n49=1
+n84 1 -> 0 when n19=0 and n20=1 and n47=1 and n45=1 and n17=1 and n77=0
+n95 1 -> 0 when n64=0
+n33 0 -> 1 when n7=0 and n6=1 and n99=0 and n83=0 and n4=0 and n13=1 and n81=0 and n62=1 and n22=1 and n69=0 and n25=0 and n8=0 and n70=1 and n78=0
+n99 0 -> 1 when n16=0 and n4=0 and n76=1 and n30=0 and n11=0 and n37=1 and n36=1 and n60=0 and n18=1 and n25=1 and n1=0 and n35=0 and n6=0 and n64=0
+n27 0 -> 1 when n30=1 and n74=1 and n32=1 and n8=1
+n70 1 -> 0 when n80=1 and n11=1 and n82=1 and n43=1 and n87=1 and n3=0 and n89=0
+n12 0 -> 1 when n77=1 and n99=1 and n37=1 and n95=1
+n95 1 -> 0 when n56=0 and n8=1
+n90 1 -> 0 when n10=0 and n62=0 and n6=0 and n56=0 and n89=1 and n17=1 and n86=1
+n72 0 -> 1 when n53=0 and n23=0 and n93=0
+n91 1 -> 0 when n77=0 and n20=0 and n35=0 and n25=0 and n23=1 and n10=1 and n66=0 and n50=1 and n53=0 and n54=0 and n51=0 and n1=0 and n88=1 and n96=1 and n47=0 and n93=1 and n99=0
+n43 1 -> 0 when n11=1 and n10=0 and n4=0 and n9=1 and n1=1 and n99=1
+n21 1 -> 0 when n26=0 and n83=0 and n63=1 and n82=0 and n53=0 and n7=0 and n64=0 and n95=1 and n24=0 and n45=1
+n64 1 -> 0 when n66=1 and n69=0 and n41=0
+n8 0 -> 1 when n18=0 and n50=0 and n72=0 and n67=1 and n1=1 and n17=0 and n64=1 and n24=0 and n49=0 and n86=0 and n25=1 and n4=0 and n66=1 and n57=0 and n3=1 and n58=0 and n88=0 and n87=0 and n11=0 and n60=0 and n98=0 and n32=1 and n13=0 and n97=0 and n70=1 and n38=1
+n82 0 -> 1 when n37=1 and n94=0 and n83=1 and n85=0 and n19=1 and n45=1 and n49=0 and n61=1 and n6=1
+n11 0 -> 1 when n12=1 and n90=0 and n34=1
+n71 1 -> 0 when n96=1 and n3=0 and n34=1 and n32=1
+n4 0 -> 1 when n28=0 and n10=1 and n9=0
+n54 0 -> 1 when n36=1
+n54 0 -> 1 when n35=1 and n14=1
+n96 0 -> 1 when n9=1 and n61=1

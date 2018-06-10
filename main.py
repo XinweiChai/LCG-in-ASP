@@ -13,28 +13,30 @@ import time
 
 sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 sizes2 = [400, 500, 600, 700, 800, 900, 1000]
+sizes = sizes1 + sizes2
 size_density = 3
 times = [1, 2, 3, 4, 5, 6, 7]
 num_tran_var = size_density * times
 # num_tran = size_density
-models = 20
+models = 10
 iteration = 50
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,'testmodel',size)
 # generateFiles(models, size, num_tran)
 # import argparse
-time_recorder1 = []
-time_recorder2 = []
-start = default_timer()
-stop = default_timer()
+time_recorder = {}
 if __name__ == '__main__':
-   for i in sizes2:
-       num_tran = size_density * i
-       if i != 400:
-           generateFiles(models, i, num_tran)
-       for j in range(models):
-           batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
-
+    f = open("data//runtime", 'w')
+    for i in sizes:
+        print(i)
+        num_tran = size_density * i
+        generateFiles(models, i, num_tran)
+        start = default_timer()
+        for j in range(models):
+            batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
+        stop = default_timer()
+        time_recorder[i] = (stop - start) / models / 20
+        f.write(str(i)+":"+str(time_recorder[i])+'\n')
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
 # batch('','testPhage.an')
@@ -54,7 +56,7 @@ if __name__ == '__main__':
 #    print("timeout")
 #    # Cleanup
 #    p.join()
-#if __name__=='__main__':
+# if __name__=='__main__':
 #    print(output_file('data//model_400//model_0_out','data//model_400//model_0' ,[0,0], [0, 0, 0, 0, 0], ('n8', '1')))
 # print(one_run('data//model_400//model_0', ['n1', 'n2', 'n3', 'n4', 'n5'], [0, 0, 0, 0, 0], ('n8', '1'), {}))
 # print(one_run('model_80//model18', ['n1','n2'], [0,0,0,0,0], ('n7','1')))
