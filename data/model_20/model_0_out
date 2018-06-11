@@ -2,11 +2,11 @@
 # n6=1
 True
 # n7=1
-False
+True
 # n8=1
-False
+True
 # n9=1
-False
+True
 # n10=1
 True
 --- n1=0, n2=1
@@ -15,20 +15,19 @@ True
 # n7=1
 True
 # n8=1
-False
+True
 # n9=1
-False
+True
 # n10=1
 True
 --- n1=1, n2=0
-# n6=1
-True
+Timeout
 # n7=1
 True
 # n8=1
-False
+True
 # n9=1
-False
+True
 # n10=1
 True
 --- n1=1, n2=1
@@ -37,8 +36,8 @@ True
 # n7=1
 True
 # n8=1
-False
+True
 # n9=1
-False
+True
 # n10=1
 True

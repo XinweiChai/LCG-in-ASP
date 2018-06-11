@@ -13,30 +13,45 @@ import time
 
 sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 sizes2 = [400, 500, 600, 700, 800, 900, 1000]
-sizes = sizes1 + sizes2
+# sizes = sizes1 + sizes2
+sizes = [200, 300]
 size_density = 3
 times = [1, 2, 3, 4, 5, 6, 7]
 num_tran_var = size_density * times
 # num_tran = size_density
 models = 10
 iteration = 50
+automata = 20
 # x=generate_random_AN(size, num_tran)
 # writeFile(x,'testmodel',size)
 # generateFiles(models, size, num_tran)
 # import argparse
 time_recorder = {}
+# if __name__ == '__main__':
+#    f = open("data//runtime", 'w')
+#    for i in sizes:
+#        print(i)
+#        num_tran = size_density * i
+#        generateFiles(models, i, num_tran)
+#        start = default_timer()
+#        for j in range(models):
+#            batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
+#        stop = default_timer()
+#        time_recorder[i] = (stop - start) / models / 20
+#        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
+
 if __name__ == '__main__':
-    f = open("data//runtime", 'w')
-    for i in sizes:
+    f = open("data//runtime2", 'w')
+    for i in range(8, 13):
         print(i)
-        num_tran = size_density * i
-        generateFiles(models, i, num_tran)
+        num_tran = automata * i
+        generateFiles(models, automata, num_tran)
         start = default_timer()
         for j in range(models):
-            batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
+            batch("data//inputFile", "data//model_20//model_" + str(j))
         stop = default_timer()
         time_recorder[i] = (stop - start) / models / 20
-        f.write(str(i)+":"+str(time_recorder[i])+'\n')
+        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
 # batch('','testPhage.an')

@@ -19,62 +19,218 @@ n18 [0, 1]
 n19 [0, 1]
 n20 [0, 1]
 
-n1 1 -> 0 when n4=0 and n20=1
-n17 0 -> 1 when n9=1 and n20=1 and n11=0 and n3=1 and n1=1 and n16=1 and n14=1
-n7 1 -> 0 when n15=1
-n7 0 -> 1 when n19=1 and n2=0
-n14 1 -> 0 when n17=0 and n8=0 and n20=0 and n13=1
-n17 0 -> 1 when n4=1 and n6=1
-n5 1 -> 0 when n15=1 and n14=1 and n18=0 and n16=0 and n20=1 and n17=0 and n11=1 and n19=1
-n10 1 -> 0 when n14=1 and n12=0 and n1=1 and n18=0 and n16=1 and n15=0
-n14 0 -> 1 when n4=1 and n1=1 and n7=1 and n12=0 and n17=1 and n16=0 and n11=0 and n8=1 and n3=1 and n5=0 and n18=1 and n10=0
-n15 0 -> 1 when n9=0 and n17=1 and n7=0 and n2=0
-n11 0 -> 1 when n16=1 and n13=0
-n20 1 -> 0 when n14=0
-n12 0 -> 1 when n19=1 and n1=1
-n2 1 -> 0 when n16=1
-n4 0 -> 1 when n14=0 and n8=1
-n8 0 -> 1 when n7=1 and n9=0 and n12=1 and n18=0 and n16=1
-n16 0 -> 1 when n20=0 and n2=0 and n10=1 and n15=0 and n6=0 and n18=0 and n7=0 and n1=0 and n8=0
-n15 0 -> 1 when n7=0
-n7 0 -> 1 when n19=1 and n12=0 and n15=0
-n3 1 -> 0 when n20=0 and n4=0 and n8=1 and n9=1 and n6=0
-n17 1 -> 0 when n1=0 and n8=0 and n11=0 and n3=0 and n10=1 and n13=0 and n5=0 and n18=0 and n16=0
-n6 0 -> 1 when n14=0 and n1=0 and n3=0 and n19=0 and n15=0 and n13=0 and n2=0 and n5=0 and n12=0
-n4 1 -> 0 when n9=0
-n15 1 -> 0 when n19=1 and n2=1 and n7=1 and n14=0
-n3 0 -> 1 when n16=0
-n20 0 -> 1 when n4=1
-n2 1 -> 0 when n16=0 and n13=1
-n8 0 -> 1 when n12=1
-n19 0 -> 1 when n6=0 and n9=1 and n2=1 and n18=1 and n11=1 and n5=0
-n1 0 -> 1 when n15=1 and n3=1 and n8=1 and n18=0 and n10=0
-n17 1 -> 0 when n6=1
-n16 0 -> 1 when n9=0 and n13=0 and n17=0 and n20=1 and n19=1 and n8=0 and n15=0 and n12=1 and n4=1
-n3 1 -> 0 when n15=0 and n14=0
-n15 1 -> 0 when n11=0
-n12 0 -> 1 when n15=1 and n8=0 and n3=1 and n7=0 and n1=0
-n19 0 -> 1 when n3=0 and n14=1 and n9=1
-n1 0 -> 1 when n4=1 and n17=0 and n7=1
-n12 0 -> 1 when n18=1 and n11=1 and n9=0
-n20 0 -> 1 when n12=0 and n3=0
-n20 1 -> 0 when n13=1 and n16=1 and n6=0 and n9=0 and n17=0 and n5=0 and n2=1 and n14=1 and n15=0 and n11=0
-n13 1 -> 0 when n14=1 and n15=1 and n7=0 and n8=1
-n20 1 -> 0 when n13=0 and n18=0 and n11=1
-n3 1 -> 0 when n20=1 and n1=0
-n19 1 -> 0 when n16=0 and n14=0 and n6=0 and n17=1 and n1=0 and n12=0 and n5=0 and n8=1 and n15=0 and n13=1 and n4=1 and n7=0
-n13 1 -> 0 when n8=1 and n20=1 and n5=1
-n16 1 -> 0 when n18=1
-n6 0 -> 1 when n10=0
-n4 0 -> 1 when n1=0 and n5=1 and n16=0
-n18 1 -> 0 when n13=1 and n19=0 and n16=0 and n17=1 and n4=1 and n8=0 and n5=1 and n2=1 and n9=0 and n12=1 and n6=1 and n11=1 and n1=0
-n8 0 -> 1 when n7=0 and n16=0 and n10=0 and n19=1 and n2=0 and n12=0 and n11=0 and n1=0
-n6 1 -> 0 when n4=0
-n9 1 -> 0 when n13=1 and n6=1 and n4=1 and n20=1 and n11=0 and n2=1 and n15=1 and n7=0 and n12=1 and n10=0 and n1=0 and n14=0
-n6 1 -> 0 when n19=0 and n20=0
-n17 0 -> 1 when n9=1
-n4 0 -> 1 when n11=0 and n10=0 and n14=1 and n9=0 and n17=0
-n16 0 -> 1 when n18=1 and n11=1 and n8=1 and n7=1 and n17=0 and n3=0
-n2 0 -> 1 when n15=1 and n20=1
-n9 1 -> 0 when n13=1 and n11=0 and n1=0
-n9 0 -> 1 when n8=0 and n16=1 and n3=0 and n4=0 and n6=1 and n14=0 and n7=1 and n1=1 and n17=0 and n20=1 and n11=1 and n2=1 and n18=0 and n15=1 and n10=0 and n19=1
+n9 1 -> 0 when n10=1
+n15 1 -> 0 when n11=0 and n4=1 and n8=0 and n14=1 and n18=1 and n5=0 and n20=1 and n9=0 and n16=1 and n1=1 and n2=0 and n17=1 and n3=0 and n10=1 and n13=1 and n19=1
+n19 1 -> 0 when n1=0 and n6=1 and n3=1 and n5=0 and n18=1 and n2=0 and n20=1
+n3 0 -> 1 when n10=1 and n13=0 and n8=1 and n1=0 and n6=0 and n15=1 and n17=0 and n11=1 and n18=1 and n5=1 and n14=1 and n2=1 and n16=0 and n9=0 and n19=1 and n7=1 and n20=1
+n15 1 -> 0 when n5=0 and n13=0 and n1=0 and n18=1 and n20=1 and n12=1
+n17 1 -> 0 when n3=0
+n14 0 -> 1 when n9=1 and n12=1
+n19 1 -> 0 when n10=1 and n20=0
+n3 0 -> 1 when n17=0 and n4=0 and n9=0 and n8=0 and n6=1 and n19=1 and n1=0 and n7=0 and n13=0 and n2=0 and n10=1 and n18=0 and n20=1 and n14=0
+n14 1 -> 0 when n5=1 and n3=1
+n2 0 -> 1 when n13=0 and n10=1 and n6=0 and n12=0 and n11=1 and n20=0 and n4=1 and n19=0
+n18 0 -> 1 when n20=0 and n1=1 and n13=0
+n2 0 -> 1 when n6=0
+n13 0 -> 1 when n11=0 and n20=0
+n5 0 -> 1 when n17=1 and n14=0 and n8=1 and n9=1 and n1=0
+n12 0 -> 1 when n14=0 and n2=1 and n15=0 and n9=0 and n18=0
+n19 1 -> 0 when n20=0
+n16 1 -> 0 when n5=1 and n15=1
+n13 0 -> 1 when n18=1 and n9=1
+n1 0 -> 1 when n10=0
+n4 1 -> 0 when n11=1 and n10=0 and n2=0 and n16=0 and n9=1 and n18=1 and n12=0 and n8=1
+n13 1 -> 0 when n10=1 and n12=0 and n20=1 and n19=1 and n15=1 and n5=0 and n3=1 and n8=1
+n16 1 -> 0 when n19=1 and n15=1 and n7=1 and n3=0 and n12=0
+n3 1 -> 0 when n16=0 and n1=0 and n12=1 and n13=1 and n4=0 and n19=1
+n3 0 -> 1 when n11=1 and n16=0 and n1=1 and n10=1 and n12=1
+n13 1 -> 0 when n8=1
+n15 1 -> 0 when n18=0
+n1 0 -> 1 when n6=0 and n3=1 and n11=1
+n9 1 -> 0 when n12=1
+n20 0 -> 1 when n9=0 and n17=1 and n3=0 and n11=1 and n7=1 and n18=0
+n9 1 -> 0 when n4=0
+n10 1 -> 0 when n3=0 and n15=1 and n9=1 and n13=1
+n15 1 -> 0 when n7=0 and n1=0
+n13 0 -> 1 when n18=0 and n16=0 and n6=0 and n4=1
+n12 1 -> 0 when n19=1
+n9 1 -> 0 when n13=0
+n13 1 -> 0 when n16=0
+n20 0 -> 1 when n18=1 and n12=0
+n1 1 -> 0 when n10=1 and n13=1 and n14=0
+n19 1 -> 0 when n17=0 and n8=1
+n12 0 -> 1 when n18=1 and n8=1 and n15=0 and n3=1 and n16=1 and n14=1 and n10=1
+n5 0 -> 1 when n6=0 and n8=0 and n3=0 and n19=1 and n9=0 and n12=0 and n13=1 and n2=1
+n17 0 -> 1 when n15=0 and n9=0
+n7 0 -> 1 when n20=0
+n19 1 -> 0 when n15=0 and n18=0 and n9=1 and n12=0 and n10=1 and n16=0 and n6=0 and n7=0 and n8=0
+n8 1 -> 0 when n15=1
+n12 1 -> 0 when n14=0
+n7 0 -> 1 when n10=0 and n9=1 and n15=0 and n12=0 and n3=1
+n11 1 -> 0 when n2=1 and n20=1 and n10=0 and n15=1
+n7 0 -> 1 when n8=0 and n20=1
+n5 0 -> 1 when n17=1 and n13=1 and n6=1 and n9=1 and n8=1 and n10=1
+n6 1 -> 0 when n11=1
+n19 0 -> 1 when n10=1
+n18 0 -> 1 when n17=1 and n8=0 and n15=0 and n7=1 and n3=1
+n4 0 -> 1 when n10=0
+n18 1 -> 0 when n1=0 and n15=0 and n11=0 and n10=0 and n5=1 and n6=1 and n13=1 and n16=1 and n20=0 and n2=0
+n17 0 -> 1 when n18=1
+n17 1 -> 0 when n10=1 and n13=0 and n19=1
+n8 1 -> 0 when n1=0
+n20 0 -> 1 when n5=0 and n9=1 and n1=0 and n18=0 and n14=0 and n11=0 and n6=0 and n13=1 and n19=1
+n8 0 -> 1 when n16=1
+n5 0 -> 1 when n17=1 and n4=1 and n15=1
+n1 1 -> 0 when n3=0 and n2=0 and n16=1 and n8=1 and n12=1 and n4=1 and n15=0 and n19=1 and n11=1 and n14=0 and n9=0 and n5=1
+n16 0 -> 1 when n18=1 and n19=0
+n7 1 -> 0 when n9=1 and n11=1 and n2=0 and n3=0 and n15=1
+n1 1 -> 0 when n18=0 and n12=0 and n10=0 and n11=1 and n6=0
+n18 1 -> 0 when n10=1 and n13=1
+n5 1 -> 0 when n11=0
+n18 0 -> 1 when n3=0 and n9=1 and n8=0 and n20=0
+n20 0 -> 1 when n8=1 and n10=1 and n19=1 and n7=1 and n16=0 and n17=0
+n7 1 -> 0 when n9=1 and n19=1 and n12=0 and n15=0
+n7 1 -> 0 when n17=0 and n12=0
+n12 1 -> 0 when n17=0 and n1=0 and n4=1 and n11=1 and n16=1 and n10=1 and n19=0 and n14=1 and n20=0 and n15=1 and n6=1 and n9=1 and n13=1 and n3=0 and n8=1
+n15 0 -> 1 when n3=0 and n6=0 and n10=1 and n20=1 and n17=0 and n9=0 and n18=0 and n4=0
+n5 1 -> 0 when n19=0 and n11=1 and n17=1
+n18 1 -> 0 when n15=0
+n3 1 -> 0 when n8=1 and n15=0 and n13=1 and n6=0 and n20=0 and n1=1 and n10=0 and n12=0
+n13 0 -> 1 when n20=1 and n19=1 and n2=0 and n5=1 and n3=1
+n16 0 -> 1 when n15=0 and n20=0
+n18 1 -> 0 when n16=0
+n9 1 -> 0 when n19=0 and n14=0 and n20=0
+n16 1 -> 0 when n12=1 and n7=0 and n3=0 and n18=0
+n15 0 -> 1 when n8=1
+n8 0 -> 1 when n10=0
+n13 0 -> 1 when n5=1 and n17=1 and n15=1 and n3=1
+n3 1 -> 0 when n2=1 and n8=0 and n9=1 and n20=0 and n4=0 and n13=1 and n10=0 and n15=1 and n17=1 and n16=0 and n12=1 and n1=1 and n5=1 and n14=1 and n19=1 and n7=1
+n20 1 -> 0 when n15=1 and n18=0
+n14 0 -> 1 when n20=0 and n18=0 and n1=0
+n10 0 -> 1 when n8=1 and n18=0 and n1=1 and n12=1
+n6 1 -> 0 when n3=1 and n9=0 and n13=1
+n18 0 -> 1 when n19=0 and n9=0
+n8 1 -> 0 when n9=0 and n16=1 and n15=0
+n16 0 -> 1 when n17=0 and n19=0 and n15=0
+n18 1 -> 0 when n17=0 and n2=1
+n3 0 -> 1 when n15=1 and n19=0 and n1=0 and n13=1
+n19 1 -> 0 when n1=1 and n3=1 and n6=0 and n5=0 and n2=0 and n8=0 and n9=0 and n7=0 and n17=0 and n15=0 and n18=1 and n16=1
+n17 0 -> 1 when n16=1 and n14=0 and n4=1
+n5 0 -> 1 when n20=1 and n12=0
+n9 0 -> 1 when n12=1 and n6=1 and n14=0
+n14 0 -> 1 when n3=1
+n2 0 -> 1 when n8=1 and n20=1 and n18=1 and n3=1 and n9=1 and n5=0 and n15=1 and n14=0 and n4=1 and n13=0 and n16=1 and n12=1
+n1 0 -> 1 when n9=0
+n18 0 -> 1 when n19=1 and n14=1 and n1=0 and n4=1
+n13 0 -> 1 when n8=1 and n5=0 and n14=1 and n17=0 and n15=0
+n7 1 -> 0 when n2=1 and n8=0 and n3=1 and n9=1
+n6 1 -> 0 when n9=0
+n1 0 -> 1 when n8=1 and n9=1
+n4 1 -> 0 when n7=1 and n10=1 and n13=1 and n20=0 and n12=1 and n11=0 and n14=1 and n17=0 and n19=1
+n2 1 -> 0 when n13=0
+n4 0 -> 1 when n11=0
+n6 1 -> 0 when n3=1 and n18=0
+n3 0 -> 1 when n20=0 and n11=1 and n5=1
+n14 1 -> 0 when n11=0 and n6=0 and n16=0 and n10=0 and n12=1 and n15=1 and n1=1 and n20=0 and n3=0
+n2 0 -> 1 when n4=1 and n10=1 and n18=1 and n5=1 and n3=1 and n20=1
+n16 0 -> 1 when n20=0 and n3=0 and n8=0 and n13=1 and n15=1 and n6=1
+n8 1 -> 0 when n1=1 and n3=0 and n10=0 and n7=0
+n16 1 -> 0 when n6=1
+n7 1 -> 0 when n15=0 and n2=0 and n17=0
+n18 0 -> 1 when n17=0 and n8=0 and n7=1
+n17 0 -> 1 when n19=1 and n16=0 and n8=0
+n6 1 -> 0 when n9=1 and n4=1 and n3=1 and n16=1 and n12=0 and n18=1 and n11=0 and n10=1
+n20 1 -> 0 when n12=1 and n17=1
+n13 0 -> 1 when n3=1 and n7=1 and n16=1 and n11=1 and n6=1 and n12=0 and n8=1 and n19=1 and n9=0 and n10=1
+n20 1 -> 0 when n14=0 and n11=1 and n5=1 and n19=1 and n17=0 and n10=0
+n6 0 -> 1 when n14=1 and n5=0 and n15=0 and n8=1
+n11 1 -> 0 when n5=1 and n13=1 and n18=0 and n12=1
+n14 0 -> 1 when n2=0
+n9 0 -> 1 when n8=1 and n7=0 and n5=0 and n6=1 and n19=0 and n2=0
+n6 1 -> 0 when n17=0 and n8=0
+n12 0 -> 1 when n2=0
+n15 1 -> 0 when n11=1 and n12=0 and n16=1 and n8=0 and n13=0 and n20=0 and n9=0 and n5=0 and n14=0 and n7=1
+n13 1 -> 0 when n12=1 and n18=0 and n1=1 and n6=0 and n7=1 and n10=0 and n19=1 and n17=1
+n11 0 -> 1 when n14=0 and n20=0
+n8 0 -> 1 when n9=0
+n10 1 -> 0 when n3=1 and n5=0 and n4=0 and n9=1 and n8=0 and n7=0 and n17=0
+n2 1 -> 0 when n8=0 and n7=0 and n16=1 and n9=0
+n17 0 -> 1 when n2=1 and n15=1
+n5 1 -> 0 when n15=0 and n13=1 and n17=1 and n7=0 and n14=1 and n4=0 and n19=1 and n16=1 and n18=0 and n11=1 and n3=1 and n1=0 and n20=1 and n2=0 and n9=1 and n10=1 and n12=0 and n8=0
+n3 0 -> 1 when n4=0 and n9=1 and n20=0 and n6=1 and n12=1 and n7=1 and n11=1 and n8=1 and n17=1
+n7 1 -> 0 when n10=0 and n17=0
+n2 1 -> 0 when n6=1
+n3 0 -> 1 when n5=0 and n6=0 and n19=1 and n1=1 and n9=0
+n5 0 -> 1 when n17=0
+n10 1 -> 0 when n2=0 and n1=1 and n8=0 and n16=0 and n6=0 and n13=1 and n17=0 and n19=0 and n15=1
+n11 1 -> 0 when n15=1 and n2=0 and n6=0 and n16=1 and n18=0 and n5=0 and n13=1
+n10 1 -> 0 when n9=0
+n10 0 -> 1 when n2=1
+n7 1 -> 0 when n4=0
+n15 0 -> 1 when n2=0 and n16=0
+n11 0 -> 1 when n16=1 and n6=0
+n9 0 -> 1 when n2=0 and n19=1 and n13=1 and n11=0
+n18 0 -> 1 when n6=1 and n19=0
+n20 0 -> 1 when n15=1 and n1=1 and n2=1 and n14=1 and n16=0 and n11=0 and n8=1 and n13=1 and n6=1
+n19 1 -> 0 when n11=1 and n4=1 and n16=1 and n12=0 and n1=1
+n19 0 -> 1 when n1=0 and n8=0 and n6=0 and n13=1 and n2=1 and n3=0 and n10=0 and n9=1
+n3 0 -> 1 when n20=0 and n15=1
+n9 1 -> 0 when n8=0 and n1=1
+n20 1 -> 0 when n17=1 and n15=0 and n10=1
+n13 0 -> 1 when n20=0 and n16=1 and n2=0 and n6=1
+n14 0 -> 1 when n18=0 and n5=0 and n6=1 and n11=0
+n14 0 -> 1 when n11=1
+n15 1 -> 0 when n17=0 and n10=0
+n6 1 -> 0 when n5=0
+n6 0 -> 1 when n19=0 and n20=1 and n5=0 and n9=1 and n1=1
+n6 1 -> 0 when n3=0
+n15 0 -> 1 when n14=0
+n3 1 -> 0 when n17=0 and n16=0 and n12=0 and n4=0 and n20=0 and n15=0 and n5=1 and n6=1 and n14=0
+n10 0 -> 1 when n4=1 and n3=1 and n1=0 and n14=1 and n17=0 and n8=0 and n16=1 and n5=1 and n12=0
+n4 1 -> 0 when n17=1 and n14=1
+n9 0 -> 1 when n17=1 and n11=1 and n4=0 and n10=1 and n18=0 and n1=0 and n16=1 and n3=0 and n13=0
+n6 1 -> 0 when n14=1
+n14 0 -> 1 when n10=0
+n3 1 -> 0 when n1=1 and n18=0 and n7=1 and n9=0 and n14=0
+n7 0 -> 1 when n3=0 and n9=1 and n13=0 and n16=1 and n15=1 and n10=1 and n19=0
+n7 0 -> 1 when n18=1 and n17=1
+n17 0 -> 1 when n16=1 and n19=0 and n4=0 and n8=0 and n7=0
+n5 0 -> 1 when n1=0
+n5 0 -> 1 when n20=0
+n17 0 -> 1 when n20=0 and n6=0
+n19 1 -> 0 when n5=1
+n19 1 -> 0 when n5=1
+n1 0 -> 1 when n18=0
+n10 0 -> 1 when n4=0 and n7=1
+n13 1 -> 0 when n9=0 and n17=1 and n6=0
+n12 0 -> 1 when n15=1
+n20 1 -> 0 when n2=0 and n7=1 and n1=1
+n4 1 -> 0 when n11=0 and n15=0 and n16=0 and n7=1 and n20=1 and n19=1 and n12=1 and n10=0 and n6=0
+n14 0 -> 1 when n1=0 and n19=0 and n5=1 and n11=0 and n12=0
+n3 0 -> 1 when n20=0 and n5=0
+n1 1 -> 0 when n9=1 and n5=1 and n20=0 and n3=1 and n14=0 and n18=1 and n4=1 and n11=0 and n2=1 and n8=0 and n17=0 and n19=0
+n6 0 -> 1 when n15=1 and n14=1 and n11=1 and n2=0 and n18=0
+n16 1 -> 0 when n15=0
+n13 1 -> 0 when n12=1 and n9=0 and n14=0
+n16 0 -> 1 when n13=0 and n3=1 and n18=1 and n8=0 and n6=0
+n6 0 -> 1 when n5=1
+n14 1 -> 0 when n19=1 and n3=0 and n11=1 and n4=0 and n9=1 and n10=1 and n8=0 and n6=0 and n7=1 and n18=0 and n2=1
+n13 1 -> 0 when n11=1 and n5=0 and n20=0 and n15=0
+n20 1 -> 0 when n5=1 and n9=1 and n6=0 and n7=1 and n11=1 and n19=0 and n15=0 and n13=1 and n17=0 and n18=1 and n12=0 and n3=0
+n19 0 -> 1 when n4=1
+n11 1 -> 0 when n9=1
+n17 1 -> 0 when n5=1 and n20=0 and n15=1 and n8=0 and n11=1 and n7=1
+n7 1 -> 0 when n20=1 and n6=0 and n2=1 and n8=0
+n11 1 -> 0 when n14=0 and n4=0 and n18=0 and n12=0
+n4 0 -> 1 when n9=1 and n11=1 and n5=0 and n12=0 and n6=1 and n10=1
+n16 1 -> 0 when n17=0 and n20=0 and n1=1
+n9 0 -> 1 when n15=1 and n7=1 and n16=0 and n1=1 and n6=0 and n8=1 and n19=0
+n9 0 -> 1 when n2=0
+n7 1 -> 0 when n17=1 and n5=0 and n1=1 and n11=1 and n18=1 and n8=0 and n13=1
+n2 1 -> 0 when n14=0 and n8=0 and n12=1
+n15 1 -> 0 when n2=1 and n12=1 and n5=0 and n4=1 and n6=1 and n10=1 and n11=1
+n2 1 -> 0 when n12=0
+n16 0 -> 1 when n12=0 and n1=1 and n6=0
+n17 0 -> 1 when n10=1 and n14=0 and n16=1
+n14 0 -> 1 when n20=1 and n9=0 and n5=0 and n13=0
+n6 0 -> 1 when n3=0 and n20=1 and n19=1 and n18=0 and n16=0 and n17=1 and n8=1 and n2=0 and n1=1 and n4=1 and n14=0 and n7=1
