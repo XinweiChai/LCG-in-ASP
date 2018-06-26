@@ -6,7 +6,7 @@ True
 # n8=1
 True
 # n9=1
-True
+False
 # n10=1
 False
 --- n1=0, n2=1
@@ -17,28 +17,28 @@ True
 # n8=1
 True
 # n9=1
-True
+False
 # n10=1
 False
 --- n1=1, n2=0
 # n6=1
 False
 # n7=1
-False
+True
 # n8=1
 True
 # n9=1
-True
+False
 # n10=1
 False
 --- n1=1, n2=1
 # n6=1
 False
 # n7=1
-False
+True
 # n8=1
 True
 # n9=1
-True
+False
 # n10=1
 False

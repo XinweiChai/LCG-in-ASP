@@ -143,13 +143,11 @@ def one_run(fnetwork, input, changeState, start, return_dict):
             orGates.append(i)
             orGatesItems.append(lcgEdges[i])
     # return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    # if len(orGates) <= 10:
-    #    return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
-    # else:
-    return_dict[0] = heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
+    if len(orGates) <= 10:
+        return_dict[0] = exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
+       #return exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState)
+    else:
+    # return_dict[0] = heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
     # return heuristics_perm_reach(len(orGates) * 100 + 1, lcgNodes, lcgEdges, startNode, initialState)
-    # return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
-    # if len(orGates) > 9:
-    #    return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
-    # else:
-    #    return exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState)
+        #return heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
+        return_dict[0] = heuristics(len(orGates)*5+1, lcgEdges, startNode, initialState)
