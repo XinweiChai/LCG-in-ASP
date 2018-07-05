@@ -54,7 +54,7 @@ def output_file(fout, fnetwork, input_instance, i, j):
     elif iterations == 0 or iterations == 1:
         fout.writelines("False\n")
     else:
-        fout.writelines("Inconclusive\n")
+        fout.writelines("Inconclusive, "+str(iterations)+" iterations\n")
     return return_dict[0]
     # return boo, iterations
 
