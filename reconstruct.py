@@ -1,19 +1,19 @@
 from random import randint
 
 
-def random_reconstruct(lcgEdges, startNode):
-    newlcgEdges = {}
-    toVisit = [startNode]
-    if startNode not in lcgEdges:
+def random_reconstruct(lcg_edges, start_node):
+    new_lcg_edges = {}
+    to_visit = [start_node]
+    if start_node not in lcg_edges:
         return None
-    while toVisit:
-        for i in toVisit:
-            if len(lcgEdges[i]) >= 1:
-                choose = lcgEdges[i][randint(0, len(lcgEdges[i]) - 1)]
-                newlcgEdges[i] = [choose]
-                newlcgEdges[choose] = list(choose[0])
-                toVisit.extend(choose[0])
+    while to_visit:
+        for i in to_visit:
+            if len(lcg_edges[i]) >= 1:
+                choose = lcg_edges[i][randint(0, len(lcg_edges[i]) - 1)]
+                new_lcg_edges[i] = [choose]
+                new_lcg_edges[choose] = list(choose[0])
+                to_visit.extend(choose[0])
             else:
-                newlcgEdges[i] = []
-            toVisit.remove(i)
-    return newlcgEdges
+                new_lcg_edges[i] = []
+            to_visit.remove(i)
+    return new_lcg_edges

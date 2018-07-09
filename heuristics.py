@@ -1,14 +1,14 @@
 from pyasp.asp import Gringo4Clasp
 from reconstruct import *
-from factGenerator import generate
+from fact_generator import generate
 from itertools import product, permutations
 import copy
 
 
-def heuristics(k, lcgEdges, startNode, initialState):
+def heuristics(k, lcg_edges, start_node, initial_state):
     for i in range(1, k + 2):
-        newlcgEdges = random_reconstruct(lcgEdges, startNode)
-        res, x = ASP_solve(newlcgEdges, initialState, i)
+        new_lcg_edges = random_reconstruct(lcg_edges, start_node)
+        res, x = asp_solve(new_lcg_edges, initial_state, i)
         if res:
             return res, i
         # elif x == 0:
@@ -16,13 +16,13 @@ def heuristics(k, lcgEdges, startNode, initialState):
     return False, k
 
 
-def ASP_solve(lcgEdges, initialState, iteration):
-    if not lcgEdges:
+def asp_solve(lcg_edges, initial_state, iteration):
+    if not lcg_edges:
         return False, 0
-    generate(initialState, lcgEdges)
-    goptions = ''
-    soptions = '1'
-    solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
+    generate(initial_state, lcg_edges)
+    g_options = ''
+    s_options = '1'
+    solver = Gringo4Clasp(gringo_options=g_options, clasp_options=s_options)
     encoding = 'nested.lp'
     facts = 'fact.lp'
     result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
@@ -33,86 +33,86 @@ def ASP_solve(lcgEdges, initialState, iteration):
     return False, iteration
 
 
-def exhaustive_run(orGates, orGatesItems, lcgEdges, startNode, initialState):
-    if not orGates:
-        return ASP_solve(lcgEdges, initialState, 0)
-    for i in product(*orGatesItems):
-        lcgEdgesCopy = copy.copy(lcgEdges)
-        for j in range(len(orGates)):
-            lcgEdgesCopy[orGates[j]] = [i[j]]
-        lcgEdgesCopy = prune(lcgEdgesCopy, startNode)
-        res, x = ASP_solve(lcgEdgesCopy, initialState, 0)
+def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_state):
+    if not or_gates:
+        return asp_solve(lcg_edges, initial_state, 0)
+    for i in product(*or_gates_items):
+        lcg_edges_copy = copy.copy(lcg_edges)
+        for j in range(len(or_gates)):
+            lcg_edges_copy[or_gates[j]] = [i[j]]
+        lcg_edges_copy = prune(lcg_edges_copy, start_node)
+        res, x = asp_solve(lcg_edges_copy, initial_state, 0)
         if res:
             return True, 0
     return False, 0
 
 
-def prune(lcgEdges, startNode):
+def prune(lcg_edges, start_node):
     modif = True
     while modif:
         modif = False
-        temp = list(lcgEdges.keys())
+        temp = list(lcg_edges.keys())
         for i in temp:
-            if i != startNode:
+            if i != start_node:
                 mark = False
-                for j in lcgEdges.values():
+                for j in lcg_edges.values():
                     if i in j:
                         mark = True
                         break
                 if not mark:
                     modif = True
-                    del lcgEdges[i]
-    return lcgEdges
+                    del lcg_edges[i]
+    return lcg_edges
 
 
-def heuristics_perm_reach(k, lcgNodes, lcgEdges, startNode, initialState):
-    if startNode in initialState:
+def heuristics_perm_reach(k, lcg_nodes, lcg_edges, start_node, initial_state):
+    if start_node in initial_state:
         return [True, 0]
     for i in range(k):
-        newlcgEdges = random_reconstruct(lcgEdges, startNode)
-        if not newlcgEdges:
+        new_lcg_edges = random_reconstruct(lcg_edges, start_node)
+        if not new_lcg_edges:
             return [False, 1]
-        if and_gate(lcgNodes, newlcgEdges, startNode, initialState):
+        if and_gate(lcg_nodes, new_lcg_edges, start_node, initial_state):
             return [True, i + 1]
     return [False, k]
 
 
-def exhaustive_reach(orGates, orGatesItems, lcgNodes, lcgEdges, startNode, initialState):
-    if not orGates:
-        return ASP_solve(lcgEdges, initialState, 0)
-    for i in product(*orGatesItems):
-        lcgEdgesCopy = copy.copy(lcgEdges)
-        for j in range(len(orGates)):
-            lcgEdgesCopy[orGates[j]] = [i[j]]
-        lcgEdgesCopy = prune(lcgEdgesCopy, startNode)
-        res = and_gate(lcgNodes, lcgEdgesCopy, startNode, initialState)
+def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state):
+    if not or_gates:
+        return asp_solve(lcg_edges, initial_state, 0)
+    for i in product(*or_gates_items):
+        lcg_edges_copy = copy.copy(lcg_edges)
+        for j in range(len(or_gates)):
+            lcg_edges_copy[or_gates[j]] = [i[j]]
+        lcg_edges_copy = prune(lcg_edges_copy, start_node)
+        res = and_gate(lcg_nodes, lcg_edges_copy, start_node, initial_state)
         if res:
             return True, 0
     return False, 0
 
 
-def and_gate(lcgNodes, lcgEdges, startNode, initialState):
-    andGates = [i for i in lcgEdges if len(lcgEdges[i]) > 1]
-    andGatesDict = {}
-    for i in andGates:
-        andGatesDict[i] = []
-        for j in lcgEdges[i]:
+def and_gate(lcg_nodes, lcg_edges, start_node, initial_state):
+    and_gates = [i for i in lcg_edges if len(lcg_edges[i]) > 1]
+    and_gates_dict = {}
+    for i in and_gates:
+        and_gates_dict[i] = []
+        for j in lcg_edges[i]:
             temp = j
-            while temp not in andGates and lcgEdges[temp]:
-                temp = lcgEdges[temp][0]
-            if temp in andGates:
-                andGatesDict[i].append(temp)
-    leaves = [i for i in andGatesDict if not andGatesDict[i]]
-    if not andGatesDict:
+            while temp not in and_gates and lcg_edges[temp]:
+                temp = lcg_edges[temp][0]
+            if temp in and_gates:
+                and_gates_dict[i].append(temp)
+    leaves = [i for i in and_gates_dict if not and_gates_dict[i]]
+    if not and_gates_dict:
         return True
     while leaves:
         for i in leaves:
             flag_leaf = False
             for j in permutations(i[0]):
                 flag = True
-                temp_state = initialState
+                temp_state = initial_state
                 for k in j:
-                    [boo, state, sequence] = simple_branch(k, temp_state, lcgEdges)
+                    [boo, state, sequence] = simple_branch(k, temp_state, lcg_edges)
                     if not boo:
                         flag = False
                         break
@@ -120,32 +120,32 @@ def and_gate(lcgNodes, lcgEdges, startNode, initialState):
                         temp_state = state
                 if flag:
                     flag_leaf = True
-                    initialState = temp_state
-                    initialState[i[1]] = i[3]
+                    initial_state = temp_state
+                    initial_state[i[1]] = i[3]
                     break
             if not flag_leaf:
                 return False
         for i in leaves:
-            andGatesDict.pop(i)
-            for j in andGatesDict:
-                if i in andGatesDict[j]:
-                    andGatesDict[j].remove(i)
-        leaves = [i for i in andGatesDict if not andGatesDict[i]]
+            and_gates_dict.pop(i)
+            for j in and_gates_dict:
+                if i in and_gates_dict[j]:
+                    and_gates_dict[j].remove(i)
+        leaves = [i for i in and_gates_dict if not and_gates_dict[i]]
     return True
 
 
-def simple_branch(target, state, lcgEdges):
+def simple_branch(target, state, lcg_edges):
     if state[target[0]] == target[1]:
         return True, state, None
-    temp = lcgEdges[target]
+    temp = lcg_edges[target]
     if not temp:
         return False, None, None
     temp = temp[0]
     sequence = [temp]
     count = 0
-    while lcgEdges[temp]:
+    while lcg_edges[temp]:
         count = count + 1
-        temp = lcgEdges[temp][0]
+        temp = lcg_edges[temp][0]
         if count % 2 == 0:
             sequence.append(temp)
     list.reverse(sequence)

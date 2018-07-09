@@ -1,34 +1,34 @@
 import re
 
 
-def read_BAN(path):
-    readProc = 0
+def read_ban(path):
+    read_proc = 0
     process = []
     actions = {}
-    actionsByHitter = {}
-    initialState = {}
-    startState = []
+    actions_by_hitter = {}
+    initial_state = {}
+    start_state = []
     f = open(path, 'r')
     for line in f.readlines():
         line = line.replace("\n", "")
         if 'goal' in line:
             words = re.split(",*\s|\(\*|\*\)", line)
-            startState = words[words.index('goal') + 1]
-            startState = re.split("[_=]", startState)
-            startState = tuple(startState)
+            start_state = words[words.index('goal') + 1]
+            start_state = re.split("[_=]", start_state)
+            start_state = tuple(start_state)
         else:
             words = re.split("\s*and\s*|,\s*|\s+", line)
             if len(words) <= 1:
                 continue
-            elif (len(words) > 3) and (not readProc):
-                readProc = 1
-            if not readProc:
+            elif (len(words) > 3) and (not read_proc):
+                read_proc = 1
+            if not read_proc:
                 process.append(words[0])
                 actions[(words[0], '0')] = []
                 actions[(words[0], '1')] = []
-                actionsByHitter[(words[0], '0')] = []
-                actionsByHitter[(words[0], '1')] = []
-                initialState[words[0]] = '0'
+                actions_by_hitter[(words[0], '0')] = []
+                actions_by_hitter[(words[0], '1')] = []
+                initial_state[words[0]] = '0'
                 continue
             else:
                 if words[0] != 'initial_state':
@@ -43,9 +43,9 @@ def read_BAN(path):
                     act = tuple(act)
                     actions[(words[0], words[3])].append(act)
                     for i in act[0]:
-                        actionsByHitter[i].append(act)
+                        actions_by_hitter[i].append(act)
                 else:
                     for i in words[1:]:
                         temp = re.split("=", i)
-                        initialState[temp[0]] = temp[1]
-    return process, actions, actionsByHitter, initialState, startState
+                        initial_state[temp[0]] = temp[1]
+    return process, actions, actions_by_hitter, initial_state, start_state

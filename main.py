@@ -1,12 +1,12 @@
-from readBAN import *
+from read_ban import *
 from SLCG import *
 from cycle import *
 from precodition import *
 from heuristics import *
-from readBAN import *
-from batchTest import *
-from generateModel import *
-from compareFile import *
+from read_ban import *
+from batch_test import *
+from generate_model import *
+from compare_file import *
 from timeit import default_timer
 import multiprocessing
 import time
@@ -22,7 +22,7 @@ num_tran_var = size_density * times
 models = 10
 iteration = 50
 automata = 20
-# x=generate_random_AN(size, num_tran)
+# x=generate_random_an(size, num_tran)
 # writeFile(x,'testmodel',size)
 # generateFiles(models, size, num_tran)
 # import argparse
@@ -113,9 +113,9 @@ if __name__ == '__main__':
 
 # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('OrTest.lp')
 # [dictionary,actions, actionsByHitter, initialState, startNode]=readBAN('LCG5')
-# [dictionary,actions, actionsByHitter, initialState, startNode]=read_BAN('model70')
+# [dictionary,actions, actionsByHitter, initialState, startNode]=read_ban('model70')
 # startNode=('n3','1')
-# [lcgNodes, lcgEdges] = SLCG(initialState, actions, startNode)
+# [lcgNodes, lcgEdges] = slcg(initialState, actions, startNode)
 # lcgEdges=cycle(lcgNodes,lcgEdges, startNode, actionsByHitter, actions)
 # lcgEdges = precondition(lcgEdges, actionsByHitter,initialState)
 # print(heuristics_perm_reach(iteration,lcgEdges,startNode,initialState,lcgNodes))

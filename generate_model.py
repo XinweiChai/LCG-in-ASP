@@ -2,7 +2,7 @@ import random
 import os
 
 
-def generate_random_AN(size, num_tran):
+def generate_random_an(size, num_tran):
     if num_tran > size * size:
         num_tran = size * size
     transition_set = []
@@ -77,4 +77,4 @@ def generateFiles(amount, size, num_tran):
     if not os.path.exists(path):
         os.makedirs(path)
     for i in range(amount):
-        writeFile(generate_random_AN(size, num_tran), path + "//model_" + str(i), size)
+        writeFile(generate_random_an(size, num_tran), path + "//model_" + str(i), size)
