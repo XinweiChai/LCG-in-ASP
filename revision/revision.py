@@ -2,12 +2,12 @@ from batch_test import *
 from cycle import *
 
 
-def pre_check(f_network, reach, unreach):
+def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_state, start_node):
     reach_set = []
     unreach_set = []  # unsatisfied set
     L = {}
     dict_lcg = {}
-    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+
     for i in reach + unreach:
         # Maybe can be replaced by logic programs
         [lcg_nodes, lcg_edges] = slcg(initial_state, actions, i)
@@ -25,29 +25,52 @@ def pre_check(f_network, reach, unreach):
     return reach_set, unreach_set, L, dict_lcg
 
 
-def specialize(an, reach, unreach, to_revise, dict_lcg):
-    rev = {to_revise: []}
+def specialize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
+    rev = [to_revise]
+    for i in rev:
+        res = one_run_no_timer(f_network, initial_state, j)  # reachability, iterations, sequence
+        trans = []
+        # get the used transition
+        mark = False
+        for j in unreach:
+            if j not in trans[0]:
+                mark = True
+                break
+        if mark:
+            for k in actions[to_revise]:
+                if k == trans:
+                    k[0].append(j)
+                    return k[0], actions
+        else:
+
+    # check all the local states besides initial states, if not possible, create a self-dependence
 
 
 
-
-
-
-    for i in reach + unreach:
-        for j in rev:
-            if i[2] in dict_lcg(j):
-                rev[i].append(j)
-    size_count = 0
-    while rev:
-        for i in rev:
-            if len(rev[i]) == size_count:
-                specialize()
-        size_count = size_count + 1
-    return an
-
-
-def generalize(an, reach, unreach, unreach1):
-    return an
+def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
+    for i in actions[to_revise]:
+        mark = False
+        for j in i[0]:
+            if j in unreach:
+                mark = True
+                i[0].remove(j)
+        if mark:
+            break
+    if mark:
+        return i[0], actions
+    else:
+        for i in actions[to_revise]:
+            mark = False
+            for j in i[0]:
+                res = one_run_no_timer(f_network, initial_state, j)
+                if not res[0]:
+                    mark = True
+                    i[0].remove(j)
+            if mark:
+                return i[0], actions
+        if mark:
+            return i[0], actions
+    return 1
 
 
 # def dependency_tree(start_node, lcg_edges, reach, unreach):
@@ -60,8 +83,10 @@ def overall(f_network, lcg_edges, reach, unreach):
     for i in reach:
         if i in unreach:
             return None  # conflicted input
+    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
     # acquire Re and Un
-    [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach)
+    [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
+                                                      initial_state, start_node)
     # if there are unbreakable cycles, abandon
     if not reach_set and not unreach_set:
         return None
@@ -74,7 +99,7 @@ def overall(f_network, lcg_edges, reach, unreach):
                 L.pop(i)
                 continue
             if i in reach_set:
-                generalize()
+                generalize(f_network, actions, initial_state, reach, unreach, i, dict_lcg)
             else:
                 specialize()
             L.pop(i)

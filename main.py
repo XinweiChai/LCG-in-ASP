@@ -45,7 +45,7 @@ if __name__ == '__main__':
     for i in range(1, 13):
         print(i)
         num_tran = automata * i
-        generateFiles(models, automata, num_tran)
+        #generateFiles(models, automata, num_tran)
         start = default_timer()
         for j in range(models):
             batch("data//inputFile", "data//model_20//model_" + str(j))
