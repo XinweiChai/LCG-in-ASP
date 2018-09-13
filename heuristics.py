@@ -13,7 +13,7 @@ def heuristics(k, lcg_edges, start_node, initial_state):
             return res, i
         # elif x == 0:
         #    return False, 1
-    return False, k
+    return False, k, new_lcg_edges
 
 
 def asp_solve(lcg_edges, initial_state, iteration):

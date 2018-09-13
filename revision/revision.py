@@ -28,12 +28,15 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
 def specialize(f_network, process, actions, initial_state, reach, unreach, to_revise, dict_lcg):
     rev = [to_revise]
     for i in rev:
-        res = one_run_no_timer(f_network, initial_state, i)  # reachability, iterations, sequence
+        res = one_run_no_timer(f_network, initial_state, i)  # reachability, iterations, sequence, assignment
         trans = []
+        for l in actions[i]:
+            if l in res[3]:  # used transitions
+                trans.append(l)
         # get the used transition
         mark = False
         for j in unreach:
-            if j not in trans[0]:
+            if j not in trans:
                 mark = True
                 break
         if mark:
@@ -47,7 +50,11 @@ def specialize(f_network, process, actions, initial_state, reach, unreach, to_re
                     if (j, k) not in initial_state:
                         res = one_run_no_timer(f_network, initial_state, (j, k))
                         if not res[0]:
-                            rev
+                            for l in actions[i]:
+                                if l in res[3]:  # used transitions
+                                    l[0].append((j, k))
+                                    return l, actions
+        return 1
 
 
 def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
@@ -80,7 +87,7 @@ def overall(f_network, lcg_edges, reach, unreach):
     for i in reach:
         if i in unreach:
             return None  # conflicted input
-    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
     # acquire Re and Un
     [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                       initial_state, start_node)
@@ -98,6 +105,6 @@ def overall(f_network, lcg_edges, reach, unreach):
             if i in reach_set:
                 generalize(f_network, actions, initial_state, reach, unreach, i, dict_lcg)
             else:
-                specialize()
+                specialize(f_network, process, actions, initial_state, reach, unreach, i, dict_lcg)
             L.pop(i)
     return lcg_edges
