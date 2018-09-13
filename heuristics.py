@@ -1,4 +1,4 @@
-from pyasp.asp import Gringo4Clasp
+from pyasp.asp import *
 from reconstruct import *
 from fact_generator import generate
 from itertools import product, permutations
@@ -27,13 +27,15 @@ def asp_solve(lcg_edges, initial_state, iteration):
     facts = 'fact.lp'
     result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
     for s in result:
-        for a in s:
-            if a.pred() == 'reachable':
-                return True, iteration
+        if Term('unreachable') in s:
+            return False, iteration
+        if Term('reachable') in s:
+            s.remove(Term('reachable'))
+            return True, iteration, s.to_list()
     return False, iteration
 
 
-def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_state):
+def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_state):  # ASPReach
     if not or_gates:
         return asp_solve(lcg_edges, initial_state, 0)
     for i in product(*or_gates_items):
@@ -41,7 +43,21 @@ def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_stat
         for j in range(len(or_gates)):
             lcg_edges_copy[or_gates[j]] = [i[j]]
         lcg_edges_copy = prune(lcg_edges_copy, start_node)
-        res, x = asp_solve(lcg_edges_copy, initial_state, 0)
+        res = asp_solve(lcg_edges_copy, initial_state, 0)
+        if res[0]:
+            return True, 0, res[2], i
+    return False, 0
+
+
+def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state):  # PermReach
+    if not or_gates:
+        return asp_solve(lcg_edges, initial_state, 0)
+    for i in product(*or_gates_items):
+        lcg_edges_copy = copy.copy(lcg_edges)
+        for j in range(len(or_gates)):
+            lcg_edges_copy[or_gates[j]] = [i[j]]
+        lcg_edges_copy = prune(lcg_edges_copy, start_node)
+        res = and_gate(lcg_nodes, lcg_edges_copy, start_node, initial_state)
         if res:
             return True, 0
     return False, 0
@@ -75,20 +91,6 @@ def heuristics_perm_reach(k, lcg_nodes, lcg_edges, start_node, initial_state):
         if and_gate(lcg_nodes, new_lcg_edges, start_node, initial_state):
             return [True, i + 1]
     return [False, k]
-
-
-def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state):
-    if not or_gates:
-        return asp_solve(lcg_edges, initial_state, 0)
-    for i in product(*or_gates_items):
-        lcg_edges_copy = copy.copy(lcg_edges)
-        for j in range(len(or_gates)):
-            lcg_edges_copy[or_gates[j]] = [i[j]]
-        lcg_edges_copy = prune(lcg_edges_copy, start_node)
-        res = and_gate(lcg_nodes, lcg_edges_copy, start_node, initial_state)
-        if res:
-            return True, 0
-    return False, 0
 
 
 def and_gate(lcg_nodes, lcg_edges, start_node, initial_state):

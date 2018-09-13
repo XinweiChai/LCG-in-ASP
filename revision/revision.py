@@ -25,10 +25,10 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
     return reach_set, unreach_set, L, dict_lcg
 
 
-def specialize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
+def specialize(f_network, process, actions, initial_state, reach, unreach, to_revise, dict_lcg):
     rev = [to_revise]
     for i in rev:
-        res = one_run_no_timer(f_network, initial_state, j)  # reachability, iterations, sequence
+        res = one_run_no_timer(f_network, initial_state, i)  # reachability, iterations, sequence
         trans = []
         # get the used transition
         mark = False
@@ -41,10 +41,13 @@ def specialize(f_network, actions, initial_state, reach, unreach, to_revise, dic
                 if k == trans:
                     k[0].append(j)
                     return k[0], actions
-        else:
-
-    # check all the local states besides initial states, if not possible, create a self-dependence
-
+        else:  # check all the local states besides initial states, if not possible, create a self-dependence
+            for j in process:
+                for k in [0, 1]:
+                    if (j, k) not in initial_state:
+                        res = one_run_no_timer(f_network, initial_state, (j, k))
+                        if not res[0]:
+                            rev
 
 
 def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
@@ -71,12 +74,6 @@ def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dic
         if mark:
             return i[0], actions
     return 1
-
-
-# def dependency_tree(start_node, lcg_edges, reach, unreach):
-#     tree = {}
-#     # build LCG for each element and check if there are other elements included
-#     return tree
 
 
 def overall(f_network, lcg_edges, reach, unreach):
