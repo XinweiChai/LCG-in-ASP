@@ -10,11 +10,12 @@ from compare_file import *
 from timeit import default_timer
 import multiprocessing
 import time
+from reach import *
 
 sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 sizes2 = [200, 300, 400, 500, 600, 700, 800, 900, 1000]
 sizes = sizes1 + sizes2
-#sizes = [200, 300]
+# sizes = [200, 300]
 size_density = 3
 times = [1, 2, 3, 4, 5, 6, 7]
 num_tran_var = size_density * times
@@ -27,7 +28,7 @@ automata = 20
 # generateFiles(models, size, num_tran)
 # import argparse
 time_recorder = {}
-#if __name__ == '__main__':
+# if __name__ == '__main__':
 #    f = open("data//runtime", 'w')
 #    for i in sizes:
 #        print(i)
@@ -40,18 +41,21 @@ time_recorder = {}
 #        time_recorder[i] = (stop - start) / models / 20
 #        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 
-if __name__ == '__main__':
-    f = open("data//runtime2", 'w')
-    for i in range(1, 13):
-        print(i)
-        num_tran = automata * i
-        #generateFiles(models, automata, num_tran)
-        start = default_timer()
-        for j in range(models):
-            batch("data//inputFile", "data//model_20//model_" + str(j))
-        stop = default_timer()
-        time_recorder[i] = (stop - start) / models / 20
-        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
+# if __name__ == '__main__':
+#    f = open("data//runtime2", 'w')
+#    for i in range(1, 13):
+#        print(i)
+#        num_tran = automata * i
+#        #generateFiles(models, automata, num_tran)
+#        start = default_timer()
+#        for j in range(models):
+#            batch("data//inputFile", "data//model_20//model_" + str(j))
+#        stop = default_timer()
+#        time_recorder[i] = (stop - start) / models / 20
+#        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
+
+asp_exhaust_solve("tcr.lp")
+
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
 # batch('','testPhage.an')
