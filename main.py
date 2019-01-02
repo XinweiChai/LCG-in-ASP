@@ -24,8 +24,8 @@ models = 10
 iteration = 50
 automata = 20
 # x=generate_random_an(size, num_tran)
-# writeFile(x,'testmodel',size)
-# generateFiles(models, size, num_tran)
+# write_file(x,'testmodel',size)
+# generate_files(models, size, num_tran)
 # import argparse
 time_recorder = {}
 # if __name__ == '__main__':
@@ -33,7 +33,7 @@ time_recorder = {}
 #    for i in sizes:
 #        print(i)
 #        num_tran = size_density * i
-#        generateFiles(models, i, num_tran)
+#        generate_files(models, i, num_tran)
 #        start = default_timer()
 #        for j in range(models):
 #            batch("data//inputFile", "data//model_" + str(i) + "//model_" + str(j))
@@ -46,7 +46,7 @@ time_recorder = {}
 #    for i in range(1, 13):
 #        print(i)
 #        num_tran = automata * i
-#        #generateFiles(models, automata, num_tran)
+#        #generate_files(models, automata, num_tran)
 #        start = default_timer()
 #        for j in range(models):
 #            batch("data//inputFile", "data//model_20//model_" + str(j))
@@ -54,7 +54,9 @@ time_recorder = {}
 #        time_recorder[i] = (stop - start) / models / 20
 #        f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 
-asp_exhaust_solve("tcr.lp")
+# asp_exhaust_solve("tcr.lp")
+# asp_exhaust_solve("th.lp")
+asp_exhaust_solve("test.lp")
 
 # batch('data_tcr','tcrsig94.an')
 # batch('data_egfr', 'egfr104.an')
@@ -90,7 +92,7 @@ asp_exhaust_solve("tcr.lp")
 
 # for i in times:
 #    begin=default_timer()
-#    generateFiles(models, size, size*i)
+#    generate_files(models, size, size*i)
 #    print(batch_iteration_test(0, models, 'data//inputFile', 'model_20//model'))
 # f.writelines(str(count_result('model_' + str(i) + '//model', '.out', models))+'\n')
 #    end=default_timer()

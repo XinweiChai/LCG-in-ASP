@@ -5,15 +5,14 @@ def slcg(initial_state, actions, start_node):
     # for i in actions.values():
     #    targets.append((i[0][1],i[0][3]))
     ls = [start_node]  # current node
-    LS = set([])  # LS = set([start_node]) # traversed nodes
+    traversed_ls = set([])  # LS = set([start_node]) # traversed nodes
     while ls:
         i = ls[0]
         ls.pop(0)
-        if i in LS:  # and [i] != LS:
+        if i in traversed_ls:  # and [i] != LS:
             continue
         lcg_nodes.append(i)
-        LS = LS | {i}
-        # if i[1] == initial_state[i[0]]:
+        traversed_ls = traversed_ls | {i}
         if i in initial_state.items():
             continue
         else:

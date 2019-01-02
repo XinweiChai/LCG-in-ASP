@@ -12,21 +12,18 @@ def generate_random_an(size, num_tran):
         sign = random.choice([1, -1])
         temp.remove(head)
         head = head * sign
-        sign = random.choice([1, -1])
-        dice = random.choice(temp)
-        body = [sign * dice]
-        temp.remove(dice)
-        nextTr = random.randint(0, 9)
-        while nextTr > 1 and temp:
-            nextTr = random.randint(0, 9)
+        body = []
+        next_tr = 1  # at lease one variable in the body
+        while next_tr > 0.2 and temp:
+            next_tr = random.random()
             sign = random.choice([1, -1])
             dice = random.choice(temp)
             body.append(sign * dice)
             temp.remove(dice)
         trans = [head, body]
         mark = False
-        for i in transition_set:
-            if head == i[0] and set(body) > set(i[1]):
+        for j in transition_set:
+            if head == j[0] and set(body) > set(j[1]):
                 mark = True
                 break
         if mark:
@@ -38,7 +35,7 @@ def generate_random_an(size, num_tran):
 
 # def generateRandomTransition(size,numTran):
 
-def writeFile(model, fn, size):
+def write_file(model, fn, size):
     f = open(fn, 'w')
     for i in range(size):
         f.writelines('n' + str(i + 1) + ' [0, 1]\n')
@@ -72,9 +69,9 @@ def writeFile(model, fn, size):
         #    f.writelines('\n')
 
 
-def generateFiles(amount, size, num_tran):
+def generate_files(amount, size, num_tran):
     path = 'data//model_' + str(size)
     if not os.path.exists(path):
         os.makedirs(path)
     for i in range(amount):
-        writeFile(generate_random_an(size, num_tran), path + "//model_" + str(i), size)
+        write_file(generate_random_an(size, num_tran), path + "//model_" + str(i), size)

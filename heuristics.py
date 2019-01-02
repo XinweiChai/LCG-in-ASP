@@ -64,9 +64,9 @@ def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node,
 
 
 def prune(lcg_edges, start_node):
-    modif = True
-    while modif:
-        modif = False
+    modified = True
+    while modified:
+        modified = False
         temp = list(lcg_edges.keys())
         for i in temp:
             if i != start_node:
@@ -76,7 +76,7 @@ def prune(lcg_edges, start_node):
                         mark = True
                         break
                 if not mark:
-                    modif = True
+                    modified = True
                     del lcg_edges[i]
     return lcg_edges
 
