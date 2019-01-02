@@ -39,7 +39,7 @@ def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_stat
     if not or_gates:
         return asp_solve(lcg_edges, initial_state, 0)
     for i in product(*or_gates_items):
-        lcg_edges_copy = copy.copy(lcg_edges)
+        lcg_edges_copy = copy.deepcopy(lcg_edges)
         for j in range(len(or_gates)):
             lcg_edges_copy[or_gates[j]] = [i[j]]
         lcg_edges_copy = prune(lcg_edges_copy, start_node)
@@ -53,7 +53,7 @@ def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node,
     if not or_gates:
         return asp_solve(lcg_edges, initial_state, 0)
     for i in product(*or_gates_items):
-        lcg_edges_copy = copy.copy(lcg_edges)
+        lcg_edges_copy = copy.deepcopy(lcg_edges)
         for j in range(len(or_gates)):
             lcg_edges_copy[or_gates[j]] = [i[j]]
         lcg_edges_copy = prune(lcg_edges_copy, start_node)
