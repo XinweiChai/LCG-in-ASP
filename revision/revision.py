@@ -1,5 +1,6 @@
 from batch_test import *
 from cycle import *
+import random
 
 
 def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_state, start_node):
@@ -108,3 +109,49 @@ def overall(f_network, lcg_edges, reach, unreach):
                 specialize(f_network, process, actions, initial_state, reach, unreach, i, dict_lcg)
             L.pop(i)
     return lcg_edges
+
+
+def rev_overall(p, re, un):
+    # check reachability and
+    return p
+
+
+def generate_reach(p, var, input):
+    # reach = batch(input, p)  # reachability
+    # return reach
+    return None
+
+
+def partial_model(p, percentage):
+    to_del = percentage * len(p)
+    deleted = []
+    for i in range(to_del):
+        deleted.append(p.pop(random.randint(len(p))))
+    return p, deleted
+
+
+def state_change(trans):
+    for i in trans[0]:
+        for j in trans[1]:
+            if i != j:
+                return i
+    return None
+
+
+def consistent_trans(trans, rules):
+    for i in rules:
+        if i[0] == state_change(trans) and set(i[1]) <= set(trans[1]):
+            return True
+    return False
+
+
+def consistent_model(p, tsd):  # see if all the transitions can be explained by rules
+    for i in tsd:
+        flag = False
+        for j in p:
+            if consistent_trans(i, j):
+                flag = True
+                break
+        if not flag:
+            return False
+    return True
