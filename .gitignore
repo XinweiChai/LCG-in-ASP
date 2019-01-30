@@ -2,5 +2,6 @@
 __pycache__/
 asp_py_lextab.py
 asp_py_parsetab.py
-fact.lp
+states.lp
+output.lp
 stateGenerator.lp

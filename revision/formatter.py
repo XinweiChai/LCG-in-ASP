@@ -13,7 +13,7 @@ def write_literal(f, var_num):
 
 
 def asp_generator(var_num, trans_num):
-    f = open("fact.lp", "w")
+    f = open("states.lp", "w")
     for i in itertools.product([0, 1], repeat=var_num):
         f.write("state" + str(i) + ".\n")
     f.close()
@@ -78,20 +78,20 @@ def asp_generator(var_num, trans_num):
     return 0
 
 
-var_num = 4
+var_num = 3
 trans_num = 17
 asp_generator(var_num, trans_num)
-f = open("output", "w")
+f = open("output.lp", "w")
 for i in range(var_num):
     # string = 'VAR ' + chr(ord('a') + i) + ' 0 1'
     string = 'VAR ' + "V" + str(i) + ' 0 1'
     print(string, file=f)
 print(file=f)
 goptions = ''
-soptions = '50'
+soptions = '1'
 solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
 encoding = 'stateGenerator.lp'
-facts = 'fact.lp'
+facts = 'states.lp'
 result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
 if result:
     x = random.randint(0, len(result) - 1)

@@ -21,10 +21,14 @@ Create a folder containing Automata Networks with the number of models ```model`
 
 # revision using asynchronous LFIT
 
-Usage of AS_LF1T.exe:
+Usage of AS_LF1T:
 	./AS_LFIT -i <input filename> > <output filename>
 
-networkGenerator/formatter.py uses as a time-series data generator
+networkGenerator/formatter.py is a time-series data generator 
+
+reach.lp/reach_global.lp is a global model checker for 3 components: clingo reach.lp trans
+
+
 
 
 
