@@ -19,7 +19,12 @@ generateFiles(models, size, num_tran)
 ```
 Create a folder containing Automata Networks with the number of models ```model```, number of automata ```size``` and the number of transitions ```num_transition``` , models are saved in the folder ```model_size```.
 
+# revision using asynchronous LFIT
 
+Usage of AS_LF1T.exe:
+	./AS_LFIT -i <input filename> > <output filename>
+
+networkGenerator/formatter.py uses as a time-series data generator
 
 
 
