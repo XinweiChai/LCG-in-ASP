@@ -23,3 +23,18 @@ def compare_file(fn1, fn2, separator):
     f1.close()
     f2.close()
     return unique
+
+# for i in compare_file('result', 'result2', '\s'):  # reachability
+#     print(i)
+# print()
+# for i in compare_file('result2', 'result', '\s'):
+#     print(i)
+# print()
+# for i in compare_file('output', 'output1', '\n'):  # state transitions
+#     print(i)
+# print()
+# for i in compare(rule_parser("rules"), rule_parser("rules2")):
+#     print(i)
+# print()
+# for i in compare(rule_parser("rules2"), rule_parser("rules")):
+#     print(i)

@@ -49,3 +49,8 @@ def reachability_parser(fn):  # (c,1,state(1,1,1))/unreachable
             data.append(temp2)
     f.close
     return data
+
+
+x = transition_parser("output")
+y = rule_parser("rules")
+z = reachability_parser("result")

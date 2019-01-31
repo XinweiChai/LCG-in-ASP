@@ -1,6 +1,6 @@
 from cycle import *
 from read_ban import *
-from revision import *
+from crac.revision import *
 
 
 def precondition(lcg_edges, initial_state):

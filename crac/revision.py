@@ -1,6 +1,9 @@
 import copy
 
 
+# import pypint
+
+
 def reverse(lcg_edges):
     rev = {}
     for i in lcg_edges:
@@ -173,3 +176,26 @@ def completion_set(lcg_edges, rev_lcg_edge, initial_state, lcg_nodes):
             ranking = rev_lcg_edge[ranking[0]] + ranking
         val = val_temp
     return val
+
+
+a = ([1, 7], [2, 3])
+b = ([1, 4], [5], [6])
+c = ([5], [6])
+e = (a, b, c)
+print(product_t(a, b))
+print(product(e))
+# print(product_alter(e))
+#
+# a = (1, 2)
+# b = (3, 4)
+# c = (5, 6)
+# e = (a, b)
+# print((product2(e)))
+
+
+# m = pypint.load("test_model.an")
+# res = m.cutsets(goal="n1=1", maxsize=5, exclude=[], exclude_initial_state=False, exclude_goal_automata=True,
+#                timeout=None)
+# res = m.cutsets(goal="n1=1", maxsize=10, exclude_initial_state=False, exclude_goal_automata=False, timeout=None)
+# res = os.system("pint-reach --cutsets " + str(maxsize) + " " + goal + " -i " + file_name)
+# print(res)

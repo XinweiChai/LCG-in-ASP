@@ -1,6 +1,7 @@
 from batch_test import *
 from cycle import *
 import random
+import os
 
 
 def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_state, start_node):
@@ -155,3 +156,11 @@ def consistent_model(p, tsd):  # see if all the transitions can be explained by 
         if not flag:
             return False
     return True
+
+input_fn = 'output1'
+output_fn = 'test'
+
+model = os.system('./AS_LF1T.exe -i ' + input_fn + ' > ' + output_fn)
+[process, actions, actions_by_hitter, initial_state, start_node] = read_ban("example.an")
+reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state, start_node)
+overall("example.an", lcg_edges, "Re", "Un")
