@@ -3,6 +3,7 @@ from crac.models import *
 from crac.tools import *
 from crac.reachability import *
 
+
 def random_test(num_var, period, up_threshold, down_threshold, noise):
     eq = generate_random_continuous_model(num_var)
     initial_state = np.ones(num_var)
@@ -65,18 +66,19 @@ def consistent_rate2(eq, res_mat, threshold):
     return correct / len(eq) / (len(eq) - 1)
 
 
-num_var = 10
-period = 8
-up_threshold = 0.8
-down_threshold = 0.2
-delay = 1
-noise = 0
-maxsize = 5
+if __name__ == "__main__":
+    num_var = 10
+    period = 8
+    up_threshold = 0.8
+    down_threshold = 0.2
+    delay = 1
+    noise = 0
+    maxsize = 5
 
-eq, ts, discrete_ts, partial_matrix, above_threshold, below_threshold = random_test(num_var, period, up_threshold,
-                                                                                    down_threshold, noise)
-# print(consistent_rate(eq, partial_matrix, threshold))
-# print(consistent_rate2(eq, partial_matrix, threshold))
+    eq, ts, discrete_ts, partial_matrix, above_threshold, below_threshold = random_test(num_var, period, up_threshold,
+                                                                                        down_threshold, noise)
+    # print(consistent_rate(eq, partial_matrix, threshold))
+    # print(consistent_rate2(eq, partial_matrix, threshold))
 
-print(one_run_over_approximation('test_model', [], ('n1', '1')))
-print(one_run_recursive('test_model1.an', [], ('a', '1'), below_threshold, above_threshold))
+    print(one_run_over_approximation('test_model', [], ('n1', '1')))
+    print(one_run_recursive('test_model1.an', [], ('a', '1'), below_threshold, above_threshold))

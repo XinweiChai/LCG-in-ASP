@@ -13,6 +13,8 @@ def asp_exhaust_solve(fn_model):
     facts = fn_model
     result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
     print(result)
+
+
 #    for s in result:
 #        if Term('unreachable') in s:
 #            return False, iteration
@@ -20,3 +22,9 @@ def asp_exhaust_solve(fn_model):
 #            s.remove(Term('reachable'))
 #            return True, iteration, s.to_list()
 #    return False, iteration
+
+
+if __name__ == "__main__":
+    asp_exhaust_solve("tcr.lp")
+    asp_exhaust_solve("th.lp")
+    asp_exhaust_solve("test.lp")

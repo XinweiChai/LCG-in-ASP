@@ -78,39 +78,33 @@ def asp_generator(var_num, trans_num):
     return 0
 
 
-var_num = 3
-trans_num = 17
-asp_generator(var_num, trans_num)
-f = open("output.lp", "w")
-for i in range(var_num):
-    # string = 'VAR ' + chr(ord('a') + i) + ' 0 1'
-    string = 'VAR ' + "V" + str(i) + ' 0 1'
-    print(string, file=f)
-print(file=f)
-goptions = ''
-soptions = '1'
-solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
-encoding = 'stateGenerator.lp'
-facts = 'states.lp'
-result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
-if result:
-    x = random.randint(0, len(result) - 1)
-    for a in result[x]:
-        args = ",".join(a.args())
-        trans = re.sub('state|\(|\)|\,', '', args)
-        temp = ''
-        for i in range(var_num):
-            temp = temp + 'V' + str(i) + "=" + trans[i] + ' '
-        temp = temp + ': '
-        for i in range(var_num):
-            temp = temp + 'V' + str(i) + "=" + trans[i + var_num] + ' '
-        trans = 'a=' + trans[0] + ' b=' + trans[1] + ' c=' + trans[2] + ' : ' + 'a=' + trans[3] + ' b=' + trans[
-            4] + ' c=' + trans[5]
-        print(temp, file=f)
-# for s in result : 
-#   for a in s :
-#     args= ",".join(a.args())
-#     trans = re.sub('state|\(|\)|\,','',args)
-#     trans = 'a='+ trans[0]+' b='+trans[1]+' c='+trans[2]+' : '+'a='+trans[3]+' b='+trans[4]+' c='+trans[5]
-#     print(trans, file = f)
-#   print(file=f)
+if __name__ == "__main__":
+    var_num = 3
+    trans_num = 17
+    asp_generator(var_num, trans_num)
+    f = open("output.lp", "w")
+    for i in range(var_num):
+        # string = 'VAR ' + chr(ord('a') + i) + ' 0 1'
+        string = 'VAR ' + "V" + str(i) + ' 0 1'
+        print(string, file=f)
+    print(file=f)
+    goptions = ''
+    soptions = '1'
+    solver = Gringo4Clasp(gringo_options=goptions, clasp_options=soptions)
+    encoding = 'stateGenerator.lp'
+    facts = 'states.lp'
+    result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
+    if result:
+        x = random.randint(0, len(result) - 1)
+        for a in result[x]:
+            args = ",".join(a.args())
+            trans = re.sub('state|\(|\)|\,', '', args)
+            temp = ''
+            for i in range(var_num):
+                temp = temp + 'V' + str(i) + "=" + trans[i] + ' '
+            temp = temp + ': '
+            for i in range(var_num):
+                temp = temp + 'V' + str(i) + "=" + trans[i + var_num] + ' '
+            trans = 'a=' + trans[0] + ' b=' + trans[1] + ' c=' + trans[2] + ' : ' + 'a=' + trans[3] + ' b=' + trans[
+                4] + ' c=' + trans[5]
+            print(temp, file=f)

@@ -1,4 +1,5 @@
 import re
+from revision.parser import rule_parser
 
 
 def compare(x, y):
@@ -24,17 +25,19 @@ def compare_file(fn1, fn2, separator):
     f2.close()
     return unique
 
-# for i in compare_file('result', 'result2', '\s'):  # reachability
-#     print(i)
-# print()
-# for i in compare_file('result2', 'result', '\s'):
-#     print(i)
-# print()
-# for i in compare_file('output', 'output1', '\n'):  # state transitions
-#     print(i)
-# print()
-# for i in compare(rule_parser("rules"), rule_parser("rules2")):
-#     print(i)
-# print()
-# for i in compare(rule_parser("rules2"), rule_parser("rules")):
-#     print(i)
+
+if __name__ == "__main__":
+    for i in compare_file('result', 'result2', '\s'):  # reachability
+        print(i)
+    print()
+    for i in compare_file('result2', 'result', '\s'):
+        print(i)
+    print()
+    for i in compare_file('output', 'output1', '\n'):  # state transitions
+        print(i)
+    print()
+    for i in compare(rule_parser("rules"), rule_parser("rules2")):
+        print(i)
+    print()
+    for i in compare(rule_parser("rules2"), rule_parser("rules")):
+        print(i)

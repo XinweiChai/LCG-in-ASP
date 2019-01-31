@@ -205,6 +205,7 @@ def one_run_under_approximation(f_network, init_state, start):
     return True
 
 
-batch('data//data_tcr', 'data//tcrsig94.an')
-batch('data//data_egfr', 'data//egfr104.an')
-batch('', 'testPhage.an')
+if __name__ == "__main__":
+    batch('data//data_tcr', 'data//tcrsig94.an')
+    batch('data//data_egfr', 'data//egfr104.an')
+    batch('', 'testPhage.an')

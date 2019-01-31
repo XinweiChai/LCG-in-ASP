@@ -1,75 +1,9 @@
 from cycle import *
 from read_ban import *
 from crac.revision import *
-
-
-def precondition(lcg_edges, initial_state):
-    mark = True
-    while mark:
-        mark = False
-        for i in list(lcg_edges):
-            if not lcg_edges[i] and i not in initial_state.items():  # and len(i) == 4:
-                lcg_edges.pop(i)
-                mark = True
-                continue
-            if len(i) == 4:
-                for k in lcg_edges[i]:
-                    if k not in lcg_edges:
-                        mark = True
-                        lcg_edges.pop(i)
-                        break
-            elif len(i) == 2 and i not in initial_state.items():
-                for k in lcg_edges[i]:
-                    if k not in lcg_edges:
-                        lcg_edges[i].remove(k)
-                        mark = True
-                        break
-    return lcg_edges
-
-
-def slcg(initial_state, actions, start_node):
-    lcg_nodes = []
-    lcg_edges = {}
-    ls = [start_node]  # current node
-    LS = set([])  # LS = set([start_node]) # traversed nodes
-    while ls:
-        i = ls[0]
-        ls.pop(0)
-        if i in LS:  # and [i] != LS:
-            continue
-        lcg_nodes.append(i)
-        LS = LS | {i}
-        if i in initial_state.items():
-            continue
-        else:
-            act = actions[i]
-            lcg_edges[i] = act
-            for j in act:
-                lcg_nodes.append(j)
-                lcg_edges[j] = list(j[0])
-                ls.extend(j[0])
-    for i in lcg_nodes:
-        if i not in lcg_edges:
-            lcg_edges[i] = []
-    return lcg_nodes, lcg_edges  # , solNodeArray
-
-
-def prune(lcg_edges, start_node):
-    modified = True
-    while modified:
-        modified = False
-        temp = list(lcg_edges.keys())
-        for i in temp:
-            if i != start_node:
-                mark = False
-                for j in lcg_edges.values():
-                    if i in j:
-                        mark = True
-                        break
-                if not mark:
-                    modified = True
-                    del lcg_edges[i]
-    return lcg_edges
+from SLCG import slcg
+from precodition import precondition
+from heuristics import prune
 
 
 def reach_state(x, lcg_edges, init_state):

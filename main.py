@@ -1,8 +1,6 @@
 from batch_test import *
 from generate_model import *
 from timeit import default_timer
-from reach import *
-
 
 sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 sizes2 = [200, 300, 400, 500, 600, 700, 800, 900, 1000]
@@ -27,6 +25,3 @@ if __name__ == '__main__':
         stop = default_timer()
         time_recorder[i] = (stop - start) / models / 20
         f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
-asp_exhaust_solve("tcr.lp")
-asp_exhaust_solve("th.lp")
-asp_exhaust_solve("test.lp")

@@ -77,10 +77,11 @@ def generate_files(amount, size, num_tran):
         write_file(generate_random_an(size, num_tran), path + "//model_" + str(i), size)
 
 
-size = 20
-num_tran = 60
-models = 10
+if __name__ == "__main__":
+    size = 20
+    num_tran = 60
+    models = 10
 
-x = generate_random_an(size, num_tran)
-write_file(x, 'testmodel', size)
-generate_files(models, size, num_tran)
+    x = generate_random_an(size, num_tran)
+    write_file(x, 'testmodel', size)
+    generate_files(models, size, num_tran)

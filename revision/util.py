@@ -1,4 +1,5 @@
-from batch_test import *
+from batch_test import one_run_no_timer
+from read_ban import read_ban
 from cycle import *
 import random
 import os
@@ -85,7 +86,7 @@ def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dic
     return 1
 
 
-def overall(f_network, lcg_edges, reach, unreach):
+def overall(f_network, reach, unreach):
     for i in reach:
         if i in unreach:
             return None  # conflicted input
@@ -109,7 +110,7 @@ def overall(f_network, lcg_edges, reach, unreach):
             else:
                 specialize(f_network, process, actions, initial_state, reach, unreach, i, dict_lcg)
             L.pop(i)
-    return lcg_edges
+    return f_network
 
 
 def rev_overall(p, re, un):
@@ -157,10 +158,13 @@ def consistent_model(p, tsd):  # see if all the transitions can be explained by 
             return False
     return True
 
-input_fn = 'output1'
-output_fn = 'test'
 
-model = os.system('./AS_LF1T.exe -i ' + input_fn + ' > ' + output_fn)
-[process, actions, actions_by_hitter, initial_state, start_node] = read_ban("example.an")
-reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state, start_node)
-overall("example.an", lcg_edges, "Re", "Un")
+if __name__ == "__main__":
+    # input_fn = 'output1'
+    # output_fn = 'test'
+
+    # model = os.system('./AS_LF1T.exe -i ' + input_fn + ' > ' + output_fn)
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban("example.an")
+    reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state,
+                                                    start_node)
+    overall("example.an", "Re", "Un")
