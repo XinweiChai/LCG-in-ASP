@@ -160,8 +160,8 @@ def one_run_no_timer(f_network, init_state, start):
     lcg_edges = cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions)
     lcg_edges = precondition(lcg_edges, actions_by_hitter, initial_state)
     lcg_edges = prune(lcg_edges, start_node)
-    print(start_node)
-    print(initial_state)
+    # print(start_node)
+    # print(initial_state)
     if initial_state[start_node[0]] == start_node[1]:
         return True, 0
     if start_node not in lcg_edges:

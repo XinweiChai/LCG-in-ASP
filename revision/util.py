@@ -29,11 +29,11 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
         [lcg_nodes, lcg_edges] = slcg(initial_state, actions, i)
         lcg_edges = cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions)
         dict_lcg[i] = [lcg_nodes, lcg_edges]
-        L[i] = [i]
+        L[i] = []
         for j in lcg_nodes:
             if j in reach + unreach:
                 L[i].append(j)
-        res, x = one_run_no_timer(f_network, i[0], i[1], i[2])
+        res, x = one_run_no_timer(f_network, init_state="", start=i)
         if not res and i in reach:
             unreach_set.append(i)
         if res and i in unreach:
@@ -111,10 +111,10 @@ def overall(f_network, reach, unreach):
     if not reach_set and not unreach_set:
         return None
     while L:
-        L_sorted = sorted(L.items(), key=lambda item: len(item[1]))
+        L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
         for i in L_sorted:
             # reconstruct lcg)
-            res, x = one_run_no_timer(f_network, i[0], i[1], i[2])
+            res, x = one_run_no_timer(f_network, "", i)
             if (i in reach_set and res) or (i in unreach_set and not res):
                 L.pop(i)
                 continue
@@ -178,6 +178,6 @@ if __name__ == "__main__":
 
     # model = os.system('./AS_LF1T.exe -i ' + input_fn + ' > ' + output_fn)
     [process, actions, actions_by_hitter, initial_state, start_node] = read_ban("example.an")
-    reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state,
-                                                    start_node)
+    # reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state,
+    #                                                 start_node)
     overall("example.an", "Re", "Un")
