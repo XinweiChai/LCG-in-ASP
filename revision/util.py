@@ -1,11 +1,24 @@
 from batch_test import one_run_no_timer
 from read_ban import read_ban
 from cycle import *
+from SLCG import slcg
 import random
 import os
+import re
+
+
+def read_reach(fn):
+    reach = []
+    fn = open(fn)
+    for i in fn.readlines():
+        i = i.replace("\n", "")
+        reach.append(re.split("=", i))
+    return reach
 
 
 def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_state, start_node):
+    reach = read_reach(reach)
+    unreach = read_reach(unreach)
     reach_set = []
     unreach_set = []  # unsatisfied set
     L = {}
@@ -20,7 +33,7 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
         for j in lcg_nodes:
             if j in reach + unreach:
                 L[i].append(j)
-        res, x = one_run(f_network, i[0], i[1], i[2])
+        res, x = one_run_no_timer(f_network, i[0], i[1], i[2])
         if not res and i in reach:
             unreach_set.append(i)
         if res and i in unreach:
@@ -101,7 +114,7 @@ def overall(f_network, reach, unreach):
         L_sorted = sorted(L.items(), key=lambda item: len(item[1]))
         for i in L_sorted:
             # reconstruct lcg)
-            res, x = one_run(f_network, i[0], i[1], i[2])
+            res, x = one_run_no_timer(f_network, i[0], i[1], i[2])
             if (i in reach_set and res) or (i in unreach_set and not res):
                 L.pop(i)
                 continue

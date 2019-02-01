@@ -2,8 +2,8 @@ from batch_test import *
 from generate_model import *
 from timeit import default_timer
 
-sizes1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-sizes2 = [200, 300, 400, 500, 600, 700, 800, 900, 1000]
+sizes1 = list(range(10, 100, 10))
+sizes2 = list(range(100, 100, 1001))
 sizes = sizes1 + sizes2
 size_density = 3
 times = [1, 2, 3, 4, 5, 6, 7]
