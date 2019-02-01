@@ -12,7 +12,7 @@ def read_reach(fn):
     fn = open(fn)
     for i in fn.readlines():
         i = i.replace("\n", "")
-        reach.append(re.split("=", i))
+        reach.append(tuple(re.split("=", i)))
     return reach
 
 
@@ -25,7 +25,7 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
     dict_lcg = {}
 
     for i in reach + unreach:
-        # Maybe can be replaced by logic programs
+        # Maybe ABAN can be replaced by logic programs
         [lcg_nodes, lcg_edges] = slcg(initial_state, actions, i)
         lcg_edges = cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions)
         dict_lcg[i] = [lcg_nodes, lcg_edges]
