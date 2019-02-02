@@ -18,7 +18,7 @@ def heuristics(k, lcg_edges, start_node, initial_state):
 
 def asp_solve(lcg_edges, initial_state, iteration):
     if not lcg_edges:
-        return False, 0
+        return False, 0, [], lcg_edges
     generate(initial_state, lcg_edges)
     g_options = ''
     s_options = '1'
@@ -28,11 +28,17 @@ def asp_solve(lcg_edges, initial_state, iteration):
     result = solver.run([encoding, facts], collapseTerms=True, collapseAtoms=False)
     for s in result:
         if Term('unreachable') in s:
-            return False, iteration
+            return False, iteration, [], lcg_edges
         if Term('reachable') in s:
             s.remove(Term('reachable'))
-            return True, iteration, s.to_list()
-    return False, iteration
+            s = s.to_list()
+            for i in range(len(s)):
+                s[i] = s[i].args()
+                s[i].pop(0)
+                s[i][0] = s[i][0].replace("\"", "")
+                s[i] = tuple(s[i])
+            return True, iteration, s, lcg_edges
+    return False, iteration, [], lcg_edges
 
 
 def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_state):  # ASPReach
@@ -59,8 +65,8 @@ def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node,
         lcg_edges_copy = prune(lcg_edges_copy, start_node)
         res = and_gate(lcg_nodes, lcg_edges_copy, start_node, initial_state)
         if res:
-            return True, 0
-    return False, 0
+            return True, 0, [], lcg_edges
+    return False, 0, [], lcg_edges
 
 
 def prune(lcg_edges, start_node):

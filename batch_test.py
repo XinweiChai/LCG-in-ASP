@@ -163,23 +163,18 @@ def one_run_no_timer(f_network, init_state, start):
     # print(start_node)
     # print(initial_state)
     if initial_state[start_node[0]] == start_node[1]:
-        return True, 0
+        return True, 0, [], lcg_edges
     if start_node not in lcg_edges:
-        return False, 0
+        return False, 0, [], lcg_edges
     or_gates = []
     or_gates_items = []
     for i in lcg_edges:
         if len(i) == 2 and len(lcg_edges[i]) > 1:
             or_gates.append(i)
             or_gates_items.append(lcg_edges[i])
-    # return exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state)
     if len(or_gates) <= 10:
         return exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state)
-    # return exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state)
     else:
-        # return_dict[0] = heuristics_perm_reach(len(or_gates) * 100 + 1, lcg_nodes, lcg_edges, start_node, initial_state)
-        # return heuristics_perm_reach(len(or_gates) * 100 + 1, lcg_nodes, lcg_edges, start_node, initial_state)
-        # return heuristics(len(or_gates)*5+1, lcg_edges, start_node, initial_state)
         return heuristics(len(or_gates) * 5 + 1, lcg_edges, start_node, initial_state)
 
 
