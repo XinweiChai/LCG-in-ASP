@@ -2,6 +2,7 @@ from batch_test import *
 from generate_model import *
 from timeit import default_timer
 
+"""
 sizes1 = list(range(10, 100, 10))
 sizes2 = list(range(100, 100, 1001))
 sizes = sizes1 + sizes2
@@ -25,3 +26,9 @@ if __name__ == '__main__':
         stop = default_timer()
         time_recorder[i] = (stop - start) / models / 20
         f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
+"""
+size = 4
+density = 3
+num_tran = size * density
+if __name__ == '__main__':
+    write_file(generate_random_an(size, num_tran), "//revision//model", size)
