@@ -151,14 +151,15 @@ def one_run(f_network, input, change_state, start, return_dict):
         return_dict[0] = heuristics(len(or_gates) * 5 + 1, lcg_edges, start_node, initial_state)
 
 
-def one_run_no_timer(f_network, init_state, start):
-    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+# def one_run_no_timer(f_network, init_state, start):
+def one_run_no_timer(actions, actions_by_hitter, initial_state, init_state, start):
+    # [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
     if init_state:
         initial_state = init_state
     start_node = start
-    [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
+    lcg_nodes, lcg_edges = slcg(initial_state, actions, start_node)
     lcg_edges = cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions)
-    lcg_edges = precondition(lcg_edges, actions_by_hitter, initial_state)
+    lcg_edges = precondition(lcg_edges, initial_state)
     lcg_edges = prune(lcg_edges, start_node)
     # print(start_node)
     # print(initial_state)

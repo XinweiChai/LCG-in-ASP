@@ -5,6 +5,7 @@ from SLCG import slcg
 import random
 import os
 import re
+import copy
 
 
 def read_reach(fn):
@@ -31,7 +32,9 @@ def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_sta
         for j in lcg_nodes:
             if j in reach + unreach:
                 L[i].append(j)
-        res, _, _, _ = one_run_no_timer(f_network, init_state="", start=i)
+        # res, _, _, _ = one_run_no_timer(copy.deepcopy(actions), copy.deepcopy(actions_by_hitter), initial_state, init_state="", start=i)
+        res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state,
+                                        init_state="", start=i)
         if not res and i in reach:
             reach_set.append(i)
         if res and i in unreach:
@@ -50,12 +53,12 @@ def delete_subsume(p, r):
     return p
 
 
-def specialize(f_network, process, actions, initial_state, reach, unreach, to_revise, dict_lcg):
+def specialize(f_network, process, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg):
     rev = [to_revise]
     modified = []
     for i in rev:
-        res, _, x, lcg_edges = one_run_no_timer(f_network, initial_state,
-                                                i)  # reachability, iterations, sequence, used transition
+        res, _, x, lcg_edges = one_run_no_timer(actions, actions_by_hitter, initial_state, init_state="",
+                                                start=i)  # reachability, iterations, sequence, used transition
         trans = []
         for l in actions[i]:
             if l in lcg_edges[i]:  # used transitions
@@ -69,7 +72,11 @@ def specialize(f_network, process, actions, initial_state, reach, unreach, to_re
                     modified.append(temp)
                     actions[i].remove(k)
                     actions[i].append(temp)
-        return actions, modified
+                    for m in k[0]:
+                        actions_by_hitter[m].remove(k)
+                        actions_by_hitter[m].append(temp)
+                    actions_by_hitter[j].append(temp)
+        return actions, actions_by_hitter, modified
         # mark = True
         # break
         # if mark:
@@ -89,30 +96,41 @@ def specialize(f_network, process, actions, initial_state, reach, unreach, to_re
         #                             return l, actions
 
 
-def generalize(f_network, actions, initial_state, reach, unreach, to_revise, dict_lcg):
+def generalize(f_network, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg):
+    modified = []
     for i in actions[to_revise]:
         mark = False
-        for j in i[0]:
-            if j in unreach:
-                mark = True
-                i[0].remove(j)
+        if len(i[0]) > 1:
+            for j in i[0]:
+                if j in unreach:
+                    mark = True
+                    temp = list(i[0])
+                    temp.remove(j)
+                    temp = (tuple(temp), i[1], i[2], i[3])
+                    modified.append(temp)
+                    actions[to_revise].remove(i)
+                    actions[to_revise].append(temp)
+                    for m in i[0]:
+                        actions_by_hitter[m].remove(i)
+                        if m != j:
+                            actions_by_hitter[m].append(temp)
         if mark:
             break
     if mark:
-        return i[0], actions
-    else:
-        for i in actions[to_revise]:
-            mark = False
-            for j in i[0]:
-                res, _, x = one_run_no_timer(f_network, initial_state, j)
-                if not res[0]:
-                    mark = True
-                    i[0].remove(j)
-            if mark:
-                return i[0], actions
-        if mark:
-            return i[0], actions
-    return 1
+        return actions, actions_by_hitter, modified
+    # else:
+    #     for i in actions[to_revise]:
+    #         mark = False
+    #         for j in i[0]:
+    #             res, _, x = one_run_no_timer(f_network, initial_state, j)
+    #             if not res[0]:
+    #                 mark = True
+    #                 i[0].remove(j)
+    #         if mark:
+    #             return i[0], actions
+    #     if mark:
+    #         return i[0], actions
+    # return 1
 
 
 def overall(f_network, reach, unreach):
@@ -130,21 +148,23 @@ def overall(f_network, reach, unreach):
         L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
         for i in L_sorted:
             if i not in reach_set + unreach_set:
-                L.remove(i)
+                L.pop(i)
                 continue
             # reconstruct lcg
-            res, _, _, _ = one_run_no_timer(f_network, "", i)
+            res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state, init_state="", start=i)
             if (i in reach_set and res) or (i in unreach_set and not res):
                 L.pop(i)
                 continue
             if i in reach_set:
-                generalize(f_network, actions, initial_state, reach, unreach, i, dict_lcg)
+                actions, actions_by_hitter, _ = generalize(f_network, actions, actions_by_hitter, initial_state, reach,
+                                                           unreach, i, dict_lcg)
             else:
-                actions, _ = specialize(f_network, process, actions, initial_state, reach, unreach, i, dict_lcg)
+                actions, actions_by_hitter, _ = specialize(f_network, process, actions, actions_by_hitter,
+                                                           initial_state, reach, unreach, i, dict_lcg)
             L.pop(i)
             [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                               initial_state, start_node)
-    return f_network
+    return actions
 
 
 def rev_overall(p, re, un):
@@ -203,4 +223,4 @@ if __name__ == "__main__":
     unreach = read_reach("Un")
     # reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state,
     #                                                 start_node)
-    overall("example.an", reach, unreach)
+    modified_actions = overall("example.an", reach, unreach)

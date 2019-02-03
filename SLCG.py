@@ -1,3 +1,5 @@
+import copy
+
 def slcg(initial_state, actions, start_node):
     lcg_nodes = []
     lcg_edges = {}
@@ -18,8 +20,8 @@ def slcg(initial_state, actions, start_node):
         else:
             act = actions[i]
             # act = [actions[value] for value in targets if value == i]
-            lcg_edges[i] = act
-            for j in act:
+            lcg_edges[i] = copy.deepcopy(act)
+            for j in copy.deepcopy(act):
                 lcg_nodes.append(j)
                 # for m in j:
                 lcg_edges[j] = list(j[0])

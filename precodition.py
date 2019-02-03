@@ -1,4 +1,4 @@
-def precondition(lcg_edges, actions_by_hitter, initial_state):
+def precondition(lcg_edges, initial_state):
     mark = True
     while mark:
         mark = False
