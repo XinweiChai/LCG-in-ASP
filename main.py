@@ -29,7 +29,7 @@ if __name__ == '__main__':
         time_recorder[i] = (stop - start) / models / 20
         f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 """
-size = 100
+size = 50
 density = 3
 num_tran = size * density
 cut_percentage = 0.2
