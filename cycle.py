@@ -19,7 +19,7 @@ def delete_element(element, scc, lcg_edges, actions, actions_by_hitter):
     for i in scc:
         if i in actions_by_hitter[element]:
             lcg_edges[i] = []
-            actions[(i[1], i[3])].remove(i)
+            # actions[(i[1], i[3])].remove(i)
     return lcg_edges
 
 

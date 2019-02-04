@@ -1,6 +1,8 @@
 from batch_test import *
 from generate_model import *
 from timeit import default_timer
+import math
+from revision.util import *
 
 """
 sizes1 = list(range(10, 100, 10))
@@ -30,5 +32,28 @@ if __name__ == '__main__':
 size = 4
 density = 3
 num_tran = size * density
+cut_percentage = 0.2
+
+
+def checkall(process, actions, actions_by_hitter, initial_state):
+    re = []
+    un = []
+    for i in process:
+        res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state, [], (i, '1'))
+        if res:
+            re.append((i, '1'))
+        else:
+            un.append((i, '1'))
+    return re, un
+
+
 if __name__ == '__main__':
-    write_file(generate_random_an(size, num_tran), "//revision//model", size)
+    # transition_set = generate_random_an(size, num_tran)
+    # write_file(transition_set, "revision//complete_model", size)
+    # transition_set = transition_set[0: len(transition_set) - math.ceil(cut_percentage * len(transition_set))]
+    # write_file(transition_set, "revision//partial_model", size)
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//complete_model")
+    re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//partial_model")
+    re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
+    overall("revision//partial_model", re_complete, un_complete)

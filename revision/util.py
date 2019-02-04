@@ -224,3 +224,4 @@ if __name__ == "__main__":
     # reach_set, unreach_set, L, dict_lcg = pre_check("example.an", "Re", "Un", actions, actions_by_hitter, initial_state,
     #                                                 start_node)
     modified_actions = overall("example.an", reach, unreach)
+    print(modified_actions)
