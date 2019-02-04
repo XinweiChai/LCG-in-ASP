@@ -53,7 +53,8 @@ def delete_subsume(p, r):
     return p
 
 
-def specialize(f_network, process, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg):
+def specialize(f_network, process, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg,
+               scc_element):
     rev = [to_revise]
     modified = []
     for i in rev:
@@ -65,9 +66,9 @@ def specialize(f_network, process, actions, actions_by_hitter, initial_state, re
                 trans.append(l)
         # get the used transition
         # mark = False
-        for j in unreach:
+        for j in unreach + scc_element:
             for k in trans:
-                if j not in k[0] and j != (k[1], k[3]):  # no self-regulation
+                if j not in k[0] and j != (k[1], k[3]) and k in actions[i]:  # no self-regulation
                     temp = (tuple(list(k[0]) + [j]), k[1], k[2], k[3])
                     modified.append(temp)
                     actions[i].remove(k)
@@ -96,13 +97,13 @@ def specialize(f_network, process, actions, actions_by_hitter, initial_state, re
         #                             return l, actions
 
 
-def generalize(f_network, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg):
+def generalize(f_network, actions, actions_by_hitter, initial_state, reach, unreach, to_revise, dict_lcg, scc_element):
     modified = []
     for i in actions[to_revise]:
         mark = False
         if len(i[0]) > 1:
             for j in i[0]:
-                if j in unreach:
+                if j in unreach + scc_element and i in actions[to_revise]:
                     mark = True
                     temp = list(i[0])
                     temp.remove(j)
@@ -116,8 +117,7 @@ def generalize(f_network, actions, actions_by_hitter, initial_state, reach, unre
                             actions_by_hitter[m].append(temp)
         if mark:
             break
-    if mark:
-        return actions, actions_by_hitter, modified
+    return actions, actions_by_hitter, modified
     # else:
     #     for i in actions[to_revise]:
     #         mark = False
@@ -144,7 +144,19 @@ def overall(f_network, reach, unreach):
     # if there are unbreakable cycles, abandon
     if not reach_set and not unreach_set:
         return None
-    while L:
+    modified = [1]
+    while L and modified:
+        modified = []
+        scc = list(strongly_connected_components_path(L.keys(), L))
+        cycles = copy.deepcopy(scc)
+        for x in scc:
+            if len(x) > 1:
+                for element in x:
+                    for succ in L[element]:
+                        if succ in x and succ != element:
+                            L[element].remove(succ)
+            else:
+                cycles.remove(x)
         L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
         for i in L_sorted:
             if i not in reach_set + unreach_set:
@@ -155,12 +167,17 @@ def overall(f_network, reach, unreach):
             if (i in reach_set and res) or (i in unreach_set and not res):
                 L.pop(i)
                 continue
+            scc_element = []
+            for j in cycles:
+                if i in j:
+                    scc_element = j
+                    break
             if i in reach_set:
-                actions, actions_by_hitter, _ = generalize(f_network, actions, actions_by_hitter, initial_state, reach,
-                                                           unreach, i, dict_lcg)
+                actions, actions_by_hitter, modified = generalize(f_network, actions, actions_by_hitter, initial_state, reach,
+                                                           unreach, i, dict_lcg, scc_element)
             else:
-                actions, actions_by_hitter, _ = specialize(f_network, process, actions, actions_by_hitter,
-                                                           initial_state, reach, unreach, i, dict_lcg)
+                actions, actions_by_hitter, modified = specialize(f_network, process, actions, actions_by_hitter,
+                                                           initial_state, reach, unreach, i, dict_lcg, scc_element)
             L.pop(i)
             [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                               initial_state, start_node)

@@ -29,13 +29,13 @@ if __name__ == '__main__':
         time_recorder[i] = (stop - start) / models / 20
         f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 """
-size = 4
+size = 100
 density = 3
 num_tran = size * density
 cut_percentage = 0.2
 
 
-def checkall(process, actions, actions_by_hitter, initial_state):
+def checkall(process, actions, actions_by_hitter, initial_state):  # test the reachability 0 -> 1
     re = []
     un = []
     for i in process:
@@ -48,12 +48,12 @@ def checkall(process, actions, actions_by_hitter, initial_state):
 
 
 if __name__ == '__main__':
-    # transition_set = generate_random_an(size, num_tran)
-    # write_file(transition_set, "revision//complete_model", size)
-    # transition_set = transition_set[0: len(transition_set) - math.ceil(cut_percentage * len(transition_set))]
-    # write_file(transition_set, "revision//partial_model", size)
+    transition_set = generate_random_an(size, num_tran)
+    write_file(transition_set, "revision//complete_model", size)
+    transition_set = transition_set[0: len(transition_set) - math.ceil(cut_percentage * len(transition_set))]
+    write_file(transition_set, "revision//partial_model", size)
     process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//complete_model")
     re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
     process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//partial_model")
     re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
-    overall("revision//partial_model", re_complete, un_complete)
+    actions = overall("revision//partial_model", re_complete, un_complete)
