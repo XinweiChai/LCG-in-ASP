@@ -1,5 +1,5 @@
 import re
-from revision.parser import rule_parser
+from m2rit.parser import rule_parser
 
 
 def compare(x, y):

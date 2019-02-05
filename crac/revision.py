@@ -1,4 +1,8 @@
 import copy
+import read_ban
+from cycle import *
+from SLCG import *
+from batch_test import one_run_no_timer
 
 
 # import pypint
@@ -176,6 +180,76 @@ def completion_set(lcg_edges, rev_lcg_edge, initial_state, lcg_nodes):
             ranking = rev_lcg_edge[ranking[0]] + ranking
         val = val_temp
     return val
+
+
+def pre_check(f_network, reach, unreach, actions, actions_by_hitter, initial_state, start_node):
+    reach_set = []
+    unreach_set = []  # unsatisfied set
+    L = {}
+    dict_lcg = {}
+
+    for i in reach + unreach:
+        # Maybe ABAN can be replaced by logic programs
+        [lcg_nodes, lcg_edges] = slcg(initial_state, actions, i)
+        lcg_edges = cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions)
+        dict_lcg[i] = [lcg_nodes, lcg_edges]
+        L[i] = []
+        for j in lcg_nodes:
+            if j in reach + unreach:
+                L[i].append(j)
+        # res, _, _, _ = one_run_no_timer(copy.deepcopy(actions), copy.deepcopy(actions_by_hitter), initial_state, init_state="", start=i)
+        res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state,
+                                        init_state="", start=i)
+        if not res and i in reach:
+            reach_set.append(i)
+        if res and i in unreach:
+            unreach_set.append(i)
+    return reach_set, unreach_set, L, dict_lcg
+
+
+def overall(f_network, reach, unreach):
+    for i in reach:
+        if i in unreach:
+            return None  # conflicted input
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+    # acquire Re and Un
+    [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
+                                                      initial_state, start_node)
+    # if there are unbreakable cycles, abandon
+    if not reach_set and not unreach_set:
+        return None
+    modified = [1]
+    while L and modified:
+        modified = []
+        scc = list(strongly_connected_components_path(L.keys(), L))
+        cycles = copy.deepcopy(scc)
+        for x in scc:
+            if len(x) > 1:
+                for element in x:
+                    for succ in L[element]:
+                        if succ in x and succ != element:
+                            L[element].remove(succ)
+            else:
+                cycles.remove(x)
+        L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
+        for i in L_sorted:
+            if i not in reach_set + unreach_set:
+                L[i] = [i]
+                continue
+            # reconstruct lcg
+            res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state, init_state="", start=i)
+            if (i in reach_set and res) or (i in unreach_set and not res):
+                L[i] = [i]
+                continue
+            scc_element = []
+            for j in cycles:
+                if i in j:
+                    scc_element = j
+                    break
+            L[i] = [i]
+            [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
+                                                              initial_state, start_node)
+    return actions
 
 
 if __name__ == "__main__":

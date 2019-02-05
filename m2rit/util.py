@@ -138,9 +138,6 @@ def overall(f_network, reach, unreach):
         if i in unreach:
             return None  # conflicted input
     [process, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
-    # keys = []
-    # for i in process:
-    #     keys.append((i, '1'))
     # acquire Re and Un
     [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                       initial_state, start_node)
@@ -168,7 +165,7 @@ def overall(f_network, reach, unreach):
             # reconstruct lcg
             res, _, _, _ = one_run_no_timer(actions, actions_by_hitter, initial_state, init_state="", start=i)
             if (i in reach_set and res) or (i in unreach_set and not res):
-                L[i]=[i]
+                L[i] = [i]
                 continue
             scc_element = []
             for j in cycles:
@@ -183,21 +180,10 @@ def overall(f_network, reach, unreach):
                 actions, actions_by_hitter, modified = specialize(f_network, process, actions, actions_by_hitter,
                                                                   initial_state, reach, unreach, i, dict_lcg,
                                                                   scc_element)
-            L[i]=[i]
+            L[i] = [i]
             [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                               initial_state, start_node)
     return actions
-
-
-def rev_overall(p, re, un):
-    # check reachability and
-    return p
-
-
-def generate_reach(p, var, input):
-    # reach = batch(input, p)  # reachability
-    # return reach
-    return None
 
 
 def partial_model(p, percentage):

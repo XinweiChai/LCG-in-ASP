@@ -2,9 +2,10 @@ from batch_test import *
 from generate_model import *
 from timeit import default_timer
 import math
-from revision.util import *
+from m2rit.util import *
 
 """
+# reachability test
 sizes1 = list(range(10, 100, 10))
 sizes2 = list(range(100, 100, 1001))
 sizes = sizes1 + sizes2
@@ -29,10 +30,6 @@ if __name__ == '__main__':
         time_recorder[i] = (stop - start) / models / 20
         f.write(str(i) + ":" + str(time_recorder[i]) + '\n')
 """
-size = 50
-density = 3
-num_tran = size * density
-cut_percentage = 0.2
 
 
 def checkall(process, actions, actions_by_hitter, initial_state):  # test the reachability 0 -> 1
@@ -47,13 +44,34 @@ def checkall(process, actions, actions_by_hitter, initial_state):  # test the re
     return re, un
 
 
+size = 50
+density = 3
+num_tran = size * density
+cut_percentage = 0.2
+
+# CRAC test
 if __name__ == '__main__':
     transition_set = generate_random_an(size, num_tran)
-    write_file(transition_set, "revision//complete_model", size)
+    write_file(transition_set, "crac//complete_model", size)
     transition_set = transition_set[0: len(transition_set) - math.ceil(cut_percentage * len(transition_set))]
-    write_file(transition_set, "revision//partial_model", size)
-    process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//complete_model")
+    write_file(transition_set, "crac//partial_model", size)
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("crac//complete_model")
     re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
-    process, actions, actions_by_hitter, initial_state, start_node = read_ban("revision//partial_model")
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("crac//partial_model")
     re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
-    actions = overall("revision//partial_model", re_complete, un_complete)
+    actions = overall("m2rit//partial_model", re_complete, un_complete)
+
+"""
+# M2RIT test
+
+if __name__ == '__main__':
+    transition_set = generate_random_an(size, num_tran)
+    write_file(transition_set, "m2rit//complete_model", size)
+    transition_set = transition_set[0: len(transition_set) - math.ceil(cut_percentage * len(transition_set))]
+    write_file(transition_set, "m2rit//partial_model", size)
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("m2rit//complete_model")
+    re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
+    process, actions, actions_by_hitter, initial_state, start_node = read_ban("m2rit//partial_model")
+    re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
+    actions = overall("m2rit//partial_model", re_complete, un_complete)
+"""
