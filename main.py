@@ -2,8 +2,8 @@ from batch_test import *
 from generate_model import *
 from timeit import default_timer
 import math
-from m2rit.util import *
-
+import m2rit.util
+import crac.revision
 """
 # reachability test
 sizes1 = list(range(10, 100, 10))
@@ -59,7 +59,7 @@ if __name__ == '__main__':
     re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
     process, actions, actions_by_hitter, initial_state, start_node = read_ban("crac//partial_model")
     re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
-    actions = overall("m2rit//partial_model", re_complete, un_complete)
+    actions = crac.revision.overall("crac//partial_model", re_complete, un_complete)
 
 """
 # M2RIT test
@@ -73,5 +73,5 @@ if __name__ == '__main__':
     re_complete, un_complete = checkall(process, actions, actions_by_hitter, initial_state)
     process, actions, actions_by_hitter, initial_state, start_node = read_ban("m2rit//partial_model")
     re_partial, un_partial = checkall(process, actions, actions_by_hitter, initial_state)
-    actions = overall("m2rit//partial_model", re_complete, un_complete)
+    actions = m2rit.util.overall("m2rit//partial_model", re_complete, un_complete)
 """
