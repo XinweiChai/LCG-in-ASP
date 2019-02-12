@@ -141,18 +141,31 @@ def update(val, n, lcg_edges, ref_set):
     return val
 
 
-def cut_set(lcg_edges, rev_lcg_edge, lcg_nodes):  # use simplified lcg
+def cut_set(lcg_edges, lcg_nodes):  # use simplified lcg
     val = {}
+    rev_lcg_edge = reverse(lcg_edges)
     ranking = rank(lcg_edges)
     for i in ranking:
         val[i] = []
     while ranking:
-        val_temp = update(val, ranking.pop(0), lcg_edges,
-                          lcg_nodes)  # possible to use a subset of lcg_nodes to squeeze the result
+        val_temp = update(val, ranking.pop(0), lcg_edges, lcg_nodes)  # could use a subset of lcg_nodes
         if val_temp != val:
             ranking = rev_lcg_edge[ranking[0]] + ranking
         val = val_temp
     return val
+
+
+def cut_set_transitions(cs, lcg_edges, start_node):
+    cst = []
+    rev_lcg = reverse(lcg_edges)
+    for i in cs[start_node]:
+        if i == (start_node,):
+            continue
+        temp = []
+        for j in i:
+            temp.append(rev_lcg[j])
+        cst.append(temp)
+    return cst
 
 
 def update_completion(val, n, lcg_edges):
@@ -231,6 +244,7 @@ def overall(f_network, reach, unreach):
                             L[element].remove(succ)
             else:
                 cycles.remove(x)
+        # Get rid of self-dependencies in SLCGs
         L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
         for i in L_sorted:
             if i not in reach_set + unreach_set:
@@ -246,6 +260,13 @@ def overall(f_network, reach, unreach):
                 if i in j:
                     scc_element = j
                     break
+            if i in reach_set:
+                pass
+                # add transitions
+            else:
+                # delete transitions
+                pass
+
             L[i] = [i]
             [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                               initial_state, start_node)
@@ -253,21 +274,25 @@ def overall(f_network, reach, unreach):
 
 
 if __name__ == "__main__":
-    a = ([1, 7], [2, 3])
-    b = ([1, 4], [5], [6])
-    c = ([5], [6])
-    e = (a, b, c)
-    print(product_t(a, b))
-    print(product(e))
+    # a = ([1, 7], [2, 3])
+    # b = ([1, 4], [5], [6])
+    # c = ([5], [6])
+    # e = (a, b, c)
+    # print(product_t(a, b))
+    # print(product(e))
     # print(product_alter(e))
-    #
     # a = (1, 2)
     # b = (3, 4)
     # c = (5, 6)
     # e = (a, b)
     # print((product2(e)))
-
-    # m = pypint.load("test_model.an")
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model1.an")
+    start_node = ('a', '1')
+    [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
+    x = cut_set(lcg_edges, lcg_nodes)
+    y = cut_set_transitions(x, lcg_edges, start_node)
+    print(x)
+    # m = pypint.load("test_model1.an")
     # res = m.cutsets(goal="n1=1", maxsize=5, exclude=[], exclude_initial_state=False, exclude_goal_automata=True,
     #                timeout=None)
     # res = m.cutsets(goal="n1=1", maxsize=10, exclude_initial_state=False, exclude_goal_automata=False, timeout=None)

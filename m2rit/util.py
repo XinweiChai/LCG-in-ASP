@@ -157,6 +157,7 @@ def overall(f_network, reach, unreach):
                             L[element].remove(succ)
             else:
                 cycles.remove(x)
+        # Get rid of self-dependencies in SLCGs
         L_sorted = dict(sorted(L.items(), key=lambda item: len(item[1])))
         for i in L_sorted:
             if i not in reach_set + unreach_set:
