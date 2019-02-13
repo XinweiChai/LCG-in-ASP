@@ -85,15 +85,16 @@ def product_alter(args):  # product for sets of sets
     return result
 
 
-def check(x, pass_item, to_check):
+def check(current, pass_item, to_check):
     for i in to_check:
-        if i != pass_item and set(x) >= set(i):
+        if i != pass_item and set(current) >= set(i):
             return True
     return False
 
 
 def product(args):  # product for sets of sets
     result = [[]]
+    args.append([[]])
     for pool in args:
         temp_res = []
         for x in result:
@@ -157,14 +158,15 @@ def cut_set(lcg_edges, lcg_nodes):  # use simplified lcg
 
 def cut_set_transitions(cs, lcg_edges, start_node):
     cst = []
-    rev_lcg = reverse(lcg_edges)
     for i in cs[start_node]:
-        if i == (start_node,):
-            continue
         temp = []
         for j in i:
-            temp.append(rev_lcg[j])
-        cst.append(temp)
+            if not lcg_edges[j]:
+                temp = []
+                break
+            temp.append(lcg_edges[j])
+        if temp:
+            cst.append(temp)
     return cst
 
 
@@ -278,6 +280,7 @@ if __name__ == "__main__":
     # b = ([1, 4], [5], [6])
     # c = ([5], [6])
     # e = (a, b, c)
+    f = [[[('b', '1')], [('c', '1')]], [[('b', '0')], [('d', '1')], [('b', '1')]]]
     # print(product_t(a, b))
     # print(product(e))
     # print(product_alter(e))
@@ -285,13 +288,15 @@ if __name__ == "__main__":
     # b = (3, 4)
     # c = (5, 6)
     # e = (a, b)
-    # print((product2(e)))
+    # print((product(e)))
+    # print(product(f))
     [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model1.an")
     start_node = ('a', '1')
     [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
     x = cut_set(lcg_edges, lcg_nodes)
     y = cut_set_transitions(x, lcg_edges, start_node)
     print(x)
+    print(y)
     # m = pypint.load("test_model1.an")
     # res = m.cutsets(goal="n1=1", maxsize=5, exclude=[], exclude_initial_state=False, exclude_goal_automata=True,
     #                timeout=None)
