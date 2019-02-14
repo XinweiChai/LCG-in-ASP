@@ -142,6 +142,21 @@ def update(val, n, lcg_edges, ref_set):
     return val
 
 
+def update_transition(val, n, lcg_edges, ref_set):
+    if len(n) == 4:  # solution
+        for i in lcg_edges[n]:
+            val[n] = val[n] + val[i]
+        if n in ref_set:  # Obs in cut set
+            val[n] = [[n]] + val[n]
+    else:  # state
+        temp = []
+        for i in lcg_edges[n]:
+            temp.append(val[i])
+        if len(temp) > 0:
+            val[n] = val[n] + product(temp)
+    return val
+
+
 def cut_set(lcg_edges, lcg_nodes):  # use simplified lcg
     val = {}
     rev_lcg_edge = reverse(lcg_edges)
@@ -156,41 +171,63 @@ def cut_set(lcg_edges, lcg_nodes):  # use simplified lcg
     return val
 
 
-def cut_set_transitions(cs, lcg_edges, start_node):
+def cut_set_transition(lcg_edges, lcg_nodes):  # use simplified lcg
+    val = {}
+    rev_lcg_edge = reverse(lcg_edges)
+    ranking = rank(lcg_edges)
+    for i in ranking:
+        val[i] = []
+    while ranking:
+        val_temp = update_transition(val, ranking.pop(0), lcg_edges, lcg_nodes)  # could use a subset of lcg_nodes
+        if val_temp != val:
+            ranking = rev_lcg_edge[ranking[0]] + ranking
+        val = val_temp
+    return val
+
+
+"""
+def cut_set_transition(cs, lcg_edges, start_node):
     cst = []
+    rev = reverse(lcg_edges)
     for i in cs[start_node]:
         temp = []
         for j in i:
-            if not lcg_edges[j]:
-                temp = []
-                break
-            temp.append(lcg_edges[j])
+            # if not lcg_edges[j]:
+            #     temp = []
+            #     break
+            if rev[j]:
+                temp.append(rev[j])
         if temp:
             cst.append(temp)
     return cst
+"""
 
 
-def update_completion(val, n, lcg_edges):
-    if len(n) == 2:  # states
-        for i in lcg_edges[n]:
-            val[n] = val[n] + val[i]
-    else:  # state
+def update_completion(val, n, lcg_edges, init_state):
+    if len(n) == 4:  # solution
         temp = []
         for i in lcg_edges[n]:
             temp.append(val[i])
         if len(temp) > 0:
             val[n] = val[n] + product(temp)
-        val[n] = [[n]] + val[n]  # suppose we can remove node n
+    else:  # state
+        for i in lcg_edges[n]:
+            val[n] = val[n] + val[i]
+        if n[1] == initial_state[n[0]]:
+            val[n] = [[]]
+        else:
+            val[n] = [[n]] + val[n]  # has no successor and is not in initial state
     return val
 
 
-def completion_set(lcg_edges, rev_lcg_edge, initial_state, lcg_nodes):
+def completion_set(lcg_edges, lcg_nodes, initial_state):
     val = {}
     ranking = rank(lcg_edges)
+    rev_lcg_edge = reverse(lcg_edges)
     for i in ranking:
         val[i] = []
     while ranking:
-        val_temp = update(val, ranking.pop(0), lcg_edges, lcg_nodes)
+        val_temp = update_completion(val, ranking.pop(0), lcg_edges, initial_state)
         if val_temp != val:
             ranking = rev_lcg_edge[ranking[0]] + ranking
         val = val_temp
@@ -280,7 +317,7 @@ if __name__ == "__main__":
     # b = ([1, 4], [5], [6])
     # c = ([5], [6])
     # e = (a, b, c)
-    f = [[[('b', '1')], [('c', '1')]], [[('b', '0')], [('d', '1')], [('b', '1')]]]
+    # f = [[[('b', '1')], [('c', '1')]], [[('b', '0')], [('d', '1')], [('b', '1')]]]
     # print(product_t(a, b))
     # print(product(e))
     # print(product_alter(e))
@@ -290,13 +327,16 @@ if __name__ == "__main__":
     # e = (a, b)
     # print((product(e)))
     # print(product(f))
-    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model1.an")
+    # [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model.an")
+    # [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model1.an")
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban("test_model2.an")
     start_node = ('a', '1')
     [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
-    x = cut_set(lcg_edges, lcg_nodes)
-    y = cut_set_transitions(x, lcg_edges, start_node)
+    # x = cut_set(lcg_edges, lcg_nodes)
+    # y = cut_set_transition(lcg_edges, lcg_nodes)
+    x = completion_set(lcg_edges, lcg_nodes, initial_state)
     print(x)
-    print(y)
+    # print(y)
     # m = pypint.load("test_model1.an")
     # res = m.cutsets(goal="n1=1", maxsize=5, exclude=[], exclude_initial_state=False, exclude_goal_automata=True,
     #                timeout=None)
