@@ -15,7 +15,7 @@ initial_state a=0, b=0, c=0
 ```
 For now the program only supports Boolean variables, so that each variable need to be declared with **[0,1]**. 
 
-To load a model, use  **variable, transitions, transitions_by_hitter, initial_state, start_node = read_ban(*path_of_model*)** where **start_node** designates the local state to be reached, for example **("a", 1)**.
+To load a model, use  ***variable, transitions, transitions_by_hitter, initial_state, start_node* = read_ban(*filepath*)** where **start_node** designates the local state to be reached, for example **("a", 1)**.
 
 ## Generate Random Models
 
