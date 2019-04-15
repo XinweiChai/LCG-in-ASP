@@ -27,7 +27,7 @@ PermReach and ASPReach aim at solving reachability problem efficiently and deal 
 
 - Package ``pyasp``  is required (download via ``pip3``)
 
-Call **one_run_with_options(*f_network, input_init, change_state, start, return_dict, option*)** with ***f_network*** the file name, ***input_init*** the initial state,  ***change_state*** to change the initial state when there are multiple tests,  ***start*** the target state, ***option*** the execution mode, ***option=0*** using pure ASP solver  ***option=1*** using ASPReach ***option=2*** using PermReach.
+Call **one_run_with_options(*f_network, input_init, change_state, start, return_dict, option*)** with ***f_network*** the file name, ***input_init*** the initial state,  ***change_state*** to change the initial state when there are multiple tests,  ***start*** the target state, ***option*** the execution mode, ***option=0*** using pure ASP solver, ***option=1*** using ASPReach, ***option=2*** using PermReach.
 
 PermReach uses a weaker heuristics, which is strong in runtime but weak in conclusiveness while ASPReach costs more runtime but more conclusive.
 
