@@ -19,10 +19,4 @@ def precondition(lcg_edges, initial_state):
                         lcg_edges[i].remove(k)
                         mark = True
                         break
-        # if mark:
-        #     lcg_edges.pop(i)
-        #     for j in lcg_edges[i]:
-        #         lcg_edges.pop(j)
-        #         lcg_edges[(j[1],j[3])].remove(j)
-        # lcg_edges=precondition(lcg_edges, actions_by_hitter,initial_state)
     return lcg_edges

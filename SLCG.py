@@ -1,5 +1,6 @@
 import copy
 
+
 def slcg(initial_state, actions, start_node):
     lcg_nodes = []
     lcg_edges = {}

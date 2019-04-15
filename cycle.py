@@ -24,22 +24,22 @@ def delete_element(element, scc, lcg_edges, actions, actions_by_hitter):
 
 
 def cycle(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions):
-    cycle = True
-    while cycle:
-        cycle = False
+    cycles = True
+    while cycles:
+        cycles = False
         SCC = strongly_connected_components_path(lcg_nodes, lcg_edges)
         for scc in SCC:
             if len(scc) > 1:
-                cycle = True
+                cycles = True
                 lcg_edges = break_cycle(lcg_edges, scc, start_node, actions_by_hitter, actions)
                 break
     return lcg_edges
 
 
 def cycle2(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions):
-    cycle = True
-    while cycle:
-        cycle = False
+    cycles = True
+    while cycles:
+        cycles = False
         SCC = strongly_connected_components_path(lcg_nodes, lcg_edges)
         single_incoming = []
         for i in SCC:
@@ -56,7 +56,7 @@ def cycle2(lcg_nodes, lcg_edges, start_node, actions_by_hitter, actions):
                 single_incoming.append(i)
         for scc in single_incoming:
             if len(scc) > 1:
-                cycle = True
+                cycles = True
                 lcg_edges = break_cycle(lcg_edges, scc, start_node, actions_by_hitter, actions)
                 break
     return lcg_edges

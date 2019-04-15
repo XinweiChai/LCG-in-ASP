@@ -29,7 +29,7 @@ def reach_trans(x, lcg_edges, init_state):
 
 
 def one_run_over_approximation(f_network, init_state, start):
-    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+    [_, actions, actions_by_hitter, initial_state, _] = read_ban(f_network)
     if init_state:
         initial_state = init_state
     start_node = start
@@ -48,7 +48,7 @@ def one_run_over_approximation(f_network, init_state, start):
 
 
 def one_run_recursive(f_network, init_state, start, below_threshold, above_threshold):
-    [dictionary, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+    [_, actions, actions_by_hitter, initial_state, _] = read_ban(f_network)
     if init_state:
         initial_state = init_state
     start_node = start

@@ -263,7 +263,7 @@ def overall(f_network, reach, unreach):
     for i in reach:
         if i in unreach:
             return None  # conflicted input
-    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban(f_network)
+    [process, actions, actions_by_hitter, initial_state, start_node] = read_ban.read_ban(f_network)
     # acquire Re and Un
     [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                       initial_state, start_node)
@@ -310,6 +310,22 @@ def overall(f_network, reach, unreach):
             [reach_set, unreach_set, L, dict_lcg] = pre_check(f_network, reach, unreach, actions, actions_by_hitter,
                                                               initial_state, start_node)
     return actions
+
+
+def rev_cut_set(fn, start_node_out):
+    [_, actions, _, initial_state, start_node] = read_ban.read_ban(fn)
+    if start_node_out:
+        start_node = start_node_out
+    [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
+    return cut_set(lcg_edges, lcg_nodes)
+
+
+def rev_completion_set(fn, start_node_out):
+    [_, actions, _, initial_state, start_node] = read_ban.read_ban(fn)
+    if start_node_out:
+        start_node = start_node_out
+    [lcg_nodes, lcg_edges] = slcg(initial_state, actions, start_node)
+    return completion_set(lcg_edges, lcg_nodes, initial_state)
 
 
 if __name__ == "__main__":

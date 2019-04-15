@@ -55,7 +55,7 @@ def exhaustive_run(or_gates, or_gates_items, lcg_edges, start_node, initial_stat
     return False, 0
 
 
-def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node, initial_state):  # PermReach
+def exhaustive_reach(or_gates, or_gates_items, lcg_edges, start_node, initial_state):  # PermReach
     if not or_gates:
         return asp_solve(lcg_edges, initial_state, 0)
     for i in product(*or_gates_items):
@@ -63,7 +63,7 @@ def exhaustive_reach(or_gates, or_gates_items, lcg_nodes, lcg_edges, start_node,
         for j in range(len(or_gates)):
             lcg_edges_copy[or_gates[j]] = [i[j]]
         lcg_edges_copy = prune(lcg_edges_copy, start_node)
-        res = and_gate(lcg_nodes, lcg_edges_copy, start_node, initial_state)
+        res = and_gate(lcg_edges_copy, initial_state)
         if res:
             return True, 0, [], lcg_edges
     return False, 0, [], lcg_edges
@@ -87,19 +87,19 @@ def prune(lcg_edges, start_node):
     return lcg_edges
 
 
-def heuristics_perm_reach(k, lcg_nodes, lcg_edges, start_node, initial_state):
+def heuristics_perm_reach(k, lcg_edges, start_node, initial_state):
     if start_node in initial_state:
         return [True, 0]
     for i in range(k):
         new_lcg_edges = random_reconstruct(lcg_edges, start_node)
         if not new_lcg_edges:
             return [False, 1]
-        if and_gate(lcg_nodes, new_lcg_edges, start_node, initial_state):
+        if and_gate(new_lcg_edges, initial_state):
             return [True, i + 1]
     return [False, k]
 
 
-def and_gate(lcg_nodes, lcg_edges, start_node, initial_state):
+def and_gate(lcg_edges, initial_state):
     and_gates = [i for i in lcg_edges if len(lcg_edges[i]) > 1]
     and_gates_dict = {}
     for i in and_gates:
@@ -120,7 +120,7 @@ def and_gate(lcg_nodes, lcg_edges, start_node, initial_state):
                 flag = True
                 temp_state = initial_state
                 for k in j:
-                    [boo, state, sequence] = simple_branch(k, temp_state, lcg_edges)
+                    [boo, state, _] = simple_branch(k, temp_state, lcg_edges)
                     if not boo:
                         flag = False
                         break

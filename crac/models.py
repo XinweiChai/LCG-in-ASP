@@ -25,8 +25,8 @@ def generate_random_an(size, num_tran):
             temp.remove(dice)
         trans = [head, body]
         mark = False
-        for i in transition_set:
-            if head == i[0] and set(body) > set(i[1]):
+        for j in transition_set:
+            if head == j[0] and set(body) > set(j[1]):
                 mark = True
                 break
         if mark:

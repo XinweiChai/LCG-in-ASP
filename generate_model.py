@@ -2,13 +2,13 @@ import random
 import os
 
 
-def generate_random_an(size, num_tran):
-    if num_tran > size * size:
-        num_tran = size * size
+def generate_random_an(an_size, an_num_tran):
+    if an_num_tran > an_size * an_size:
+        an_num_tran = an_size * an_size
     transition_set = []
-    for i in range(num_tran):
-        head = random.randint(1, size)
-        temp = list(range(1, size + 1))
+    for i in range(an_num_tran):
+        head = random.randint(1, an_size)
+        temp = list(range(1, an_size + 1))
         sign = random.choice([1, -1])
         temp.remove(head)
         head = head * sign
@@ -35,9 +35,9 @@ def generate_random_an(size, num_tran):
 
 # def generateRandomTransition(size,numTran):
 
-def write_file(model, fn, size):
+def write_file(model, fn, an_size):
     f = open(fn, 'w')
-    for i in range(size):
+    for i in range(an_size):
         f.writelines('n' + str(i + 1) + ' [0, 1]\n')
     f.writelines('\n')
     for i in model:
@@ -69,12 +69,12 @@ def write_file(model, fn, size):
         #    f.writelines('\n')
 
 
-def generate_files(amount, size, num_tran):
-    path = 'data//model_' + str(size)
+def generate_files(amount, an_size, an_num_tran):
+    path = 'data//model_' + str(an_size)
     if not os.path.exists(path):
         os.makedirs(path)
     for i in range(amount):
-        write_file(generate_random_an(size, num_tran), path + "//model_" + str(i), size)
+        write_file(generate_random_an(an_size, an_num_tran), path + "//model_" + str(i), an_size)
 
 
 if __name__ == "__main__":
