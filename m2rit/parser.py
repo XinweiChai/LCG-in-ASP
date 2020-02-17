@@ -2,14 +2,13 @@ import re
 
 
 def rule_parser(fn):  # in form of "c(0,T)::5/10 :- b(1,T-1)." --> ['c','0','b','1']
-    f = open(fn, 'r')
-    data = []
-    for i in f.read().splitlines():
-        temp = re.sub("::|,T(-1)*|%|\d+\/\d+|\.|\)|\s", '', i)
-        temp = re.split(":-|,|\(", temp)
-        # print(temp)s
-        data.append(temp)
-    f.close
+    with open(fn, 'r') as f:
+        data = []
+        for i in f.read().splitlines():
+            temp = re.sub("::|,T(-1)*|%|\d+\/\d+|\.|\)|\s", '', i)
+            temp = re.split(":-|,|\(", temp)
+            # print(temp)s
+            data.append(temp)
     return data
 
 
