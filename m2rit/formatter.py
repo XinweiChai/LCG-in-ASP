@@ -13,10 +13,9 @@ def write_literal(f, var_num):
 
 
 def asp_generator(var_num, trans_num):
-    f = open("states.lp", "w")
-    for i in itertools.product([0, 1], repeat=var_num):
-        f.write("state" + str(i) + ".\n")
-    f.close()
+    with open("states.lp", "w") as f:
+        for i in itertools.product([0, 1], repeat=var_num):
+            f.write("state" + str(i) + ".\n")
     f = open('stateGenerator.lp', "w")
     for i in range(var_num):
         f.write("{trans(")
