@@ -16,13 +16,11 @@ def compare(x, y):
 
 
 def compare_file(fn1, fn2, separator):
-    f1 = open(fn1, 'r')
-    f2 = open(fn2, 'r')
-    words1 = re.split(separator, f1.read())
-    words2 = re.split(separator, f2.read())
-    unique = compare(words1, words2)
-    f1.close()
-    f2.close()
+    with open(fn1, 'r') as f1:
+        with open(fn1, 'r') as f2:
+            words1 = re.split(separator, f1.read())
+            words2 = re.split(separator, f2.read())
+            unique = compare(words1, words2)
     return unique
 
 
