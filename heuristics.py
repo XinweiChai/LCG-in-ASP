@@ -152,7 +152,7 @@ def simple_branch(target, state, lcg_edges):
     sequence = [temp]
     count = 0
     while lcg_edges[temp]:
-        count = count + 1
+        count += 1
         temp = lcg_edges[temp][0]
         if count % 2 == 0:
             sequence.append(temp)

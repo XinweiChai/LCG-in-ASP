@@ -11,7 +11,7 @@ def generate_random_an(an_size, an_num_tran):
         temp = list(range(1, an_size + 1))
         sign = random.choice([1, -1])
         temp.remove(head)
-        head = head * sign
+        head *= sign
         body = []
         next_tr = 1  # at lease one variable in the body
         while next_tr > 0.2 and temp:

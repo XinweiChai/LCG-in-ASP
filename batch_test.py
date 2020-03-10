@@ -89,7 +89,7 @@ def iteration_test(f_network, f_out):  # count the average and max iteration
                 reach_count = reach_count + 1
             else:
                 if iter > 1:
-                    inc = inc + 1
+                    inc += 1
     if reach_count == 0:
         return 0, max_count, inc
     else:
@@ -109,8 +109,8 @@ def batch_iteration_test(begin, end, fn, f_network):
     for i in range(begin, end):
         print(i)
         average, max_count, inc = iteration_test(fn, f_network + str(i))
-        aver_of_average = aver_of_average + average
-        aver_of_inc = aver_of_inc + inc
+        aver_of_average += average
+        aver_of_inc += inc
         if max_count > max_of_max:
             max_of_max = max_count
     return aver_of_average / (end - begin), max_of_max, aver_of_inc / (end - begin)

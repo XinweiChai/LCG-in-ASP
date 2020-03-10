@@ -36,11 +36,11 @@ def consistent_rate(eq, res_mat, threshold):
         for j in range(len(eq[0])):
             if i != j:
                 if abs(res_mat[i][j]) < threshold:
-                    negative = negative + 1
+                    negative += 1
                     if np.sign(eq[i][j]) != 0:
                         false_negative = false_negative + 1
                 else:
-                    positive = positive + 1
+                    positive += 1
                     if np.sign(eq[i][j]) != np.sign(res_mat[i][j]):
                         false_positive = false_positive + 1
     if positive != 0:
@@ -62,7 +62,7 @@ def consistent_rate2(eq, res_mat, threshold):
                 if (res_mat[i][j] <= -threshold and eq[i][j] < 0) or \
                         (res_mat[i][j] >= threshold and eq[i][j] > 0) or \
                         (-threshold < res_mat[i][j] < threshold and eq[i][j] == 0):
-                    correct = correct + 1
+                    correct += 1
     return correct / len(eq) / (len(eq) - 1)
 
 

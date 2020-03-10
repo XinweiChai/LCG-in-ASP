@@ -11,7 +11,7 @@ def generate_random_an(size, num_tran):
         temp = list(range(1, size + 1))
         sign = random.choice([1, -1])
         temp.remove(head)
-        head = head * sign
+        head *= sign
         sign = random.choice([1, -1])
         dice = random.choice(temp)
         body = [sign * dice]

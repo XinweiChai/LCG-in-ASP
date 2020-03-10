@@ -40,10 +40,10 @@ def count_result(fn, suffix, num):
         x = f.readline()
         while x:
             if 'Inconclusive' in x or 'Inconc' in x or 'Killed' in x:
-                inconc = inconc + 1
+                inconc += 1
             if 'True' in x:
-                trues = trues + 1
+                trues += 1
             if 'False' in x:
-                falses = falses + 1
+                falses += 1
             x = f.readline()
     return trues, falses, inconc

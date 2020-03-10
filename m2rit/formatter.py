@@ -100,10 +100,10 @@ if __name__ == "__main__":
             trans = re.sub('state|\(|\)|\,', '', args)
             temp = ''
             for i in range(var_num):
-                temp = temp + 'V' + str(i) + "=" + trans[i] + ' '
-            temp = temp + ': '
+                temp += 'V' + str(i) + "=" + trans[i] + ' '
+            temp += ': '
             for i in range(var_num):
-                temp = temp + 'V' + str(i) + "=" + trans[i + var_num] + ' '
+                temp += 'V' + str(i) + "=" + trans[i + var_num] + ' '
             trans = 'a=' + trans[0] + ' b=' + trans[1] + ' c=' + trans[2] + ' : ' + 'a=' + trans[3] + ' b=' + trans[
                 4] + ' c=' + trans[5]
             print(temp, file=f)
